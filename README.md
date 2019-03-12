@@ -10,7 +10,7 @@
  * Computer Organization		
  * The Programming Language		 
  * Artificial Intelligence		
-    * Machine Learning		 
+    * [Machine Learning](https://github.com/MingxiaGuo/Computer-Science/tree/master/Machine_Learning)
  * Big Data		
     * Data Mining		 
  * [Cloud Computing](https://github.com/MingxiaGuo/Computer-Science/tree/master/Cloud_Computing) 

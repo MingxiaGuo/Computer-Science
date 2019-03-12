@@ -1,0 +1,31 @@
+* Food\(Sadilek et al,2013\)
+
+  * data: Twitter data\(words+location\)
+  * skill: tell food poisoning likeliness of restaurant properly
+
+* Clothing\(Abu-Mostafa,2012\)
+
+  * data: sales figures + client surveys
+  * skill: give food fashion recommendations to clients
+
+* Housing\(Tsanas and Xifara,2012\)
+
+  * data: characteristics of buildings and their energy load
+  * skill: predict energy load of other buildings closely
+
+* Transportation\(Stallkamp et al ,2012\)
+
+  * data: some traffic sign images and meanings
+  * skill: recognize traffic signs accurately
+
+* Education
+
+  * data: students' records on quizzes on a Math tutoring system
+  * skill: predict whether a student can give a correct answer to another quiz queation
+    ![](/assets/图1.PNG)
+
+* Entertainment：Recommender System\(推荐系统\)
+  * data：how many users have rated some movies
+  * skill：predict how a user would rate an unrated movie
+    ![](/assets/图2.PNG)
+    ![](/assets/图3.PNG)
