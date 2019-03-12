@@ -3,9 +3,9 @@
  * [Computer Science An Overview](https://github.com/MingxiaGuo/Computer-Science/tree/master/Computer_Science_an_Overview)	 
  * [Mathematics for Computer Science](https://github.com/MingxiaGuo/Computer-Science/tree/master/Mathematics_for_Computer_Science)
  * [Computer System](https://github.com/MingxiaGuo/Computer-Science/tree/master/Computer_System)
- * Operating System
+ * [Operating System](https://github.com/MingxiaGuo/Computer-Science/tree/master/Operating_System)
  * [Computer Network](https://github.com/MingxiaGuo/Computer-Science/tree/master/Computer_Network) 
- * Data Structure & Algorithm		
+ * [Algorithm & Data Structure](https://github.com/MingxiaGuo/Computer-Science/tree/master/Algorithm-Data_Structure)
  * [Algorithm Practice](https://github.com/MingxiaGuo/Computer-Science/tree/master/Algorithm_Practice)
  * Computer Organization		
  * The Programming Language		 
