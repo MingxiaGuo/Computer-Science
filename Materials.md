@@ -1,3 +1,8 @@
+* Book
+* Video
+# Video
+1. [计算机科学速成课[Crash Course Computer Science]——YouTube-> Bilibili](https://www.bilibili.com/video/av21376839?from=search&seid=9162856292795471868\)
+
 # Book
 
 **1、《代码大全》 史蒂夫·迈克康奈尔**

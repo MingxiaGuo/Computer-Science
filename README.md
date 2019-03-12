@@ -8,12 +8,14 @@
  * [Algorithm & Data Structure](https://github.com/MingxiaGuo/Computer-Science/tree/master/Algorithm-Data_Structure)
  * [Algorithm Practice](https://github.com/MingxiaGuo/Computer-Science/tree/master/Algorithm_Practice)
  * Computer Organization		
- * The Programming Language		 
+ * [The Programming Language](https://github.com/MingxiaGuo/Computer-Science/tree/master/The_Programming_Language) 
  * Artificial Intelligence		
     * [Machine Learning](https://github.com/MingxiaGuo/Computer-Science/tree/master/Machine_Learning)
  * Big Data		
     * Data Mining		 
  * [Cloud Computing](https://github.com/MingxiaGuo/Computer-Science/tree/master/Cloud_Computing) 
  * Blockchain
+
+* [Materials](https://github.com/MingxiaGuo/Computer-Science/tree/master/Materials.md)
 
 
