@@ -16,9 +16,4 @@ Video：
         
     * [计算机科学速成课\[Crash Course Computer Science\]——YouTube -&gt; Bilibili](https://www.bilibili.com/video/av21376839?from=search&amp;seid=9162856292795471868\\)
 
-* cut
-        
-    
-Content
-
 
