@@ -28,4 +28,7 @@ materials:
     * [wiki](http://os.cs.tsinghua.edu.cn/oscourse/OS2015)
     * [学堂在线](https://www.xuetangx.com/courses/TsinghuaX/30240243X/2015_T1/about)
     * [在线交流](https://piazza.com/tsinghua.edu.cn/spring2015/30240243x/home)
+    * [bilibili video](https://www.bilibili.com/video/av6538245/)
 
+* [南京大学计算机操作系统]
+   * [coursera](https://www.coursera.org/learn/jisuanji-caozuo-xitong#reviews)
