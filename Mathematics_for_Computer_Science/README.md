@@ -1,8 +1,6 @@
-# My Awesome Book
+# Mathematics for Computer Science
 
 计算机中的数学
-
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
 
 Book
 
@@ -12,10 +10,14 @@ Book
 * 线性代数及应用
 * 程序员的数学1 2 3 
 
+
 video
 
 * 数学地图：[bilibili](https://www.bilibili.com/video/av9208524?from=search&seid=15485865071546240272)，[youtube](https://www.youtube.com/watch?v=OmJ-4B-mS-Y&list=PLOYRlicwLG3St5aEm02ncj-sPDJwmojIS&index=2)
 * 物理地图：[bilibili](https://www.bilibili.com/video/av9206164?from=search&seid=8874245310149466695)，[youtube](https://www.youtube.com/watch?v=ZihywtixUYo&list=PLOYRlicwLG3St5aEm02ncj-sPDJwmojIS&index=1)
+
+Tool
+* [immersivemath: linear algebra](http://immersivemath.com/ila/index.html)
 
 Content
 
