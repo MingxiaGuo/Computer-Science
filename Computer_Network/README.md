@@ -10,11 +10,9 @@ Open Course
 * [Stanford Unniversity: CS144 Introduction to Computer Network](https://www.youtube.com/watch?v=-nciJGUPyAM&index=1&list=PLvFG2xYBrYAQCyz4Wx3NPoYJOFjvU7g2Z)
 * [bilibili 韩立刚](https://www.bilibili.com/video/av23124815/?p=3)
 
+计算机网络涉及学科：数学、概率论、随机过程、矩阵论、物理学、光学、计算机科学。
 
-
-
-
-网络：数学、概率论、随机过程、矩阵论、物理学、光学、计算机科学。
+[My Note](https://github.com/MingxiaGuo/Computer-Science/blob/master/Computer_Network/SUMMARY.md)
 
 
 
