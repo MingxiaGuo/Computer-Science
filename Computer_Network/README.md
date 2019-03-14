@@ -8,7 +8,7 @@ Book
 
 Open Course
 * [Stanford Unniversity: CS144 Introduction to Computer Network](https://www.youtube.com/watch?v=-nciJGUPyAM&index=1&list=PLvFG2xYBrYAQCyz4Wx3NPoYJOFjvU7g2Z)
-* [bilibili 韩立刚](https://www.bilibili.com/video/av23124815/?p=3\)
+* [bilibili 韩立刚](https://www.bilibili.com/video/av23124815/?p=3)
 
 
 
