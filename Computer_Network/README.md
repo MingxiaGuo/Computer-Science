@@ -1,18 +1,14 @@
-# My Awesome Book
+#  Computer Network
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Book
+* 《计算机网络：[自顶向下](https://www.baidu.com/s?wd=自顶向下&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao)的学习方法》
+* 《计算机网络》
+* 《TCP/IP详解》
+* 《UNIX网络编程》
 
-《计算机网络：[自顶向下](https://www.baidu.com/s?wd=自顶向下&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao)的学习方法》
-
-《计算机网络》
-
-《TCP/IP详解》
-
-《UNIX网络编程》
-
-[Stanford Unniversity: CS144 Introduction to Computer Network](https://www.youtube.com/watch?v=-nciJGUPyAM&index=1&list=PLvFG2xYBrYAQCyz4Wx3NPoYJOFjvU7g2Z)
-
-[bilibili 韩立刚](https://www.bilibili.com/video/av23124815/?p=3\)
+Open Course
+* [Stanford Unniversity: CS144 Introduction to Computer Network](https://www.youtube.com/watch?v=-nciJGUPyAM&index=1&list=PLvFG2xYBrYAQCyz4Wx3NPoYJOFjvU7g2Z)
+* [bilibili 韩立刚](https://www.bilibili.com/video/av23124815/?p=3\)
 
 
 
