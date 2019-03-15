@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [Introduction](Introduction.md)
 * When Can Machines Learn? (illustrative + technical)
     *  [1 The Learning Problem](chapter1.md)
         * 1.0 Course Introduction
