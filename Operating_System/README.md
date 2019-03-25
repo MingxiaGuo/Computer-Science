@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [Introduction](INTRODUCTION.md)
 * 第一章 操作系统引论
   * [1.1 操作系统目标和作用](1.1-操作系统目标和作用.md)
   * [1.2 操作系统发展过程](1.2-操作系统发展过程.md)
