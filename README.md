@@ -11,7 +11,7 @@
 * [The Programming Language](https://github.com/MingxiaGuo/Computer-Science/tree/master/The_Programming_Language) 
 * [Artificial Intelligence](https://github.com/MingxiaGuo/Computer-Science/tree/master/Artificial_Intelligence)
    * [Machine Learning](https://github.com/MingxiaGuo/Computer-Science/tree/master/Machine_Learning)
-   * Deep Learning
+   * [Deep Learning](Deep_Learning)
 * Big Data		
    * Data Mining		 
 * [Cloud Computing](https://github.com/MingxiaGuo/Computer-Science/tree/master/Cloud_Computing) 
