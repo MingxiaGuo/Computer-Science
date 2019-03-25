@@ -1,10 +1,11 @@
-# content
-[三张图读懂机器学习：基本概念、五大流派与九种常见算法](https://36kr.com/p/5072074.html)
-[一文读懂机器学习、数据科学、人工智能、深度学习和统计学之间的区别](一文读懂机器学习、数据科学、人工智能、深度学习和统计学之间的区别)
+# Introduction
+
 * 机器学习算法
   * 监督学习： 使用预定义的“训练示例”集合，训练系统，便于其在新数据被馈送时也能得出结论。系统一直被训练，直到达到所需的精度水平。
   * 无监督学习： 给系统一堆无标签数据，它必须自己检测模式和关系。 系统要用推断功能来描述未分类数据的模式。
   * 强化学习：强化学习其实是一个连续决策的过程，这个过程有点像有监督学习，只是标注数据不是预先准备好的，而是通过一个过程来回调整，并给出“标注数据”。
+
+![](assets/Introduction-of-machine-learning.png)
 
 * 机器学习常用算法：
   * 线性回归
@@ -36,53 +37,11 @@
 
 ⑥调优模型：使用更多数据、不同的特征或调整过的参数来提升算法的性能表现
 
-* When Can Machines Learn? \(illustrative + technical\)
 
-  * Lecture 1: The Learning Problem
+# Open courses
+* [李宏毅2017机器学习](https://www.bilibili.com/video/av10590361?from=search&seid=8726738433477857991)
+* [李宏毅2019机器学习](https://www.bilibili.com/video/av35932863?from=search&seid=8726738433477857991)
 
-    * Course Introduction
-    * What is Machine Learning
-    * Applications of Machine Learning
-    * Components of Machine Learning
-    * Machine Learning and Other Fields
-
-  * Lecture 2: Learning to Answer Yes/No
-
-    * Perceptron Hypothesis Set
-    * **Perceptron Learning Algorithm 感知机算法**
-    * Guarantee of PLA
-    * Non-Separable Data: **Pocket Algorithm**
-
-  * Lecture 3: Types of Learning
-
-    * Learning with Different Output Space y
-    * Learning with Different Data Label $$y_n$$
-    * Learning with Different Protocol $$f =(X_n,y_n)$$
-    * Learning with Different Input Space x
-    
-  * Lecture 4: Feasibility of Learning
-    * Learning is Impoosible?
-    * Probability to the Tescue
-    * Connection to Learning
-    * Connection to Real Learning
-* WHy Can Machines Learn?(theoretical + illustrative\)
-
-  - Lecture 5: Training versus Testing
-    - Recap and Preview
-    - Effective Number of Lines
-    - Effective Number of Hypotheses
-    - Break Point
-
-* How Can Machines Learn?\(technical + practical\)
-
-* WHy Can Machines Learn Better?\(practical + theoretical\)
-
-- Embedding Numerous Features: kernel Models
-  - Lecture 1: Linear Support Vector Machine
-    - Large-margin Separating Hyperplane
-    - Standard Large-margin Problem
-    - Support Vector Machine
-    - Reasons behind Large-Margin Hyperplane
-- Conbining Predictive Features: Aggregation Models
-- Distilling Implicit Features: Extraction Models
-
+# Reference
+[三张图读懂机器学习：基本概念、五大流派与九种常见算法](https://36kr.com/p/5072074.html)
+[一文读懂机器学习、数据科学、人工智能、深度学习和统计学之间的区别](一文读懂机器学习、数据科学、人工智能、深度学习和统计学之间的区别)

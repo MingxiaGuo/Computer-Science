@@ -1,7 +1,9 @@
-# Summary
+
+
+# Content
 
 * [Introduction](INTRODUCTION.md)
-* When Can Machines Learn? (illustrative + technical)
+* a）When Can Machines Learn? (illustrative + technical)
     *  [1 The Learning Problem](1-The-Learning-Problem.md)
         * 1.0 Course Introduction
         * [1.1 What is Machine Learning](1.1-What-is-Machine-Learning.md)
@@ -23,7 +25,7 @@
         * [4.2 Probability to the Rescue](4.2-Probability-to-the-Rescue.md)
         * [4.3 Connection to Learning](4.3-connection-to-learning.md)
         * [4.4 Connnection to Real Learning](4.4-connnection-to-real-learning.md)
-* WHy Can Machines Learn?(theoretical + illustrative)
+* b) Why Can Machines Learn?(theoretical + illustrative)
     * [5 Training versus Testing](5-training-versus-testing.md)
         * [5.1 Recap and Preview](5.1-recap-and-preview.md)
         * [5.2 Effective Number of Lines](5.2-effective-number-of-lines.md)
@@ -39,6 +41,20 @@
     * 14 Regularization
     * 15 Validation
     * 16 Three Learning Principles
+
+* c) How Can Machines Learn?(technical + practical)
+
+* d) WHy Can Machines Learn Better?(practical + theoretical)
+
+- Embedding Numerous Features: kernel Models
+  - Lecture 1: Linear Support Vector Machine
+    - Large-margin Separating Hyperplane
+    - Standard Large-margin Problem
+    - Support Vector Machine
+    - Reasons behind Large-Margin Hyperplane
+- Conbining Predictive Features: Aggregation Models
+- Distilling Implicit Features: Extraction Models
+
 * [机器学习技法](ji-qi-xue-xi-ji-fa.md)
 * [Linear Support Vector Machine](支持向量机svm.md)
   * [Large-Margin Separating Hyperplane](支持向量机svm/large-margin-separating-hyperplane.md)
