@@ -30,5 +30,5 @@ materials:
     * [在线交流](https://piazza.com/tsinghua.edu.cn/spring2015/30240243x/home)
     * [bilibili video](https://www.bilibili.com/video/av6538245/)
 
-* [南京大学计算机操作系统]
+* 南京大学计算机操作系统
    * [coursera](https://www.coursera.org/learn/jisuanji-caozuo-xitong#reviews)
