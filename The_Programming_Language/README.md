@@ -95,7 +95,7 @@ Programming  Language enable users to write programs for specific computations/a
 
 ## Comparison of pargrammong languages
 
-![](/assets/comparsion languages-1.png)
+![](assets/comparsion languages-1.png)
 
 ![](/assets/comparison laguages-2png)
 
