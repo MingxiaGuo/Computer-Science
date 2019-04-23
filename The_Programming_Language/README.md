@@ -1,4 +1,3 @@
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
 
 编程语言：一组用来定义计算机程序的语法规则。它是一种被标准化的交流语言，用来向计算机发出指令。一种计算机语言 让程序员能够准确地 定义计算机所需要使用的数据，并精确地定义在不同情况下所应当采取的行动。
 
