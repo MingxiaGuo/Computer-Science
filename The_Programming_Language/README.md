@@ -1,13 +1,18 @@
 
+* [C](C/readme.md)
+* [python](python/readme.md)
+* [golang](golang/readme.md)
+* java
+
 编程语言：一组用来定义计算机程序的语法规则。它是一种被标准化的交流语言，用来向计算机发出指令。一种计算机语言 让程序员能够准确地 定义计算机所需要使用的数据，并精确地定义在不同情况下所应当采取的行动。
 
 Programming  Language enable users to write programs for specific computations/algorithms.
 
 尽管人们多次试图创造一种通用的程序设计语言，却没有一次尝试是成功的。之所以 有那么多种不同的编程语言存在的原因是设计程序语言的初衷不同，对语言学习曲线的追求不同，不同程序之间的运行成本差异等。
 
-编程语言的历史早于真正意义的计算机的出现。19世纪就有“可编程的”织布机和钢琴弹奏装置出现，它们都是领域特定语言\(DSL\)的样例。
+编程语言的历史早于真正意义的计算机的出现。19世纪就有“可编程的”织布机和钢琴弹奏装置出现，它们都是领域特定语言(DSL)的样例。
 
-* 偏性能敏感的编译型语言：C C++ Java C\# Delphi Objective-C
+* 偏性能敏感的编译型语言：C C++ Java C# Delphi Objective-C
 
 * 偏快速业务开发的动态解析型语言： PHP Python Perl Ruby JavaScript Lua
 
@@ -23,37 +28,37 @@ Programming  Language enable users to write programs for specific computations/a
 
 * 1951 – Regional Assembly Language
 * 1952 – Autocode
-* 1954 – IPL \(LISP语言的祖先\)
-* 1955 – FLOW-MATIC \(COBOL语言的祖先\)
-
-* 1957 – FORTRAN \(第一个编译型语言\)\( FORMULA TRANSLATION\)
-* 1957 – COMTRAN \(COBOL语言的祖先\)
-* 1958 – LISP\(LIST PROCESSOR\)
+* 1954 – IPL (LISP语言的祖先)
+* 1955 – FLOW-MATIC (COBOL语言的祖先)
+---
+* 1957 – FORTRAN (第一个编译型语言)( FORMULA TRANSLATION)
+* 1957 – COMTRAN (COBOL语言的祖先)
+* 1958 – LISP (LIST PROCESSOR)
 * 1958 – ALGOL 58
-* 1959 – FACT \(COBOL语言的祖先\)
-* 1959 – COBOL\(COMMON BUSINESS-ORIENTED LANGUAGE\) 1959 – RPG
-
+* 1959 – FACT (COBOL语言的祖先)
+* 1959 – COBOL (COMMON BUSINESS-ORIENTED LANGUAGE) 1959 – RPG
+---
 * 1962 – APL
 * 1962 – Simula
 * 1962 – SNOBOL
-* 1963 – CPL \(C语言的祖先\)
+* 1963 – CPL (C语言的祖先)
 * 1964 – BASIC
 * 1964 – PL/I
 * 1966 – JOSS
-* 1967 – BCPL \(C语言的祖先\)
+* 1967 – BCPL (C语言的祖先)
 * 1968 – Logo
-* 1969 – B \(C语言的祖先\) 
+* 1969 – B (C语言的祖先) 
 * 1970 – Pascal 
 * 1970 – Forth
-
+---
 * 1972 – C
 * 1972 – Smalltalk
 * 1972 – Prolog
 * 1973 – ML
 * 1975 – Scheme
 * 1978 – SQL
-
-* 1980 – C++ \(既有类的C语言，更名于1983年7月\)
+---
+* 1980 – C++ (既有类的C语言，更名于1983年7月)
 * 1983 – Ada
 * 1984 – Common Lisp
 * 1984 – MATLAB
@@ -69,18 +74,18 @@ Programming  Language enable users to write programs for specific computations/a
 * 1991 – Visual Basic
 * 1993 – Ruby
 * 1993 – Lua
-* 1994 – CLOS \(ANSI Common Lisp的一部分\)
+* 1994 – CLOS (ANSI Common Lisp的一部分)
 * 1995 – Java
-* 1995 – Delphi \(Object Pascal\)
+* 1995 – Delphi (Object Pascal)
 * 1995 – JavaScript
 * 1995 – PHP
 * 1996 – WebDNA
 * 1997 – Rebol
 * 1999 – D
 * 2000 – ActionScript
-* 2001 – C\#
+* 2001 – C#
 * 2001 – Visual Basic .NET
-* 2002 – F\#
+* 2002 – F#
 * 2003 – Groovy
 * 2003 – Scala
 * 2007 – Clojure
@@ -95,15 +100,15 @@ Programming  Language enable users to write programs for specific computations/a
 
 ## Comparison of pargrammong languages
 
-![](assets/comparsion languages-1.png)
+![](assets/comparsion-languages-1.png)
 
-![](/assets/comparison laguages-2png)
+![](assets/comparison-laguages-2.png)
 
-![](/assets/comparison languages-3.png)
+![](assets/comparison-languages-3.png)
 
 ## The security of programming languages
 
-![](/assets/secure of programming languages.png)
+![](assets/secure-of-programming-languages.png)
 
 ## Tips for Secure Programming
 
@@ -117,7 +122,7 @@ Programming  Language enable users to write programs for specific computations/a
 
 * Store data securely
 
-* Write code that is capable of handling exceptions\(errors\) securely
+* Write code that is capable of handling exceptions (errors) securely
 
 * Write code that is free of hardcoded credentials or cryptographic keys
 
@@ -125,13 +130,14 @@ Programming  Language enable users to write programs for specific computations/a
 
 * Implement comprehensive yet realistic security policies
 
-CRLF Injection
+---
+* CRLF Injection
 
-SQL Injection
+* SQL Injection
 
-Buffer Management Errors
+* Buffer Management Errors
 
-Buffer Overflow
+* Buffer Overflow
 
-Insufficient Input Validation
+* Insufficient Input Validation
 
