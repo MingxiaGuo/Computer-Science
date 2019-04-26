@@ -45,3 +45,5 @@
 ## Open Course
 
 ## website
+
+[云计算、大数据、人工智能的关系](https://zhuanlan.zhihu.com/p/62898738)
