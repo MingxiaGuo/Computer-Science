@@ -23,6 +23,7 @@
 
 
 ## Book
+* [豆瓣推荐](https://book.douban.com/subject_search?search_text=%E8%AE%A1%E7%AE%97%E6%9C%BA&cat=1001) 
 * Computer Science an Overview
 * **The C Programming Language 2nd by Kernighan and Ritchie**     
 * Algorithms & Data Structure
@@ -141,11 +142,23 @@ Computability by N. J. Cutland
 
 
 ## Open Course
+* [美国计算机名校例如MIT ，CMU ，有哪些公认的好课并且有课程讲义的，适合国内学生自学的？](https://www.zhihu.com/question/57532048)
+* MIT
+   * [Linear Algebra](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm)
+   * [https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm)
+* CMU
+   * google: CMU15XXX 或者 CMU10XXX，15是计算机系，10是机器学习系
+   * [Introduction to Computer Systems](http://www.cs.cmu.edu/~213/)
+   * [Machine Learning](http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml)
+* SU
+   * [Convex Optimization](http://web.stanford.edu/class/ee364a/index.html) [Youtube](https://www.youtube.com/watch?v=McLq1hEq3UY&list=PL3940DD956CDF0622)
+* UCB
+   * [Intro to AI](http://ai.berkeley.edu/home.html)
 
 ## website
 
-[云计算、大数据、人工智能的关系](https://zhuanlan.zhihu.com/p/62898738)
-[如何把计算机组成原理、操作系统、数据结构和计算机网络融会贯通，相互联系起来？](https://www.zhihu.com/question/22017267/answer/26468016)
+* [云计算、大数据、人工智能的关系](https://zhuanlan.zhihu.com/p/62898738)
+* [如何把计算机组成原理、操作系统、数据结构和计算机网络融会贯通，相互联系起来？](https://www.zhihu.com/question/22017267/answer/26468016)
 
 ## Tools
 * Mindmap
