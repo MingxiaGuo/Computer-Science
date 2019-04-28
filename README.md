@@ -25,12 +25,12 @@
 ## Book
 * Computer Science an Overview
 * **The C Programming Language 2nd by Kernighan and Ritchie**     
-* Algorithms
+* Algorithms & Data Structure
    * Data Structure and Algorithm Analysis
    * Introduction of Algorithms by Cormen, Leiserson, Rivest & Stein 
    * Algorithms.4th
 * 计算机原理
-   * **Computer Systems : a programmer‘s perspective 3rd by CMU**
+   * **Computer Systems : a programmer‘s perspective 3rd by CMU** [website](http://www.csapp.cs.cmu.edu) 
 * 计算机组成和体系结构
    * Computer Organization and Design
    * Computer Architecture：A Quantitative Approach
