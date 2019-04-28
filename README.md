@@ -28,9 +28,9 @@
 * Algorithms & Data Structure
    * Data Structure and Algorithm Analysis
    * Introduction of Algorithms by Cormen, Leiserson, Rivest & Stein 
-   * Algorithms.4th
+   * Algorithms.4th [booksite](https://algs4.cs.princeton.edu/home/)
 * 计算机原理
-   * **Computer Systems : a programmer‘s perspective 3rd by CMU** [website](http://www.csapp.cs.cmu.edu) 
+   * **Computer Systems : a programmer‘s perspective 3rd by CMU** [booksite](http://www.csapp.cs.cmu.edu) 
 * 计算机组成和体系结构
    * Computer Organization and Design
    * Computer Architecture：A Quantitative Approach
