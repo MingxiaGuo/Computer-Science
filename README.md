@@ -28,6 +28,7 @@
 * Algorithms
    * Data Structure and Algorithm Analysis
    * Introduction of Algorithms by Cormen, Leiserson, Rivest & Stein 
+   * Algorithms.4th
 * 计算机原理
    * **Computer Systems : a programmer‘s perspective 3rd by CMU**
 * 计算机组成和体系结构
@@ -39,6 +40,7 @@
    * Modern Operating Systems by Andrew S. Tanenbaum 
 * 网络
    * TCP/IP from stevens
+   * Computer Networking: A Top-Down Approach 7th
 * Linux
 * Structure and Interpretation of Computer Programs
 * Design Pattern
