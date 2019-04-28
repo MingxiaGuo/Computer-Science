@@ -42,6 +42,7 @@
    * TCP/IP from stevens
    * Computer Networking: A Top-Down Approach 7th
 * Linux
+   * [鸟哥的Linux私房菜](http://linux.vbird.org/)
 * Structure and Interpretation of Computer Programs
 * Design Pattern
 * Math
@@ -144,3 +145,14 @@ Computability by N. J. Cutland
 ## website
 
 [云计算、大数据、人工智能的关系](https://zhuanlan.zhihu.com/p/62898738)
+
+## Tools
+    * Mindmap
+        * xmind
+        * [processon](https://www.processon.com/diagrams)
+    * note
+        * github
+        * evernote
+    * read
+        * marginnote [1](https://sspai.com/post/47317) [2](https://sspai.com/post/54005)
+    
