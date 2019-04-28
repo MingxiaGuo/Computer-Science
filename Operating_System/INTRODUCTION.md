@@ -32,3 +32,10 @@ materials:
 
 * 南京大学计算机操作系统
    * [coursera](https://www.coursera.org/learn/jisuanji-caozuo-xitong#reviews)
+   
+* website
+   * [鸟哥的Linux私房菜](http://linux.vbird.org)
+   * [Linux中国](https://linux.cn)
+   * [实验楼](https://www.shiyanlou.com):有Linux在线开发环境
+   * [Linux下载站](http://www.linuxdown.net)
+   * [Linux公社](https://www.linuxidc.com)
