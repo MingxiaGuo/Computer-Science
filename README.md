@@ -145,6 +145,7 @@ Computability by N. J. Cutland
 ## website
 
 [云计算、大数据、人工智能的关系](https://zhuanlan.zhihu.com/p/62898738)
+[如何把计算机组成原理、操作系统、数据结构和计算机网络融会贯通，相互联系起来？](https://www.zhihu.com/question/22017267/answer/26468016)
 
 ## Tools
 * Mindmap
