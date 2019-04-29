@@ -1,6 +1,8 @@
 # Computer Science An Overview
 
-
+* [Map of Computer Science](Map-of-Computer-Science.md)
+* [Crash Course Computer Science](Crash-Course-Computer-Science.md)
+---
 * Book
    * Computer Science An Overview
 
