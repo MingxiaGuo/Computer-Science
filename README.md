@@ -173,18 +173,16 @@ Computability by N. J. Cutland
   * evernote
 * read
   * marginnote [1](https://sspai.com/post/47317) [2](https://sspai.com/post/54005)
-<<<<<<< HEAD
-    
 
+    
 * Editors
    * [VIM](https://www.vim.org/): The simplest but one of the most professional editor.
    * [Emacos](https://www.gnu.org/software/emacs/): One of the biggest competitor to VIM
    * [VSCode](https://github.com/Microsoft/vscode): f you want a fancy GUI, Microsoft did a good job.
    * A list of all editors: 
       * Editors ranked according to their popularity:https://www.slant.co/topics/12/~best-programming-text-editors
-=======
+
 * disk
   * [坚果云](https://www.jianguoyun.com/d/home#/)
   * 百度云   
  
->>>>>>> c932bf4d4802e121c160b2716e7082de7654c539
