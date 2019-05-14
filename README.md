@@ -4,8 +4,8 @@
 * [Mathematics for Computer Science](Mathematics_for_Computer_Science)
    * Linear Algebra
    * 高数
-* [Computer System](Computer_System)
-* [Operating System](Operating_System) :扎克伯格说他大学最重要的课就是操作系统。
+* [Computer System&Organization&Architecture](Computer_System)
+* [Operating System](Operating_System) :大学最重要的课
 * [Computer Network](Computer_Network) 
 * [Algorithm & Data Structure](Algorithm-Data_Structure)
 * [Algorithm Practice](Algorithm_Practice)
@@ -14,12 +14,12 @@
 * [Artificial Intelligence](Artificial_Intelligence)
    * [Machine Learning](Machine_Learning)
    * [Deep Learning](Deep_Learning)
-* Big Data		
-   * Data Mining		 
+* [Big Data](Big_Data)
+   * [Data Mining](Data_Mining)	 
 * [Cloud Computing](Cloud_Computing) 
 * [Blockchain](Blockchain)
-
-
+* [User experience](User_experience)
+* [Open technology](Open_technology)
 
 ## Book
 * [豆瓣推荐](https://book.douban.com/subject_search?search_text=%E8%AE%A1%E7%AE%97%E6%9C%BA&cat=1001) 
