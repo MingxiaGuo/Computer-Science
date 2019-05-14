@@ -21,7 +21,7 @@ Modern Mathematics
 * another: crossover
 
 
-pure maths:
+### pure maths:
 * number systems: (origin:natural numbers and arithmetic operations)
     * natural numbers
     * integers: negative numbers
@@ -65,7 +65,7 @@ pure maths:
     * complex analysis: properties of functions whith complex numbers
 
 
-applied mathematics
+### applied mathematics
 * mathematical physics
     * theoretical physics
 * mathematical chemistry
