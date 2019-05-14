@@ -156,9 +156,11 @@ Computability by N. J. Cutland
    * [Intro to AI](http://ai.berkeley.edu/home.html)
 
 ## website
-
+* [Github,awesome: Best-websites-a-programmer-should-visit](https://github.com/sdmg15/Best-websites-a-programmer-should-visit)
+* [Github: chinese-programmer-wrong-pronunciation](https://github.com/shimohq/chinese-programmer-wrong-pronunciation)
 * [云计算、大数据、人工智能的关系](https://zhuanlan.zhihu.com/p/62898738)
 * [如何把计算机组成原理、操作系统、数据结构和计算机网络融会贯通，相互联系起来？](https://www.zhihu.com/question/22017267/answer/26468016)
+
 
 ## Tools
 * Mindmap
@@ -170,3 +172,10 @@ Computability by N. J. Cutland
 * read
   * marginnote [1](https://sspai.com/post/47317) [2](https://sspai.com/post/54005)
     
+
+* Editors
+   * [VIM](https://www.vim.org/): The simplest but one of the most professional editor.
+   * [Emacos](https://www.gnu.org/software/emacs/): One of the biggest competitor to VIM
+   * [VSCode](https://github.com/Microsoft/vscode): f you want a fancy GUI, Microsoft did a good job.
+   * A list of all editors: 
+      * Editors ranked according to their popularity:https://www.slant.co/topics/12/~best-programming-text-editors

@@ -1,5 +1,10 @@
 # Mathematics for Computer Science
 
+* Linear Algebra
+* Probability and Information Theory
+* Numerical Computation
+
+
 计算机中的数学
 
 Book

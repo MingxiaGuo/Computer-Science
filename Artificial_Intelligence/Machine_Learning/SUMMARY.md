@@ -23,7 +23,7 @@
         * [4.2 Probability to the Rescue](di-4-zhang-feasibility-of-learning/4.md)
         * [4.3 Connection to Learning](di-4-zhang-feasibility-of-learning/43-connection-to-learning.md)
         * [4.4 Connnection to Real Learning](di-4-zhang-feasibility-of-learning/44-connnection-to-real-learning.md)
-* WHy Can Machines Learn?\(theoretical + illustrative\)
+* WHy Can Machines Learn?(theoretical + illustrative)
     * [5 Training versus Testing](di-5-zhang-training-versus-testing.md)
         * [5.1 Recap and Preview](di-5-zhang-training-versus-testing/51-recap-and-preview.md)
         * [5.2 Effective Number of Lines](di-5-zhang-training-versus-testing/52-effective-number-of-lines.md)

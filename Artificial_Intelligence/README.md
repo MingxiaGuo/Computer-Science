@@ -1,4 +1,7 @@
 
+
+[Technical Skill Development Recommendation - Cognitive](https://w3-connections.ibm.com/forums/html/topic?id=cbc40f70-2944-439f-8a1c-99b62d28afbe&ps=)
+
 人工智能（英语：Artificial Intelligence，缩写为 AI）亦称机器智能，指由人制造出来的机器所表现出来的智能。通常人工智能是指通过普通计算机程序的手段实现的人类智能技术。
 
 人工智能也可以分成两类：
@@ -72,3 +75,44 @@
 指纹识别
 基于Haar的人脸检测
 基于HoG特征的物体检测
+
+
+人工智能：
+* 计算智能：快速计算，记忆和储存能力
+* 感知智能：视觉、听觉、触觉等感知能力，如语音识别、语音合成、图像识别
+* 认知智能：理解、解释的能力
+
+[极简AI：10张幻灯片看懂AI/机器学习](https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_11814202613423361644%22%7D&n_type=0&p_from=1)
+
+
+| Critical Technical Skills | Recommended learning materials | Remark|
+| -- | -- | -- |
+| 1 Paper Trace | | |
+| 1.1 Linear algebra| [Deeplearningbook: linear_algebra](http://www.deeplearningbook.org/contents/linear_algebra.html)|Mandatory skill for all |
+| 1.2 Probability and information Theory | [Deeplearningbook: probability](http://www.deeplearningbook.org/contents/prob.html)| Selective skill based on job role|
+| 1.3 Numerical Computation | [Deeplearningbook: Numerical](http://www.deeplearningbook.org/contents/numerical.html) | Selective skill based on job role|
+| 1.4 DL&ML algorithm knowledge | <li>[Deeplearning tutorial](http://ufldl.stanford.edu/tutorial/)<li>[open badge: Data Science Fundamentals](https://cognitiveclass.ai/learn/data-science/) |Mandatory skill for all|
+| 1.5 Sharp Hands-on capacity | 兴趣小组/黑客松（筹划中...）| Optional based on interest |
+| 1.6 R,Python,Java and C++ programming skill | <li>[Python & Numpy Tutorial](http://cs231n.github.io/python-numpy-tutorial/) <li>C++ books: 1. Thing C++;2. Effective C++; 3. More Effective C++;4. Understanding C++ 11 | Selective skill based on job role |
+| 2 DL&ML Algorithm Development | | |
+| 2.1 DL&ML algorithm knowledge | <li>[Coursera: Machine learning](https://www.coursera.org/learn/machine-learning) <li>[Open Badge: Deep Learning](https://cognitiveclass.ai/learn/deep-learning/) |  Mandatory skill for all|
+| 2.2 R,python, java and C++ programming skill | <li>[PythonBooks](https://wiki.python.org/moin/PythonBooks) <li>Pandass: http://pandas.pydata.org/pandas-docs/stable/10min.html# http://pandas.pydata.org/pandas-docs/stable/api.html# | Selective skill based on job role |
+| 2.3 Evaluation methodology knowledge | 待完善 | |
+| 2.4 Basic mathematic knowledge | <li>[Machine learning basics](http://www.deeplearningbook.org/contents/ml.html)  <li>[SGD](https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/W58e79197cd25_41e3_9e47_11ff6f16244b/page/SGD)  <li>Backpropagation: http://cs231n.github.io/optimization-2/ http://neuralnetworksanddeeplearning.com/chap2.html | Selective skill based on job role|
+| 3 Model development |||
+| 3.1 DL&ML algorithm knowledge | <li>[Coursera: Deep learning](https://www.coursera.org/specializations/deep-learning) <li>[Convolutional Neural Networks (CNNs / ConvNets)](http://cs231n.github.io/convolutional-networks/) <li>[Sequence Modeling: Recurrent and Recursive Nets](http://www.deeplearningbook.org/contents/rnn.html) <li>[LSTM](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) <li>[Bi-LSTM](http://Bidirectional%20LSTM-CRF%20Models%20for%20Sequence%20Tagging) <li>[Word2Vec](http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/) <li>[Autoencoders](http://www.deeplearningbook.org/contents/autoencoders.html) <li>[Reinforcement Learning](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html) <li>[Yolo](https://github.com/pjreddie/darknet) <li>[Faster RCNN](https://github.com/rbgirshick/py-faster-rcnn) <li>[Tensorflow image classification model](https://github.com/tensorflow/models/tree/master/slim) | Selective skill based on job role| 
+| 3.2 Knowledge of DL framework and mathematic lib such as xgboost, blas, scikit-learn and so on |<li>scikit-learn: [Examples](http://scikit-learn.org/stable/auto_examples/index.html), [API Reference](http://scikit-learn.org/stable/modules/classes.html)<li>[xgboost](https://github.com/dmlc/xgboost)<li>[keras](https://keras.io)<li>[Caffe](http://caffe.berkeleyvision.org)<li>[TensorFlow](https://www.tensorflow.org/tutorials) | Mandatory skill for all | 
+| 3.3 Data processing knowledge	| <li>数据清洗 <li>特征工程(PCA, SVD, ICA) | 后续追加推荐资料, Selective skill based on job role |
+| 3.4 R, Python programming |待完善 | Selective skill based on job role |
+| 4 DL Framework Integration |
+| 4.1 Deep Knowledge of DL framework and mathematic lib such as xgboost, blas, scikit-learn |<li>Keras Tutorials: https://www.datacamp.com/community/tutorials/deep-learning-python
+https://elitedatascience.com/keras-tutorial-deep-learning-in-python <li>[CaffeOnSpark](https://github.com/yahoo/CaffeOnSpark) <li>[TensorFlow](https://www.tensorflow.org/guide/) | Selective skill based on job role|
+| 4.2 R, Python, Java and c++ programming| 	Cuda/cuDNN	| Selective skill based on job role |
+| 5. Development Skill ||
+| 5.1 R, Python, Java and c++ and GUI programming skill|待完善| Selective skill based on job role|
+| 5.2 Network programming skill|[Unix network programming v3](https://item.jd.com/11728741.html)
+[RDMA](http://www.mellanox.com/related-docs/prod_software/RDMA_Aware_Programming_user_manual.pdf)|Selective skill based on job role|
+| 5.3 OS knowledge | <li>[Linux 101](http://linux.101hacks.com) <li>[A Road Map for LPIC-1](https://developer.ibm.com/tutorials/l-lpic1-map/) <li>[Linux documentation project](http://www.tldp.org) | Selective skill based on job role|
+| 5.4 Spark programming knowledge| Spark - RDD, Spark SQL, pyspark, sparkR: http://spark.apache.org/examples.html http://spark.apache.org/docs/latest/sql-programming-guide.html http://spark.apache.org/docs/latest/sparkr.html | Selective skill based on job role|
+|5.5 Performance tuning skill| [Power Performance tuning](http://w3.itso.ibm.com/abstracts/sg248171.html?Open) |Selective skill based on job role|
+ 
