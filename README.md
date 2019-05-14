@@ -157,13 +157,13 @@ Computability by N. J. Cutland
 * UCB
    * [Intro to AI](http://ai.berkeley.edu/home.html)
 
-## website
+## website | social_eminence
 * [Github,awesome: Best-websites-a-programmer-should-visit](https://github.com/sdmg15/Best-websites-a-programmer-should-visit)
 * [Github: chinese-programmer-wrong-pronunciation](https://github.com/shimohq/chinese-programmer-wrong-pronunciation)
 * [云计算、大数据、人工智能的关系](https://zhuanlan.zhihu.com/p/62898738)
 * [如何把计算机组成原理、操作系统、数据结构和计算机网络融会贯通，相互联系起来？](https://www.zhihu.com/question/22017267/answer/26468016)
-
-
+* Pronounciation: Don't pronounce the words as if you are speaking in Russian:https://github.com/shimohq/chinese-programmer-wrong-pronunciation
+* Formatter: Well indented code always makes people feel better. Astyle is one of the tool I used a lot: http://astyle.sourceforge.net/astyle.html
 ## Tools
 * Mindmap
   * xmind
