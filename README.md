@@ -132,7 +132,9 @@ Object-Oriented Analysis and Design with Applications by Grady Booch
 Masterminds of Programming     
 Computability by N. J. Cutland
 
+[买书](http://search.china-pub.com/s/?key1=%C9%EE%C8%EB%C0%ED%BD%E2%BC%C6%CB%E3%BB%FA%D3%A2%CE%C4&type=&pz=1)
 
+[pdf download](http://www.java1234.com/a/javabook/)
 ##  Video
 
 > coursera，edx，udacity
@@ -171,6 +173,7 @@ Computability by N. J. Cutland
   * evernote
 * read
   * marginnote [1](https://sspai.com/post/47317) [2](https://sspai.com/post/54005)
+<<<<<<< HEAD
     
 
 * Editors
@@ -179,3 +182,9 @@ Computability by N. J. Cutland
    * [VSCode](https://github.com/Microsoft/vscode): f you want a fancy GUI, Microsoft did a good job.
    * A list of all editors: 
       * Editors ranked according to their popularity:https://www.slant.co/topics/12/~best-programming-text-editors
+=======
+* disk
+  * [坚果云](https://www.jianguoyun.com/d/home#/)
+  * 百度云   
+ 
+>>>>>>> c932bf4d4802e121c160b2716e7082de7654c539
