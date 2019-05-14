@@ -84,6 +84,8 @@
 
 [极简AI：10张幻灯片看懂AI/机器学习](https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_11814202613423361644%22%7D&n_type=0&p_from=1)
 
+[Gartner：2018 年十大战略科技发展趋势](https://36kr.com/p/5101110)
+[「力荐」AI达人收藏夹里必备的50个咨询网站和博客](https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_9610521711747001432%22%7D&n_type=0&p_from=1)
 
 | Critical Technical Skills | Recommended learning materials | Remark|
 | -- | -- | -- |
