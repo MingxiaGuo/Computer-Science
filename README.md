@@ -36,7 +36,7 @@
    * [Intro to AI](http://ai.berkeley.edu/home.html)
 * Crash Course
    * [计算机科学速成课[Crash Course Computer Science]——YouTube-> Bilibili](https://www.bilibili.com/video/av21376839?from=search&seid=9162856292795471868)
-* coursera，
+* coursera
 * edx
 * udacity
 
@@ -51,10 +51,10 @@
 * Mindmap
   * xmind
   * [processon](https://www.processon.com/diagrams)
-* note
+* Note
   * github
   * evernote
-* read
+* Reading
   * marginnote [1](https://sspai.com/post/47317) [2](https://sspai.com/post/54005)
 * Editors
    * [VIM](https://www.vim.org/): The simplest but one of the most professional editor.
@@ -62,14 +62,14 @@
    * [VSCode](https://github.com/Microsoft/vscode): f you want a fancy GUI, Microsoft did a good job.
    * A list of all editors: 
       * Editors ranked according to their popularity:https://www.slant.co/topics/12/~best-programming-text-editors
-* disk
+* Disk
   * [坚果云](https://www.jianguoyun.com/d/home#/)
   * 百度云   
  
 ## Book
 * [豆瓣推荐](https://book.douban.com/subject_search?search_text=%E8%AE%A1%E7%AE%97%E6%9C%BA&cat=1001) 
 * [买书](http://search.china-pub.com/s/?key1=%C9%EE%C8%EB%C0%ED%BD%E2%BC%C6%CB%E3%BB%FA%D3%A2%CE%C4&type=&pz=1)
-* [pdf download](http://www.java1234.com/a/javabook/)
+* [Pdf Download](http://www.java1234.com/a/javabook/)
 ---
 * Computer Science an Overview
 * Programming
@@ -117,23 +117,18 @@
 * Linux
    * [鸟哥的Linux私房菜](http://linux.vbird.org/)
 * Structure and Interpretation of Computer Programs
-* **Design Patterns by the Gang of Four 设计模式**
-   > 就我而言，我认为四人帮编著的《设计模式》是一本极为有用的书。 虽然此书并不像其他建议一样有关“元”编程，但它强调封装诸如模式一类的优秀编程技术， 因而鼓励其他人提出新模式和反模式（antipatterns），并运用于编程对话中。—— Chris Jester-Young
-
-**7、《设计模式》 Design Patterns 
-  
-**推荐数：617
-
-自1995年出版以来，本书一直名列Amazon和各大书店销售榜前列。 近10年后，本书仍是Addison-Wesley公司2003年最畅销的图书之一。 中文版销售逾4万册。
-
-就我而言，我认为四人帮编著的《设计模式》是一本极为有用的书。 虽然此书并不像其他建议一样有关“元”编程，但它强调封装诸如模式一类的优秀编程技术， 因而鼓励其他人提出新模式和反模式（antipatterns），并运用于编程对话中。—— Chris Jester-Young
+* 设计模式
+  * **Design Patterns by the Gang of Four 设计模式**
+     > 就我而言，我认为四人帮编著的《设计模式》是一本极为有用的书。 虽然此书并不像其他建议一样有关“元”编程，但它强调封装诸如模式一类的优秀编程技术， 因而鼓励其他人提出新模式和反模式（antipatterns），并运用于编程对话中。—— Chris Jester-Young
+  * Head First设计模式 | 深入浅出设计模式，推荐数：445
+     > 本书的产品设计应用神经生物学、认知科学，以及学习理论，这使得这本书能够将这些知识深深地印在你的脑海里， 不容易被遗忘。本书的编写方式采用引导式教学，不直接告诉你该怎么做，而是利用故事当作引子，带领读者思考并想办法解决问题。 解决问题的过程中又会产生一些新的问题，再继续思考、继续解决问题，这样可以加深体会。作者以大量的生活化故事当背景，例如第1章是鸭子，第2章是气象站，第3章是咖啡店， 书中搭配大量的插图(几乎每一页都有图)，所以阅读起来生动有趣，不会感觉到昏昏欲睡。作者还利用歪歪斜斜的手写字体，增加“现场感”。 精心设计许多爆笑的对白，让学习过程不会太枯燥。 还有模式告白节目，将设计模式拟人化成节目来宾，畅谈其内在的一切。 每一章都有数目不等的测验题。 每章最后有一页要点整理，这也是精华所在，我都是利用这一页做复习。我知道四人帮的《设计模式》是一本标准书，但倒不如先看看这部大部头，此书更为简易。 一旦你了解了解了基本原则，可以去看四人帮的那本圣经了。- Calanus
 
 * Math
 
 mit的linear algebra os，berkeley 的 sicp（python版），stanford的compiler，
 
-
-CODE by Charles Petzold /编码：隐匿在计算机软硬件背后的语言:这是一本讲述计算机工作原理的书。
+* CODE by Charles Petzold /编码：隐匿在计算机软硬件背后的语言:这是一本讲述计算机工作原理的书。
+  > 这是一本讲述计算机工作原理的书。不过，你千万不要因为“工作原理”之类的字眼就武断地认为，它是晦涩而难懂的。 作者用丰富的想象和清晰的笔墨将看似繁杂的理论阐述得通俗易懂，你丝毫不会感到枯燥和生硬。 更重要的是，你会因此而获得对计算机工作原理较深刻的理解。 这种理解不是抽象层面上的，而是具有一定深度的，这种深度甚至不逊于“电气工程师”和“程序员”的理解。不管你是计算机高手，还是对这个神奇的机器充满敬畏之心的菜鸟， 都不妨翻阅一下《编码:隐匿在计算机软硬件背后的语言》，读一读大师的经典作品，必然会有收获。我推荐Charles Petzold的《编码》。 在这个充满工具和IDE的年代，很多复杂度已经从程序员那“抽取”走了，这本书一本开眼之作。 – hemil
 * other
    * 人月神话/The Mythical Man Month by Frederick Brooks 
      > 在软件领域，很少能有像《人月神话》一样具有深远影响力并且畅销不衰的著作。Brooks博士为人们管理复杂项目提供了最具洞察力的见解。 既有很多发人深省的观点，又有大量软件工程的实践。 本书内容来自Brooks博士在IBM公司System/360家族和OS/360中的项目管理经验。该书英文原版一经面世，即引起业内人士的强烈反响，后又译为德、法、日、俄中等多种语言，全球销量数百万册。 确立了其在行业内的经典地位。
@@ -164,7 +159,6 @@ CODE by Charles Petzold /编码：隐匿在计算机软硬件背后的语言:这
 
 
 
-
 5、《算法导论》  
 推荐数：671
 
@@ -181,6 +175,11 @@ CODE by Charles Petzold /编码：隐匿在计算机软硬件背后的语言:这
   
 
 
+**23、《Patterns of Enterprise Application Architecture / 企业应用架构模式》  
+**很奇怪，还没人推荐 Martin Fowler 的《企业应用架构模式》- levi rosol
+
+**24、《The Little Schemer》和《The Seasoned Schemer》 nmiranda  
+**这两本是LISP的英文书，尚无中文版。 美国东北大学网站上也有电子版。
 
 **9、《计算机程序设计艺术》  
 **  
@@ -198,30 +197,6 @@ CODE by Charles Petzold /编码：隐匿在计算机软硬件背后的语言:这
 
 我很奇怪，居然没人提到龙书。（或许已有推荐，我没有看到）。 我从没忘过此书的第一版封面。 此书让我知道了编译器是多么地神奇绝妙。- DB
 
-**11、《深入浅出设计模式》  
-**  
-推荐数：445
-
-•《Head First设计模式》\(中文版\) 作者Eric Freeman；  
-•ElElisabeth Freeman是作家、讲师和技术顾问。  
-•Eric拥有耶鲁大学的计算机科学博士学位，E1isabath拥有耶鲁大学的计算机科学硕士学位。  
-•Kathy Sierra\(javaranch．com的创始人\)FHBert Bates是畅销的HeadFirst系列书籍的创立者，也是Sun公司Java开发员认证考试的开发者。  
-本书的产品设计应用神经生物学、认知科学，以及学习理论，这使得这本书能够将这些知识深深地印在你的脑海里， 不容易被遗忘。
-
-本书的编写方式采用引导式教学，不直接告诉你该怎么做，而是利用故事当作引子，带领读者思考并想办法解决问题。 解决问题的过程中又会产生一些新的问题，再继续思考、继续解决问题，这样可以加深体会。
-
-作者以大量的生活化故事当背景，例如第1章是鸭子，第2章是气象站，第3章是咖啡店， 书中搭配大量的插图\(几乎每一页都有图\)，所以阅读起来生动有趣，不会感觉到昏昏欲睡。
-
-作者还利用歪歪斜斜的手写字体，增加“现场感”。 精心设计许多爆笑的对白，让学习过程不会太枯燥。 还有模式告白节目，将设计模式拟人化成节目来宾，畅谈其内在的一切。 每一章都有数目不等的测验题。 每章最后有一页要点整理，这也是精华所在，我都是利用这一页做复习。
-
-我知道四人帮的《设计模式》是一本标准书，但倒不如先看看这部大部头，此书更为简易。 一旦你了解了解了基本原则，可以去看四人帮的那本圣经了。- Calanus
-
-
-
-
-
-
-
 **16、《修改代码的艺术》by Michael Feathers  
 **本书是继《重构》和《重构与模式》之后探讨修改代码技术的又一里程碑式的著作， 而且从涵盖面和深度上都超过了前两部经典。 书中不仅讲述面向对象语言（Java、C\#和C++）代码，也有专章讨论C这样的过程式语言。
 
@@ -233,28 +208,6 @@ CODE by Charles Petzold /编码：隐匿在计算机软硬件背后的语言:这
 
 同意。很多开发人员讨论用干净的石板来编写软件。 但我想几乎所有开发人员的某些时候是在吃其他开发人员的狗食。– Bernard Dy
 
-**17、《编码：隐匿在计算机软硬件背后的语言》  
-**这是一本讲述计算机工作原理的书。
-
-不过，你千万不要因为“工作原理”之类的字眼就武断地认为，它是晦涩而难懂的。 作者用丰富的想象和清晰的笔墨将看似繁杂的理论阐述得通俗易懂，你丝毫不会感到枯燥和生硬。 更重要的是，你会因此而获得对计算机工作原理较深刻的理解。 这种理解不是抽象层面上的，而是具有一定深度的，这种深度甚至不逊于“电气工程师”和“程序员”的理解。
-
-不管你是计算机高手，还是对这个神奇的机器充满敬畏之心的菜鸟， 都不妨翻阅一下《编码:隐匿在计算机软硬件背后的语言》，读一读大师的经典作品，必然会有收获。
-
-我推荐Charles Petzold的《编码》。 在这个充满工具和IDE的年代，很多复杂度已经从程序员那“抽取”走了，这本书一本开眼之作。 – hemil
-
-
-
-
-
-
-**22、《Effective Java 中文版》  
-**此书第二版教你如何编写漂亮并高效的代码，虽然这是一本Java书，但其中有很多跨语言的理念。 – Marcio Aguiar
-
-**23、《Patterns of Enterprise Application Architecture / 企业应用架构模式》  
-**很奇怪，还没人推荐 Martin Fowler 的《企业应用架构模式》- levi rosol
-
-**24、《The Little Schemer》和《The Seasoned Schemer》 nmiranda  
-**这两本是LISP的英文书，尚无中文版。 美国东北大学网站上也有电子版。
 
 **25、《交互设计之路》**英文名：《The Inmates Are Running The Asylum: Why High Tech Products Drive Us Crazy and How to Restore the Sanity》该书作者：Alan Cooper，人称Visual Basic之父，交互设计之父。  
 本书是基于众多商务案例，讲述如何创建更好的、高客户忠诚度的软件产品和基于软件的高科技产品的书。 本书列举了很多真实可信的实际例子，说明目前在软件产品和基于软件的高科技产品中，普遍存在着“难用”的问题。
