@@ -73,38 +73,6 @@
   * [坚果云](https://www.jianguoyun.com/d/home#/)
   * 百度云   
  
-
-
-PM可以做的几件事：设计，编程，协调，商务，市场等。一般人只能擅长其中的一两个方面，所以就有了各种title，同一个title也可能做不同的事情。Google的体系是Product Manager最高，基本要求会所有东西（-_-b），没有Project Manager。Program Manager是微软特有的吧，我觉得做的事情介于前两者之间
-
-作者：盛佳
-链接：https://www.zhihu.com/question/19570095/answer/12293050
-来源：知乎
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
-产品经理（Product Manager）、项目经理（Project Manager）、项目群经理（Program Manager）
-rogram比project大 但中文语境里 可以认为都一样
-
-product关注/负责某型产品的整个生命周期
-
-具体都要看公司的岗位定义 就是所谓的jd
-  应该分别是是开发经理，项目经理，产品经理吧？
-
-开发经理带团队，负责团队的培养，招聘，任务制定等等工作
-
-项目经理主要负责项目进度，协调个个团队，也隶属于研发团队，不带人。要说权利，属于处级不带长，放屁都不响这伙的。所以有的公司是某个团队的leader or manager 兼着干，这样好吊配资源，大一点的公司都单独设岗，也需要和RD Director汇报，否则没个干。
-
-产品经理不一样了，隶属前端市场部或者产品部，负责产品的，和前两个沟通很多，但事情完全不同了
-program manager, 可以是程序经理，类似于product manager
-也可以是项目集经理，类似于管了几个project的 大 project manager.
-Program manager项目集经理》project manager 项目经理》product manager 产品经理
-就通信行业而言：
-product manager，产品经理， 懂技术了解市场，应该是牛人。产品的owner，知道该把产品做成什么样子。
-project manager，项目经理，不需要懂技术，关键是开发进度把控，人力财务各方面综合管理，项目管理，风险管理。
-program manager，是不是类似于管人力的经理？ 研发的直接领导？ 我们没有这个，有line manager，不知道是否跟这个对应。
-
---
---
 ## Book
 * [豆瓣推荐](https://book.douban.com/subject_search?search_text=%E8%AE%A1%E7%AE%97%E6%9C%BA&cat=1001) 
 * [买书](http://search.china-pub.com/s/?key1=%C9%EE%C8%EB%C0%ED%BD%E2%BC%C6%CB%E3%BB%FA%D3%A2%CE%C4&type=&pz=1)
