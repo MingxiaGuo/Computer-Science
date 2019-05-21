@@ -21,6 +21,60 @@
 * [User experience](User_experience)
 * [Open technology](Open_technology)
 
+
+##  Video
+
+> coursera，edx，udacity
+
+1. [计算机科学速成课[Crash Course Computer Science]——YouTube-> Bilibili](https://www.bilibili.com/video/av21376839?from=search&seid=9162856292795471868)
+
+
+
+## Open Course
+* [美国计算机名校例如MIT ，CMU ，有哪些公认的好课并且有课程讲义的，适合国内学生自学的？](https://www.zhihu.com/question/57532048)
+* MIT
+   * [Linear Algebra](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm)
+   * [https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm)
+* CMU
+   * google: CMU15XXX 或者 CMU10XXX，15是计算机系，10是机器学习系
+   * [Introduction to Computer Systems](http://www.cs.cmu.edu/~213/)
+   * [Machine Learning](http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml)
+* SU
+   * [Convex Optimization](http://web.stanford.edu/class/ee364a/index.html) [Youtube](https://www.youtube.com/watch?v=McLq1hEq3UY&list=PL3940DD956CDF0622)
+* UCB
+   * [Intro to AI](http://ai.berkeley.edu/home.html)
+
+## website | social_eminence
+* [Github,awesome: Best-websites-a-programmer-should-visit](https://github.com/sdmg15/Best-websites-a-programmer-should-visit)
+* [Github: chinese-programmer-wrong-pronunciation](https://github.com/shimohq/chinese-programmer-wrong-pronunciation)
+* [云计算、大数据、人工智能的关系](https://zhuanlan.zhihu.com/p/62898738)
+* [如何把计算机组成原理、操作系统、数据结构和计算机网络融会贯通，相互联系起来？](https://www.zhihu.com/question/22017267/answer/26468016)
+* Pronounciation: Don't pronounce the words as if you are speaking in Russian:https://github.com/shimohq/chinese-programmer-wrong-pronunciation
+* Formatter: Well indented code always makes people feel better. Astyle is one of the tool I used a lot: http://astyle.sourceforge.net/astyle.html
+## Tools
+* Mindmap
+  * xmind
+  * [processon](https://www.processon.com/diagrams)
+* note
+  * github
+  * evernote
+* read
+  * marginnote [1](https://sspai.com/post/47317) [2](https://sspai.com/post/54005)
+
+    
+* Editors
+   * [VIM](https://www.vim.org/): The simplest but one of the most professional editor.
+   * [Emacos](https://www.gnu.org/software/emacs/): One of the biggest competitor to VIM
+   * [VSCode](https://github.com/Microsoft/vscode): f you want a fancy GUI, Microsoft did a good job.
+   * A list of all editors: 
+      * Editors ranked according to their popularity:https://www.slant.co/topics/12/~best-programming-text-editors
+
+* disk
+  * [坚果云](https://www.jianguoyun.com/d/home#/)
+  * 百度云   
+ 
+
+
 PM可以做的几件事：设计，编程，协调，商务，市场等。一般人只能擅长其中的一两个方面，所以就有了各种title，同一个title也可能做不同的事情。Google的体系是Product Manager最高，基本要求会所有东西（-_-b），没有Project Manager。Program Manager是微软特有的吧，我觉得做的事情介于前两者之间
 
 作者：盛佳
@@ -360,54 +414,3 @@ Masterminds of Programming
 Computability by N. J. Cutland
 
 
-##  Video
-
-> coursera，edx，udacity
-
-1. [计算机科学速成课[Crash Course Computer Science]——YouTube-> Bilibili](https://www.bilibili.com/video/av21376839?from=search&seid=9162856292795471868)
-
-
-
-## Open Course
-* [美国计算机名校例如MIT ，CMU ，有哪些公认的好课并且有课程讲义的，适合国内学生自学的？](https://www.zhihu.com/question/57532048)
-* MIT
-   * [Linear Algebra](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm)
-   * [https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm)
-* CMU
-   * google: CMU15XXX 或者 CMU10XXX，15是计算机系，10是机器学习系
-   * [Introduction to Computer Systems](http://www.cs.cmu.edu/~213/)
-   * [Machine Learning](http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml)
-* SU
-   * [Convex Optimization](http://web.stanford.edu/class/ee364a/index.html) [Youtube](https://www.youtube.com/watch?v=McLq1hEq3UY&list=PL3940DD956CDF0622)
-* UCB
-   * [Intro to AI](http://ai.berkeley.edu/home.html)
-
-## website | social_eminence
-* [Github,awesome: Best-websites-a-programmer-should-visit](https://github.com/sdmg15/Best-websites-a-programmer-should-visit)
-* [Github: chinese-programmer-wrong-pronunciation](https://github.com/shimohq/chinese-programmer-wrong-pronunciation)
-* [云计算、大数据、人工智能的关系](https://zhuanlan.zhihu.com/p/62898738)
-* [如何把计算机组成原理、操作系统、数据结构和计算机网络融会贯通，相互联系起来？](https://www.zhihu.com/question/22017267/answer/26468016)
-* Pronounciation: Don't pronounce the words as if you are speaking in Russian:https://github.com/shimohq/chinese-programmer-wrong-pronunciation
-* Formatter: Well indented code always makes people feel better. Astyle is one of the tool I used a lot: http://astyle.sourceforge.net/astyle.html
-## Tools
-* Mindmap
-  * xmind
-  * [processon](https://www.processon.com/diagrams)
-* note
-  * github
-  * evernote
-* read
-  * marginnote [1](https://sspai.com/post/47317) [2](https://sspai.com/post/54005)
-
-    
-* Editors
-   * [VIM](https://www.vim.org/): The simplest but one of the most professional editor.
-   * [Emacos](https://www.gnu.org/software/emacs/): One of the biggest competitor to VIM
-   * [VSCode](https://github.com/Microsoft/vscode): f you want a fancy GUI, Microsoft did a good job.
-   * A list of all editors: 
-      * Editors ranked according to their popularity:https://www.slant.co/topics/12/~best-programming-text-editors
-
-* disk
-  * [坚果云](https://www.jianguoyun.com/d/home#/)
-  * 百度云   
- 

@@ -11,7 +11,7 @@
 计算机中的数学
 
 Book
-
+Deep Learning by MIT: [official website](http://www.deeplearningbook.org); [中文](https://github.com/exacity/deeplearningbook-chinese); [英文](https://github.com/daviddao/deep-learning-book)
 * 计算机科学的数学 
 * 具体数学 第2版
 * 离散数学及其应用 第6版

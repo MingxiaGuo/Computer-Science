@@ -1,14 +1,29 @@
 # Cloud Computing
+
 [SUMMARY](SUMMARY.md)
 
 [Technical Skill Development Recommendation - Cloud](https://w3-connections.ibm.com/forums/html/topic?id=6552b0a7-a559-4766-ae63-a9df2b839488&ps=)
+
+虚拟化，openstack、KVM
+云计算的虚拟资源层，Iaas云管理层，paas各个平台服务层次
+
+kvm xen dokcer openstack cloudfoundry ceph sdn等云计算关键技术
+计算、存储、网络虚拟化的技术发展和应用
+nfv，公有云，私有云，混合云的架构、部署、应用场景
+sdn，nfv 云存储 云计算的部署和运维
 
 技术
 * openstack：IaaS云平台
 * Docker：容器引擎，https://docs.docker.com/
 * Kubernetes：容器云平台，https://kubernetes.io/docs/
+* ansible
 
-Book：  
+
+runc: https://github.com/opencontainers/runc
+
+docker -- 从入门到实践 https://yeasy.gitbooks.io/docker_practice/introduction/why.html
+
+# Book：  
 《云计算 从基础架构到最佳实践》 齐伟 刘冰 路士华 冯德林 著  
 《云计算网络珠玑》 李俊武 著  
 《云计算通俗讲义》 王良明 著  
@@ -19,9 +34,7 @@ Book：
 《云计算基础架构及关键应用》
 
 
-kuberbetes
-ansible
-Docker
+
 Microservices
 Security Certification
 

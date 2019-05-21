@@ -1,6 +1,15 @@
+# Book:
+* Foundations of Machine Learning by NewYork University: [PDF,PPT](https://cs.nyu.edu/~mohri/mlbook/); [online](https://mitpress.ublish.com/ereader/7093/?preview=#page/2)
+* Deep Learning by MIT: [official website](http://www.deeplearningbook.org); [中文](https://github.com/exacity/deeplearningbook-chinese); [英文](https://github.com/daviddao/deep-learning-book)
+
+
+# Open Course
 
 
 [Technical Skill Development Recommendation - Cognitive](https://w3-connections.ibm.com/forums/html/topic?id=cbc40f70-2944-439f-8a1c-99b62d28afbe&ps=)
+
+机器学习的四个基本原则性的问题，即泛化性、稳定性、可计算性和可解释性就可以用数学工程手段来解决.
+机器学习和人工智能之间并不能画等号，毕竟机器学习实际上是研究算法的学科，而人工智能志在模拟人的思维和行为。
 
 人工智能（英语：Artificial Intelligence，缩写为 AI）亦称机器智能，指由人制造出来的机器所表现出来的智能。通常人工智能是指通过普通计算机程序的手段实现的人类智能技术。
 

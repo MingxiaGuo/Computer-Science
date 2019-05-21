@@ -1,6 +1,6 @@
 ## materials
 
-\[系统学习GO，推荐几本靠谱的书? - 知乎\]\([https://www.zhihu.com/question/30461290\](https://www.zhihu.com/question/30461290%29\)
+[系统学习GO，推荐几本靠谱的书? - 知乎]([https://www.zhihu.com/question/30461290\](https://www.zhihu.com/question/30461290%29)
 
 相关网站
 
@@ -20,7 +20,7 @@
 
 * Go 语言开发社区的资源站 [go-lang.cat-v.org/](#)
 
-* 官方的 Go IRC 频道 [irc.freenode.net](http://irc.freenode.net/)  的\#go-nuts
+* 官方的 Go IRC 频道 [irc.freenode.net](http://irc.freenode.net/)  的#go-nuts
 
 * Go 语言相关资源的搜索引擎页面： [gowalker.org](https://gowalker.org/)
 
