@@ -1,51 +1,53 @@
+# Content:
+* [Introdunction](INTRODUCTION.md)
+* [Machine learning](Machine_Learning)
+* [Deep learning](Deep_Learning)
+* [Computer Vision](Computer_Vision)
+
+# roamdmap
+* cv
+    * [jiajunhua/ahong007007-Awesome_Computer_Vision](https://github.com/jiajunhua/ahong007007-Awesome_Computer_Vision)
+    * [jbhuang0604/awesome-computer-vision](https://github.com/jbhuang0604/awesome-computer-vision)
+* speech recognition
+    * [zzw922cn/awesome-speech-recognition-speech-synthesis-papers](https://github.com/zzw922cn/awesome-speech-recognition-speech-synthesis-papers)
+    * [awesome-speech](https://github.com/mxer/awesome-speech)
+    * [moebg/awesome-speech-recognition](https://github.com/moebg/awesome-speech-recognition)
 # Book:
 * Foundations of Machine Learning by NewYork University: [PDF,PPT](https://cs.nyu.edu/~mohri/mlbook/); [online](https://mitpress.ublish.com/ereader/7093/?preview=#page/2)
 * Deep Learning by MIT: [official website](http://www.deeplearningbook.org); [中文](https://github.com/exacity/deeplearningbook-chinese); [英文](https://github.com/daviddao/deep-learning-book)
 
-
 # Open Course
+* [Intro to AI by Berkeley](http://ai.berkeley.edu/home.html)
+* [机器学习课程-吴恩达: Stanford CS229](http://open.163.com/movie/2008/1/M/C/M6SGF6VB4_M6SGHFBMC.html): [online resource](http://cs229.stanford.edu/)
+* 机器学习基石：[上](https://www.coursera.org/learn/ntumlone-mathematicalfoundations/lecture/wPics/course-introduction) [下]()
+* 机器学习技巧
+* [李宏毅2017机器学习](https://www.bilibili.com/video/av10590361?from=search&seid=8726738433477857991)
+* [李宏毅2019机器学习](https://www.bilibili.com/video/av35932863?from=search&seid=8726738433477857991)
 
+* [Deep Learning Fundamentals: August 23, 2017--Cognitive class.ai, ML0115EN,IBM](https://cognitiveclass.ai/courses/introduction-deep-learning/)
+* [Convolutional Neural Networks for Visual Recognition: Stanford CS231n](http://cs231n.stanford.edu/) [笔记](https://blog.csdn.net/CV_YOU/article/details/77888010) [课堂讲义](https://cs231n.github.io/) [YouTube](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv) [Bilibili](http://www.bilibili.com/video/av13260183/#page=1) [中文字幕](https://study.163.com/course/introduction.htm?courseId=1004697005&_trace_c_p_k2_=e948a812b07a4215a459530a19f1ac01)
+* [Tensorflow for Deep Learning Research: Stanford cs20si](http://web.stanford.edu/class/cs20si/)
+* [李宏毅2017深度学习](https://www.bilibili.com/video/av9770302?from=search&seid=8726738433477857991)
 
-[Technical Skill Development Recommendation - Cognitive](https://w3-connections.ibm.com/forums/html/topic?id=cbc40f70-2944-439f-8a1c-99b62d28afbe&ps=)
+# video
+* [DeepLearning.TV](https://www.youtube.com/watch?time_continue=33&v=b99UVkWzYTQ)
 
-机器学习的四个基本原则性的问题，即泛化性、稳定性、可计算性和可解释性就可以用数学工程手段来解决.
-机器学习和人工智能之间并不能画等号，毕竟机器学习实际上是研究算法的学科，而人工智能志在模拟人的思维和行为。
+## Website
+* [我爱自然语言处理](http://www.52nlp.cn/)
+* [计算机视觉（ComputerVision, CV）入门](https://blog.csdn.net/weixin_40054912/article/details/80355034)
+* [极简AI：10张幻灯片看懂AI/机器学习](https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_11814202613423361644%22%7D&n_type=0&p_from=1)
+* [Gartner：2018 年十大战略科技发展趋势](https://36kr.com/p/5101110)
+* [「力荐」AI达人收藏夹里必备的50个咨询网站和博客](https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_9610521711747001432%22%7D&n_type=0&p_from=1)
 
-人工智能（英语：Artificial Intelligence，缩写为 AI）亦称机器智能，指由人制造出来的机器所表现出来的智能。通常人工智能是指通过普通计算机程序的手段实现的人类智能技术。
+# Tools
+* MATLAB
+* Octave
 
-人工智能也可以分成两类：
-* 强人工智能：强人工智能观点认为“有可能”制造出“真正”能推理（Reasoning）和解决问题的智能机器，并且，这样的机器将被认为是具有知觉、有自我意识的。像绝大多数科幻电影中的机器人就是在这范畴弱人工智能：
-* 弱人工智能观点认为“不可能”制造出能“真正”地推理和解决问题的智能机器，这些机器只不过“看起来”像是智能的，但是并不真正拥有智能，也不会有自主意识。我们目前阶段的人工智能，其实都是弱人工智能。
-
-> 作者：腾讯云技术社区
-> 链接：https://zhuanlan.zhihu.com/p/58449395
-> 来源：知乎
-> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
-从广泛的概念来说，机器学习是人工智能的一个子集，是实现人工智能的重要方法。人工智能旨在使计算机更智能化，而机器学习已经证明了如何做到这一点。 简而言之，机器学习是人工智能的途径和应用 。 即以机器学习为手段解决人工智能中的问题。机器学习在近30多年已发展为一门多领域交叉学科，涉及概率论、统计学、逼近论、凸分析、计算复杂性理论等多门学科。通过使用从大量数据中反复学习到的算法，机器学习可以改进计算机的功能，而无需进行明确的编程。
-
-随着大数据的迅速发展，机器学习变得越来越重要，它有力地处理大量数据，做出准确的预测。
-机器学习中就有好多个经典的算法，其中就包含了神经网络(深度学习可看成是神经网络的升级版)。
-机器学习是一种重在寻找数据中的模式并使用这些模式来做出预测的研究和算法的门类。机器学习是人工智能领域的一部分，并且和知识发现与数据挖掘有所交集。
-
-深度学习是一个基于经验的领域。狭义地说就是“很多层”的神经网络，在若干测试和竞赛下，尤其涉及语音、图像等复杂对象的引用中，深度学习取得优越的性能。深度学习是一种实现机器学习的技术。
-深度学习本来并不是一种独立的学习方法，其本身也会用到有监督和无监督的学习方法来训练深度神经网络。但由于近几年该领域发展迅猛，一些特有的学习手段相继被提出（如残差网络），因此越来越多的人将其单独看作一种学习的方法。最初的深度学习是利用深度神经网络来解决特征表达的一种学习过程。深度神经网络本身并不是一个全新的概念，可大致理解为包含多个隐含层的神经网络结构。为了提高深层神经网络的训练效果，人们对神经元的连接方法和激活函数等方面做出相应的调整。其实有不少想法早年间也曾有过，但由于当时训练数据量不足、计算能力落后，因此最终的效果不尽如人意。深度学习摧枯拉朽般地实现了各种任务，使得似乎所有的机器辅助功能都变为可能。无人驾驶汽车，预防性医疗保健，甚至是更好的电影推荐，都近在眼前，或者即将实现。
-当下深度学习在计算机视觉、自然语言处理领域的应用远超过传统的机器学习方法
-
-
-科学不是战争而是合作，任何学科的发展从来都不是一条路走到黑，而是同行之间互相学习、互相借鉴、博采众长、相得益彰，站在巨人的肩膀上不断前行。
-
-纵观机器学习发展历程，研究热点可以简单总结为2000-2006年的流形学习、2006年-2011年的稀疏学习、2012年至今的深度学习。未来哪种机器学习算法会成为热点呢？深度学习三大巨头之一吴恩达曾表示，“在继深度学习之后，迁移学习将引领下一波机器学习技术”。但最终机器学习的下一个热点是什么，谁又能说得准呢。
-
-作者：育心
-链接：https://www.zhihu.com/question/57770020/answer/249708509
-来源：知乎
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-
-人工智能研究领域：
+# 人工智能应用和研究领域：
 * **Recommender Systems**
-* **计算机视觉 CV**
-* 自然语言处理
+* **Computer Vision, CV**
+* **Speech Recognition**
+* 自然语言处理 NLP
 * 强化学习
 * 无人驾驶运动规划(路径规划)
 * Expert Systems
@@ -55,25 +57,16 @@
 * Knowledge Representation
 * Robotics and Perception
 * Planning and Scheduling
-* Machine Learning
-    * Supervised learning
-    * unSupervised learning
-    * Semi-Supervised learning
-    * Ensemble learning
-    * deep learning
-    * reinforcement learning
-    * regression
-    * classification /clustering
-    * outlier (anomaly) detection
-    * metric learning
-    * causality analysis
-    * 传统算法
-        * 决策树
-        * 聚类
-        * 贝叶斯分类
-        * 支持向量机
-        * EM
-        * Adaboost
+* 人脸识别
+* 指纹识别
+* 虹膜识别
+* 掌纹识别
+* 情感识别
+
+# 人工智能研究领域：
+* 模式识别
+* 机器学习
+* 深度学习
 
 图像预处理：
 * 图像去燥
@@ -86,15 +79,8 @@
 基于HoG特征的物体检测
 
 
-人工智能：
-* 计算智能：快速计算，记忆和储存能力
-* 感知智能：视觉、听觉、触觉等感知能力，如语音识别、语音合成、图像识别
-* 认知智能：理解、解释的能力
-
-[极简AI：10张幻灯片看懂AI/机器学习](https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_11814202613423361644%22%7D&n_type=0&p_from=1)
-
-[Gartner：2018 年十大战略科技发展趋势](https://36kr.com/p/5101110)
-[「力荐」AI达人收藏夹里必备的50个咨询网站和博客](https://mbd.baidu.com/newspage/data/landingsuper?context=%7B%22nid%22%3A%22news_9610521711747001432%22%7D&n_type=0&p_from=1)
+# Roadmap
+* [Technical Skill Development Recommendation - Cognitive](https://w3-connections.ibm.com/forums/html/topic?id=cbc40f70-2944-439f-8a1c-99b62d28afbe&ps=)
 
 | Critical Technical Skills | Recommended learning materials | Remark|
 | -- | -- | -- |

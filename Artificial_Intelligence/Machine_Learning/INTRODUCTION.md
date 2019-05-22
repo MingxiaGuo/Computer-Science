@@ -1,5 +1,8 @@
 # Introduction
 
+Machine learning 是研究计算机怎样模拟或实现人类的学习行为，以获取新的知识或技能，重新组织已有的知识结构使之不断改善自身的性能，它是人工智能的核心。主要使用归纳、综合而不是演绎。
+
+
 * 机器学习算法
   * 监督学习： 使用预定义的“训练示例”集合，训练系统，便于其在新数据被馈送时也能得出结论。系统一直被训练，直到达到所需的精度水平。
   * 无监督学习： 给系统一堆无标签数据，它必须自己检测模式和关系。 系统要用推断功能来描述未分类数据的模式。
@@ -18,6 +21,26 @@
   * 随机森林
   * 降维算法
   * 梯度提高和演算法
+
+* Machine Learning
+    * Supervised learning
+    * unSupervised learning
+    * Semi-Supervised learning
+    * Ensemble learning
+    * deep learning
+    * reinforcement learning
+    * regression
+    * classification /clustering
+    * outlier (anomaly) detection
+    * metric learning
+    * causality analysis
+    * 传统算法
+        * 决策树
+        * 聚类
+        * 贝叶斯分类
+        * 支持向量机
+        * EM
+        * Adaboost
 
 机器学习：机器通过分析大量数据来进行学习。比如说，不需要通过编程来识别猫或人脸，它们可以通过使用图片来进行训练，从而归纳和识别特定的目标。
 
@@ -38,10 +61,5 @@
 ⑥调优模型：使用更多数据、不同的特征或调整过的参数来提升算法的性能表现
 
 
-# Open courses
-* [李宏毅2017机器学习](https://www.bilibili.com/video/av10590361?from=search&seid=8726738433477857991)
-* [李宏毅2019机器学习](https://www.bilibili.com/video/av35932863?from=search&seid=8726738433477857991)
 
-# Reference
-[三张图读懂机器学习：基本概念、五大流派与九种常见算法](https://36kr.com/p/5072074.html)
-[一文读懂机器学习、数据科学、人工智能、深度学习和统计学之间的区别](一文读懂机器学习、数据科学、人工智能、深度学习和统计学之间的区别)
+

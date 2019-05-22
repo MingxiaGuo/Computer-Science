@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * [TODO](todo.md)
-* [数据中心网络架构](数据中心网络架构.md)
 * [TODO2](todo2.md)
 * [待学](dai-xue.md)
 * [术语表](zhu-yu-biao.md)
@@ -22,11 +21,11 @@
   * [2.4 云生态](2-云计算架构/24-yun-sheng-tai.md)
 * 第3章 云计算技术
   * [3.1 虚拟化技术](3-云计算技术/3.1-虚拟化技术.md)
-  * [3.2 网络](3-云计算技术/32-wang-luo.md)
+  * [3.2 网络](3-云计算技术/3.2-网络.md)
     * [3.2.1 安全的网络](3-云计算技术/32-wang-luo/321-an-quan-de-wang-luo.md)
     * [3.2.2 可靠的网络](3-云计算技术/32-wang-luo/322-ke-kao-de-wang-luo.md)
     * [3.2.3 灵活的网络](3-云计算技术/32-wang-luo/323-ling-huo-de-wang-luo.md)
-  * [3.3 存储](3-云计算技术/33-cun-chu.md)
+  * [3.3 存储](3-云计算技术/3.3-存储.md)
   * [3.4 安全](3-云计算技术/34-an-quan.md)
   * 3.5 大数据
   * 3.6 日志

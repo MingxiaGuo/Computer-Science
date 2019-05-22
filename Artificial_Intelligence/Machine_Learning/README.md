@@ -1,14 +1,13 @@
 
 
 # Content
-
 * [Introduction](INTRODUCTION.md)
 * a）When Can Machines Learn? (illustrative + technical)
     *  [1 The Learning Problem](1-The-Learning-Problem.md)
         * 1.0 Course Introduction
         * [1.1 What is Machine Learning](1.1-What-is-Machine-Learning.md)
         * [1.2 Applications of Machine Learning](1.2-applications-of-machine-learning.md)
-        * [1.3 Components of Machine Learning](13-components-of-machine-learning.md)
+        * [1.3 Components of Machine Learning](1.3-components-of-machine-learning.md)
         * [1.4 Machine Learning and Other Fields](1.4-Machine-Learning-and-Other-Fields.md)
     * [2 Learning to Answer Yes/No](2-learning-to-answer-yesno.md)
         * [2.1 Percetron Hypothesis Set](2.1-percetron-hypothesisi-set.md)
@@ -33,7 +32,7 @@
     * [6 Theory of Generalization](6-theory-of-generalization.md)
     * [7 The vc dimension](7-the-vc-dimension.md)
     * 8 The Noise and Error
-    * [9 线性回归Linear Regression](9-xian-xing-hui-gui.md)
+    * [9 Linear Regression 线性回归](9-linear-regression.md)
     * 10 逻辑回归Logisitic Regression
     * 11 Linear Models for Classification
     * 12 Nolinear Transform
@@ -73,3 +72,10 @@
   * [1. 法向量为什么是平面方程的系数](法向量为什么是平面方程的系数.md)
 * 深度学习
 
+# Open courses
+* [李宏毅2017机器学习](https://www.bilibili.com/video/av10590361?from=search&seid=8726738433477857991)
+* [李宏毅2019机器学习](https://www.bilibili.com/video/av35932863?from=search&seid=8726738433477857991)
+
+# Reference
+[三张图读懂机器学习：基本概念、五大流派与九种常见算法](https://36kr.com/p/5072074.html)
+[一文读懂机器学习、数据科学、人工智能、深度学习和统计学之间的区别](一文读懂机器学习、数据科学、人工智能、深度学习和统计学之间的区别)

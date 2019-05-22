@@ -1,0 +1,2 @@
+* [jiajunhua/ahong007007-Awesome_Computer_Vision](https://github.com/jiajunhua/ahong007007-Awesome_Computer_Vision)
+* [jbhuang0604/awesome-computer-vision](https://github.com/jbhuang0604/awesome-computer-vision)

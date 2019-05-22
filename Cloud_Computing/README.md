@@ -2,6 +2,8 @@
 
 [SUMMARY](SUMMARY.md)
 
+[rootsongjc/awesome-cloud-native](https://github.com/rootsongjc/awesome-cloud-native)
+
 [Technical Skill Development Recommendation - Cloud](https://w3-connections.ibm.com/forums/html/topic?id=6552b0a7-a559-4766-ae63-a9df2b839488&ps=)
 
 虚拟化，openstack、KVM
