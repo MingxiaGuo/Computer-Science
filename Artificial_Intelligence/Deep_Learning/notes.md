@@ -2,7 +2,11 @@
 哺乳动物视觉处理机理：
 图像分割
 基于特征的目标识别 SIFT特征
+1998
+2012年ImageNet大赛 AlexNet 卷积神经网络胜出
 
+googleNet vgg
+msra
 # What is Deep Learning?
 # What are are neural networks and how they work?
 
@@ -107,6 +111,8 @@ Big deep learning researchers
 
 
 # 应用：
-* 计算机视觉：计算机视觉的历史
+* 计算机视觉：
+    * 图像分类
+    * 计算机视觉的历史
 * 自然语言处理
 * 语音识别

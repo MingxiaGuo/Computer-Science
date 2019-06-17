@@ -3,7 +3,7 @@
 * [Computer Science An Overview](Computer_Science_an_Overview)	 
 * [Mathematics for Computer Science](Mathematics_for_Computer_Science)
    * Linear Algebra
-   * 高数
+   * Calculus
 * [Computer System & Organization & Architecture](Computer_System)
 * [Operating System](Operating_System) :大学最重要的课
 * [Computer Network](Computer_Network) 

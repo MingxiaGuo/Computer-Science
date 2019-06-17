@@ -25,19 +25,6 @@
     7. TensorFlow
  
 
-GENERAL INFORMATION
-This course is free.
-It is self-paced.
-It can be taken at any time.
-It can be audited as many times as you wish.
- 
-
-RECOMMENDED SKILLS PRIOR TO TAKING THIS COURSE
-None
- 
-
-REQUIREMENTS
-None
 Note: This course is an introductory course and does not have any hands-on lab. After completing this course, it is recommended to take "Deep learning with TensorFlow" course. 
 
 Note: Though this course does not have any hands-on lab, still you can try PowerAI to understand different deep learning libraries better. PowerAI speeds up deep learning and AI. Built on IBM's Power Systems, PowerAI is a scalable software platform that accelerates deep learning and AI with blazing performance for individual users or enterprises. The PowerAI platform supports popular machine learning libraries and dependencies including Tensorflow, Caffe, Torch, and Theano. You can download a free version of PowerAI here.

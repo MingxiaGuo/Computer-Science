@@ -12,13 +12,14 @@
     * [zzw922cn/awesome-speech-recognition-speech-synthesis-papers](https://github.com/zzw922cn/awesome-speech-recognition-speech-synthesis-papers)
     * [awesome-speech](https://github.com/mxer/awesome-speech)
     * [moebg/awesome-speech-recognition](https://github.com/moebg/awesome-speech-recognition)
+
 # Book:
 * Foundations of Machine Learning by NewYork University: [PDF,PPT](https://cs.nyu.edu/~mohri/mlbook/); [online](https://mitpress.ublish.com/ereader/7093/?preview=#page/2)
 * Deep Learning by MIT: [official website](http://www.deeplearningbook.org); [中文](https://github.com/exacity/deeplearningbook-chinese); [英文](https://github.com/daviddao/deep-learning-book)
 
 # Open Course
 * [Intro to AI by Berkeley](http://ai.berkeley.edu/home.html)
-* [机器学习课程-吴恩达: Stanford CS229](http://open.163.com/movie/2008/1/M/C/M6SGF6VB4_M6SGHFBMC.html): [online resource](http://cs229.stanford.edu/)
+* [机器学习课程-吴恩达: Stanford CS229](http://open.163.com/special/opencourse/machinelearning.html): [online resource](http://cs229.stanford.edu/)
 * 机器学习基石：[上](https://www.coursera.org/learn/ntumlone-mathematicalfoundations/lecture/wPics/course-introduction) [下]()
 * 机器学习技巧
 * [李宏毅2017机器学习](https://www.bilibili.com/video/av10590361?from=search&seid=8726738433477857991)
@@ -28,6 +29,22 @@
 * [Convolutional Neural Networks for Visual Recognition: Stanford CS231n](http://cs231n.stanford.edu/) [笔记](https://blog.csdn.net/CV_YOU/article/details/77888010) [课堂讲义](https://cs231n.github.io/) [YouTube](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv) [Bilibili](http://www.bilibili.com/video/av13260183/#page=1) [中文字幕](https://study.163.com/course/introduction.htm?courseId=1004697005&_trace_c_p_k2_=e948a812b07a4215a459530a19f1ac01)
 * [Tensorflow for Deep Learning Research: Stanford cs20si](http://web.stanford.edu/class/cs20si/)
 * [李宏毅2017深度学习](https://www.bilibili.com/video/av9770302?from=search&seid=8726738433477857991)
+
+* CS131: Computer Vision: Foundations and Applications
+– Fall 2018, Juan Carlos Niebles and Ranjay Krishna
+– Undergraduate introductory class
+* CS231a: Computer Vision, from 3D Reconstruction to Recognition
+– Professor Silvio Savarese
+– Core computer vision class for seniors, masters, and PhDs
+– Image processing, cameras, 3D reconstruction, segmentation, object recognition,
+scene understanding; not just deep learning
+* CS 224n: Natural Language Processing with Deep Learning
+– Winter 2019, Chris Manning
+* CS 230: Deep Learning
+– Spring 2019, Prof. Andrew Ng and Kian Katanforoosh
+* CS231n: Convolutional Neural Networks for Visual Recognition
+– This course, Justin Johnson & Serena Yeung & Fei-Fei Li
+– Focusing on applications of deep learning to computer vision
 
 # video
 * [DeepLearning.TV](https://www.youtube.com/watch?time_continue=33&v=b99UVkWzYTQ)
@@ -62,6 +79,7 @@
 * 虹膜识别
 * 掌纹识别
 * 情感识别
+* 医学诊断
 
 # 人工智能研究领域：
 * 模式识别

@@ -33,7 +33,7 @@
     * [7 The vc dimension](7-the-vc-dimension.md)
     * 8 The Noise and Error
     * [9 Linear Regression 线性回归](9-linear-regression.md)
-    * 10 逻辑回归Logisitic Regression
+    * 10 Logisitic Regression 逻辑回归
     * 11 Linear Models for Classification
     * 12 Nolinear Transform
     * 13 Hazard of Overfitting
@@ -60,10 +60,10 @@
   * [Standard Large-Margin Problem](支持向量机svm/standard-large-margin-problem.md)
   * Support Vector Machine
   * Reasons behind Large-Margin Hyperplane
-* DualSupportVectorMachine
-* KernelSupportVectorMachine
-* Soft-MarginSupportVectorMachine
-* KernalLogisticRegression
+* Dual Support Vector Machine
+* Kernel Support Vector Machine
+* Soft-Margin Support Vector Machine
+* Kernal Logistic Regression
 * [支持向量回归SVR](zhi-chi-xiang-liang-hui-gui-svr.md)
 * Blending and Bagging
 * Adaptive Boosting
