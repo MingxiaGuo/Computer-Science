@@ -2,7 +2,7 @@
 
 Programming  Language enable users to write programs for specific computations/algorithms.
 
-尽管人们多次试图创造一种通用的程序设计语言，却没有一次尝试是成功的。之所以 有那么多种不同的编程语言存在的原因是设计程序语言的初衷不同，对语言学习曲线的追求不同，不同程序之间的运行成本差异等。
+尽管人们多次试图创造一种通用的程序设计语言，却没有一次尝试是成功的。之所以有那么多种不同的编程语言存在的原因是设计程序语言的初衷不同，对语言学习曲线的追求不同，不同程序之间的运行成本差异等。
 
 编程语言的历史早于真正意义的计算机的出现。19世纪就有“可编程的”织布机和钢琴弹奏装置出现，它们都是领域特定语言(DSL)的样例。
 
@@ -11,6 +11,18 @@ Programming  Language enable users to write programs for specific computations/a
 * 偏快速业务开发的动态解析型语言： PHP Python Perl Ruby JavaScript Lua
 
 * 面向特定领域的语言：Erlang R MATLAB
+
+编程思想：
+* 面向过程
+* 面向对象
+* 函数式编程
+* 面向消息编程
+
+语言类型
+* 静态类型开发语言
+* 动态类型开发语言
+* 编译型语言
+* 解析型语言
 
 ### 编程语言发展的编年史
 
@@ -134,4 +146,5 @@ Programming  Language enable users to write programs for specific computations/a
 * Buffer Overflow
 
 * Insufficient Input Validation
+
 
