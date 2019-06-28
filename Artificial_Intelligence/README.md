@@ -4,7 +4,7 @@
 * [Deep learning](Deep_Learning)
 * [Computer Vision](Computer_Vision)
 
-# roamdmap
+# roadmap
 * cv
     * [jiajunhua/ahong007007-Awesome_Computer_Vision](https://github.com/jiajunhua/ahong007007-Awesome_Computer_Vision)
     * [jbhuang0604/awesome-computer-vision](https://github.com/jbhuang0604/awesome-computer-vision)
@@ -61,10 +61,13 @@ scene understanding; not just deep learning
 * Octave
 
 # 人工智能应用和研究领域：
-* **Recommender Systems**
+* **Recommender Systems** / Recommendation
 * **Computer Vision, CV**
 * **Speech Recognition**
-* 自然语言处理 NLP
+* **NLP** 自然语言处理 
+* **Knowledge Graph**: 知识抽取、知识表示、知识融合、知识推理
+* Healthcare
+* AI for Hybrid Cloud
 * 强化学习
 * 无人驾驶运动规划(路径规划)
 * Expert Systems
@@ -115,8 +118,8 @@ scene understanding; not just deep learning
 | 2.3 Evaluation methodology knowledge | 待完善 | |
 | 2.4 Basic mathematic knowledge | <li>[Machine learning basics](http://www.deeplearningbook.org/contents/ml.html)  <li>[SGD](https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/W58e79197cd25_41e3_9e47_11ff6f16244b/page/SGD)  <li>Backpropagation: http://cs231n.github.io/optimization-2/ http://neuralnetworksanddeeplearning.com/chap2.html | Selective skill based on job role|
 | 3 Model development |||
-| 3.1 DL&ML algorithm knowledge | <li>[Coursera: Deep learning](https://www.coursera.org/specializations/deep-learning) <li>[Convolutional Neural Networks (CNNs / ConvNets)](http://cs231n.github.io/convolutional-networks/) <li>[Sequence Modeling: Recurrent and Recursive Nets](http://www.deeplearningbook.org/contents/rnn.html) <li>[LSTM](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) <li>[Bi-LSTM](http://Bidirectional%20LSTM-CRF%20Models%20for%20Sequence%20Tagging) <li>[Word2Vec](http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/) <li>[Autoencoders](http://www.deeplearningbook.org/contents/autoencoders.html) <li>[Reinforcement Learning](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html) <li>[Yolo](https://github.com/pjreddie/darknet) <li>[Faster RCNN](https://github.com/rbgirshick/py-faster-rcnn) <li>[Tensorflow image classification model](https://github.com/tensorflow/models/tree/master/slim) | Selective skill based on job role| 
-| 3.2 Knowledge of DL framework and mathematic lib such as xgboost, blas, scikit-learn and so on |<li>scikit-learn: [Examples](http://scikit-learn.org/stable/auto_examples/index.html), [API Reference](http://scikit-learn.org/stable/modules/classes.html)<li>[xgboost](https://github.com/dmlc/xgboost)<li>[keras](https://keras.io)<li>[Caffe](http://caffe.berkeleyvision.org)<li>[TensorFlow](https://www.tensorflow.org/tutorials) | Mandatory skill for all | 
+| 3.1 DL&ML algorithm knowledge | <li>[Coursera: Deep learning](https://www.coursera.org/specializations/deep-learning) <li>[Convolutional Neural Networks (CNNs / ConvNets)](http://cs231n.github.io/convolutional-networks/) <li>[Sequence Modeling: Recurrent and Recursive Nets](http://www.deeplearningbook.org/contents/rnn.html) <li>[LSTM](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) <li>[Bi-LSTM](http://Bidirectional%20LSTM-CRF%20Models%20for%20Sequence%20Tagging) <li>[Word2Vec](http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/) <li>[Autoencoders](http://www.deeplearningbook.org/contents/autoencoders.html) <li>[Reinforcement Learning](http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html) <li>[Yolo](https://github.com/pjreddie/darknet) <li>[Faster RCNN](https://github.com/rbgirshick/py-faster-rcnn) <li>[Tensorflow image classification model](https://github.com/tensorflow/models/tree/master/slim) | Selective skill based on job role|
+| 3.2 Knowledge of DL framework and mathematic lib such as xgboost, blas, scikit-learn and so on |<li>scikit-learn: [Examples](http://scikit-learn.org/stable/auto_examples/index.html), [API Reference](http://scikit-learn.org/stable/modules/classes.html)<li>[xgboost](https://github.com/dmlc/xgboost)<li>[keras](https://keras.io)<li>[Caffe](http://caffe.berkeleyvision.org)<li>[TensorFlow](https://www.tensorflow.org/tutorials) | Mandatory skill for all |
 | 3.3 Data processing knowledge	| <li>数据清洗 <li>特征工程(PCA, SVD, ICA) | 后续追加推荐资料, Selective skill based on job role |
 | 3.4 R, Python programming |待完善 | Selective skill based on job role |
 | 4 DL Framework Integration |
@@ -130,4 +133,3 @@ https://elitedatascience.com/keras-tutorial-deep-learning-in-python <li>[CaffeOn
 | 5.3 OS knowledge | <li>[Linux 101](http://linux.101hacks.com) <li>[A Road Map for LPIC-1](https://developer.ibm.com/tutorials/l-lpic1-map/) <li>[Linux documentation project](http://www.tldp.org) | Selective skill based on job role|
 | 5.4 Spark programming knowledge| Spark - RDD, Spark SQL, pyspark, sparkR: http://spark.apache.org/examples.html http://spark.apache.org/docs/latest/sql-programming-guide.html http://spark.apache.org/docs/latest/sparkr.html | Selective skill based on job role|
 |5.5 Performance tuning skill| [Power Performance tuning](http://w3.itso.ibm.com/abstracts/sg248171.html?Open) |Selective skill based on job role|
- 

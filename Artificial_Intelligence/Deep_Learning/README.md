@@ -23,7 +23,7 @@
     5. Theano
     6. Caffe
     7. TensorFlow
- 
+
 
 Note: This course is an introductory course and does not have any hands-on lab. After completing this course, it is recommended to take "Deep learning with TensorFlow" course. 
 
@@ -32,5 +32,6 @@ Note: Though this course does not have any hands-on lab, still you can try Power
 
 
 # Open courses
-* [李宏毅2017深度学习](https://www.bilibili.com/video/av9770302?from=search&seid=8726738433477857991)
+* [李宏毅2017深度学习 ](https://www.bilibili.com/video/av9770302?from=search&seid=8726738433477857991) [ppt](http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLDS17.html)
 
+* [李宏毅2019深度学习](https://www.bilibili.com/video/av48285039?from=search&seid=18412288318936573886)

@@ -1,4 +1,3 @@
-
 哺乳动物视觉处理机理：
 图像分割
 基于特征的目标识别 SIFT特征
@@ -7,42 +6,37 @@
 
 googleNet vgg
 msra
+
+* CNN
+* RNN
+* 
+
 # What is Deep Learning?
-# What are are neural networks and how they work?
+
+Deep-learning methods are **representation-learning** methods with multiple levels of representation, obtained by composing simple but **non-linear modules** that each transform the representation at one level (starting with the raw input) into a representation at a higher, slightly more **abstract level**. With the composition of enough such transformations, very complex functions can be learned. 
+
+# What are neural networks and how they work?
 
 Deep learning is about neural networks.
-The structure of a neural network is like any other kind of network;there is an interconnected web of nodes, which are called neurons,and the edges that join them together.
-A neural network's main function is to receive a set of inputs,perform progressively complex calculations,
+The structure of a neural network is like any other kind of network; there is an interconnected web of nodes, which are called neurons,and the edges that join them together.
+A neural network's main function is to receive a set of inputs, perform progressively complex calculations,
 and then use the output to solve a problem.
 Neural networks are used for lots of different applications, but in this series we will focus on classification.
 
-If you wanna learn about neural nets in a bit more detail, including the math,
-my two favourite resources are Michael Nielsen's book, and Andrew Ng's class.
+If you wanna learn about neural nets in a bit more detail, including the math, my two favourite resources are Michael Nielsen's book, and Andrew Ng's class.
 
-
-
-Classification is the process of categorizing a group of objects, while only using some basic data features that describe them.
-There are lots of classifiers available today - like Logistic Regression, Support Vector Machines, Naive Bayes, and of course, neural networks.
+Classification is the process of categorizing a group of objects, while only using some basic data features that describe them. There are lots of classifiers available today - like Logistic Regression, Support Vector Machines, Naive Bayes, and of course, neural networks.
 The firing of a classifier, or activation as its commonly called, produces a score.
 For example, say you needed to predict if a patient is sick or healthy, and all you have are their height, weight, and body temperature. The classifier would receive this data about the patient, process it, and fire out a confidence score. A high score would mean a high confidence that the patient is sick, and a low score would suggest that they are healthy.
-Neural nets are used for classification tasks where an object can fall
-into one of at least two different categories.
-Unlike other networks like a social network,
-a neural network is highly structured and comes in layers.
-The first layer is the input layer,
-the final layer is the output layer,
-and all layers in between are referred to as hidden layers.
+Neural nets are used for classification tasks where an object can fall into one of at least two different categories.
+Unlike other networks like a social network, a neural network is highly structured and comes in layers.
+The first layer is the input layer, the final layer is the output layer, and all layers in between are referred to as hidden layers.
 A neural net can be viewed as the result of spinning classifiers together in a layered web.
 This is because each node in the hidden and output layers has its own classifier.
-Take that node for example -
-it gets its inputs from the input layer, and activates.
+Take that node for example - it gets its inputs from the input layer, and activates.
 Its score is then passed on as input to the next hidden layer for further activation.
-So,
-let’s see how this plays out end to end across the entire network.
-A set of inputs is passed to the first hidden layer,
-the activations from that layer are passed to the next layer and so on,
-until you reach the output layer,
-where the results of the classification are determined by the scores at each node.
+So, let’s see how this plays out end to end across the entire network.
+A set of inputs is passed to the first hidden layer, the activations from that layer are passed to the next layer and so on, until you reach the output layer, where the results of the classification are determined by the scores at each node.
 This happens for each set of inputs.
 Here's another one...
 like so.
@@ -80,16 +74,17 @@ Here's that forward prop again -
 to train the net, the output from forward prop is compared to the output that is known to be correct,
 and the cost is the difference of the two.
 The point of training is to make that cost as small as possible, across millions of training examples.
-To do this, the net tweaks the weights and biases step by step
-until the prediction closely matches the correct output.
+To do this, the net tweaks the weights and biases step by step until the prediction closely matches the correct output.
 Once trained well, a neural net has the potential to make accurate predictions each time.
 This is a neural net in a nutshell.
-At this point you might be wondering;
-why create and train a web of classifiers for a task like classification,
+At this point you might be wondering; why create and train a web of classifiers for a task like classification,
 when an individual classifier can do the job quite well?
 The answer involves the problem of pattern complexity, which we will see in the next video.
 
 # What are are convolutional neural networks?
+
+Conventional machine-learning techniques were **limited** in their ability to process **natural
+data in their raw form**. For decades, constructing a pattern-recognition or machine-learning system **required careful engineering** and **considerable domain expertise** to design a feature extractor that transformed the raw data (such as the pixel values of an image) into a suitable internal representation or feature vector from which the learning subsystem, often a classifier, could detect or classify patterns in the input. 
 
 # Why is deep learning so powerful and what can it be used for?
 Be part of a rapidly growing field in data science; there's no better time than now to get started with neural networks.
@@ -116,3 +111,27 @@ Big deep learning researchers
     * 计算机视觉的历史
 * 自然语言处理
 * 语音识别
+
+## 深度学习模型的主要组成部分
+
+1. 数据的输入
+
+2. 神经元模拟，其中包含参数的初始化和存储
+
+3. 正向传播，对于给定的输入向前传播，得到最终预测输出
+
+4. 损失计算，根据标准输出的结果计算损失的大小
+
+5. 反向传播，根据损失量调整各个参数的值
+
+6. 训练，不断的用给定数据重复正向传播，损失计算和反响传播调整参数的过程
+
+7. 预测，在模型训练完成之后，通过正向传播来应用模型
+
+8. 超参选择
+
+# history
+
+![](assets/history.png)
+
+1. 
