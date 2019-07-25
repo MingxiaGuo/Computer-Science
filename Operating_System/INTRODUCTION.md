@@ -24,6 +24,8 @@
 
 
 materials:
+* [MIT 6.828 Operating System Engineering](https://pdos.csail.mit.edu/6.828/2014/schedule.html)
+
 * [清华大学操作系统课程](https://github.com/chyyuu/os_course_info)
     * [wiki](http://os.cs.tsinghua.edu.cn/oscourse/OS2015)
     * [学堂在线](https://www.xuetangx.com/courses/TsinghuaX/30240243X/2015_T1/about)
