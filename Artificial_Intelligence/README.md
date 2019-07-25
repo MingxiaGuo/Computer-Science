@@ -29,7 +29,7 @@
 * [Convolutional Neural Networks for Visual Recognition: Stanford CS231n](http://cs231n.stanford.edu/) [笔记](https://blog.csdn.net/CV_YOU/article/details/77888010) [课堂讲义](https://cs231n.github.io/) [YouTube](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv) [Bilibili](http://www.bilibili.com/video/av13260183/#page=1) [中文字幕](https://study.163.com/course/introduction.htm?courseId=1004697005&_trace_c_p_k2_=e948a812b07a4215a459530a19f1ac01)
 * [Tensorflow for Deep Learning Research: Stanford cs20si](http://web.stanford.edu/class/cs20si/)
 * [李宏毅2017深度学习](https://www.bilibili.com/video/av9770302?from=search&seid=8726738433477857991)
-
+[PPT](https://www.jianshu.com/p/581aff7d554a) [offical web](http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLDS17.html)
 * CS131: Computer Vision: Foundations and Applications
 – Fall 2018, Juan Carlos Niebles and Ranjay Krishna
 – Undergraduate introductory class
