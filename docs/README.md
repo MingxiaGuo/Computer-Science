@@ -7,9 +7,9 @@
    * Linear Algebra
    * Calculus
 * [Computer System & Organization & Architecture](Computer_System/README.md)
-* [Operating System](Operating_System/README.md) :The most important course in the university :star:
-* [Computer Network](Computer_Network/README.md) 
-* [Algorithm & Data Structure](Algorithm-Data_Structure/README.md): Algorithms + Data Structures = Programs 
+* [Operating System](Operating_System/README.md) :The most important course in the university :star: :star: :star: :star: :star:
+* [Computer Network](Computer_Network/README.md) :star: :star: :star: :star: :star:
+* [Algorithm & Data Structure](Algorithm-Data_Structure/README.md): Algorithms + Data Structures = Programs :star: :star: :star: :star: :star:
 * [Algorithm Practice](Algorithm_Practice/README.md)
 * Computer Organization		
 * [The Programming Language](The_Programming_Language/README.md) : Familiar with a language：C++，Java or Python

@@ -8,6 +8,8 @@
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+    <link href="https://cdn.bootcss.com/KaTeX/0.10.0/katex.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/KaTeX/0.10.0/katex.min.js"></script>
     <style type="text/css">
         @media (min-width:600px) {
             .sidebar-toggle {
@@ -38,10 +40,26 @@
                 noData: '😞 No Results! ',
                 depth: 6
             },
-            subMaxLevel: 4,
+            subMaxLevel: 5,
             coverpage: true,
             loadSidebar: true,
-            loadNavbar: true
+            loadNavbar: true,
+            markdown: {
+                smartypants: true,
+                renderer: {
+                    code: function(code, lang) {
+                        mermaid.initialize({
+                            startOnLoad: false
+                        });
+                        if (lang === "mermaid") {
+                            return (
+                                '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
+                            );
+                        }
+                        return this.origin.code.apply(this, arguments);
+                    }
+                }
+            }
         }
     </script>
     <!-- <script src="//unpkg.com/docsify"></script> -->
@@ -50,6 +68,7 @@
     <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
     <script src="//unpkg.com/docsify-copy-code"></script>
+    <!-- <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script> -->
 </body>
 
 </html>
