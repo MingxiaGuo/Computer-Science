@@ -13,26 +13,11 @@
 ##### 13.算法入门
 ##### 14.数据结构
 ##### [15.阿兰·图灵](Computer_Science_an_Overview/Crash-Course-Computer-Science/15-阿兰-图灵.md)
-##### [16.软件工程](Computer_Science_an_Overview/Crash-Course-Computer-Science/16-软件工程.md)
-##### [17.集成电路&摩尔定律](Computer_Science_an_Overview/Crash-Course-Computer-Science/17-集成电路摩尔定律.md)
-##### [28.计算机网络](Computer_Science_an_Overview/Crash-Course-Computer-Science/28-计算机网络.md)
-##### [29.互联网](Computer_Science_an_Overview/Crash-Course-Computer-Science/29-互联网.md)
 
+------
 
-
-7. 中央处理器：用ALU和寄存器做CPU
-8. 指令和程序
-9. 高级CPU设计
-10. 早期的编程方式
-11. 编程语言的发展史
-12. 编程原理 —— 语句和函数
-13. 算法入门
-14. 数据结构
-15. 阿兰·图灵：对计算机理论作出巨大贡献的人————计算机科学之父
-
-------------------
-16. 软件工程：完成一个大型项目
-17. 集成电路&摩尔定律：计算机怎么发展到如今这么快
+##### [16.软件工程](Computer_Science_an_Overview/Crash-Course-Computer-Science/16-软件工程.md)：完成一个大型项目
+##### [17.集成电路&摩尔定律](Computer_Science_an_Overview/Crash-Course-Computer-Science/17-集成电路摩尔定律.md)：计算机怎么发展到如今这么快
 18. 操作系统
 19. 内存&存储介质
 20. 文件系统
@@ -43,8 +28,8 @@
 25. 个人计算机
 26. 图形用户界面
 27. 3D图形
-28. 计算机网络
-29. 互联网
+##### [28.计算机网络](Computer_Science_an_Overview/Crash-Course-Computer-Science/28-计算机网络.md)
+##### [29.互联网](Computer_Science_an_Overview/Crash-Course-Computer-Science/29-互联网.md)
 30. 万维网
 31. 计算机安全
 32. 黑客&攻击

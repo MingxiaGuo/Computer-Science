@@ -65,8 +65,6 @@ Security Certification
 
 
 
-
-
 A short history of cloud
-  
+
 ![](assets/a-short-history-of-cloud.png)

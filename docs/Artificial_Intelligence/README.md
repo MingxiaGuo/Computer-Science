@@ -12,6 +12,7 @@
     * [zzw922cn/awesome-speech-recognition-speech-synthesis-papers](https://github.com/zzw922cn/awesome-speech-recognition-speech-synthesis-papers)
     * [awesome-speech](https://github.com/mxer/awesome-speech)
     * [moebg/awesome-speech-recognition](https://github.com/moebg/awesome-speech-recognition)
+* NLP
 
 # Book:
 * Foundations of Machine Learning by NewYork University: [PDF,PPT](https://cs.nyu.edu/~mohri/mlbook/); [online](https://mitpress.ublish.com/ereader/7093/?preview=#page/2)
