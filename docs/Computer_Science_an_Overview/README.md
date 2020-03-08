@@ -25,3 +25,9 @@ IT行业定律
    * 计算机科学速成课[Crash Course Computer Science]: [Bilibili](https://www.bilibili.com/video/av21376839?from=search&amp;seid=9162856292795471868\\) [github](https://github.com/1c7/Crash-Course-Computer-Science-Chinese)
    
 
+---
+
+3-9 计算机的原理，硬件，组成计算机的物理组件：电、电路、寄存器、RAM、ALU、CPU
+
+如何从内存读写数据，执行操作，指令的执行即计算机程序
+10-14 基础： 编程：函数、算法、数据结构

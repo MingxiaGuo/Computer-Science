@@ -4,20 +4,19 @@
 
 * [Computer Science An Overview](Computer_Science_an_Overview/README.md)	 
 * [Mathematics for Computer Science](Mathematics_for_Computer_Science/README.md)
-   * Linear Algebra
-   * Calculus
+  * Linear Algebra
+  * Calculus
 * [Computer System & Organization & Architecture](Computer_System/README.md)
 * [Operating System](Operating_System/README.md) :The most important course in the university :star: :star: :star: :star: :star:
 * [Computer Network](Computer_Network/README.md) :star: :star: :star: :star: :star:
 * [Algorithm & Data Structure](Algorithm-Data_Structure/README.md): Algorithms + Data Structures = Programs :star: :star: :star: :star: :star:
-* [Algorithm Practice](Algorithm_Practice/README.md)
-* Computer Organization		
+* [Algorithm Practice](Algorithm_Practice/README.md)	
 * [The Programming Language](The_Programming_Language/README.md) : Familiar with a language：C++，Java or Python
 * [Artificial Intelligence](Artificial_Intelligence/README.md)
-   * [Machine Learning](Machine_Learning/README.md)
-   * [Deep Learning](Deep_Learning/README.md)
+  * [Machine Learning](Machine_Learning/README.md)
+  * [Deep Learning](Deep_Learning/README.md)
 * [Big Data](Big_Data/README.md)
-   * [Data Mining](Big_Data/Data_Mining/README.md)	 
+  * [Data Mining](Big_Data/Data_Mining/README.md)	 
 * [Cloud Computing](Cloud_Computing/README.md) 
 * [Blockchain](Blockchain/README.md)
 * [User experience](User_experience/README.md)
@@ -25,33 +24,36 @@
 
 
 ## Open Course
+
 * [美国计算机名校例如MIT ，CMU ，有哪些公认的好课并且有课程讲义的，适合国内学生自学的？](https://www.zhihu.com/question/57532048)
 * [awesome-courses](https://github.com/prakhar1989/awesome-courses#algorithms)
 * MIT
-   * [Linear Algebra: spring 2010](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm)
-   * [Introduction to algorithms: fall 2005](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm)
+  * [Linear Algebra: spring 2010](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm)
+  * [Introduction to algorithms: fall 2005](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm)
 * CMU
-   * google: CMU15XXX 或者 CMU10XXX，15是计算机系，10是机器学习系
-   * [Introduction to Computer Systems](http://www.cs.cmu.edu/~213/)
-   * [Machine Learning](http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml)
+  * google: CMU15XXX 或者 CMU10XXX，15是计算机系，10是机器学习系
+  * [Introduction to Computer Systems](http://www.cs.cmu.edu/~213/)
+  * [Machine Learning](http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml)
 * SU
-   * [Convex Optimization](http://web.stanford.edu/class/ee364a/index.html) [Youtube](https://www.youtube.com/watch?v=McLq1hEq3UY&list=PL3940DD956CDF0622)
+  * [Convex Optimization](http://web.stanford.edu/class/ee364a/index.html) [Youtube](https://www.youtube.com/watch?v=McLq1hEq3UY&list=PL3940DD956CDF0622)
 * UCB
-   * [Intro to AI](http://ai.berkeley.edu/home.html)
+  * [Intro to AI](http://ai.berkeley.edu/home.html)
 * Crash Course
-   * [计算机科学速成课[Crash Course Computer Science]——YouTube-> Bilibili](https://www.bilibili.com/video/av21376839?from=search&seid=9162856292795471868)
+  * [计算机科学速成课[Crash Course Computer Science]——YouTube-> Bilibili](https://www.bilibili.com/video/av21376839?from=search&seid=9162856292795471868)
 * coursera
-   [机器学习基石](https://www.coursera.org/learn/ntumlone-mathematicalfoundations/lecture/wPics/course-introduction)
+  [机器学习基石](https://www.coursera.org/learn/ntumlone-mathematicalfoundations/lecture/wPics/course-introduction)
 * edx
 * udacity
 * IBM 微讲堂:[website](https://developer.ibm.com/cn/tv/2017/container-microservice/); [优酷](https://i.youku.com/i/UNTI2NTA2NTAw/playlists?spm=a2hzp.8253876.0.0&order=1&page=1)
 
 
 ## website
+
 * [stackoverflow](https://stackoverflow.com/)
 * [wikipedia]()
 
 ## website | social_eminence
+
 * [Github,awesome: Best-websites-a-programmer-should-visit](https://github.com/sdmg15/Best-websites-a-programmer-should-visit)
 * [Developer Survey Results 2019](https://insights.stackoverflow.com/survey/2019)
 * [Github: chinese-programmer-wrong-pronunciation](https://github.com/shimohq/chinese-programmer-wrong-pronunciation)
@@ -63,6 +65,7 @@
 
 
 ## Tools
+
 * Mindmap
   * xmind
   * [processon](https://www.processon.com/diagrams)
@@ -73,114 +76,153 @@
 * Reading
   * marginnote [1](https://sspai.com/post/47317) [2](https://sspai.com/post/54005)
 * Editors
-   * [VIM](https://www.vim.org/): The simplest but one of the most professional editor.
-   * [Emacos](https://www.gnu.org/software/emacs/): One of the biggest competitor to VIM
-   * [VSCode](https://github.com/Microsoft/vscode): f you want a fancy GUI, Microsoft did a good job.
-   * A list of all editors: 
-      * Editors ranked according to their popularity:https://www.slant.co/topics/12/~best-programming-text-editors
+  * [VIM](https://www.vim.org/): The simplest but one of the most professional editor.
+  * [Emacos](https://www.gnu.org/software/emacs/): One of the biggest competitor to VIM
+  * [VSCode](https://github.com/Microsoft/vscode): f you want a fancy GUI, Microsoft did a good job.
+  * A list of all editors: 
+    * Editors ranked according to their popularity:https://www.slant.co/topics/12/~best-programming-text-editors
 * Disk
   * [坚果云](https://www.jianguoyun.com/d/home#/)
   * 百度云   
 * Terminal
-   * [iTerm2 for MacOS](https://www.iterm2.com/index.html)
+  * [iTerm2 for MacOS](https://www.iterm2.com/index.html)
 * Github Pages: [docsify](https://docsify.js.org/#/?id=docsify)
 * [Logo](https://logomakr.com)
+
 ## Book
+
 * [豆瓣推荐](https://book.douban.com/subject_search?search_text=%E8%AE%A1%E7%AE%97%E6%9C%BA&cat=1001) 
 * [买书](http://search.china-pub.com/s/?key1=%C9%EE%C8%EB%C0%ED%BD%E2%BC%C6%CB%E3%BB%FA%D3%A2%CE%C4&type=&pz=1)
 * [Pdf Download](http://www.java1234.com/a/javabook/)
+
 ---
+
 * Computer Science an Overview
+
 * Programming
-   * **The C Programming Language 2nd by Kernighan and Ritchie**    
-     
-      > 这本书简洁易读，会教给你三件事：C 编程语言；如何像程序员一样思考；底层计算模型。 （这对理解“底层”非常重要）—— Nathan。《C程序设计语言》(第2版新版)原著即为C语言的设计者之一Dennis M.Ritchie和著名的计算机科学家Brian W.Kernighan合著的 一本介绍C语言的权威经典著作。 我们现在见到的大量论述C语言程序设计的教材和专著均以此书为蓝本。 原著第1版中介绍的C语言成为后来广泛使用的C语言版本——标准C的基础。人们熟知的“hello,world”程序就是由本书首次引入的，现在，这一程序已经成为所有程序设计语言入门的第一课。
-   * Effective Java
-     
-     > 此书第二版教你如何编写漂亮并高效的代码，虽然这是一本Java书，但其中有很多跨语言的理念。 – Marcio Aguiar
-   * Effective C++和More Effective C++
-     
-     > 在我职业生涯早期，Scott Meyer的《Effective C++》和后续的《More Effective C++》都对我的编程能力有着直接影响。 正如当时的一位朋友所说，这些书缩短你培养编程技能的过程，而其他人可能要花费数年。去年对我影响最大的一本书是《大教堂与市集》，该书教会我很有关开源开发过程如何运作，和如何处理我代码中的Bug。 – John Channing
-   * **Code complete by Steve McConnell / 代码大全**
-     > “优秀的编程实践的百科全书，《代码大全》注重个人技术，其中所有东西加起来， 就是我们本能所说的“编写整洁的代码”。这本书有50页在谈论代码布局。” —— Joel Spolsky
-     > 现在，作者将这本经典著作全新演绎，融入了最前沿的实践技术，加入了上百个崭新的代码示例， 充分展示了软件构建的艺术性和科学性。 McConnell汇集了来自研究机构、学术界以及业界日常实践的主要知识， 把最高效的技术和最重要的原理交织融会为这本既清晰又实用的指南。
-     > 无论您的经验水平如何，也不管您在怎样的开发环境中工作，也无论项目是大是小， 本书都将激发您的思维并帮助您构建高品质的代码。
-   * 代码整洁之道
-     > 细节之中自有天地，整洁成就卓越代码。尽管糟糕的代码也能运行，但如果代码不整洁，会使整个开发团队泥足深陷， 写得不好的代码每年都要耗费难以计数的时间和资源。 然而这种情况并非无法避免。著名软件专家RoberfC.Marlin在《代码整洁之道》中为你呈现出了革命性的视野。 Martin携同ObjectMetltor公司的同事，从他们有关整洁代码的最佳敏捷实践中提炼出软件技艺的价值观， 以飨读者，让你成为更优秀的程序员——只要你着手研读《代码整洁之道》。阅读《代码整洁之道》需要你做些什么呢？你将阅读代码——大量代码。 《代码整洁之道》促使你思考代码中何谓正确，何谓错误。 更重要的是，《代码整洁之道》将促使你重新评估自己的专业价值观，以及对自己技艺的承诺。虽然《代码整洁之道》和《代码大全》有很多共同之处，但它有更为简洁更为实际的清晰例子。 – Craig P. Motlin
-     > 从《代码整洁之道》中可以学到：
-     >  •好代码和糟糕的代码之间的区别；  
-     >  •如何编写好代码，如何将糟糕的代码转化为好代码；  
-     >  •如何创建好名称、好函数、好对象和好类；  
-     >  •如何格式化代码以实现其可读性的最大化；  
-     >  •如何在不妨碍代码逻辑的前提下充分实现错误处理；  
-     >  •如何进行单元测试和测试驱动开发。  
-   * Refactoring: Improving the Design of Existing Code Martin Fowler /重构：改善既有代码的设计  
-     
-     >《重构:改善既有代码的设计》清晰地揭示了重构的过程，解释了重构的原理和最佳实践方式， 并给出了何时以及何地应该开始挖掘代码以求改善。 书中给出了70多个可行的重构，每个重构都介绍了一种经过验证的代码变换手法的动机和技术。《重构:改善既有代码的设计》提出的重构准则将帮助你一次一小步地修改你的代码，从而减少了开发过程中的风险。我必须承认，我最喜欢的编程语录是出自这本书：任何一个傻瓜都能写出计算机能理解的程序， 而优秀的程序员却能写出别人能读得懂的程序。—— Martin Fowler
-   * **Structure and Interpretation of Computer Programs by MIT professors /计算机程序的构造和解释** 推荐数：916
-     
-      >《代码大全》、《重构》和《设计模式》这些经典书会教给你高效的工作习惯和交易细节。 其他像《人件集》、《计算机编程心理学》和《人月神话》这些书会深入软件开发的心理层面。 其他书籍则处理算法。这些书都有自己所属的位置。然而《计算机程序的构造和解释》与这些不同。 这是一本会启发你的书，它会燃起你编写出色程序的热情； 它还将教会你认识并欣赏美； 它会让你有种敬畏，让你难以抑制地渴望学习更多的东西。同时，你将会学到其他东西，函数式编程（第三章）、惰性计算、元编程、虚拟机、解释器和编译器。这本书是写给著名的6.001，是麻省理工学院的入门编程课程。
-   * 《编程珠玑》  **推荐数：282
-     
-      > 计算机科学大师Jon Bentley以其独有的洞察力和创造力， 从磨砺程序员的实际问题中凝结出一篇篇不朽的编程“珠玑”， 成为世界计算机界名刊《ACM通讯》历史上最受欢迎的专栏， 最终结集为两部不朽的计算机科学经典名著，影响和激励着一代又一代程序员和计算机科学工作者。本书为第一卷，主要讨论计算机科学中最本质的问题：如何正确选择和高效地实现算法。
+
+  * **The C Programming Language 2nd by Kernighan and Ritchie**    
+
+    > 这本书简洁易读，会教给你三件事：C 编程语言；如何像程序员一样思考；底层计算模型。 （这对理解“底层”非常重要）—— Nathan。《C程序设计语言》(第2版新版)原著即为C语言的设计者之一Dennis M.Ritchie和著名的计算机科学家Brian W.Kernighan合著的 一本介绍C语言的权威经典著作。 我们现在见到的大量论述C语言程序设计的教材和专著均以此书为蓝本。 原著第1版中介绍的C语言成为后来广泛使用的C语言版本——标准C的基础。人们熟知的“hello,world”程序就是由本书首次引入的，现在，这一程序已经成为所有程序设计语言入门的第一课。
+
+  * Effective Java
+
+    > 此书第二版教你如何编写漂亮并高效的代码，虽然这是一本Java书，但其中有很多跨语言的理念。 – Marcio Aguiar
+
+  * Effective C++和More Effective C++
+
+    > 在我职业生涯早期，Scott Meyer的《Effective C++》和后续的《More Effective C++》都对我的编程能力有着直接影响。 正如当时的一位朋友所说，这些书缩短你培养编程技能的过程，而其他人可能要花费数年。去年对我影响最大的一本书是《大教堂与市集》，该书教会我很有关开源开发过程如何运作，和如何处理我代码中的Bug。 – John Channing
+
+  * **Code complete by Steve McConnell / 代码大全**
+
+    > “优秀的编程实践的百科全书，《代码大全》注重个人技术，其中所有东西加起来， 就是我们本能所说的“编写整洁的代码”。这本书有50页在谈论代码布局。” —— Joel Spolsky
+    > 现在，作者将这本经典著作全新演绎，融入了最前沿的实践技术，加入了上百个崭新的代码示例， 充分展示了软件构建的艺术性和科学性。 McConnell汇集了来自研究机构、学术界以及业界日常实践的主要知识， 把最高效的技术和最重要的原理交织融会为这本既清晰又实用的指南。
+    > 无论您的经验水平如何，也不管您在怎样的开发环境中工作，也无论项目是大是小， 本书都将激发您的思维并帮助您构建高品质的代码。
+
+  * 代码整洁之道
+
+    > 细节之中自有天地，整洁成就卓越代码。尽管糟糕的代码也能运行，但如果代码不整洁，会使整个开发团队泥足深陷， 写得不好的代码每年都要耗费难以计数的时间和资源。 然而这种情况并非无法避免。著名软件专家RoberfC.Marlin在《代码整洁之道》中为你呈现出了革命性的视野。 Martin携同ObjectMetltor公司的同事，从他们有关整洁代码的最佳敏捷实践中提炼出软件技艺的价值观， 以飨读者，让你成为更优秀的程序员——只要你着手研读《代码整洁之道》。阅读《代码整洁之道》需要你做些什么呢？你将阅读代码——大量代码。 《代码整洁之道》促使你思考代码中何谓正确，何谓错误。 更重要的是，《代码整洁之道》将促使你重新评估自己的专业价值观，以及对自己技艺的承诺。虽然《代码整洁之道》和《代码大全》有很多共同之处，但它有更为简洁更为实际的清晰例子。 – Craig P. Motlin
+    > 从《代码整洁之道》中可以学到：
+    > •好代码和糟糕的代码之间的区别；  
+    > •如何编写好代码，如何将糟糕的代码转化为好代码；  
+    > •如何创建好名称、好函数、好对象和好类；  
+    > •如何格式化代码以实现其可读性的最大化；  
+    > •如何在不妨碍代码逻辑的前提下充分实现错误处理；  
+    > •如何进行单元测试和测试驱动开发。  
+
+  * Refactoring: Improving the Design of Existing Code Martin Fowler /重构：改善既有代码的设计  
+
+    >《重构:改善既有代码的设计》清晰地揭示了重构的过程，解释了重构的原理和最佳实践方式， 并给出了何时以及何地应该开始挖掘代码以求改善。 书中给出了70多个可行的重构，每个重构都介绍了一种经过验证的代码变换手法的动机和技术。《重构:改善既有代码的设计》提出的重构准则将帮助你一次一小步地修改你的代码，从而减少了开发过程中的风险。我必须承认，我最喜欢的编程语录是出自这本书：任何一个傻瓜都能写出计算机能理解的程序， 而优秀的程序员却能写出别人能读得懂的程序。—— Martin Fowler
+
+  * **Structure and Interpretation of Computer Programs by MIT professors /计算机程序的构造和解释** 推荐数：916
+
+    >《代码大全》、《重构》和《设计模式》这些经典书会教给你高效的工作习惯和交易细节。 其他像《人件集》、《计算机编程心理学》和《人月神话》这些书会深入软件开发的心理层面。 其他书籍则处理算法。这些书都有自己所属的位置。然而《计算机程序的构造和解释》与这些不同。 这是一本会启发你的书，它会燃起你编写出色程序的热情； 它还将教会你认识并欣赏美； 它会让你有种敬畏，让你难以抑制地渴望学习更多的东西。同时，你将会学到其他东西，函数式编程（第三章）、惰性计算、元编程、虚拟机、解释器和编译器。这本书是写给著名的6.001，是麻省理工学院的入门编程课程。
+
+  * 《编程珠玑》  **推荐数：282
+
+    > 计算机科学大师Jon Bentley以其独有的洞察力和创造力， 从磨砺程序员的实际问题中凝结出一篇篇不朽的编程“珠玑”， 成为世界计算机界名刊《ACM通讯》历史上最受欢迎的专栏， 最终结集为两部不朽的计算机科学经典名著，影响和激励着一代又一代程序员和计算机科学工作者。本书为第一卷，主要讨论计算机科学中最本质的问题：如何正确选择和高效地实现算法。
+
 * Algorithms & Data Structure
-   * Data Structure and Algorithm Analysis
-   * Introduction of Algorithms by Cormen, Leiserson, Rivest & Stein 
-   * Algorithms.4th [booksite](https://algs4.cs.princeton.edu/home/)
+
+  * Data Structure and Algorithm Analysis
+  * Introduction of Algorithms by Cormen, Leiserson, Rivest & Stein 
+  * Algorithms.4th [booksite](https://algs4.cs.princeton.edu/home/)
+
 * 计算机原理
-  
-   * **Computer Systems : a programmer‘s perspective 3rd by CMU** [booksite](http://www.csapp.cs.cmu.edu) 
+
+  * **Computer Systems : a programmer‘s perspective 3rd by CMU** [booksite](http://www.csapp.cs.cmu.edu) 
+
 * 计算机组成和体系结构
-   * Computer Organization and Design
-   * Computer Architecture：A Quantitative Approach
+
+  * Computer Organization and Design
+  * Computer Architecture：A Quantitative Approach
+
 * **操作系统**
-   * Operating System Concept
-   * Operating System Design and Implementation
-   * Modern Operating Systems by Andrew S. Tanenbaum 
+
+  * Operating System Concept
+  * Operating System Design and Implementation
+  * Modern Operating Systems by Andrew S. Tanenbaum 
+
 * 网络
-   * TCP/IP from stevens
-   * Computer Networking: A Top-Down Approach 7th
+
+  * TCP/IP from stevens
+  * Computer Networking: A Top-Down Approach 7th
+
 * Linux
-  
-   * [鸟哥的Linux私房菜](http://linux.vbird.org/)
+
+  * [鸟哥的Linux私房菜](http://linux.vbird.org/)
+
 * Structure and Interpretation of Computer Programs
+
 * 设计模式
+
   * **Design Patterns by the Gang of Four 设计模式**
-    
-     > 就我而言，我认为四人帮编著的《设计模式》是一本极为有用的书。 虽然此书并不像其他建议一样有关“元”编程，但它强调封装诸如模式一类的优秀编程技术， 因而鼓励其他人提出新模式和反模式（antipatterns），并运用于编程对话中。—— Chris Jester-Young
+
+    > 就我而言，我认为四人帮编著的《设计模式》是一本极为有用的书。 虽然此书并不像其他建议一样有关“元”编程，但它强调封装诸如模式一类的优秀编程技术， 因而鼓励其他人提出新模式和反模式（antipatterns），并运用于编程对话中。—— Chris Jester-Young
+
   * Head First设计模式 | 深入浅出设计模式，推荐数：445
-  
-     > 本书的产品设计应用神经生物学、认知科学，以及学习理论，这使得这本书能够将这些知识深深地印在你的脑海里， 不容易被遗忘。本书的编写方式采用引导式教学，不直接告诉你该怎么做，而是利用故事当作引子，带领读者思考并想办法解决问题。 解决问题的过程中又会产生一些新的问题，再继续思考、继续解决问题，这样可以加深体会。作者以大量的生活化故事当背景，例如第1章是鸭子，第2章是气象站，第3章是咖啡店， 书中搭配大量的插图(几乎每一页都有图)，所以阅读起来生动有趣，不会感觉到昏昏欲睡。作者还利用歪歪斜斜的手写字体，增加“现场感”。 精心设计许多爆笑的对白，让学习过程不会太枯燥。 还有模式告白节目，将设计模式拟人化成节目来宾，畅谈其内在的一切。 每一章都有数目不等的测验题。 每章最后有一页要点整理，这也是精华所在，我都是利用这一页做复习。我知道四人帮的《设计模式》是一本标准书，但倒不如先看看这部大部头，此书更为简易。 一旦你了解了解了基本原则，可以去看四人帮的那本圣经了。- Calanus
-  
+
+    > 本书的产品设计应用神经生物学、认知科学，以及学习理论，这使得这本书能够将这些知识深深地印在你的脑海里， 不容易被遗忘。本书的编写方式采用引导式教学，不直接告诉你该怎么做，而是利用故事当作引子，带领读者思考并想办法解决问题。 解决问题的过程中又会产生一些新的问题，再继续思考、继续解决问题，这样可以加深体会。作者以大量的生活化故事当背景，例如第1章是鸭子，第2章是气象站，第3章是咖啡店， 书中搭配大量的插图(几乎每一页都有图)，所以阅读起来生动有趣，不会感觉到昏昏欲睡。作者还利用歪歪斜斜的手写字体，增加“现场感”。 精心设计许多爆笑的对白，让学习过程不会太枯燥。 还有模式告白节目，将设计模式拟人化成节目来宾，畅谈其内在的一切。 每一章都有数目不等的测验题。 每章最后有一页要点整理，这也是精华所在，我都是利用这一页做复习。我知道四人帮的《设计模式》是一本标准书，但倒不如先看看这部大部头，此书更为简易。 一旦你了解了解了基本原则，可以去看四人帮的那本圣经了。- Calanus
+
 * Math
 
 mit的linear algebra os，berkeley 的 sicp（python版），stanford的compiler，
 
 * CODE by Charles Petzold /编码：隐匿在计算机软硬件背后的语言:这是一本讲述计算机工作原理的书。
-  
+
   > 这是一本讲述计算机工作原理的书。不过，你千万不要因为“工作原理”之类的字眼就武断地认为，它是晦涩而难懂的。 作者用丰富的想象和清晰的笔墨将看似繁杂的理论阐述得通俗易懂，你丝毫不会感到枯燥和生硬。 更重要的是，你会因此而获得对计算机工作原理较深刻的理解。 这种理解不是抽象层面上的，而是具有一定深度的，这种深度甚至不逊于“电气工程师”和“程序员”的理解。不管你是计算机高手，还是对这个神奇的机器充满敬畏之心的菜鸟， 都不妨翻阅一下《编码:隐匿在计算机软硬件背后的语言》，读一读大师的经典作品，必然会有收获。我推荐Charles Petzold的《编码》。 在这个充满工具和IDE的年代，很多复杂度已经从程序员那“抽取”走了，这本书一本开眼之作。 – hemil
+
 * other
-   * 人月神话/The Mythical Man Month by Frederick Brooks 
-     
-     > 在软件领域，很少能有像《人月神话》一样具有深远影响力并且畅销不衰的著作。Brooks博士为人们管理复杂项目提供了最具洞察力的见解。 既有很多发人深省的观点，又有大量软件工程的实践。 本书内容来自Brooks博士在IBM公司System/360家族和OS/360中的项目管理经验。该书英文原版一经面世，即引起业内人士的强烈反响，后又译为德、法、日、俄中等多种语言，全球销量数百万册。 确立了其在行业内的经典地位。
-   * 黑客与画家
-   * 浪潮之巅
-   * 大道至简
-   * Surely You're Joking, Mr. Feynman! / 别闹了，费曼先生, 
-     
-     > Surely You're Joking, Mr. Feynman!
-   * Coders at Work / 编程人生
-     
-     > 这是一本访谈笔录，记录了当今最具个人魅力的15位软件先驱的编程生涯。 包括DonaldKnuth、Jamie Zawinski、Joshua Bloch、Ken Thompson等在内的业界传奇人物，为我们讲述了他们是怎么学习编程的，在编程过程中发现了什么以及他们对未来的看法， 并对诸如应该如何设计软件等长久以来一直困扰很多程序员的问题谈了自己的观点。可以从中学到一些业界顶级人士的经验，了解他们如何思考并工作。
-   * 禅与摩托车维修艺术 / Zen and the Art of Motorcycle Maintenance
-     
-     > 对我影响最大的那本书是 Robert Pirsig 的《禅与摩托车维修艺术》。 不管你做什么事，总是要力求完美，彻底了解你手中的工具和任务，更为重要的是， 要有乐趣（因为如果你做事有乐趣，一切将自发引向更好的结果）。 – akr
-   * 哥德尔、艾舍尔、巴赫书：集异璧之大成
-     
-     > 他极为深入研究了程序员每日都要面对的问题：递归、验证、证明和布尔代数。 这是一本很出色的读物，难度不大，偶尔有挑战，一旦你要鏖战到底，将是非常值得的。 – Jonik
-   * Peopleware / 人件集:人性化的软件开发 
-     
-      > Demarco 和 Lister 表明，软件开发中的首要问题是人，并非技术。 他们的答案并不简单，只是令人难以置信的成功。 第二版新增加了八章内容。 – Eduardo Molteni
+
+  * 人月神话/The Mythical Man Month by Frederick Brooks 
+
+    > 在软件领域，很少能有像《人月神话》一样具有深远影响力并且畅销不衰的著作。Brooks博士为人们管理复杂项目提供了最具洞察力的见解。 既有很多发人深省的观点，又有大量软件工程的实践。 本书内容来自Brooks博士在IBM公司System/360家族和OS/360中的项目管理经验。该书英文原版一经面世，即引起业内人士的强烈反响，后又译为德、法、日、俄中等多种语言，全球销量数百万册。 确立了其在行业内的经典地位。
+
+  * 黑客与画家
+
+  * 浪潮之巅
+
+  * 大道至简
+
+  * Surely You're Joking, Mr. Feynman! / 别闹了，费曼先生, 
+
+    > Surely You're Joking, Mr. Feynman!
+
+  * Coders at Work / 编程人生
+
+    > 这是一本访谈笔录，记录了当今最具个人魅力的15位软件先驱的编程生涯。 包括DonaldKnuth、Jamie Zawinski、Joshua Bloch、Ken Thompson等在内的业界传奇人物，为我们讲述了他们是怎么学习编程的，在编程过程中发现了什么以及他们对未来的看法， 并对诸如应该如何设计软件等长久以来一直困扰很多程序员的问题谈了自己的观点。可以从中学到一些业界顶级人士的经验，了解他们如何思考并工作。
+
+  * 禅与摩托车维修艺术 / Zen and the Art of Motorcycle Maintenance
+
+    > 对我影响最大的那本书是 Robert Pirsig 的《禅与摩托车维修艺术》。 不管你做什么事，总是要力求完美，彻底了解你手中的工具和任务，更为重要的是， 要有乐趣（因为如果你做事有乐趣，一切将自发引向更好的结果）。 – akr
+
+  * 哥德尔、艾舍尔、巴赫书：集异璧之大成
+
+    > 他极为深入研究了程序员每日都要面对的问题：递归、验证、证明和布尔代数。 这是一本很出色的读物，难度不大，偶尔有挑战，一旦你要鏖战到底，将是非常值得的。 – Jonik
+
+  * Peopleware / 人件集:人性化的软件开发 
+
+    > Demarco 和 Lister 表明，软件开发中的首要问题是人，并非技术。 他们的答案并不简单，只是令人难以置信的成功。 第二版新增加了八章内容。 – Eduardo Molteni
 
 2、《程序员修炼之道》  
 推荐数：1504
@@ -261,6 +303,7 @@ mit的linear algebra os，berkeley 的 sicp（python版），stanford的compiler
 如果你不是程序员，阅读此书可能会很有趣，但如果你已经是个程序员，可能会有点乏味。
 
 * The Art of Unix Programming /Unix编程艺术
+
 > It is useful regardless operating system you use. – J.F. Sebastian不管你使用什么操作系统，这本书都很有用。 – J.F. Sebastian
 
 **28、《高效程序员的45个习惯：敏捷开发修炼之道》**
@@ -362,5 +405,4 @@ Object-Oriented Analysis and Design with Applications by Grady Booch
 
 Masterminds of Programming     
 Computability by N. J. Cutland
-
 

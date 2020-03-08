@@ -11,7 +11,6 @@
 * [Computer Network](Computer_Network) 
 * [Algorithm & Data Structure](Algorithm-Data_Structure): Algorithms + Data Structures = Programs 
 * [Algorithm Practice](Algorithm_Practice)
-* Computer Organization		
 * [The Programming Language](The_Programming_Language) : Familiar with a language：C++，Java or Python
 * [Artificial Intelligence](Artificial_Intelligence)
    * [Machine Learning](Machine_Learning)
