@@ -1,6 +1,6 @@
 # OpenStack
 
-*OpenStack是IaaS(基础设施即服务)组件，让任何人都可以自行建立和提供 云端运算服务。此外，OpenStack也用作建立 防火墙内的“ 私有云 ”（Private Cloud），提供机构或企业内各部门共享资源
+OpenStack是IaaS(基础设施即服务)组件，让任何人都可以自行建立和提供 云端运算服务。此外，OpenStack也用作建立 防火墙内的“ 私有云 ”（Private Cloud），提供机构或企业内各部门共享资源
 
  * 既是一个社区，也是一个项目和一个开源软件
 

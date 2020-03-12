@@ -14,9 +14,9 @@ kvm xen dokcer openstack cloudfoundry ceph sdn等云计算关键技术
 nfv，公有云，私有云，混合云的架构、部署、应用场景
 sdn，nfv 云存储 云计算的部署和运维
 
+
+
 技术
-
-
 
 * openstack：IaaS云平台
 * Linux 容器

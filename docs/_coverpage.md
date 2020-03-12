@@ -1,4 +1,4 @@
-![logo](logo.png)
+![logo](考拉.svg)
 
 # Computer Science
 
