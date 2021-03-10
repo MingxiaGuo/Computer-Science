@@ -19,11 +19,11 @@ Everyone’s container journey starts with one container. At first the growth is
 
 * Configuration Management
 
-  ![container_orchestration_functionality.png](../../../assets/container_orchestration_functionality.png)
+  ![container_orchestration_functionality.png](../../assets/container_orchestration_functionality.png)
 
 ## Container ecosystem layers
 
-![container_ecosystem_layers.png](../../../assets/container_ecosystem_layers.png)
+![container_ecosystem_layers.png](../../assets/container_ecosystem_layers.png)
 
 ## What is container orchestration?
 
@@ -46,7 +46,7 @@ Everyone’s container journey starts with one container. At first the growth is
 * Health management
   * Replaces unhealthy containers and nodes
 
-![](../../../assets/container_orchestration_2.png)
+![](../../assets/container_orchestration_2.png)
 
 # Kubernetes
 
@@ -115,9 +115,9 @@ The KCSP program is a vetted tier of service providers who have deep experience 
 
 Kubernetes Cluster Architecture 
 
-![](../../..assets/architecture_cluster.png)
+![](../../assets/architecture_cluster.png)
 
-![](../../../assets/architecture.png)
+![](../../assets/architecture.png)
 
 * **Cluster**
   
@@ -206,7 +206,7 @@ A group of co-located containers
 * Each pod has its own IP
 * Shares a PID namespace, network, and hostname, volumes
 
-![](../../../assets/pod.png)
+![](../../assets/pod.png)
 
 ### Services
 
@@ -222,7 +222,7 @@ A service defines a set of pods and a means by which to access them, such as sin
   * LoadBalancer – Exposes externally using a cloud provider’s load balancer
   * ExternalName – Maps to an external name (such as foo.bar.example.com)
 
-  ![](../../../assets/services.png)
+  ![](../../assets/services.png)
 
 ### Volumes
 
