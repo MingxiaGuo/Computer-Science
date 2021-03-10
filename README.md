@@ -2,25 +2,25 @@
 
 ## Contents
 
-* [Computer Science An Overview](Computer_Science_an_Overview)	 
-* [Mathematics for Computer Science](Mathematics_for_Computer_Science)
+* [Computer Science An Overview](docs/Computer_Science_an_Overview)	 
+* [Mathematics for Computer Science](docs/Mathematics_for_Computer_Science)
    * Linear Algebra
    * Calculus
-* [Computer System & Organization & Architecture](Computer_System)
-* [Operating System](Operating_System) :The most important course in the university
-* [Computer Network](Computer_Network) 
-* [Algorithm & Data Structure](Algorithm-Data_Structure): Algorithms + Data Structures = Programs 
-* [Algorithm Practice](Algorithm_Practice)
-* [The Programming Language](The_Programming_Language) : Familiar with a language：C++，Java or Python
-* [Artificial Intelligence](Artificial_Intelligence)
-   * [Machine Learning](Machine_Learning)
-   * [Deep Learning](Deep_Learning)
-* [Big Data](Big_Data)
-   * [Data Mining](Big_Data/Data_Mining)
-* [Cloud Computing](Cloud_Computing) 
-* [Blockchain](Blockchain)
-* [User experience](User_experience)
-* [Open technology](Open_technology)
+* [Computer System & Organization & Architecture](docs/Computer_System)
+* [Operating System](docs/Operating_System) :The most important course in the university
+* [Computer Network](docs/Computer_Network) 
+* [Algorithm & Data Structure](docs/Algorithm-Data_Structure): Algorithms + Data Structures = Programs 
+* [Algorithm Practice](docs/Algorithm_Practice)
+* [The Programming Language](docs/The_Programming_Language) : Familiar with a language：C++，Java or Python
+* [Artificial Intelligence](docs/Artificial_Intelligence)
+   * [Machine Learning](docs/Machine_Learning)
+   * [Deep Learning](docs/Deep_Learning)
+* [Big Data](docs/Big_Data)
+   * [Data Mining](docs/Big_Data/Data_Mining)
+* [Cloud Computing](docs/Cloud_Computing) 
+* [Blockchain](docs/Blockchain)
+* [User experience](docs/User_experience)
+* [Open technology](docs/Open_technology)
 
 
 ## Open Course
