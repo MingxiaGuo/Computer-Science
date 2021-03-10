@@ -1,0 +1,12 @@
+# 镜像格式
+目前主要作为虚拟机的镜像格式：
+1. raw
+2. qcow2
+4. vmdk
+----
+## 1. raw
+## 2. 
+
+
+## Reference:
+[qcow2、raw、vmdk等镜像格式](https://www.cnblogs.com/lsgxeva/p/9565813.html)

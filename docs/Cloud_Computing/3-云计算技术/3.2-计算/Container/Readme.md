@@ -1,4 +1,5 @@
 
+
 https://yeasy.gitbooks.io/docker_practice/
 
 Docker简介
@@ -7,6 +8,9 @@ Docker简介
 3. Dokcer基本概念
 
 
+Container ecosystem layers
+
+![container_ecosystem_layers.png](../../../assets/container_ecosystem_layers.png)
 
 
 
