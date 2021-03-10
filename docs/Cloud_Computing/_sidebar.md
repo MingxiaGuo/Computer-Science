@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [TODO2](todo2.md)
-* [待学](dai-xue.md)
+
 * 第1章 云计算概念
   * [1.1 云计算定义](Cloud_Computing/1-云计算概念/1.1-云计算是什么.md)
   * [1.2 云计算分类](Cloud_Computing/1-云计算概念/1.2-云计算分类.md)
