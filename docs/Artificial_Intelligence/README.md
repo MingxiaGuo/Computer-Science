@@ -61,44 +61,8 @@ scene understanding; not just deep learning
 * MATLAB
 * Octave
 
-# 人工智能应用和研究领域：
-* **Recommender Systems** / Recommendation
-* **Computer Vision, CV**
-* **Speech Recognition**
-* **NLP** 自然语言处理 
-* **Knowledge Graph**: 知识抽取、知识表示、知识融合、知识推理
-* Healthcare
-* AI for Hybrid Cloud
-* 强化学习
-* 无人驾驶运动规划(路径规划)
-* Expert Systems
-* Multi-Agent systems
-* Evolurionary Computation
-* Fussy Logic and Rough Set
-* Knowledge Representation
-* Robotics and Perception
-* Planning and Scheduling
-* 人脸识别
-* 指纹识别
-* 虹膜识别
-* 掌纹识别
-* 情感识别
-* 医学诊断
-
-# 人工智能研究领域：
-* 模式识别
-* 机器学习
-* 深度学习
-
-图像预处理：
-* 图像去燥
-* 图像增强
-* 图像分割
 
 
-指纹识别
-基于Haar的人脸检测
-基于HoG特征的物体检测
 
 
 # Roadmap
@@ -123,9 +87,10 @@ scene understanding; not just deep learning
 | 3.2 Knowledge of DL framework and mathematic lib such as xgboost, blas, scikit-learn and so on |<li>scikit-learn: [Examples](http://scikit-learn.org/stable/auto_examples/index.html), [API Reference](http://scikit-learn.org/stable/modules/classes.html)<li>[xgboost](https://github.com/dmlc/xgboost)<li>[keras](https://keras.io)<li>[Caffe](http://caffe.berkeleyvision.org)<li>[TensorFlow](https://www.tensorflow.org/tutorials) | Mandatory skill for all |
 | 3.3 Data processing knowledge	| <li>数据清洗 <li>特征工程(PCA, SVD, ICA) | 后续追加推荐资料, Selective skill based on job role |
 | 3.4 R, Python programming |待完善 | Selective skill based on job role |
-| 4 DL Framework Integration |
-| 4.1 Deep Knowledge of DL framework and mathematic lib such as xgboost, blas, scikit-learn |<li>Keras Tutorials: https://www.datacamp.com/community/tutorials/deep-learning-python
-https://elitedatascience.com/keras-tutorial-deep-learning-in-python <li>[CaffeOnSpark](https://github.com/yahoo/CaffeOnSpark) <li>[TensorFlow](https://www.tensorflow.org/guide/) | Selective skill based on job role|
+| 4 DL Framework Integration |||
+| 4.1 Deep Knowledge of DL framework and mathematic lib such as xgboost, blas, scikit-learn|<li>Keras Tutorials: https://www.datacamp.com/community/tutorials/deep-learning-python
+https://elitedatascience.com/keras-tutorial-deep-learning-in-python <li>[CaffeOnSpark](https://github.com/yahoo/CaffeOnSpark) <li>[TensorFlow](https://www.tensorflow.org/guide/)| Selective skill based on job role|
+
 | 4.2 R, Python, Java and c++ programming| 	Cuda/cuDNN	| Selective skill based on job role |
 | 5. Development Skill ||
 | 5.1 R, Python, Java and c++ and GUI programming skill|待完善| Selective skill based on job role|
@@ -134,3 +99,4 @@ https://elitedatascience.com/keras-tutorial-deep-learning-in-python <li>[CaffeOn
 | 5.3 OS knowledge | <li>[Linux 101](http://linux.101hacks.com) <li>[A Road Map for LPIC-1](https://developer.ibm.com/tutorials/l-lpic1-map/) <li>[Linux documentation project](http://www.tldp.org) | Selective skill based on job role|
 | 5.4 Spark programming knowledge| Spark - RDD, Spark SQL, pyspark, sparkR: http://spark.apache.org/examples.html http://spark.apache.org/docs/latest/sql-programming-guide.html http://spark.apache.org/docs/latest/sparkr.html | Selective skill based on job role|
 |5.5 Performance tuning skill| [Power Performance tuning](http://w3.itso.ibm.com/abstracts/sg248171.html?Open) |Selective skill based on job role|
+

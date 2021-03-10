@@ -4,7 +4,7 @@ Lecture 3 Types of learning
 focus: binary claddification or regression from a batch of supervised data with concrete features
 
 - learning with Different Output Space y
-    
+  
     * classification：目标推出一组离散的结果
     * regression：通过回归来推出一个连续的输出
     * structured
@@ -21,10 +21,10 @@ focus: binary claddification or regression from a batch of supervised data with 
     * online
     * active
 - Learning with Different Input Space x
-    
+  
     * concrete
     * raw
     * abstract
 
-![](/assets/图27.png)
+![](./assets/图27.png)
 
