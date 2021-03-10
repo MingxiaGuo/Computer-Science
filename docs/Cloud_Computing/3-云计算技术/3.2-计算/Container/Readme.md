@@ -9,7 +9,8 @@ Docker简介
 
 
 Container ecosystem layers
-![](../../../../assets/container_ecosystem_layers.png)
+
+![container_ecosystem_layers.png](../../../../assets/container_ecosystem_layers.png)
 
 
 
