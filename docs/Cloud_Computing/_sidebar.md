@@ -2,12 +2,11 @@
 
 * [Introduction](Cloud_Computing/README.md)
 * 第1章 云计算概念
-  * [1.1 云计算定义](Cloud_Computing/1-云计算概念/1.1-云计算是什么.md)
+  * [1.1 云计算定义](Cloud_Computing/1-云计算概念/1.1-云计算定义.md)
   * [1.2 云计算分类](Cloud_Computing/1-云计算概念/1.2-云计算分类.md)
   * [1.3 云计算技术](Cloud_Computing/1-云计算概念/1.3-云计算技术.md)
-  * [1.4 云计算优势](Cloud_Computing/1-云计算概念/1.4-云计算优势.md)
-  * [1.5 云计算劣势](Cloud_Computing/1-云计算概念/1.5-云计算劣势.md)
-  * [1.6 云计算应用案例](Cloud_Computing/1-云计算概念/1.6-云计算应用案例.md)
+  * [1.4 云计算优劣势](Cloud_Computing/1-云计算概念/1.4-云计算优劣势.md)
+  * [1.5 云计算应用案例](Cloud_Computing/1-云计算概念/1.5-云计算应用案例.md)
 * 第2章 云计算架构
   * 2.1 多租户
   * 2.2 角色
