@@ -3,7 +3,7 @@ A cluster is a set of resources, worker nodes, networks, and storage devices tha
 
 Everyone’s container journey starts with one container. At first the growth is easy to handle, but soon you have many applications, many instances… And that is why we have Container orchestration.
 
-<img src="../../../assets/Container_orchestration.png" style="zoom: 50%;" />
+<img src="../../assets/Container_orchestration.png" style="zoom: 50%;" />
 
 ## Container Orchestration Functionality
 
