@@ -8,6 +8,8 @@ Docker简介
 3. Dokcer基本概念
 
 
+Container ecosystem layers
+![](../../../../assets/container_ecosystem_layers.png)
 
 
 
