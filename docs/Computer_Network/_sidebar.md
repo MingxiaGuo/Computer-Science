@@ -74,7 +74,7 @@
   * 9.3 无线城域网 WMAN
 * [第十章 下一代因特网](Computer_Network/10-下一代因特网.md)
   * [10.1 下一代网际协议IPv6](Computer_Network/10.1-下一代网际协议IPv6.md)
-  * [10.2 多协议标记交换 MPLS](Computer_Network/10.2-多协议标记交换 MPLS.md)
+  * [10.2 多协议标记交换MPLS](Computer_Network/10.2-多协议标记交换 MPLS.md)
   * 10.3  P2P 文件共享
 * [网卡](Computer_Network/wang-qia.md)
 
