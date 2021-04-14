@@ -42,7 +42,7 @@
   * 4.6 OpenStack
   * 4.7 Salesforce
   * 4.8 VMware
-  * 4.9 [IBMCloud](Cloud_Computing/4-云计算厂商/IBMCloud.md)
+  * [4.9 IBMCloud](Cloud_Computing/4-云计算厂商/IBMCloud.md)
 * [第5章 云计算组件](Cloud_Computing/5-云计算组件/5-云计算组件.md)
   * 5.1 计算组件
   * 5.2 网络组件
