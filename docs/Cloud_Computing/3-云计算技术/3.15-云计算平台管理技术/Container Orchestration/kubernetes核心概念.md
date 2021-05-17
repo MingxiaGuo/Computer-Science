@@ -4,7 +4,7 @@ Kubernetes，从官方网站上可以看到，它是一个工业级的容器编�
 
 Kubernetes 为什么要用“舵手”来命名呢？大家可以看一下这张图：
 
-<img src="../assets/轮船.png" style="zoom:50%;" />
+<img src="../../../assets/轮船.png" style="zoom:50%;" />
 
 这是一艘载着一堆集装箱的轮船，轮船在大海上运着集装箱奔波，把集装箱送到它们该去的地方。我们之前其实介绍过一个概念叫做 container，container 这个英文单词也有另外的一个意思就是“集装箱”。Kubernetes 也就借着这个寓意，希望成为运送集装箱的一个轮船，来帮助我们管理这些集装箱，也就是管理这些容器。
 
@@ -29,7 +29,7 @@ Kubernetes 为什么要用“舵手”来命名呢？大家可以看一下这张
 
 ### 1、调度
 
-<img src="../assets/调度.png" style="zoom:50%;" />
+<img src="../../../assets/调度.png" style="zoom:50%;" />
 
 Kubernetes 可以把用户提交的容器放到 Kubernetes 管理的集群的某一台节点上去。Kubernetes 的调度器是执行这项能力的组件，它会观察正在被调度的这个容器的大小、规格。 
 
@@ -37,7 +37,7 @@ Kubernetes 可以把用户提交的容器放到 Kubernetes 管理的集群的某
 
 ###  2、自动修复
 
-<img src="../assets/自动修复.png" style="zoom:50%;" />
+<img src="../../../assets/自动修复.png" style="zoom:50%;" />
 
 Kubernetes 有一个节点健康检查的功能，它会监测这个集群中所有的宿主机，当宿主机本身出现故障，或者软件出现故障的时候，这个节点健康检查会自动对它进行发现。 
 
