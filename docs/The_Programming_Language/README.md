@@ -2,7 +2,7 @@
 * [Introduction](INTRODUCTION.md)
 * [C](C/README.md)
 * [python](python/readme.md)
-* [golang](golang/readme.md)
+* [go](go/readme.md)
 * java
 
 计算机语言发展史：

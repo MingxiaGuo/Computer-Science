@@ -63,4 +63,3 @@ Go的中文邮件组为http://groups.google.com/group/golang-china
 
 Go mindmap: https://github.com/gocn/knowledge
 
-

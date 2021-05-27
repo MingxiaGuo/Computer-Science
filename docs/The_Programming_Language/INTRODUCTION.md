@@ -1,4 +1,4 @@
-编程语言：一组用来定义计算机程序的语法规则。它是一种被标准化的交流语言，用来向计算机发出指令。一种计算机语言 让程序员能够准确地 定义计算机所需要使用的数据，并精确地定义在不同情况下所应当采取的行动。
+[编程语言](https://www.wikiwand.com/en/Programming_language)：一组用来定义计算机程序的语法规则。它是一种被标准化的交流语言，用来向计算机发出指令。一种计算机语言 让程序员能够准确地 定义计算机所需要使用的数据，并精确地定义在不同情况下所应当采取的行动。
 
 Programming  Language enable users to write programs for specific computations/algorithms.
 
@@ -18,11 +18,24 @@ Programming  Language enable users to write programs for specific computations/a
 * 函数式编程
 * 面向消息编程
 
-语言类型
-* 静态类型开发语言
-* 动态类型开发语言
-* 编译型语言
-* 解析型语言
+[语言类型](https://www.wikiwand.com/en/Type_system#/Dynamic_type_checking_and_runtime_type_information)
+
+* [静态类型开发语言](https://zhuanlan.zhihu.com/p/66383937): 编译时变量的数据类型就可以确定的语言
+* 动态类型开发语言: 运行时才确定数据类型的语言
+* [编译型语言](https://www.wikiwand.com/en/Compiled_language):  其实现通常是编译器(从源代码生成机器码的翻译器)，而不是解释器(源代码的逐步执行器，其中不发生运行前翻译)。
+* [解析型语言](https://www.wikiwand.com/zh/%E7%9B%B4%E8%AD%AF%E8%AA%9E%E8%A8%80)
+
+
+
+[盘点最常见的5个编程语言排行榜、排名逻辑&最新榜单](https://blog.csdn.net/MOY37RQW1JarN33BgZk/article/details/83044275)
+
+* Tobie排行榜: https://www.tiobe.com/tiobe-index/
+
+动态语言和静态语言：
+
+单机时代：C语言，随着机器性能的提升、软件规模与复杂度的提 高，Java逐步取代了C的位置。尽管看起来Java已经深获人心，但Java编程的体验并未尽如人意。
+
+互联网时代：Go，Go语言希望取代C和Java的地位，成为最流行的通用开发语言。Go希望成为互联网时代的C语言
 
 ### 编程语言发展的编年史
 
@@ -146,5 +159,4 @@ Programming  Language enable users to write programs for specific computations/a
 * Buffer Overflow
 
 * Insufficient Input Validation
-
 

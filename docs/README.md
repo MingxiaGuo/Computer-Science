@@ -86,8 +86,9 @@
   * 百度云   
 * Terminal
   * [iTerm2 for MacOS](https://www.iterm2.com/index.html)
-* Github Pages: [docsify](https://docsify.js.org/#/?id=docsify)
 * [Logo](https://logomakr.com)
+* Blog framework: [Hexo](https://hexo.io/)
+* Documentation framework: [docsify](https://docsify.js.org/#/?id=docsify)
 
 ## Book
 
