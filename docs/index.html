@@ -44,6 +44,7 @@
 
 <body>
     <div id="app"></div>
+    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
     <script>
         window.$docsify = {
             maxAge: 100,
@@ -90,7 +91,10 @@
                 nextText: '下一章节',
                 // crossChapter: true,
                 // crossChapterText: true,
-            }
+            },
+	    plugins: [
+	      EditOnGithubPlugin.create('https://github.com/MingxiaGuo/Computer-Science/blob/master/docs/')
+	    ]
         }
     </script>
     <!-- <script src="//unpkg.com/docsify"></script> -->
