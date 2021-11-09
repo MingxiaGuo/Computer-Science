@@ -14,8 +14,8 @@ IT行业定律:
 
 ---
 * Summary
-  * [Map of Computer Science](Computer_Science_an_Overview/Map-of-Computer-Science.md)
-  * [Crash Course Computer Science](Computer_Science_an_Overview/Crash-Course-Computer-Science/README.md)
+  * [Map of Computer Science](Crash-Course-Computer-Science/Map-of-Computer-Science.md)
+  * [Crash Course Computer Science](Crash-Course-Computer-Science/README.md)
 
 * Book
    * [Computer Science An Overview 12th](../../Book/Computer.Science.An.Overview.Global.Edition.12th.Edition.(2014).pdf)
