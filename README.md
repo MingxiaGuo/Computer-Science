@@ -33,14 +33,13 @@
    * [Introduction to algorithms: fall 2005](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm)
 * CMU
    * google: CMU15XXX 或者 CMU10XXX，15是计算机系，10是机器学习系
-   * [Introduction to Computer Systems](http://www.cs.cmu.edu/~213/)
+
    * [Machine Learning](http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml)
 * SU
    * [Convex Optimization](http://web.stanford.edu/class/ee364a/index.html) [Youtube](https://www.youtube.com/watch?v=McLq1hEq3UY&list=PL3940DD956CDF0622)
 * UCB
    * [Intro to AI](http://ai.berkeley.edu/home.html)
-* Crash Course
-   * [计算机科学速成课[Crash Course Computer Science]——YouTube-> Bilibili](https://www.bilibili.com/video/av21376839?from=search&seid=9162856292795471868)
+
 * coursera
    [机器学习基石](https://www.coursera.org/learn/ntumlone-mathematicalfoundations/lecture/wPics/course-introduction)
 * edx
