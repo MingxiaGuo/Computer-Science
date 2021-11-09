@@ -62,29 +62,7 @@
 * [Formatter: Well indented code always makes people feel better. Astyle is one of the tool I used a lot](http://astyle.sourceforge.net/astyle.html)
 
 
-## Tools
-* Mindmap
-  * xmind
-  * [processon](https://www.processon.com/diagrams)
-  * [COOGLE]()
-* Note
-  * github
-  * evernote
-* Reading
-  * marginnote [1](https://sspai.com/post/47317) [2](https://sspai.com/post/54005)
-* Editors
-   * [VIM](https://www.vim.org/): The simplest but one of the most professional editor.
-   * [Emacos](https://www.gnu.org/software/emacs/): One of the biggest competitor to VIM
-   * [VSCode](https://github.com/Microsoft/vscode): f you want a fancy GUI, Microsoft did a good job.
-   * A list of all editors: 
-      * Editors ranked according to their popularity:https://www.slant.co/topics/12/~best-programming-text-editors
-* Disk
-  * [坚果云](https://www.jianguoyun.com/d/home#/)
-  * 百度云   
-* Terminal
-   * [iTerm2 for MacOS](https://www.iterm2.com/index.html)
-* Github Pages: [docsify](https://docsify.js.org/#/?id=docsify)
-* [Logo](https://logomakr.com)
+
 ## Book
 * [豆瓣推荐](https://book.douban.com/subject_search?search_text=%E8%AE%A1%E7%AE%97%E6%9C%BA&cat=1001) 
 * [买书](http://search.china-pub.com/s/?key1=%C9%EE%C8%EB%C0%ED%BD%E2%BC%C6%CB%E3%BB%FA%D3%A2%CE%C4&type=&pz=1)
