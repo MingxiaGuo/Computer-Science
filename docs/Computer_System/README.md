@@ -8,6 +8,9 @@
 
 编码：通常将为了便于计算机处理而经过数字化处理的信息称作编码。计算机内部会把所有信息当成数字处理，尽管有些信息本来不是数字。用于表示字符的数字是“字符编码”，用来表述颜色的数字是“颜色编码”。
 
+
+[First Chapter](chapter1.md)
+
 ## Reference
 * Book
   * CSAPP: Computer system A Programmer's perspective
@@ -17,6 +20,7 @@
   * [Introduction to computer architecture](http://users.ece.cmu.edu/~jhoe/doku/doku.php?id=18-447_introduction_to_computer_architecture)
   * [Build a Modern Computer from First Principles: Nand to Tetris Part I (hardware project)](https://www.coursera.org/learn/build-a-computer?utm_source=ZHShareTargetIDMore&utm_medium=social&utm_oi=27831115448320) -> book:The Elements of Computing Systems(chater1-6); website https://www.nand2tetris.org/
   * [Build a Modern Computer from First Principles: Nand to Tetris Part II (software project)](https://www.coursera.org/learn/nand2tetris2) -> book:The Elements of Computing Systems(chater7-12);website: https://www.nand2tetris.org/
+  * [NandGame ---- Build a computer from scratch](https://nandgame.com)
   * [Stanford CS107 Computer Organization & Systems](http://web.stanford.edu/class/cs107/) ->Book: CSAPP 偏软
   * [CMU 15-213 Introduction to Computer Systems](http://www.cs.cmu.edu/~213/) -> Book: CSAPP 偏软
   * [Berkeley CS61C Great Ideas in Computer Architecture(Machine Structures)](https://inst.eecs.berkeley.edu/~cs61c/fa20/) -> Book: COD
@@ -25,5 +29,4 @@
 course=class+homework+project(lab)+quiz(not graded)+exam
 
 
-[First Chapter](chapter1.md)
 
