@@ -24,6 +24,8 @@
 
 ## awesome guide:
 * [macos setup guide](https://sourabhbajaj.com/mac-setup/)
+* [Awesome OpenSource](https://awesomeopensource.com/)
+* [Learn anything](https://learn-anything.xyz/)
 
 ## Open Course
 * [美国计算机名校例如MIT ，CMU ，有哪些公认的好课并且有课程讲义的，适合国内学生自学的？](https://www.zhihu.com/question/57532048)
