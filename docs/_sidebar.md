@@ -1,6 +1,6 @@
 * [Contents](./?id=contents)
+* [awesome guide:](./?id=awesome-guide)
 * [Open Course](./?id=Open-course)
 * [website](./?id=website)
 * [website | social_eminence](./?id=website-social_eminence)
-* [Tools](./?id=tools)
 * [Book](./?id=book)
