@@ -4,6 +4,7 @@
 
 * Linear Algebra
     * MIT 18.06  Linear Algebra, Spring 2005: [MIT](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/);[bilibili](https://www.bilibili.com/video/av15463995?from=search&seid=13397969681830042332) ;[网易公开课](http://open.163.com/special/opencourse/daishu.html) ;[Youtube](https://www.youtube.com/watch?v=ZK3O402wf1c&list=PLE7DDD91010BC51F8)
+    * [Linear Algebra: spring 2010](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm)
     * [Immersive linear algebra](http://immersivemath.com/ila/index.html)
     
     * [MIT Linear Algebra: spring 2010](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm)

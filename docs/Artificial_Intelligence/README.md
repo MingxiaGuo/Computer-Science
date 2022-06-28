@@ -19,21 +19,19 @@
 * Deep Learning by MIT: [official website](http://www.deeplearningbook.org); [中文](https://github.com/exacity/deeplearningbook-chinese); [英文](https://github.com/daviddao/deep-learning-book)
 
 # Open Course
-
 * [CMU: Machine Learning](http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml)
-
-* [Intro to AI by UC Berkeley](http://ai.berkeley.edu/home.html)
-* [机器学习课程-吴恩达: Stanford CS229](http://open.163.com/special/opencourse/machinelearning.html): [online resource](http://cs229.stanford.edu/)
-* coursera 机器学习基石：[上](https://www.coursera.org/learn/ntumlone-mathematicalfoundations/lecture/wPics/course-introduction) [下]()
-* 机器学习技巧
+* [Berkeley: Intro to AI](http://ai.berkeley.edu/home.html)
+* [Stanford: CS229 机器学习课程-吴恩达](http://open.163.com/special/opencourse/machinelearning.html): [online resource](http://cs229.stanford.edu/)
+* [机器学习基石](https://www.coursera.org/learn/ntumlone-mathematicalfoundations/lecture/wPics/course-introduction) 
+* [机器学习技巧]()
 * [李宏毅2017机器学习](https://www.bilibili.com/video/av10590361?from=search&seid=8726738433477857991)
 * [李宏毅2019机器学习](https://www.bilibili.com/video/av35932863?from=search&seid=8726738433477857991)
-
-* [Deep Learning Fundamentals: August 23, 2017--Cognitive class.ai, ML0115EN,IBM](https://cognitiveclass.ai/courses/introduction-deep-learning/)
-* [Convolutional Neural Networks for Visual Recognition: Stanford CS231n](http://cs231n.stanford.edu/) [笔记](https://blog.csdn.net/CV_YOU/article/details/77888010) [课堂讲义](https://cs231n.github.io/) [YouTube](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv) [Bilibili](http://www.bilibili.com/video/av13260183/#page=1) [中文字幕](https://study.163.com/course/introduction.htm?courseId=1004697005&_trace_c_p_k2_=e948a812b07a4215a459530a19f1ac01)
-* [Tensorflow for Deep Learning Research: Stanford cs20si](http://web.stanford.edu/class/cs20si/)
 * [李宏毅2017深度学习](https://www.bilibili.com/video/av9770302?from=search&seid=8726738433477857991)
 [PPT](https://www.jianshu.com/p/581aff7d554a) [offical web](http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLDS17.html)
+* [Deep Learning Fundamentals: August 23, 2017--Cognitive class.ai, ML0115EN,IBM](https://cognitiveclass.ai/courses/introduction-deep-learning/)
+* [Stanford: CS231n Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/) [笔记](https://blog.csdn.net/CV_YOU/article/details/77888010) [课堂讲义](https://cs231n.github.io/) [YouTube](https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv) [Bilibili](http://www.bilibili.com/video/av13260183/#page=1) [中文字幕](https://study.163.com/course/introduction.htm?courseId=1004697005&_trace_c_p_k2_=e948a812b07a4215a459530a19f1ac01)
+* [Stanford: cs20si Tensorflow for Deep Learning Research](http://web.stanford.edu/class/cs20si/)
+
 * CS131: Computer Vision: Foundations and Applications
 – Fall 2018, Juan Carlos Niebles and Ranjay Krishna
 – Undergraduate introductory class
@@ -49,7 +47,8 @@ scene understanding; not just deep learning
 * CS231n: Convolutional Neural Networks for Visual Recognition
 – This course, Justin Johnson & Serena Yeung & Fei-Fei Li
 – Focusing on applications of deep learning to computer vision
-
+* [CMU: 10701 Machine Learning](http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml)
+* 
 # video
 * [DeepLearning.TV](https://www.youtube.com/watch?time_continue=33&v=b99UVkWzYTQ)
 
