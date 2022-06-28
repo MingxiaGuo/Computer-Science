@@ -26,9 +26,6 @@ Each bit position can be accessed individually: for example, for a given bitset 
 
 从而达到写算法时能根据实际问题实现最有效的时间─空间折中与双赢。
 
-**    
-**
-
 \(3\)位图数据结构的实现
 
 （a）比特的编号机制
@@ -56,7 +53,7 @@ Each bit position can be accessed individually: for example, for a given bitset 
         }  
         return 0;  
     }  
-    
+
 输出结果如下图所示
 
 ![](http://img.blog.csdn.net/20170611132807503?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzM1OTI1ODM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)

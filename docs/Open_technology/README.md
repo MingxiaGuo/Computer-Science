@@ -9,6 +9,7 @@ Special Interest Groups (SIG)：https://github.com/kubernetes/community/blob/mas
 
 Communications：
 社区沟通方式,不同的沟通方式有不同的中点，了解不同方式的特点，使用合适的工具沟通。这里是常用的工具，沟通的方式当然不限于此。
+
 * [Google Docs](https://docs.google.com/)
 * [Google论坛](https://groups.google.com/)
 * [Slack](https://kubernetes.slack.com/)

@@ -1,5 +1,38 @@
 # The GO Programming Language
 
+- golang - [A Tour of Gohttps://tour.golang.org/](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwierJvygubfAhXupVkKHboyCv8QFjAAegQIChAB&url=https%3A%2F%2Ftour.golang.org%2F&usg=AOvVaw1_8r9p82VJ6ungPMSEYhqa)
+
+---
+
+语言层面解决软件工程问题的设计哲学： 
+
+* 不得包含在源代码文件中没有用到的包，否则Go编译器会报编译错误。
+* 强制左花括号{的放置位置
+* 函数名的大小写规则，
+
+与C语言相比，Go语言摒弃了语句必须以分号作 为语句结束标记的习惯。
+
+编译环境准备： https://go.dev/doc/install
+
+Go集成开发环境(IDE)：VSCode
+
+问题追踪和调试
+
+工程管理
+
+
+
+Doc: https://go.dev/doc/
+
+* Download and Install Go: https://go.dev/doc/install
+
+* The Go Programming Language Specification: https://go.dev/ref/spec
+* Tutorial: Get started with Go: https://go.dev/doc/tutorial/getting-started
+
+* [Tour of Go](https://go.dev/tour/)
+* [How to Write Go Code](https://go.dev/doc/code.html)
+* Effective Go: https://go.dev/doc/effective_go
+
 ## Contents
 * [初识GO](1.初识Go.md)
 * [顺序编程](2.顺序编程.md)

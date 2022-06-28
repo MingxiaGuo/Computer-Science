@@ -1,83 +1,26 @@
 # Operating System
 
- 操作系统是计算机系统配置的基本软件之一。它在整个计算机系统软件中占有中心地位。操作系统质量的好坏，直接影响整个计算机系统的性能和用户对计算机的使用。一个精心设计的操作系统能极大地扩充计算机系统的功能，充分发挥系统中各种设备的使用效率，提高系统工作的可靠性。操作系统的作用是对计算机系统进行统一的调度和管理，提供各种强有力的系统服务，为用户创造既灵活又方便的使用环境。操作系统是所有其他软件与计算机硬件的唯一接口，所有用户在使用计算机时都要得到操作系统提供的服务。
+* Book
 
-**操作系统是目前最复杂的软件成分**
+  * 《Operating System Concepts》 ——Abraham Silberschatz/Peter B. Galvin/Greg Gagne
+  * 《Modern Operating Systems》—— Andrew S. Tanenbaum
+  * 《The MINUX book -- Operating Systems Design and Implementation》—— Andrew S. Tanenbaum
+* opencourse
 
-操作系统的工作：
-* 程序的执行
-    * 负责启动每个程序，以及结束程序的工作。
-* 完成与硬件有关的工作。
-* 完成与应用无关的工作。
-    * 易于使用，基本服务，统一性
-* 计算机系统的效率与安全问题
-* 高级程序设计语言的编译不是OS关心的主要问题
+  * [MIT 6.828 Operating System Engineering](https://pdos.csail.mit.edu/6.828/2014/schedule.html)
+  * [清华大学操作系统课程](https://github.com/chyyuu/os_course_info)
 
-功能：硬件抽象和协调管理
-
-
-先修课程：
-* C语言
-* 汇编语言
-* 计算机组成原理
-* 数据结构 
-
-
-materials:
-* [MIT 6.828 Operating System Engineering](https://pdos.csail.mit.edu/6.828/2014/schedule.html)
-
-* [清华大学操作系统课程](https://github.com/chyyuu/os_course_info)
     * [wiki](http://os.cs.tsinghua.edu.cn/oscourse/OS2015)
     * [学堂在线](https://www.xuetangx.com/courses/TsinghuaX/30240243X/2015_T1/about)
     * [在线交流](https://piazza.com/tsinghua.edu.cn/spring2015/30240243x/home)
     * [bilibili video](https://www.bilibili.com/video/av6538245/)
+  * 南京大学计算机操作系统
 
-* 南京大学计算机操作系统
-   * [coursera](https://www.coursera.org/learn/jisuanji-caozuo-xitong#reviews)
-   
+    * [coursera](https://www.coursera.org/learn/jisuanji-caozuo-xitong#reviews)
 * website
-   * [鸟哥的Linux私房菜](http://linux.vbird.org)
-   * [Linux中国](https://linux.cn)
-   * [实验楼](https://www.shiyanlou.com):有Linux在线开发环境
-   * [Linux下载站](http://www.linuxdown.net)
-   * [Linux公社](https://www.linuxidc.com)
 
-
-# Contents
-
-* [Introduction](INTRODUCTION.md)
-* 第一章 操作系统引论
-  * [1.1 操作系统目标和作用](1.1-操作系统目标和作用.md)
-  * [1.2 操作系统发展过程](1.2-操作系统发展过程.md)
-  * [1.3 操作系统内核的基本特性](1.3-操作系统的基本特性.md)
-  * [1.4 操作系统的主要功能](1.4-操作系统的主要功能.md)
-  * [1.5 操作系统结构设计](1.5-操作系统结构设计.md)
-  * [1.6 操作系统的硬件环境](1.6-操作系统的硬件环境.md)
-  * [1.7 操作系统实例](1.7-操作系统实例.md)
-* 第二章 进程管理
-  * [2.1 进程的基本概念](2.1-进程的基本概念.md)
-  * [2.2 进程控制](2.2-进程控制.md)
-  * [2.3 进程同步](2.3-进程同步.md)
-    * [2.3.1 进程同步的基本概念](2.3.1-进程同步的基本概念.md)
-    * [2.3.2 临界资源锁机制--解决进程互斥](2.3.2-临界资源锁机制--解决进程互斥.md)
-    * [2.3.3 进程同步的信号量机制](2.3.3-进程同步的信号量机制.md)
-  * [2.4 经典进程的同步问题](2.4-经典进程的同步问题.md)
-  * [2.5 进程通信](2.5-进程通信.md)
-  * [2.6 线程](2.6-线程.md)
-* [第三章 处理机调度与死锁](第三章-处理机调度与死锁.md)
-* [第四章 存储器管理](第四章-内存管理.md)
-* [第五章 设备管理](di-wu-zhang-she-bei-guan-li.md)
-* [第六章 文件管理](6-文件管理.md)
-  * [6.1 文件系统的概念](6.1-文件系统的概念.md)
-  * 6.2 文件的逻辑结构
-  * 6.3 文件的存取方法
-  * 6.4 文件的物理结构
-  * 6.5 文件存储空间管理
-  * 6.6 文件目录
-  * 6.7 文件共享和保护
-  * [6.8 文件的完整性](6.8-文件的完整性.md)
-* [第七章 操作系统接口](7-操作系统接口.md)
-  * [7.1 联机命令接口](7.1-联机命令接口.md)
-  * [7.2 系统调用(程序接口)](7.2-系统调用程序接口.md)
-  * [7.3 图形用户接口](7.3-图形用户接口.md)
-* [第八章 Linux](8-linux.md)
+  * [鸟哥的Linux私房菜](http://linux.vbird.org)
+  * [Linux中国](https://linux.cn)
+  * [实验楼](https://www.shiyanlou.com):有Linux在线开发环境
+  * [Linux下载站](http://www.linuxdown.net)
+  * [Linux公社](https://www.linuxidc.com)

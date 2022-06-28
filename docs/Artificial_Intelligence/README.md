@@ -19,9 +19,12 @@
 * Deep Learning by MIT: [official website](http://www.deeplearningbook.org); [中文](https://github.com/exacity/deeplearningbook-chinese); [英文](https://github.com/daviddao/deep-learning-book)
 
 # Open Course
-* [Intro to AI by Berkeley](http://ai.berkeley.edu/home.html)
+
+* [CMU: Machine Learning](http://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml)
+
+* [Intro to AI by UC Berkeley](http://ai.berkeley.edu/home.html)
 * [机器学习课程-吴恩达: Stanford CS229](http://open.163.com/special/opencourse/machinelearning.html): [online resource](http://cs229.stanford.edu/)
-* 机器学习基石：[上](https://www.coursera.org/learn/ntumlone-mathematicalfoundations/lecture/wPics/course-introduction) [下]()
+* coursera 机器学习基石：[上](https://www.coursera.org/learn/ntumlone-mathematicalfoundations/lecture/wPics/course-introduction) [下]()
 * 机器学习技巧
 * [李宏毅2017机器学习](https://www.bilibili.com/video/av10590361?from=search&seid=8726738433477857991)
 * [李宏毅2019机器学习](https://www.bilibili.com/video/av35932863?from=search&seid=8726738433477857991)
@@ -88,14 +91,12 @@ scene understanding; not just deep learning
 | 3.3 Data processing knowledge	| <li>数据清洗 <li>特征工程(PCA, SVD, ICA) | 后续追加推荐资料, Selective skill based on job role |
 | 3.4 R, Python programming |待完善 | Selective skill based on job role |
 | 4 DL Framework Integration |||
-| 4.1 Deep Knowledge of DL framework and mathematic lib such as xgboost, blas, scikit-learn|<li>Keras Tutorials: https://www.datacamp.com/community/tutorials/deep-learning-python
-https://elitedatascience.com/keras-tutorial-deep-learning-in-python <li>[CaffeOnSpark](https://github.com/yahoo/CaffeOnSpark) <li>[TensorFlow](https://www.tensorflow.org/guide/)| Selective skill based on job role|
-
-| 4.2 R, Python, Java and c++ programming| 	Cuda/cuDNN	| Selective skill based on job role |
+| 4.1 Deep Knowledge of DL framework and mathematic lib such as xgboost, blas, scikit-learn|<li>Keras Tutorials: https://www.datacamp.com/community/tutorials/deep-learning-python <li>https://elitedatascience.com/keras-tutorial-deep-learning-in-python <li>[CaffeOnSpark](https://github.com/yahoo/CaffeOnSpark) <li>[TensorFlow](https://www.tensorflow.org/guide/)| Selective skill based on job role|
+| 4.2 R, Python, Java and c++ programming| 	Cuda/cuDNN	| Selective skill based on job role|
 | 5. Development Skill ||
 | 5.1 R, Python, Java and c++ and GUI programming skill|待完善| Selective skill based on job role|
-| 5.2 Network programming skill|[Unix network programming v3](https://item.jd.com/11728741.html)
-[RDMA](http://www.mellanox.com/related-docs/prod_software/RDMA_Aware_Programming_user_manual.pdf)|Selective skill based on job role|
+| 5.2 Network programming skill|<li>[Unix network programming v3](https://item.jd.com/11728741.html) 
+<>[RDMA](http://www.mellanox.com/related-docs/prod_software/RDMA_Aware_Programming_user_manual.pdf)|Selective skill based on job role|
 | 5.3 OS knowledge | <li>[Linux 101](http://linux.101hacks.com) <li>[A Road Map for LPIC-1](https://developer.ibm.com/tutorials/l-lpic1-map/) <li>[Linux documentation project](http://www.tldp.org) | Selective skill based on job role|
 | 5.4 Spark programming knowledge| Spark - RDD, Spark SQL, pyspark, sparkR: http://spark.apache.org/examples.html http://spark.apache.org/docs/latest/sql-programming-guide.html http://spark.apache.org/docs/latest/sparkr.html | Selective skill based on job role|
 |5.5 Performance tuning skill| [Power Performance tuning](http://w3.itso.ibm.com/abstracts/sg248171.html?Open) |Selective skill based on job role|

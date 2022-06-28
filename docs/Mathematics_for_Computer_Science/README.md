@@ -1,9 +1,12 @@
 # Mathematics for Computer Science
 
+编程的基础是计算机科学，计算机科学的基础是数学
+
 * Linear Algebra
     * MIT 18.06  Linear Algebra, Spring 2005: [MIT](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/);[bilibili](https://www.bilibili.com/video/av15463995?from=search&seid=13397969681830042332) ;[网易公开课](http://open.163.com/special/opencourse/daishu.html) ;[Youtube](https://www.youtube.com/watch?v=ZK3O402wf1c&list=PLE7DDD91010BC51F8)
-
     * [Immersive linear algebra](http://immersivemath.com/ila/index.html)
+    
+    * [MIT Linear Algebra: spring 2010](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm)
 * Probability and Information Theory
 * Numerical Computation
 
@@ -27,8 +30,7 @@ video
 * 数学地图：[bilibili](https://www.bilibili.com/video/av9208524?from=search&seid=15485865071546240272)，[youtube](https://www.youtube.com/watch?v=OmJ-4B-mS-Y&list=PLOYRlicwLG3St5aEm02ncj-sPDJwmojIS&index=2)
 * 物理地图：[bilibili](https://www.bilibili.com/video/av9206164?from=search&seid=8874245310149466695)，[youtube](https://www.youtube.com/watch?v=ZihywtixUYo&list=PLOYRlicwLG3St5aEm02ncj-sPDJwmojIS&index=1)
 
-Tool
-* [immersivemath: linear algebra](http://immersivemath.com/ila/index.html)
+
 
 Content
 

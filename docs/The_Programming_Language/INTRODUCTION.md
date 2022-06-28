@@ -25,7 +25,7 @@ Programming  Language enable users to write programs for specific computations/a
 * [编译型语言](https://www.wikiwand.com/en/Compiled_language):  其实现通常是编译器(从源代码生成机器码的翻译器)，而不是解释器(源代码的逐步执行器，其中不发生运行前翻译)。
 * [解析型语言](https://www.wikiwand.com/zh/%E7%9B%B4%E8%AD%AF%E8%AA%9E%E8%A8%80)
 
-
+klk,,
 
 [盘点最常见的5个编程语言排行榜、排名逻辑&最新榜单](https://blog.csdn.net/MOY37RQW1JarN33BgZk/article/details/83044275)
 
@@ -33,9 +33,17 @@ Programming  Language enable users to write programs for specific computations/a
 
 动态语言和静态语言：
 
-单机时代：C语言，随着机器性能的提升、软件规模与复杂度的提 高，Java逐步取代了C的位置。尽管看起来Java已经深获人心，但Java编程的体验并未尽如人意。
+单机时代：C语言，随着**机器性能的提升、软件规模与复杂度的提高**，Java逐步取代了C的位置。尽管看起来Java已经深获人心，但Java编程的体验并未尽如人意。
 
 互联网时代：Go，Go语言希望取代C和Java的地位，成为最流行的通用开发语言。Go希望成为互联网时代的C语言
+
+多数系统级语言（包括Java和C#）的根本编程哲学来源于C++，将C++面向对象进一步发扬光大。
+
+C语言经久不衰的根源是它**足够简单**。
+
+互联网时代的语言需要考虑的关键问题：1.并行与分布式支持(容易地操作多核计算机和计算机集群) 2. 软件工程支持 3. 编程哲学的重塑
+
+语言层面解决软件工程问题的设计哲学
 
 ### 编程语言发展的编年史
 
@@ -70,7 +78,7 @@ Programming  Language enable users to write programs for specific computations/a
 * 1970 – Pascal 
 * 1970 – Forth
 ---
-* 1972 – C
+* 1972 – C  (2000年前单机时代的编程之王)
 * 1972 – Smalltalk
 * 1972 – Prolog
 * 1973 – ML

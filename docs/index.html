@@ -19,8 +19,7 @@
                 background-color: #f3f2ee;
             }
         }
-        
-        ,
+
         .content,
         .sidebar,
         .markdown-section,
@@ -30,7 +29,7 @@
         }
         /*Custom theme styles */
         
-         :root {
+        :root {
             /*--base-font-size: 14px;*/
             /*--theme-color   : #f7c241; 黄色*/
             --theme-color: #eb9f9f;
@@ -39,12 +38,24 @@
             --cover-background-color: #f1bbba;
         }
     </style>
-
 </head>
 
 <body>
     <div id="app"></div>
     <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+
+    <!-- mindmap -->
+    <!-- <script src="//cdn.jsdelivr.net/npm/d3@6"></script>
+    <script src="//cdn.jsdelivr.net/npm/markmap-view"></script> -->
+
+    <script src="//unpkg.com/d3@3/d3.min.js"></script> -->
+    <script src="//unpkg.com/markmap@0.6.1/lib/d3-flextree.js"></script>
+    <script src="//unpkg.com/markmap@0.6.1/lib/view.mindmap.js"></script>
+    <link rel="stylesheet" href="//unpkg.com/markmap@0.6.1/style/view.mindmap.css">
+
+  
+
+  
     <script>
         window.$docsify = {
             maxAge: 100,
@@ -65,36 +76,44 @@
             autoHeader: true,
             loadNavbar: true,
             formatUpdated: '{MM}/{DD} {HH}:{mm}',
-            formatUpdated: function(time) {
-                // ...
+            // formatUpdated: function(time) {
+            //     // ...
 
-                return time;
-            },
-            markdown: {
-                smartypants: true,
-                renderer: {
-                    code: function(code, lang) {
-                        mermaid.initialize({
-                            startOnLoad: false
-                        });
-                        if (lang === "mermaid") {
-                            return (
-                                '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
-                            );
-                        }
-                        return this.origin.code.apply(this, arguments);
-                    }
-                }
-            },
+            //     return time;
+            // },
+            // markdown: {
+            //     smartypants: true,
+            //     renderer: {
+            //         code: function(code, lang) {
+            //             mermaid.initialize({
+            //                 startOnLoad: false
+            //             });
+            //             if (lang === "mermaid") {
+            //                 return (
+            //                     '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
+            //                 );
+            //             }
+            //             return this.origin.code.apply(this, arguments);
+            //         }
+            //     }
+            // },
             pagination: {
                 previousText: '上一章节',
                 nextText: '下一章节',
                 // crossChapter: true,
                 // crossChapterText: true,
             },
-	    plugins: [
-	      EditOnGithubPlugin.create('https://github.com/MingxiaGuo/Computer-Science/blob/master/docs/')
-	    ]
+            mindmap: {
+                // https://github.com/dundalek/markmap
+                markmap: {
+                    preset: 'colorful', // or default
+                    linkShape: 'diagonal' // or bracket
+                }
+            },
+	        plugins: [
+	            EditOnGithubPlugin.create('https://github.com/MingxiaGuo/Computer-Science/blob/master/docs/')
+	        ]
+
         }
     </script>
     <!-- <script src="//unpkg.com/docsify"></script> -->
@@ -104,6 +123,14 @@
     <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
     <script src="//unpkg.com/docsify-copy-code"></script>
     <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+    <!-- <script src="//unpkg.com/markmap@0.6.1/lib/d3-flextree.js"></script>
+    <script src="//unpkg.com/markmap@0.6.1/lib/view.mindmap.js"></script>
+    <link rel="stylesheet" href="//unpkg.com/markmap@0.6.1/style/view.mindmap.css">
+    <script src="//unpkg.com/docsify-mindmap/dist/docsify-mindmap.min.js"></script> -->
+    <script src="//unpkg.com/docsify-mindmap/dist/docsify-mindmap.min.js"></script>
+
+
 </body>
 
 </html>

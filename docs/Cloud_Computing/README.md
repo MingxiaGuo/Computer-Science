@@ -1,15 +1,9 @@
 # Cloud Computing
 
-[SUMMARY](SUMMARY.md)
-
-[rootsongjc/awesome-cloud-native](https://github.com/rootsongjc/awesome-cloud-native)
+[Awesome Cloud Native](https://github.com/rootsongjc/awesome-cloud-native)
 
 [Technical Skill Development Recommendation - Cloud](https://w3-connections.ibm.com/forums/html/topic?id=6552b0a7-a559-4766-ae63-a9df2b839488&ps=)
-
-虚拟化，openstack、KVM
 云计算的虚拟资源层，Iaas云管理层，paas各个平台服务层次
-
-kvm xen dokcer openstack cloudfoundry ceph sdn等云计算关键技术
 计算、存储、网络虚拟化的技术发展和应用
 nfv，公有云，私有云，混合云的架构、部署、应用场景
 sdn，nfv 云存储 云计算的部署和运维
@@ -23,13 +17,11 @@ sdn，nfv 云存储 云计算的部署和运维
 * Docker：容器引擎，https://docs.docker.com/
 * Kubernetes：容器云平台，https://kubernetes.io/docs/
 * ansible
+* 虚拟化： KVM， xen， docker 
+*  cloudfoundry ceph sdn
 
 
 runc: https://github.com/opencontainers/runc
-
-docker -- 从入门到实践 https://yeasy.gitbooks.io/docker_practice/introduction/why.html
-
-
 
 [Cloud Native Landscape](https://github.com/cncf/landscape)
 
@@ -42,12 +34,11 @@ docker -- 从入门到实践 https://yeasy.gitbooks.io/docker_practice/introduct
 [《云计算基础架构及关键应用》 陆平 著](https://www.zhihu.com/pub/reader/119568860)
 《腾云：云计算和大数据时代网络技术揭秘》徐立冰著
 《云计算基础架构及关键应用》
+《docker -- 从入门到实践》 https://yeasy.gitbooks.io/docker_practice/introduction/why.html
 
 # Curriculum
 
 * [阿里云原生技术课程](https://edu.aliyun.com/roadmap/cloudnative)
-
-
 
 
 
@@ -78,10 +69,4 @@ Security Certification
     * 云计算的产品和服务形态非常适合新时代的 B 端需要，订阅制和 Pay-as-you-go 的计费方式大幅降低了客户的进入门槛，而技术基础设施架构方面的稳定性需要又带来了较高的客户粘性，再加上多租户高密度数据中心所能带来的规模效应，这些因素使得云计算能够成为一门好的生意，对应着一个极佳的 B 端商业模式。这三者缺一不可，共同促成了云计算的兴起与繁荣，也吸引了不计其数的业界精英投入其中，是为云计算取之不竭的源动力
 
 -----
-
-A short history of cloud
-
-![](assets/a-short-history-of-cloud.png)
-
-
 
