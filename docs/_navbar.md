@@ -6,7 +6,7 @@
     * [Computer Network](Computer_Network/README.md) 
     * [Algorithm & Data Structure](Algorithm-Data_Structure/README.md)
     * [Algorithm Practice](Algorithm_Practice/README.md)
-    * [The Programming Language](The_Programming_Language/README.md) 
+    * [Computer Language](Computer_Language/README.md) 
     * [Artificial Intelligence](Artificial_Intelligence/README.md)
     * [Big Data](Big_Data/README.md)
     * [Cloud Computing](Cloud_Computing/README.md) 

@@ -2,7 +2,7 @@
 * [Mathematics for Computer Science](Mathematics_for_Computer_Science/README.md)
   * Linear Algebra
   * Calculus
-* [Computer System & Organization & Architecture](Computer_System/README.md)
+* [Computer Organization & Architecture](Computer_System/README.md)
 * [Operating System](Operating_System/README.md) :The most important course in the university :star: :star: :star: :star: :star:
 * [Computer Network](Computer_Network/README.md) :star: :star: :star: :star: :star:
 * [Algorithm & Data Structure](Algorithm-Data_Structure/README.md): Algorithms + Data Structures = Programs :star: :star: :star: :star: :star:

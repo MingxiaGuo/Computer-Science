@@ -16,7 +16,7 @@
     * [Machine code](https://www.wikiwand.com/en/Machine_code)
     * [Assembly language](https://www.wikiwand.com/en/Assembly_language)
 
-    * [C](https://www.wikiwand.com/en/C_(programming_language))
+    * [C](https://www.wikiwand.com/en/C_(programming_language)); 在2000年前的单机时代，C语言是编程之王
     * [C++](https://www.wikiwand.com/en/C++)
     * [Java](https://www.wikiwand.com/en/Java_(programming_language))
     * [Go](https://www.wikiwand.com/en/Go_(programming_language))
@@ -58,3 +58,18 @@ Dynamic programming language
 
 Static program language 
 
+
+
+面向过程编程
+	C
+	Fortran
+面向对象编程
+	C++
+	C#
+	Java
+函数式编程
+面向消息编程
+
+
+
+在一般的编程过程中，都要先编译再执行。所谓编译就是把用C语言等编程语言编写的文件(源文件)转换成用机器语言(原生代码)编写的文件。

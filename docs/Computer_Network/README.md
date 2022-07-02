@@ -12,7 +12,3 @@ Open Course
 
 计算机网络涉及学科：数学、概率论、随机过程、矩阵论、物理学、光学、计算机科学。
 
-[My Note](https://github.com/MingxiaGuo/Computer-Science/blob/master/Computer_Network/SUMMARY.md)
-
-
-
