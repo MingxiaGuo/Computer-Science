@@ -1,21 +1,14 @@
 * Cloud Compuring
 * [Introduction](Cloud_Computing/README.md)
-* 第1章 云计算概念
-  * [1.1 云计算定义](Cloud_Computing/1-云计算概念/1.1-云计算定义.md)
-  * [1.2 云计算分类](Cloud_Computing/1-云计算概念/1.2-云计算分类.md)
-  * [1.3 云计算技术](Cloud_Computing/1-云计算概念/1.3-云计算技术.md)
-  * [1.4 云计算优劣势](Cloud_Computing/1-云计算概念/1.4-云计算优劣势.md)
-  * [1.5 云计算应用案例](Cloud_Computing/1-云计算概念/1.5-云计算应用案例.md)
-  * 1.6 云计算厂商
-  * 1.7 云计算解决方案
-  * 1.8 云计算应用场景
-* 第2章 云计算架构
+* [1 云计算概念](Cloud_Computing/1-云计算概念.md)
+* 2 云计算架构
   * 2.1 多租户
   * 2.2 角色
   * 2.3 弹性
   * 2.4 云生态
+* [3 云计算组件](Cloud_Computing/2-云计算组件.md)
 * 第3章 云计算技术
-  * [3.1 云原生技术](Cloud_Computing/3-云计算技术/3.1-云原生技术.md)
+  * [3.1 云原生](Cloud_Computing/3.1-云原生.md)
   * [3.2 计算](Cloud_Computing/3-云计算技术/3.2-计算.md)
   * [3.3 网络](Cloud_Computing/3-云计算技术/3.3-网络.md)
     * [3.3.1 安全的网络](Cloud_Computing/3-云计算技术/3.3.1-安全的网络.md)
@@ -35,11 +28,7 @@
   * 3.14 数据管理技术
   * [3.15 云计算平台管理技术](Cloud_Computing/3-云计算技术/3.15-云计算平台管理技术.md)
   * 3.16 桌面&应用虚拟化
-* [第5章 云计算组件](Cloud_Computing/5-云计算组件/5-云计算组件.md)
-  * 5.1 计算组件
-  * 5.2 网络组件
-  * 5.3 存储组件
-  * 5.4 身份认证组件
-  * 5.5 容器集成
+* 
+  * 5.6 [VPC](4-VPC.md)
 * 第八章 PaaS平台
   * Cloud Foundry

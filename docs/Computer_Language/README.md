@@ -15,19 +15,19 @@
 
     * [Machine code](https://www.wikiwand.com/en/Machine_code)
     * [Assembly language](https://www.wikiwand.com/en/Assembly_language)
-
     * [C](https://www.wikiwand.com/en/C_(programming_language)); 在2000年前的单机时代，C语言是编程之王
+    * [C](https://www.wikiwand.com/en/C_(programming_language)); 在2000年前的单机时代，C语言是编程之王 静态类型/弱类型/非脚本型/通用语言
     * [C++](https://www.wikiwand.com/en/C++)
-    * [Java](https://www.wikiwand.com/en/Java_(programming_language))
-    * [Go](https://www.wikiwand.com/en/Go_(programming_language))
-    * [Python](https://www.wikiwand.com/en/Python_(programming_language))
-    * [JavaScript](https://www.wikiwand.com/en/JavaScript)
+    * [Java](https://www.wikiwand.com/en/Java_(programming_language)): 静态类型/强类型/非脚本型/通用语言
+    * [Go](https://www.wikiwand.com/en/Go_(programming_language))：静态类型/强类型/非脚本型/通用语言
+    * [Python](https://www.wikiwand.com/en/Python_(programming_language))：动态类型/强类型/脚本型/通用语言
+    * [JavaScript](https://www.wikiwand.com/en/JavaScript)：动态类型/弱类型/脚本型/通用语言
     * Scripting language
       * Bash: Unix shell , Command language
       * Python
       * Javascript
 
-  * [Query language](https://www.wikiwand.com/en/Query_language): SQL
+  * [Query language](https://www.wikiwand.com/en/Query_language): SQL： 领域专用语言
 
 * Data exchange Language: 
 
@@ -50,23 +50,34 @@
 
 
 
+编程语言分类：
+
+* 动态类型/静态类型: Dynamic programming language/Static program language 
+* 强类型/弱类型
+* 脚本型/非脚本型
+* 通用语言/领域专用语言
+* 不能用编译型/解释型来分类语言，编译型/解释型只用来修饰实现，而不用来修饰语言
+
+
+
+函数式 声明式
+
+字节码 机器码
+
 [Compiled language](https://www.wikiwand.com/en/Compiled_language): C, C++, Java, Go, Objective-C, Swift
 
 [interpreted languages](https://www.wikiwand.com/en/Interpreted_language): Command Langauge
 
-Dynamic programming language
-
-Static program language 
 
 
 
 面向过程编程
-	C
-	Fortran
+C
+Fortran
 面向对象编程
-	C++
-	C#
-	Java
+C++
+C#
+Java
 函数式编程
 面向消息编程
 
