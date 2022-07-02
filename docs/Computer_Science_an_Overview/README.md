@@ -12,6 +12,18 @@ IT行业定律:
 
 计算机： 1&0 -> 逻辑门 -> CPU -> 操作系统 -> 整个互联网
 
+
+
+
+
+3-9 计算机的原理，硬件，组成计算机的物理组件：电、电路、寄存器、RAM、ALU、CPU
+
+如何从内存读写数据，执行操作，指令的执行即计算机程序
+
+10-14 基础： 编程：函数、算法、数据结构
+
+
+
 ---
 * Summary
   * [Map of Computer Science](Crash-Course-Computer-Science/Map-of-Computer-Science.md)
@@ -23,4 +35,3 @@ IT行业定律:
 * Video：  
    * 计算机科学地图[Map of Computer Science]: [bilibili](https://www.bilibili.com/video/av21096859?from=search&seid=16370583374760966611); [youtube](https://www.youtube.com/watch?v=SzJ46YA_RaA)
    * 计算机科学速成课[Crash Course Computer Science]: [Bilibili](https://www.bilibili.com/video/av21376839?from=search&amp;seid=9162856292795471868\\) [github](https://github.com/1c7/Crash-Course-Computer-Science-Chinese)
-   

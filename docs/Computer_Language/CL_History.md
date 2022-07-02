@@ -1,3 +1,15 @@
+#计算机语言发展史
+
+![](assets/QQ截图20170304204637.png)
+
+- 所有计算机都基于冯诺依曼体系结构。
+- 贝尔实验室发明了C语言,c++,晶体管。
+- 硬件公司：intel,AMD
+- SUN公司：java
+- Java核心优势：跨平台
+
+
+
 [编程语言](https://www.wikiwand.com/en/Programming_language)：一组用来定义计算机程序的语法规则。它是一种被标准化的交流语言，用来向计算机发出指令。一种计算机语言 让程序员能够准确地 定义计算机所需要使用的数据，并精确地定义在不同情况下所应当采取的行动。
 
 Programming  Language enable users to write programs for specific computations/algorithms.
@@ -13,8 +25,9 @@ Programming  Language enable users to write programs for specific computations/a
 * 面向特定领域的语言：Erlang R MATLAB
 
 编程思想：
+
 * 面向过程
-* 面向对象
+* 面向对象 Object-oriented programming https://www.wikiwand.com/en/Object-oriented_programming
 * 函数式编程
 * 面向消息编程
 
@@ -47,6 +60,8 @@ C语言经久不衰的根源是它**足够简单**。
 
 ### 编程语言发展的编年史
 
+从1951年至今，人类一共发明了256种编程语言，每一种语言的出现都带有某些新特征。编程语言不断的在革新，很快就会有超出这个清单的新编程语言出现。
+
 我们一个统计出来256种编程语言，当然，这么多的语言中只有一些是常用的或实用的。
 
 ---
@@ -57,14 +72,18 @@ C语言经久不衰的根源是它**足够简单**。
 * 1952 – Autocode
 * 1954 – IPL (LISP语言的祖先)
 * 1955 – FLOW-MATIC (COBOL语言的祖先)
+
 ---
+
 * 1957 – FORTRAN (第一个编译型语言)( FORMULA TRANSLATION)
 * 1957 – COMTRAN (COBOL语言的祖先)
 * 1958 – LISP (LIST PROCESSOR)
 * 1958 – ALGOL 58
 * 1959 – FACT (COBOL语言的祖先)
 * 1959 – COBOL (COMMON BUSINESS-ORIENTED LANGUAGE) 1959 – RPG
+
 ---
+
 * 1962 – APL
 * 1962 – Simula
 * 1962 – SNOBOL
@@ -77,14 +96,18 @@ C语言经久不衰的根源是它**足够简单**。
 * 1969 – B (C语言的祖先) 
 * 1970 – Pascal 
 * 1970 – Forth
+
 ---
+
 * 1972 – C  (2000年前单机时代的编程之王)
 * 1972 – Smalltalk
 * 1972 – Prolog
 * 1973 – ML
 * 1975 – Scheme
 * 1978 – SQL
+
 ---
+
 * 1980 – C++ (既有类的C语言，更名于1983年7月)
 * 1983 – Ada
 * 1984 – Common Lisp
@@ -123,19 +146,19 @@ C语言经久不衰的根源是它**足够简单**。
 
 ---
 
-从1951年至今，人类一共发明了256种编程语言，每一种语言的出现都带有某些新特征。编程语言不断的在革新，很快就会有超出这个清单的新编程语言出现。
+
 
 ## Comparison of pargrammong languages
 
-![](assets/comparsion-languages-1.png)
+![](/Users/gmx/Documents/workspace/Computer-Science/docs/Computer_Language/Programming_Language/assets/comparsion-languages-1.png)
 
-![](assets/comparison-laguages-2.png)
+![](/Users/gmx/Documents/workspace/Computer-Science/docs/Computer_Language/Programming_Language/assets/comparison-laguages-2.png)
 
-![](assets/comparison-languages-3.png)
+![](/Users/gmx/Documents/workspace/Computer-Science/docs/Computer_Language/Programming_Language/assets/comparison-languages-3.png)
 
 ## The security of programming languages
 
-![](assets/secure-of-programming-languages.png)
+![](/Users/gmx/Documents/workspace/Computer-Science/docs/Computer_Language/Programming_Language/assets/secure-of-programming-languages.png)
 
 ## Tips for Secure Programming
 
@@ -158,6 +181,7 @@ C语言经久不衰的根源是它**足够简单**。
 * Implement comprehensive yet realistic security policies
 
 ---
+
 * CRLF Injection
 
 * SQL Injection

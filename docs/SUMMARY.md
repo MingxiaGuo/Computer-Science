@@ -7,7 +7,8 @@
 * [Computer Network](Computer_Network/README.md) :star: :star: :star: :star: :star:
 * [Algorithm & Data Structure](Algorithm-Data_Structure/README.md): Algorithms + Data Structures = Programs :star: :star: :star: :star: :star:
 * [Algorithm Practice](Algorithm_Practice/README.md)	
-* [The Programming Language](The_Programming_Language/README.md) : Familiar with a language：C++，Java or Python
+* [Computer Language](Computer_Language/README.md) : Familiar with a language：C++，Java or Python
+  * [Computer Language History](Computer_Language/CL_History.md)
 * [Artificial Intelligence](Artificial_Intelligence/README.md)
   * [Machine Learning](Machine_Learning/README.md)
   * [Deep Learning](Deep_Learning/README.md)

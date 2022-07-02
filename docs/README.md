@@ -6,12 +6,12 @@
 * [Mathematics for Computer Science](Mathematics_for_Computer_Science/README.md)
   * Linear Algebra
   * Calculus
-* [Computer System &amp; Organization &amp; Architecture](Computer_System/README.md)
+* [Computer Organization & Architecture & System](docs/Computer_System)
 * [Operating System](Operating_System/README.md) :The most important course in the university ⭐️ ⭐️ ⭐️ ⭐️ ⭐️
 * [Computer Network](Computer_Network/README.md) ⭐️ ⭐️ ⭐️ ⭐️ ⭐️
 * [Algorithm &amp; Data Structure](Algorithm-Data_Structure/README.md): Algorithms + Data Structures = Programs ⭐️ ⭐️ ⭐️ ⭐️ ⭐️
 * [Algorithm Practice](Algorithm_Practice/README.md)
-* [The Programming Language](The_Programming_Language/README.md) : Familiar with a language：C++，Java or Python
+* [Computer Language](Computer_Language/README.md) : Familiar with a language：C++，Java or Python
 * [Artificial Intelligence](Artificial_Intelligence/README.md)
   * [Machine Learning](Machine_Learning/README.md)
   * [Deep Learning](Deep_Learning/README.md)
@@ -21,8 +21,17 @@
 * [Blockchain](Blockchain/README.md)
 * [User experience](User_experience/README.md)
 * [Open technology](Open_technology/README.md)
+* Design Pattern
+* Project Management
+
+## Awesome Repo:
+
+[CSS LAYOUT](https://csslayout.io/)
+
+Düzenli Çizelgehttps://github.com/edisdev/periodic-table
 
 ## awesome guide:
+
 * [macos setup guide](https://sourabhbajaj.com/mac-setup/)
 * [Awesome OpenSource](https://awesomeopensource.com/)
 * [Learn anything](https://learn-anything.xyz/)
@@ -59,5 +68,6 @@
 * [买书](http://search.china-pub.com/s/?key1=%C9%EE%C8%EB%C0%ED%BD%E2%BC%C6%CB%E3%BB%FA%D3%A2%CE%C4&type=&pz=1)
 * [Pdf Download](http://www.java1234.com/a/javabook/)
 * [Book Recomendation](book.md)
+* [Z library](http://zh.1lib.pl/): 全球最大数字图书馆
 
 ---
