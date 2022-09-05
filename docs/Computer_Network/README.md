@@ -1,9 +1,9 @@
 #  Computer Network
 
 Book
+* 《TCP/IP详解》（[TCP/IP illustrated](https://book.douban.com/subject/1741925/)）—— 斯蒂文森（W. Richard Stevens） 🚩强烈推荐🚩
 * 《计算机网络：[自顶向下](https://www.baidu.com/s?wd=自顶向下&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao)的学习方法》
 * 《计算机网络》
-* 《TCP/IP详解》
 * 《UNIX网络编程》
 
 Open Course
