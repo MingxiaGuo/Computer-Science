@@ -10,13 +10,11 @@
 
     * shell
     * [batch programming languages](https://www.wikiwand.com/en/Batch_programming_language).
-
   * [Programming language](https://www.wikiwand.com/en/Programming_language)
-
+  
     * [Machine code](https://www.wikiwand.com/en/Machine_code)
     * [Assembly language](https://www.wikiwand.com/en/Assembly_language)
-    * [C](https://www.wikiwand.com/en/C_(programming_language)); 在2000年前的单机时代，C语言是编程之王
-    * [C](https://www.wikiwand.com/en/C_(programming_language)); 在2000年前的单机时代，C语言是编程之王 静态类型/弱类型/非脚本型/通用语言
+    * [C](https://www.wikiwand.com/en/C_(programming_language)); 在2000年前的单机时代，C语言是编程之王； 静态类型/弱类型/非脚本型/通用语言
     * [C++](https://www.wikiwand.com/en/C++)
     * [Java](https://www.wikiwand.com/en/Java_(programming_language)): 静态类型/强类型/非脚本型/通用语言
     * [Go](https://www.wikiwand.com/en/Go_(programming_language))：静态类型/强类型/非脚本型/通用语言
@@ -26,23 +24,19 @@
       * Bash: Unix shell , Command language
       * Python
       * Javascript
-
-  * [Query language](https://www.wikiwand.com/en/Query_language): SQL： 领域专用语言
-
+  * [Query language](https://www.wikiwand.com/en/Query_language): 
+    * SQL： 领域专用语言
 * Data exchange Language: 
 
   * JSON, 
   * [XML](https://www.wikiwand.com/en/XML) (Extensible Markup Language)
   * [YAML](https://www.wikiwand.com/en/YAML) (YAML Ain't Markup Language) https://yaml.org/
-
 * [Markup language](https://www.wikiwand.com/en/Markup_language)
 
   * [HTML](https://www.wikiwand.com/en/HTML) (Hyper Text Markup Language) https://html.spec.whatwg.org/multipage/
-
 * [style sheet language](https://www.wikiwand.com/en/Style_sheet_language)
 
   * [CSS](https://www.wikiwand.com/en/CSS) (Cascading Style Sheets)
-
 * Modeling Language
 
   * [Architecture description language](https://www.wikiwand.com/en/Architecture_description_language) : UML
@@ -84,3 +78,25 @@ Java
 
 
 在一般的编程过程中，都要先编译再执行。所谓编译就是把用C语言等编程语言编写的文件(源文件)转换成用机器语言(原生代码)编写的文件。
+
+
+
+
+
+
+
+
+
+程序一般由关键字、常量、变量、运算符、类型和函数组成。
+
+程序中可能会使用到这些分隔符：括号 ()，中括号 [] 和大括号 {}。
+
+程序中可能会使用到这些标点符号：.、,、;、: 和 …。
+
+程序的代码通过语句来实现结构化。每个语句不需要像 C 家族中的其它语言一样以分号 ; 结尾，因为这些工作都将由 Go 编译器自动完成。
+
+如果你打算将多个语句写在同一行，它们则必须使用 ; 人为区分，但在实际开发中我们并不鼓励这种做法。
+
+
+
+## 
