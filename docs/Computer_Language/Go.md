@@ -1,15 +1,7 @@
 # The Go Programming Language
 
 - golang - [A Tour of Gohttps://tour.golang.org/](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwierJvygubfAhXupVkKHboyCv8QFjAAegQIChAB&url=https%3A%2F%2Ftour.golang.org%2F&usg=AOvVaw1_8r9p82VJ6ungPMSEYhqa)
-
-## Contents
-* [初识GO](1.初识Go.md)
-* [顺序编程](2.顺序编程.md)
-* 面向对象编程
-* 并发编程
-* 网络编程
-* 安全编程
-* 工程管理
+- Code example: https://github.com/cncamp/golang
 
 ## materials
 
@@ -83,12 +75,6 @@ Doc: https://go.dev/doc/
 
 
 
-问题追踪和调试
-
-工程管理
-
-
-
 尽管看起来Java已经深获人心，但Java编程的体验并未尽如人意。
 之所以开发Go 语言，是因为“近10年来开发程序之难让我们有点沮丧”。 这一定位暗示了Go语言希望取代C和Java的地位，成为最流行的通用开发语言。
 Go语言设计者认为值得学习的是C语言，而不是C++。
@@ -102,10 +88,6 @@ Go语言设计者认为值得学习的是C语言，而不是C++。
 2012年发布正式版
 
 
-
-# Go
-
-Code example: https://github.com/cncamp/golang
 
 ## 1. Go Introduction
 
@@ -477,231 +459,6 @@ git remote add origin https://github.com/repo_name.git        # add remote repos
 * 官方 playground：https://play.golang.org/
 * 可直接编写和运行 Go 语言程序 
 * 国内可直接访问的 playground https://goplay.tools/
-
-## 代码格式
-
-```
-package PackageName
-
-import （
-
-）
-
-func main() {
-
-}
-```
-
-* 当你导入多个包时，最好按照字母顺序排列包名，这样做更加清晰易读。
-
-* **每一段代码只会被编译一次**
-
-* **如果对一个包进行更改或重新编译，所有引用了这个包的客户端程序都必须全部重新编译。**
-
-* 如果包名不是以 . 或 / 开头，如 “fmt” 或者 “container/list”，则 Go 会在全局文件进行查找；如果包名以 ./ 开头，则 Go 会在相对目录中查找；如果包名以 / 开头（在 Windows 下也可以这样使用），则会在系统的绝对路径中查找。
-
-* 除了符号 _，包中所有代码对象的标识符必须是唯一的，以避免名称冲突。但是相同的标识符可以在不同的包中使用，因为可以使用包名来区分它们。
-
-* 你可以通过使用包的别名来解决包名之间的名称冲突，或者说根据你的个人喜好对包名进行重新设置，如：import fm “fmt”。
-
-* main 函数是每一个可执行程序所必须包含的，一般来说都是在启动后第一个执行的函数（如果有 init() 函数则会先执行该函数）
-
-* 多行注释一般用于包的文档描述或注释成块的代码片段。
-
-所有的结构将在这一章或接下来的章节中进一步地解释说明，但总体思路如下：
-
-* 在完成包的 import 之后，开始对常量、变量和类型的定义或声明。
-
-* 如果存在 init 函数的话，则对该函数进行定义（这是一个特殊的函数，每个含有该函数的包都会首先执行这个函数）。
-
-* 如果当前包是 main 包，则定义 main 函数。
-
-* 然后定义其余的函数，首先是类型的方法，接着是按照 main 函数中先后调用的顺序来定义相关函数，如果有很多函数，则可以按照字母顺序来进行排序。
-
-反斜杠  可以在常量表达式中作为多行的连接符使用。
-
-数字型的常量是没有大小和符号的，并且可以使用任何精度而不会导致溢出：
-
-所有的内存在 Go 中都是经过初始化的。
-
-所有的内存在 Go 中都是经过初始化的。
-
-%s 代表字符串标识符、%v 代表使用类型的默认输出格式的标识符。这些标识符所对应的值从格式化字符串后的第一个逗号开始按照相同顺序添加
-
-函数 fmt.Sprintf 与 Printf 的作用是完全相同的，不过前者将格式化后的字符串以返回值的形式返回给调用者，因此你可以在程序中使用包含变量的字符串，具体例子可以参见示例 15.4  [simple\_tcp\_server.go](https://github.com/Unknwon/the-way-to-go_ZH_CN/blob/master/eBook/examples/chapter_15/simple_tcp_server.go)
-
-函数 fmt.Print 和 fmt.Println 会自动使用格式化标识符 %v 对字符串进行格式化，两者都会在每个参数之间自动增加空格，而后者还会在字符串的最后加上一个换行符
-
-*标识符*：有效的标识符必须以字符（可以使用任何 UTF-8 编码的字符或 _）开头，然后紧跟着 0 个或多个字符或 Unicode 数字，如：X56、group1、_x23、i、өԑ12。无效的标识符：以数字开头、go语言关键字、包含运算符。
-
-_ 本身就是一个特殊的标识符，被称为空白标识符。它可以像其他标识符那样用于变量的声明或赋值（任何类型都可以赋值给它），但任何赋给这个标识符的值都将被抛弃，因此这些值不能在后续的代码中使用，也不可以使用这个标识符作为变量对其它变量进行赋值或运算。在编码过程中，你可能会遇到没有名称的变量、类型或方法。虽然这不是必须的，但有时候这样做可以极大地增强代码的灵活性，这些变量被统称为匿名变量。
-
-```
-func GetName\(\) \(firstName, lastName, nickName string\){
-  ...
-return ”May”, “Chan”, “Chibi Maruko”
-  ...
-}
-```
-
-若只想获得nickName，则函数调用语句可以用如下方式编写:
-
-_, _, nickName := GetName()
-
-
-
-----
-
-
-
-
-
-**Golang import**导入包语法介绍
-
-[https://blog.csdn.net/u010649766/article/details/79458004](https://blog.csdn.net/u010649766/article/details/79458004)
-
-写 Go 代码的时经常用到 import 这个命令用来导入包，参考如下：
-
-```
-import(
-"fmt"
-)
-```
-
-然后在代码里面可以通过如下的方式调用：
-
-```fmt.Println( "我爱北京天安门" )```
-
-
-fmt 是 Go 的标准库，它其实是去 GOROOT 下去加载该模块，当然 Go 的 import 还支持如下两种方式来加载自己写的模块：
-
-相对路径
-
-import  "./model" // 当前文件同一目录的 model 目录，但是不建议这种方式 import
-
-1
-
-绝对路径
-
-import  "shorturl/model" // 加载 GOPATH/src/shorturl/model 模块
-
-1
-
-package 的导入的特殊用法
-
-上面展示了一些 import 常用的几种方式，但是还有一些特殊的 import ，让很多新手很费解，下面是三种导入包的使用方法。
-
-点操作
-
-有时候会看到如下的方式导入包：
-
-```
-import(
-
-. "fmt"
-
-)
-```
-
-这个点操作的含义就是这个包导入之后在你调用这个包的函数时，你可以省略前缀的包名，也就是前面你调用的：
-
-fmt.Println\( "我爱北京天安门" \)
-
-
-
-可以省略的写成：
-
-Println\( "我爱北京天安门" \)
-
-1
-
-别名操作
-
-别名操作顾名思义可以把包命名成另一个用起来容易记忆的名字：
-
-import\(
-
-f "fmt"
-
-\)
-
-1
-
-2
-
-3
-
-别名操作调用包函数时前缀变成了重命名的前缀，即：
-
-f.Println\( "我爱北京天安门" \)
-
-1
-
-下划线操作
-
-这个操作经常是让很多人费解的一个操作符，请看下面这个 import
-
-import \(
-
-“database/sql”
-
-\_ “github.com/ziutek/mymysql/godrv”
-
-\)
-
-下滑线 “\_” 操作其实只是引入该包。当导入一个包时，它所有的 init\(\) 函数就会被执行，但有些时候并非真的需要使用这些包，仅仅是希望它的 init\(\) 函数被执行而已。这个时候就可以使用 “\_” 操作引用该包了。即使用 “\_” 操作引用包是无法通过包名来调用包中的导出函数，而是只是为了简单的调用其 init\(\) 函数。
-
-
-
-impot
-
-导入本地：`import  "fmt"`
-
-导入远程包：`import “github.com/mattn/go-sqlite3”`   //计算CRC32的包托管于Github
-
-                然后，在执行go build或者go install之前，只需要加这么一句：`go get github.com/mattn/go-sqlite3`
-    
-                go get下来的源码位置应为：¥GOPATH/src/github.com/mattn/go-sqlite3\(这里是物理路径\)
-    
-                  若网络问题导致无法使用go get下载，则需要手动下载包那就应该在src目录下建立同样的子目录将包存放到此处。
-    
-                 例如你的报错信息中有golang.org/x/net/context这个包，
-    
-                 因为golang.org的服务器是谷歌公司的，IP被封，你通过手动等方式下载回来的包因该存放到此处:
-    
-                 $GOPATH/src/golang.org/x/net/context
-
-
-
-## Write a example
-
-* $ cd /Users/guogmx/Documents/workspace/workspace_go
-
-* $ mkdir src/hello
-
-* $ vim hell.go
-
-```
-package main
-
-import "fmt"
-
-func main(){
-   ...
-   fmt.Printf("hello, world")
-   ...
-}
-```
-
-* $ go build
-
-* $ ./hello
-
-* hello, world
-
-* $ go install
-
-> You can run go install to install the binary into your workspace’s bin directory or go clean -I to remove it.
 
 
 
@@ -1185,7 +942,7 @@ https://www.cnblogs.com/cheyunhua/p/16652003.html
 
 ### 2.5 函数
 
-Main 函数: https://github.com/cncamp/golang/blob/master/examples/module1/map/main.go
+**Main 函数**: https://github.com/cncamp/golang/blob/master/examples/module1/map/main.go
 
 - 每个 Go 语言程序都应该有个 main package
 
@@ -1203,9 +960,9 @@ Main 函数: https://github.com/cncamp/golang/blob/master/examples/module1/map/m
   }
   ```
 
-参数解析
+**参数解析**
 
-* 请注意main函数与其他语言不同，没有类似java的[]stringargs参数
+* 请注意main函数与其他语言不同，没有类似java的 []string args参数
 
 * Go语言如何传入参数呢? 
 
@@ -1222,7 +979,7 @@ Main 函数: https://github.com/cncamp/golang/blob/master/examples/module1/map/m
     flag.Parse()
     ```
 
-Init 函数：https://github.com/cncamp/golang/blob/master/examples/module1/init/main.go
+**Init 函数**：https://github.com/cncamp/golang/blob/master/examples/module1/init/main.go
 
 * Init函数:会在包初始化时运行, 包被第一次加载时，所有程序运行之前运行init
 
@@ -1240,7 +997,7 @@ Init 函数：https://github.com/cncamp/golang/blob/master/examples/module1/init
   }
   ```
 
-返回值 
+**返回值** 
 
 * 多值返回：异常处理更简洁，error 是一个返回值
 
@@ -1258,9 +1015,9 @@ Init 函数：https://github.com/cncamp/golang/blob/master/examples/module1/init
    result, _ = strconv.Atoi(origStr)
   ```
 
-传递变长参数
+**传递变长参数**
 
-* Go 语言中的可变长参数允许调用方传递任意多个相同类型的参数 • 
+* Go 语言中的可变长参数允许调用方传递任意多个相同类型的参数 •
 
 * 函数定义
 
@@ -1275,7 +1032,7 @@ Init 函数：https://github.com/cncamp/golang/blob/master/examples/module1/init
   myArray = append(myArray, "a","b","c")
   ```
 
-内置函数: 不加包名，引用名 直接用
+**内置函数**: 不加包名，引用名 直接用
 
 | 函数名              | 作用                             |
 | :------------------ | -------------------------------- |
@@ -1287,7 +1044,7 @@ Init 函数：https://github.com/cncamp/golang/blob/master/examples/module1/init
 | print, println      | 打印                             |
 | complex, real, imag | 操作复数                         |
 
-回调函数(Callback)
+**回调函数**(Callback)
 
 * 函数作为参数传入其它函数，并在其他函数内部调用执行
 
@@ -1313,7 +1070,7 @@ Init 函数：https://github.com/cncamp/golang/blob/master/examples/module1/init
   }
   ```
 
-闭包
+**闭包**
 
 * 实际是个匿名函数：定义函数是为了逻辑抽象，为了易于阅读，提高重用性； 当想要某段逻辑独立 运行且不想起个函数名字
 
@@ -1339,97 +1096,7 @@ Init 函数：https://github.com/cncamp/golang/blob/master/examples/module1/init
 
 
 
-
-
-
-
-
-
-### 2.6 反射机制
-
-* reflect.TypeOf ()返回被检查对象的类型 
-
-* reflect.ValueOf()返回被检查对象的值
-
-* 示例
-
-  ```
-  myMap := make(map[string]string, 10) myMap["a"] = "b"
-  t := reflect.TypeOf(myMap) fmt.Println("type:", t)
-   v := reflect.ValueOf(myMap) fmt.Println("value:", v)
-  ```
-
-* 基于 struct 的反射
-
-  ```go
-  // struct
-  myStruct := T{A: "a"}
-  v1 := reflect.ValueOf(myStruct)
-  for i := 0; i < v1.NumField(); i++ { 
-    fmt.Printf("Field %d: %v\n", i, v1.Field(i))
-  }
-  for i := 0; i < v1.NumMethod(); i++ { 
-    fmt.Printf("Method %d: %v\n", i, v1.Method(i)) 
-  }
-  // 需要注意 receive 是 struct 还是指针
-  result := v1.Method(0).Call(nil) 
-  fmt.Println("result:", result)
-  ```
-
-### 2.6 错误处理
-
-
-
-## 3. 面向对象编程
-
-Go 语言中的面向对象编程
-
-* 可见性控制
-
-  - public - 常量、变量、类型、接口、结构、函数等的名称大写
-
-  - private - 非大写就只能在包内使用
-
-* 继承
-
-  - 通过组合实现，内嵌一个或多个 struct
-
-* 多态
-  * 通过接口实现，通过接口定义方法集，编写多套实现
-
-Json 编解码
-
-* Unmarshal:从string转换至struct
-  func unmarshal2Struct(humanStr string)Human {
-
-h := Human{}
- err := json.Unmarshal([]byte(humanStr), &h) if err != nil {
-
-println(err)
- }}
- return h return string(updatedBytes)
-
-
-
-• •
-
-json 包使用 map[string]interface{} 和 []interface{} 类型保存任意对象 可通过如下逻辑解析任意 json
-
-var obj interface{}
- err := json.Unmarshal([]byte(humanStr), &obj) objMap, ok := obj.(map[string]interface{})
- for k, v := range objMap {
-
-switch value := v.(type) { case string:
-
-fmt.Printf("type of %s is string, value is %v\n", k, value) case interface{}:
-
-fmt.Printf("type of %s is interface{}, value is %v\n", k, value) default:
-
-fmt.Printf("type of %s is wrong, value is %v\n", k, value) }
-
-}
-
-### 方法
+### 2.6 方法
 
 * 方法:作用在接收者上的函数
 
@@ -1464,9 +1131,7 @@ fmt.Printf("type of %s is wrong, value is %v\n", k, value) }
 
 如果变量是struct，想要改变这个变量，传变量的地址, 不想改变传值
 
-
-
-#### 接口
+### 2.7 接口
 
 * 接口定义一组方法集合, 接口是一个逻辑抽象，把一个对象的行为抽象出来但不写具体实现
 
@@ -1487,6 +1152,10 @@ fmt.Printf("type of %s is wrong, value is %v\n", k, value) }
 * Go语言中接口不接受属性定义
 
 * 接口可以嵌套其他接口
+
+* 要实现接口首先需要定义struct
+
+* 接口说go语言对多态的支持；
 
 * 示例：k8s service需要适配不同cloud：AWS Azure openstack, service有个类型loadBalanceType，要与不同的云厂商对接loadBalance管理接口，从service的语义来说就是定义负载均衡，操作也是固定的：配置删除更新；所以可以抽象一个loadBalanceTyper servcie，不同厂商去实现这个interface。对于service controller只需要调用接口，
 
@@ -1509,7 +1178,7 @@ func (c *Car) getName() string {
   return c.factory + "-" + c.model
 }
 func main() {
-	interfaces := []IF{}
+	interfaces := []IF{} //定义切片
 	h := new(Human)
 	h.firstName = "first"
 	h.lastName = "last"
@@ -1517,18 +1186,408 @@ func main() {
   c := new(Car)
 	c.factory = "benz"
 	c.model = "s"
-	interfaces = append(interfaces, c) 
+	interfaces = append(interfaces, c) // h和c不同的struct可以加到同一个slice，因为human和car都实现了IF接口，理论上是同一类型，就可以加到一个slice里； 单纯的int和string不可以加到一个slice，如果定义interface{}, 可以把int，string放到一个slice，一般不推荐这么做
   for _, f := range interfaces {
 		fmt.Println(f.getName()) 
   }
+  
+  //什么是多态
+  var human1 IF // human1 是interface
+  human1=new(Human) //但是按Human 初始化
+  human1.getName() //引用变量时，程序语言可以自动辨识出 通过Human的getName方式获取出来；声明对象时是抽象的初始化时是具体的，抽象对象调用函数时由程序识别真正的类型是什么 
 }
 ```
 
 注意事项
 
-* Interface是可能为nil的，所以针对interface的使用一定要预 先判空，否则会引起程序 crash(nil panic)
-
+* Interface是可能为nil的，所以针对interface的使用一定要预先判空，否则会引起程序 crash(nil panic)
 * Struct初始化意味着空间分配，对struct的引用不会出现空指针
+
+### 2.8 程序结构
+
+* $ cd /Users/guogmx/Documents/workspace/workspace_go
+
+* $ mkdir src/hello
+
+* $ vim hell.go
+
+```go
+package main
+
+import "fmt"
+
+func main(){
+   ...
+   fmt.Printf("hello, world")
+   ...
+}
+```
+
+* $ go build
+* $ ./hello
+
+* hello, world
+
+* $ go install
+
+> You can run go install to install the binary into your workspace’s bin directory or go clean -I to remove it.
+>
+> 
+
+* 当你导入多个包时，最好按照字母顺序排列包名，这样做更加清晰易读。
+* **每一段代码只会被编译一次**
+* **如果对一个包进行更改或重新编译，所有引用了这个包的客户端程序都必须全部重新编译。**
+* 如果包名不是以 . 或 / 开头，如 “fmt” 或者 “container/list”，则 Go 会在全局文件进行查找；如果包名以 ./ 开头，则 Go 会在相对目录中查找；如果包名以 / 开头（在 Windows 下也可以这样使用），则会在系统的绝对路径中查找。
+* 除了符号 _，包中所有代码对象的标识符必须是唯一的，以避免名称冲突。但是相同的标识符可以在不同的包中使用，因为可以使用包名来区分它们。
+* 你可以通过使用包的别名来解决包名之间的名称冲突，或者说根据你的个人喜好对包名进行重新设置，如：import fm “fmt”。
+* main 函数是每一个可执行程序所必须包含的，一般来说都是在启动后第一个执行的函数（如果有 init() 函数则会先执行该函数）
+* 多行注释一般用于包的文档描述或注释成块的代码片段。
+
+所有的结构将在这一章或接下来的章节中进一步地解释说明，但总体思路如下：
+
+* 在完成包的 import 之后，开始对常量、变量和类型的定义或声明。
+
+* 如果存在 init 函数的话，则对该函数进行定义（这是一个特殊的函数，每个含有该函数的包都会首先执行这个函数）。
+
+* 如果当前包是 main 包，则定义 main 函数。
+
+* 然后定义其余的函数，首先是类型的方法，接着是按照 main 函数中先后调用的顺序来定义相关函数，如果有很多函数，则可以按照字母顺序来进行排序。
+
+反斜杠  可以在常量表达式中作为多行的连接符使用。
+
+数字型的常量是没有大小和符号的，并且可以使用任何精度而不会导致溢出：
+
+所有的内存在 Go 中都是经过初始化的。
+
+%s 代表字符串标识符、%v 代表使用类型的默认输出格式的标识符。这些标识符所对应的值从格式化字符串后的第一个逗号开始按照相同顺序添加
+
+函数 fmt.Sprintf 与 Printf 的作用是完全相同的，不过前者将格式化后的字符串以返回值的形式返回给调用者，因此你可以在程序中使用包含变量的字符串，具体例子可以参见示例 15.4  [simple\_tcp\_server.go](https://github.com/Unknwon/the-way-to-go_ZH_CN/blob/master/eBook/examples/chapter_15/simple_tcp_server.go)
+
+函数 fmt.Print 和 fmt.Println 会自动使用格式化标识符 %v 对字符串进行格式化，两者都会在每个参数之间自动增加空格，而后者还会在字符串的最后加上一个换行符
+
+*标识符*：有效的标识符必须以字符（可以使用任何 UTF-8 编码的字符或 _）开头，然后紧跟着 0 个或多个字符或 Unicode 数字，如：X56、group1、_x23、i、өԑ12。无效的标识符：以数字开头、go语言关键字、包含运算符。
+
+_ 本身就是一个特殊的标识符，被称为空白标识符。它可以像其他标识符那样用于变量的声明或赋值（任何类型都可以赋值给它），但任何赋给这个标识符的值都将被抛弃，因此这些值不能在后续的代码中使用，也不可以使用这个标识符作为变量对其它变量进行赋值或运算。在编码过程中，你可能会遇到没有名称的变量、类型或方法。虽然这不是必须的，但有时候这样做可以极大地增强代码的灵活性，这些变量被统称为匿名变量。
+
+```
+func GetName\(\) \(firstName, lastName, nickName string\){
+  ...
+return ”May”, “Chan”, “Chibi Maruko”
+  ...
+}
+```
+
+若只想获得nickName，则函数调用语句可以用如下方式编写:
+
+_, _, nickName := GetName()
+
+
+
+----
+
+
+
+
+
+**Golang import**导入包语法介绍
+
+[https://blog.csdn.net/u010649766/article/details/79458004](https://blog.csdn.net/u010649766/article/details/79458004)
+
+写 Go 代码的时经常用到 import 这个命令用来导入包，参考如下：
+
+```
+import(
+"fmt"
+)
+```
+
+然后在代码里面可以通过如下的方式调用：
+
+```fmt.Println( "我爱北京天安门" )```
+
+
+fmt 是 Go 的标准库，它其实是去 GOROOT 下去加载该模块，当然 Go 的 import 还支持如下两种方式来加载自己写的模块：
+
+相对路径
+
+import  "./model" // 当前文件同一目录的 model 目录，但是不建议这种方式 import
+
+1
+
+绝对路径
+
+import  "shorturl/model" // 加载 GOPATH/src/shorturl/model 模块
+
+1
+
+package 的导入的特殊用法
+
+上面展示了一些 import 常用的几种方式，但是还有一些特殊的 import ，让很多新手很费解，下面是三种导入包的使用方法。
+
+点操作
+
+有时候会看到如下的方式导入包：
+
+```
+import(
+
+. "fmt"
+
+)
+```
+
+这个点操作的含义就是这个包导入之后在你调用这个包的函数时，你可以省略前缀的包名，也就是前面你调用的：
+
+fmt.Println\( "我爱北京天安门" \)
+
+
+
+可以省略的写成：
+
+Println\( "我爱北京天安门" \)
+
+1
+
+别名操作
+
+别名操作顾名思义可以把包命名成另一个用起来容易记忆的名字：
+
+import\(
+
+f "fmt"
+
+\)
+
+1
+
+2
+
+3
+
+别名操作调用包函数时前缀变成了重命名的前缀，即：
+
+f.Println\( "我爱北京天安门" \)
+
+1
+
+下划线操作
+
+这个操作经常是让很多人费解的一个操作符，请看下面这个 import
+
+import \(
+
+“database/sql”
+
+\_ “github.com/ziutek/mymysql/godrv”
+
+\)
+
+下滑线 “\_” 操作其实只是引入该包。当导入一个包时，它所有的 init\(\) 函数就会被执行，但有些时候并非真的需要使用这些包，仅仅是希望它的 init\(\) 函数被执行而已。这个时候就可以使用 “\_” 操作引用该包了。即使用 “\_” 操作引用包是无法通过包名来调用包中的导出函数，而是只是为了简单的调用其 init\(\) 函数。
+
+
+
+impot
+
+导入本地：`import  "fmt"`
+
+导入远程包：`import “github.com/mattn/go-sqlite3”`   //计算CRC32的包托管于Github
+
+                然后，在执行go build或者go install之前，只需要加这么一句：`go get github.com/mattn/go-sqlite3`
+    
+                go get下来的源码位置应为：¥GOPATH/src/github.com/mattn/go-sqlite3\(这里是物理路径\)
+    
+                  若网络问题导致无法使用go get下载，则需要手动下载包那就应该在src目录下建立同样的子目录将包存放到此处。
+    
+                 例如你的报错信息中有golang.org/x/net/context这个包，
+    
+                 因为golang.org的服务器是谷歌公司的，IP被封，你通过手动等方式下载回来的包因该存放到此处:
+    
+                 $GOPATH/src/golang.org/x/net/context
+
+
+
+
+
+
+
+### 2.6 反射机制
+
+k8s中大量用到反射机制，定义一个对象，通过反射机制获得这个对象的值，类型；如果是interface可以得到它的function。k8s是声明式API，对所有对象都做了抽象：node pod，从客户API获得的都是一个个string，判断对象的属性是什么类型
+
+* reflect.TypeOf ()：返回被检查对象的类型 
+
+* reflect.ValueOf()：返回被检查对象的值
+
+* 示例：https://github.com/cncamp/golang/blob/master/examples/module1/reflect/main.go
+
+  ```go
+  myMap := make(map[string]string, 10) 
+  myMap["a"] = "b"
+  t := reflect.TypeOf(myMap) 
+  fmt.Println("type:", t)
+  v := reflect.ValueOf(myMap) 
+  fmt.Println("value:", v)
+  ```
+
+* 基于 struct 的反射
+
+  ```go
+  // struct
+  myStruct := T{A: "a"}
+  v1 := reflect.ValueOf(myStruct)
+  for i := 0; i < v1.NumField(); i++ { 
+    fmt.Printf("Field %d: %v\n", i, v1.Field(i))
+  }
+  for i := 0; i < v1.NumMethod(); i++ { // 方法被程序加载以后，对应方法就是某块内存空间
+    fmt.Printf("Method %d: %v\n", i, v1.Method(i)) 
+  }
+  // 需要注意 receive 是 struct 还是指针
+  result := v1.Method(0).Call(nil) 
+  fmt.Println("result:", result)
+  ```
+
+* 场景：用通用逻辑处理不同类型的对象，去解析类型，取值，调用方法时可以使用反射机制
+* 反射机制本身有性能损耗，是动态解析
+
+### 2.6 错误处理
+
+#### 2.6.1 error接口
+
+* Go 语言无内置 exception 机制，只提供 error 接口供定义错误 
+
+  ```go
+  type error interface { //error本身是个interface
+  	Error() string //只有一个函数
+  }
+  ```
+
+* 可通过 errors.New 或 fmt.Errorf 创建新的 error
+
+  ```go
+  var errNotFound error = errors.New("NotFound")
+  ```
+
+* 通常应用程序对 error 的处理大部分是判断 error 是否为 nil
+
+  * 如需将 error 归类，通常交给应用程序自定义，比如 kubernetes 自定义了与 apiserver 交互的不同类型错误
+
+    ```go
+    type StatusError struct { 
+    	ErrStatus metav1.Status
+    }
+    var _ error = &StatusError{}
+    // Error implements the Error interface. 
+    func (e *StatusError) Error() string {
+    	return e.ErrStatus.Message 
+    }
+    ```
+
+#### 2.6.2 defer
+
+* **函数返回之前**执行某个语句或函数
+
+  * 等同于 Java 和 C# 的 finally
+
+* 示例：https://github.com/cncamp/golang/blob/master/examples/module1/defer/main.go
+
+  ```go
+  func main() {
+  	defer fmt.Println("1")
+  	defer fmt.Println("2")
+  	defer fmt.Println("3")
+  	loopFunc()
+  	time.Sleep(time.Second)
+  } //打印结果 3 2 1 ； 相当于一个栈
+  ```
+
+* 常见的defer使用场景: 记得关闭你打开的资源； 确保资源一定是释放掉的，使用场景一般在关闭资源时
+
+  - defer file.Close()
+
+  - defer mu.Unlock()
+
+  - defer println("")
+
+#### 2.6.3 Panic和recover
+
+* panic:可在系统出现不可恢复错误时主动调用panic, panic会使当前线程直接crash ； 线程退出可以使用panic
+* defer:保证执行并把控制权交还给接收到panic的函数调用者
+* recover:函数从panic或错误场景中恢复；panic的错误需要recover
+
+```go
+defer func() {
+    fmt.Println("defer func is called")
+    if err := recover(); err != nil { 
+    	fmt.Println(err)
+    }
+}()
+panic("a panic is triggered")
+```
+
+## 3. 面向对象编程
+
+Go 语言中的面向对象编程
+
+* 可见性控制
+
+  - public - 常量、变量、类型、接口、结构、函数等的名称大写(首字母)
+
+  - private - 非大写就只能在包内使用
+
+* 继承
+
+  - 通过组合实现，内嵌一个或多个 struct，或者为不同对象定义不同属性
+
+* 多态
+  * 通过接口实现，通过接口定义方法集，编写多套实现，见2.7接口
+
+Json 编解码:k8s 所有对象都encode成json传到apiserver，在apiserver解码；声明式系统都是先定义个yaml/json file再转成go的struct
+
+* Unmarshal:从string转换至struct
+  
+  ```go
+  func unmarshal2Struct(humanStr string)Human {
+  	h := Human{}
+  	err := json.Unmarshal([]byte(humanStr), &h) 
+    if err != nil {
+      println(err)
+  	}
+    return h
+  }
+  ```
+  
+* Marshal:从struct转换至string
+
+  ```go
+  func marshal2JsonString(h Human) string {
+  	h.Age = 30
+  	updatedBytes, err := json.Marshal(&h) //updatedBytes是bytes类型
+    if err != nil {
+      println(err)
+  	}
+    return string(updatedBytes) //bytes转string
+  }
+  ```
+
+* json 包使用 map[string]interface{} 和 []interface{} 类型保存任意对象; k8s经常出现的逻辑， 
+
+* 可通过如下逻辑解析任意 json
+
+  ```go
+  var obj interface{}// interface{}是一个类型，不定类型，可以是int，可以是string； 单纯的int和string不可以加到一个slice，如果定义interface{}, 可以把int，string放到一个slice，一般不推荐这么做
+  err := json.Unmarshal([]byte(humanStr), &obj) 
+  objMap, ok := obj.(map[string]interface{})
+  for k, v := range objMap {
+  	switch value := v.(type) { 
+    case string:
+  		fmt.Printf("type of %s is string, value is %v\n", k, value) 
+    case interface{}:
+  		fmt.Printf("type of %s is interface{}, value is %v\n", k, value) 
+    default:
+  		fmt.Printf("type of %s is wrong, value is %v\n", k, value) 
+    }
+  }
+  ```
 
 ## 4. 并发编程
 
@@ -1536,36 +1595,566 @@ func main() {
 
 并发和并行：
 
-* 并发(concurrency)：两个或多个事件在同一时间间隔发生 
+* 并发(concurrency)：两个或多个事件在同一时间间隔发生 ; 交替执行
 * 并行(parallellism)：两个或者多个事件在同一时刻发生
 
+### 4.1 协程
+
+协程
+
+* 进程:
+  * 分配系统资源(CPU 时间、内存等)基本单位 
+  * 有独立的内存空间，切换开销大
+
+* 线程:进程的一个执行流，是CPU调度并能独立运行的的基本单位
+
+  - 一个进程可以支持多个线程，起一个程序通过起多个线程来用多个CPU
+  - 同一进程中的多线程共享内存空间，线程切换代价小
+
+  - 多线程通信方便
+
+  - 从内核层面来看线程其实也是一种特殊的进程，它跟父进程共享了打开的文件和文件系统信息，共享了地址空间和信号处理函数
+
+- 协程
+  - Go 语言中的轻量级线程实现；进程和线程是在操作系统层面体现的
+  - Golang 在 runtime、系统调用等多方面对 goroutine 调度进行了封装和处理，当遇到长时间执行 或者进行系统调用时，会主动把当前 goroutine 的 CPU (P) 转让出去，让其他 goroutine 能被调度 并执行，也就是 Golang 从语言层面支持了协程
+
+Communicating Sequential Process 
+
+* CSP：go语言多线程的模型叫CSP
+  * 描述两个独立的并发实体通过共享的通讯 channel 进行通信的并发模型。 
+
+- Go协程goroutine：go语言里对线程的实现
+  - 是一种轻量线程，它不是操作系统的线程，而是将一个操作系统线程分段使用，通过调度器实现协作式调度。
+  - 是一种绿色线程，微线程，它与 Coroutine 协程也有区别，能够在发现堵塞后启动新的微线程。
+
+- 通道channel
+  - 类似 Unix 的 Pipe，用于协程之间通讯和同步。
+  - 协程之间虽然解耦，但是它们和 Channel 有着耦合。
+
+线程和协程的差异
+
+* 每个goroutine(协程)默认占用内存远比Java、C的线程少 
+  * goroutine:2KB
+  * 线程:8MB
+
+* 线程/goroutine切换开销方面，goroutine远比线程小
+  * 线程:涉及模式切换(从用户态切换到内核态)、16个寄存器、PC、SP...等寄存器的刷新 
+  * goroutine:只有三个寄存器的值修改 - PC / SP / DX.
+
+* GOMAXPROCS
+  * 控制并行线程数量
+
+协程示例
+
+* 启动新协程:gofunctionName() 
+
+  ```go
+  for i := 0; i < 10; i++ {
+  	go fmt.Println(i) 
+  }
+  time.Sleep(time.Second)
+  ```
+
+### 4.2 channel - 多线程通信
+
+* Channel 是多个协程之间通讯的管道
+  * 一端发送数据，一端接收数据
+  * 同一时间只有一个协程可以访问数据，无共享内存模式可能出现的内存竞争 
+  * 协调协程的执行顺序
+
+* 声明方式
+
+  - var identifier chan datatype
+
+  - 操作符<-
+
+- 示例
+
+  ```go
+  ch := make(chan int) 
+  go func() {
+  	fmt.Println("hello from goroutine")
+  	ch <- 0 //数据写入Channel 
+  }()
+  i := <-ch//从Channel中取数据并赋值
+  ```
+
+通道缓冲
+
+* 基于Channel的通信是同步的
+* 当缓冲区满时，数据的发送是阻塞的
+* 通过make关键字创建通道时可定义缓冲区容量，默认缓冲区容量为0
+
+* 下面两个定义的区别?
+
+  - ch := make(chan int)  // 默认 length为0，是一个阻塞channel，producer塞不进数据，只有当consumer取数据时，producer的数据直接发给consumer， 一边取一边读，取走才能传进去
+
+  - ch := make(chan int,1) // length为1，buffer里一个，传输一个，总数是2
+
+遍历通道缓冲区
+
+```go
+ch := make(chan int, 10) 
+go func() {
+	for i := 0; i < 10; i++ { 
+		rand.Seed(time.Now().UnixNano())
+ 		n := rand.Intn(10) // n will be between 0 and 10 
+ 		fmt.Println("putting: ", n)
+ 		ch <- n
+	}
+	close(ch) 
+}()
+fmt.Println("hello from main") 
+for v := range ch {
+	fmt.Println("receiving: ", v) 
+}
+```
+
+单向通道
+
+* 只发送通道
+  * var sendOnly chan<- int
+
+* 只接收通道
+  * var readOnly <-chan int
+
+* Istio webhook controller
+   • func (w *WebhookCertPatcher) runWebhookController(stopChan <-chan struct{}) {}
+
+* 如何用: 双向通道转换; 单向通道不能独立使用，需要配合双向通道；避免有人做误操作，
+
+  ```go
+  var c = make(chan int) 
+  go prod(c)
+  go consume(c)
+  func prod(ch chan<- int){ //双向转单向，只写
+  	for { ch <- 1 } 
+  }
+  func consume(ch <-chan int) { 
+    for { <-ch }
+  }
+  ```
+
+关闭通道
+
+* 通道无需每次关闭
+
+* 关闭的作用是告诉接收者该通道再无新数据发送 
+
+* 只有发送方需要关闭通道
+
+* ```go
+  ch := make(chan int)
+  defer close(ch)
+  if v, notClosed := <-ch; notClosed {
+  	fmt.Println(v) 
+  }
+  ```
+
+select
+
+* 当多个协程同时运行时，可通过 select 轮询多个通道
+
+  * 如果所有通道都阻塞则等待，如定义了 default 则执行 default 
+  * 如多个通道就绪则随机选择
+
+* ```go
+  select {
+  	case v:= <- ch1:
+  		...
+  	case v:= <- ch2:
+  		... 
+  	default:
+  		... 
+  }
+  ```
+
+定时器 Timer
+
+* time.Ticker以指定的时间间隔重复的向通道C发送时间值
+
+* 使用场景
+
+  * 为协程设定超时时间
+
+* ```go
+  timer := time.NewTimer(time.Second) 
+  select {
+  	// check normal channel
+  	case <-ch:
+   		fmt.Println("received from ch")
+  	case <-timer.C:
+   		fmt.Println("timeout waiting from channel ch")
+  }
+  ```
+
+上下文 Context
+
+* 超时、取消操作或者一些异常情况，往往需要进行抢占操作或者中断后续操作
+
+* Context 是设置截止日期、同步信号，传递请求相关值的结构体
+
+  ```go
+  type Context interface {
+  	Deadline() (deadline time.Time, ok bool) 
+    Done() <-chan struct{}
+  	Err() error
+  	Value(key interface{}) interface{}
+  }
+  ```
+
+* 用法
+  * context.Background  //初始化最顶层的上下文
+  * context.TODO
+  * context.WithDeadline 
+  * context.WithValue
+  * context.WithCancel
+  * context.WithTimeout
+
+如何停止一个子协程 https://github.com/cncamp/golang/blob/master/examples/module1/context/donechannel/main.go
+
+```go
+done := make(chan bool) 
+go func() {
+	for { 
+    select {
+		case <-done:
+ 			fmt.Println("done channel is triggerred, exit child go routine") return
+		} 
+	}
+}() 
+close(done)
+```
+
+基于 Context 停止子协程 https://github.com/cncamp/golang/blob/master/examples/module1/context/context/main.go
+
+* Context是Go语言对goroutine和timer的封装
+
+  ```go
+  ctx, cancel := context.WithTimeout(context.Background(), time.Second) 
+  defer cancel()
+  go process(ctx, 100*time.Millisecond)
+  <-ctx.Done()
+  fmt.Println("main:", ctx.Err())
+  ```
+
+
+
+### 4.3 线程安全
+
+现在大部分机器都是多CPU，多核的；线程要读取内存中的数据，CPU的处理速度比内存相对快, 如果每次去访问内存会导致程序效率降低，所以在CPU中加了缓存机制(L1缓存，L2缓存)，线程访问数据时，第一次从内存加载，后续都是从缓存中读区，此时线程1改了数据，线程2读出来还是原来的值，为了解决这个问题，即线程安全问题，解决方案是加锁。
+
+<img src="/Users/gmx/Documents/workspace/note/Computer-Science/docs/Computer_Language/assets/线程安全.png" style="zoom:50%;" />
+
+
+
+线程安全解决方案：
+
+* channel
+* 加锁
+
+### 4.4 线程加锁
+
+锁
+
+- Go 语言不仅仅提供基于 CSP 的通讯模型，也支持基于共享内存的多线程数据访问
+
+- Sync 包提供了锁的基本原语
+
+  - sync.Mutex 互斥锁：Lock()加锁，Unlock 解锁； 读写都是互斥锁；
+
+  - sync.RWMutex 读写分离锁：不限制并发读，只限制并发写和并发读写；Mutex读写都加锁会降低性能，RWMutex 读写分离优化性能
+
+  - sync.WaitGroup：等待一组 goroutine 返回
+
+  - sync.Once：保证某段代码只执行一次
+
+  - sync.Cond：让一组 goroutine 在满足特定条件时被唤醒
+
+Mutex 示例：https://github.com/cncamp/golang/blob/master/examples/module2/syncmap/main.go
+
+* Kubernetes 中的 informer factory ， 
+
+```go
+// Start initializes all requested informers. 
+func (f *sharedInformerFactory) Start(stopCh <-chan struct{}) {
+   f.lock.Lock()
+   defer f.lock.Unlock()
+   for informerType, informer := range f.informers {
+       if !f.startedInformers[informerType] {
+          go informer.Run(stopCh)
+          f.startedInformers[informerType] = true
+        } 
+   }
+}
+```
+
+RWMutex示例：https://github.com/cncamp/golang/blob/master/examples/module2/mutex/main.go
+
+WaitGroup 示例：https://github.com/cncamp/golang/blob/master/examples/module2/waitgroup/main.go
+
+```go
+// CreateBatch create a batch of pods. All pods are created before waiting.
+func (c *PodClient) CreateBatch(pods []*v1.Pod) []*v1.Pod {
+	ps := make([]*v1.Pod, len(pods))
+  var wg sync.WaitGroup 
+  for i, pod := range pods {
+  	wg.Add(1)
+    go func(i int, pod *v1.Pod) {
+    	defer wg.Done()
+      defer GinkgoRecover()
+      ps[i] = c.CreateSync(pod) //等待pod起来
+    }(i, pod) 
+  }
+	wg.Wait() //所有都done以后结束阻塞，结束执行
+	return ps 
+}
+```
+
+Once示例：https://github.com/cncamp/golang/blob/master/examples/module2/once/main.go
+
+Cond 示例：阻塞等待互相通知的机制；https://github.com/cncamp/golang/blob/master/examples/module2/condition/main.go
+
+* Kubernetes 中的队列，标准的生产者消费者模式 
+* cond: sync.NewCond(&sync.Mutex{}),
+
+```go
+// Add marks item as needing processing.
+func (q *Type) Add(item interface{}) {  //生产者，
+  q.cond.L.Lock()
+	defer q.cond.L.Unlock() 
+  if q.shuttingDown {
+		return
+	}
+	if q.dirty.has(item) {
+		return
+	}
+	q.metrics.add(item) 
+  q.dirty.insert(item)
+ 	if q.processing.has(item) {
+		return
+	}
+	q.queue = append(q.queue, item) q.cond.Signal()
+}
+
+// Get blocks until it can return an item to be processed. If shutdown = true,
+// the caller should end their goroutine. You must call Done with item when you // have finished processing it.
+func (q *Type) Get() (item interface{}, shutdown bool) { //消费者
+  q.cond.L.Lock()
+	defer q.cond.L.Unlock()
+ 	for len(q.queue) == 0 && !q.shuttingDown { 
+  	q.cond.Wait()
+	}
+	if len(q.queue) == 0 {
+ 		// We must be shutting down. 
+    return nil, true
+	}
+ 	item, q.queue = q.queue[0], q.queue[1:] //删掉第一个数据
+  q.metrics.get(item) 
+  q.processing.insert(item) 
+  q.dirty.delete(item)
+ 	return item, false
+}
+```
+
+### 4.5 线程调度
+
+深入理解 Go 语言线程调度
+
+* 进程:资源分配的基本单位
+* 线程:调度的基本单位, 是没有独立资源的线程
+* 无论是线程还是进程，在linux中都以task_struct描述，从内核角度看，与进程无本质区别 ,但是与父进程共享mm,fs,files,signal.
+* Glibc中的pthread库提供NPTL(NativePOSIXThreadingLibrary)支持
+
+![](/Users/gmx/Documents/workspace/note/Computer-Science/docs/Computer_Language/assets/进程与线程.png)
+
+* 一个操作系统所能支持的进程数有限，对多核支持不太好的语言如java，一台机器所能支持的线程有限，此时需要一个更新的语言如golang
+
+Linux 进程的内存使用
+
+* 随着技术迭代，出现了虚拟地址
+
+![](/Users/gmx/Documents/workspace/note/Computer-Science/docs/Computer_Language/assets/linux内存使用.png)
+
+CPU 对内存的访问
+
+* CPU上有个MemoryManagementUnit(MMU)单元
+
+* CPU把虚拟地址给MMU，MMU去物理内存中查询页表，得到实际的物理地址
+
+* CPU维护一份缓存TranslationLookasideBuffer(TLB)，缓存虚拟地址和物理地址的映射关系
+
+  ![](/Users/gmx/Documents/workspace/note/Computer-Science/docs/Computer_Language/assets/CPU对内存访问.png)
+
+  
+
+进程切换开销
+
+* 直接开销
+  * 切换页表全局目录(PGD)
+  * 切换内核态堆栈
+  * 切换硬件上下文(进程恢复前，必须装入寄存器的数据统称为硬件上下文) 
+  * 刷新TLB
+  * 系统调度器的代码执行
+
+* 间接开销
+  * CPU 缓存失效导致的进程需要到内存直接访问的 IO 操作变多
+
+线程切换开销
+
+* 线程本质上只是一批共享资源的进程，线程切换本质上依然需要内核进行进程切换
+
+* 一组线程因为共享内存资源，因此一个进程的所有线程共享虚拟地址空间，线程切换相比进程 切换，主要节省了虚拟地址空间的切换
+
+用户线程
+
+无需内核帮助，应用程序在用户空间创建的可执行单元，创建销毁完全在用户态完成。
+
+![](/Users/gmx/Documents/workspace/note/Computer-Science/docs/Computer_Language/assets/用户线程.png)
+
+Goroutine
+
+Go 语言基于 GMP 模型实现用户态线程
+
+- G:表示goroutine，每个goroutine都有自己的栈空间，定时器， 初始化的栈空间在 2k 左右，空间会随着需求增长。
+- M:抽象化代表内核线程，记录内核线程栈信息，当goroutine调度 到线程时，使用该 goroutine 自己的栈信息。
+- P:代表调度器，负责调度goroutine，维护一个本地goroutine队 列，M 从 P 上获得 goroutine 并执行，同时还负责部分内存的管理。
+
+GMP 模型细节
+
+G 所处的位置
+
+Goroutine 创建过程
+
+将 Goroutine 放到运行队列上
+
+调度器行为
+
+
+
+### 4.6 内存管理
+
 ## 5. 网络编程
+
+Go语言标准库里提供的net包，支持基于IP层、TCP/UDP层及更高层面(如HTTP、FTP、SMTP)的网络操作，其中用于IP层的称为Raw Socket。
+
+### 5.1 socket编程
+
+在Go语言中编写网络程序时，我们将看不到传统的编码形式。以前我们使用Socket编程时， 会按照如下步骤展开。
+
+(1) 建立Socket:使用socket()函数。
+ (2) 绑定Socket:使用bind()函数。
+ (3) 监听:使用listen()函数。或者连接:使用connect()函数。
+ (4) 接受连接:使用accept()函数。
+ (5) 接收:使用receive()函数。或者发送:使用send()函数。 
+
+Go语言标准库对此过程进行了抽象和封装。无论我们期望使用什么协议建立什么形式的连接，都只需要调用net.Dial()即可。
+
+#### 5.1.1 **Dial()**函数
+
+Dial()函数的原型如下:
+ **func** Dial(net, addr string) (Conn, error)
+
+其中net参数是网络协议的名字，addr参数是IP地址或域名，而端口号以“:”的形式跟随在地址 或域名的后面，端口号可选。如果连接成功，返回连接对象，否则返回error。
+
+我们来看一下几种常见协议的调用方式。 TCP链接:
+
+```go
+conn, err := net.Dial("tcp", "192.168.0.10:2100")
+```
+
+UDP链接:
+
+```go
+conn, err := net.Dial("udp", "192.168.0.12:975")
+```
+
+ICMP链接(使用协议名称):
+
+```
+conn, err := net.Dial("ip4:icmp", "www.baidu.com")
+```
+
+ICMP链接(使用协议编号):
+
+```
+conn, err := net.Dial("ip4:1", "10.0.0.3")
+```
+
+这里我们可以通过以下链接查看协议编号的含义:http://www.iana.org/assignments/protocol-num- bers/protocol-numbers.xml。 
+
+目前，Dial()函数支持如下几种网络协议:"tcp"、"tcp4"(仅限IPv4)、"tcp6"(仅限 IPv6)、"udp"、"udp4"(仅限IPv4)、"udp6"(仅限IPv6)、"ip"、"ip4"(仅限IPv4)和"ip6"(仅限IPv6)。 在成功建立连接后，我们就可以进行数据的发送和接收。发送数据时，使用conn的Write()成员方法，接收数据时使用Read()方法。
+
+#### 5.1.2 ICMP示例程序
+
+使用ICMP协议向在线的主机发送一个问候，并等待主机 返回
+
+```go
+package main
+import ( "net"
+ "os"
+"bytes" 6 "fmt"
+)
+func main() {
+if len(os.Args) != 2 {
+        fmt.Println("Usage: ", os.Args[0], "host")
+os.Exit(1) }
+    service := os.Args[1]
+    conn, err := net.Dial("ip4:icmp", service)
+    checkError(err)
+var msg [512]byte
+msg[0] = 8 // echo
+msg[1] = 0 // code 0
+msg[2] = 0 // checksum msg[3] = 0 // checksum msg[4] = 0 // identifier[0] msg[5] = 13 //identifier[1] msg[6] = 0 // sequence[0] msg[7] = 37 // sequence[1] len := 8
+check := checkSum(msg[0:len]) msg[2] = byte(check >> 8) msg[3] = byte(check & 255)
+    _, err = conn.Write(msg[0:len])
+    checkError(err)
+    _, err = conn.Read(msg[0:])
+    checkError(err)
+fmt.Println("Got response") if msg[5] == 13 {
+        fmt.Println("Identifier matches")
+    }
+if msg[7] == 37 { fmt.Println("Sequence matches")
+}
+os.Exit(0) }
+func checkSum(msg []byte) uint16 { sum := 0
+// 先假设为偶数
+for n := 1; n <len(msg)-1; n += 2 {
+sum += int(msg[n])*256 + int(msg[n+1]) }
+sum = (sum >> 16) + (sum & 0xffff) sum += (sum >> 16)
+var answer uint16 = uint16(^sum) return answer
+}
+func checkError(err error) { if err != nil {
+        fmt.Fprintf(os.Stderr, "Fatal error: %s", err.Error())
+    os.Exit(1)
+} }
+func readFully(conn net.Conn) ([]byte, error) { defer conn.Close()
+result := bytes.NewBuffer(nil) var buf [512]byte
+for {
+n, err := conn.Read(buf[0:]) result.Write(buf[0:n])
+if err != nil {
+if err == io.EOF { break
+}
+return nil, err
+} }
+return result.Bytes(), nil
+}
+```
+
+
+
+5.1.3 
+
+### 5.2 http编程
+
+### 5.3 RPC编程
 
 ## 6. 安全编程
 
 ## 7. 工程管理
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### 常用语法
-
-
-
-
-
-## 包管理
+### 包管理
 
 go包管理与java类似，java包管理需要写全路径，go只需要写最后一个包名
 
@@ -1594,13 +2183,11 @@ go包管理与java类似，java包管理需要写全路径，go只需要写最�
 
 
 
-### 
 
-## 框架
 
-* [Gin —— a HTTP web framework written in Go \(Golang\)](https://github.com/gin-gonic)
+* 
 
-## **Go**跨平台编译
+### **Go**跨平台编译
 
 Golang支持交叉编译，也就是说你在32位平台的机器上开发，可以编译生成64位平台上的可执行程序。
 
@@ -1657,7 +2244,7 @@ $GOPATH
     └─your_pkg_src(本地包)
 ```
 
-## go工具
+### go工具
 
  bin/ 目录下主要包括以下几个工具：
 
@@ -1676,7 +2263,7 @@ guru.exe 	go语言源代码有关工具，如代码高亮等
 版权声明：本文为CSDN博主「阿龙哥哥」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
 原文链接：https://blog.csdn.net/v6543210/article/details/84504460
 
-## Go编译顺序
+### Go编译顺序
 
 Go命令行工具只是一个源代码管理工具，或者说是一个前端。真正的Go编译 器和链接器被Go命令行工具隐藏在后面，我们可以直接使用它们:
 
@@ -1694,8 +2281,11 @@ Hello, world. 你好，世界!
 
 
 
-## 问题追踪和调试
+### 问题追踪和调试
 
 1. 打印日志：fmt包或log包
 2. GDB调试 ```$ gdb softwareName```
 
+## 8. go开发框架
+
+* [Gin —— a HTTP web framework written in Go \(Golang\)](https://github.com/gin-gonic)

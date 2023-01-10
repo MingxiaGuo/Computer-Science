@@ -26,12 +26,6 @@ A VPC’s logical isolation is implemented using virtual network functions and s
 
 Cloud Data Center(Insfrustracture) is hosted in multiple locations world-wide. These locations are composed of Regions, Availability Zones, Local Zones, AWS Outposts, and Wavelength Zones. 
 
-* **Regions**: Each Region is a separate geographic area. Regions are isolated from each other. This achieves the greatest possible fault tolerance and stability. 一个region是多个数据中心的集群，到2021年为止AWS全球有25个region，AWS服务分布在世界各地。
-
-* **Availability Zones**: Availability Zones are multiple, isolated locations within each Region. The code for Availability Zone is its Region code followed by a letter identifier. For example, `us-east-1a` 每个region中包含数个独立的、物理分离的AZ，每个AZ有独立的供电，制冷，安保，同一region内AZ之间有高带宽，极低延时的光纤网络相连，数据以加密形式传输。每个AZ下包含一个或多个数据中心，每个数据中心有独立的供电、制冷、网络。
-
-* **Local Zones**: Local Zones provide you the ability to place resources, such as compute and storage, in multiple locations closer to your end users.
-
 - **AWS Outposts**: AWS Outposts brings native AWS services, infrastructure, and operating models to virtually any data center, co-location space, or on-premises facility.
 - **Wavelength Zones**: Wavelength Zones allow developers to build applications that deliver ultra-low latencies to 5G devices and end users. Wavelength deploys standard AWS compute and storage services to the edge of telecommunication carriers' 5G networks.
 - 
@@ -40,11 +34,45 @@ Cloud Data Center(Insfrustracture) is hosted in multiple locations world-wide. T
 
 AWS Global Infrastructure: https://aws.amazon.com/about-aws/global-infrastructure/
 
+* Geography: Europe, Asia Pacific, North America, South America
 
+* **Regions**: Each Region is a separate geographic area. Regions are isolated from each other. This achieves the greatest possible fault tolerance and stability. 一个region是多个数据中心的集群，到2021年为止AWS全球有25个region，AWS服务分布在世界各地。Lodon, WDC, Tokyo.region is an abstraction that is related to the geographic area in which a VPC is deployed. Each region contains multiple zones, which represent independent fault domains. A VPC can span multiple zones within its assigned region.
 
-* **Regions**: Each Region is a separate geographic area. Regions are isolated from each other. This achieves the greatest possible fault tolerance and stability. 一个region是多个数据中心的集群，到2021年为止AWS全球有25个region，AWS服务分布在世界各地。
 * **Availability Zones**: Availability Zones are multiple, isolated locations within each Region. The code for Availability Zone is its Region code followed by a letter identifier. For example, `us-east-1a` 每个region中包含数个独立的、物理分离的AZ，每个AZ有独立的供电，制冷，安保，同一region内AZ之间有高带宽，极低延时的光纤网络相连，数据以加密形式传输。每个AZ下包含一个或多个数据中心，每个数据中心有独立的供电、制冷、网络。
-* VPC：Virtual Private Cloud, 是用户在region中自定义的虚拟网络，是一个整体概念，用户可在region中创建多个VPC。我们可以在VPC中选择IP网段，创建subnet，指定route table，控制ACL，设置网关。大部分AWS服务都需要以VPC为基础进行构建，入EC2，ALB，及无服务器服务ECS Fargate。VPC只能属于一个region
-* Subnet：当我们在一个VPC中创建subnet时需要给subnet选择一个AZ，一个subnet只能选择在一个AZ中。Subnet是VPC中的子网络建立在特定的AZ中，subnet是最终承载大部分AWS服务的组件，如EC2，ECS Fargate，RDS。subnet分为private subnet(不能直接访问intenet)和public subnet(可直接访问internet)，private subnet也可通过NAT的方式访问internet
+
+* Zones: A zone is an abstraction that refers to the physical data center that hosts the compute, network, and storage resources, as well as the related cooling and power, which provides services and applications. Zones are isolated from each other to create no shared single point of failure, improved fault tolerance, and reduced latency. Each zone is assigned a default address prefix, which specifies the address range in which subnets can be created. If the default address scheme does not suit your requirements, such as if you want to bring your own public IPv4 address range, you can customize the address prefixes.
+
+* **Local Zones**: Local Zones provide you the ability to place resources, such as compute and storage, in multiple locations closer to your end users.
+
+* Network
+
+  * VPC：Virtual Private Cloud, 是用户在region中自定义的虚拟网络，是一个整体概念，用户可在region中创建多个VPC。我们可以在VPC中选择**IP网段**，创建subnet，指定route table, security group，控制ACL，设置网关。大部分AWS服务都需要以VPC为基础进行构建，入EC2，ALB，及无服务器服务ECS Fargate。VPC只能属于一个region
+
+  * Subnet：当我们在一个VPC中创建subnet时需要给subnet选择一个AZ，一个subnet只能选择在一个AZ中。Subnet是VPC中的子网络建立在特定的AZ中，subnet是最终承载大部分AWS服务的组件，如EC2，ECS Fargate，RDS。subnet分为private subnet(不能直接访问intenet)和public subnet(可直接访问internet)，private subnet也可通过NAT的方式访问internet. Each subnet consists of a specified IP address range (CIDR block). Subnets are bound to a single zone, and they cannot span multiple zones or regions. Subnets in the same VPC are connected to each other.
+
+  * External connectivity: External connectivity can be achieved by using a public gateway that is attached to a subnet, or a floating IP address that is attached to a virtual server instance. Use a public gateway for source network address translation (SNAT) and a floating IP for destination network address translation (DNAT). For secure external connectivity, use the VPN service to connect your VPC to another network. 
+
+    | Public gateway                                               | Floating IP                                                  |
+    | ------------------------------------------------------------ | ------------------------------------------------------------ |
+    | Instances can initiate connections to the internet, but they can't receive connections from the internet. | Instances can initiate or receive connections to or from the internet |
+    | Provides connectivity for an entire subnet                   | Provides connectivity for a single instance                  |
+    
+    A Public Gateway enables a subnet and all its attached virtual server instances to connect to the internet. Subnets are private by default. After a subnet is attached to the public gateway, all instances in that subnet can connect to the internet. Although each zone has only one public gateway, the public gateway can be attached to multiple subnets.
+    
+    Public gateways use Many-to-1 NAT, which means that thousands of instances with private addresses use one public IP address to communicate with the public internet.
+    
+    | SNAT                                                         | DNAT                                                         | ACL                                                          | VPN                                                          |
+    | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+    | Instances can have outbound-only access to the Internet      | Allow inbound connectivity from the Internet to a Private IP | Provide restricted inbound access from the Internet to instances or subnets | Site-to-site VPN handles customers of any size, and single or multiple locations |
+    | Entire subnets share the same outbound public endpoint       | Provides limited access to a single private server           | Restrict access inbound from Internet, based on service, protocol, or port | High throughput (up to 10 Gbps) provides customers the ability to transfer large data files securely and quickly |
+    | Protects instances; Cannot initiate access to instances through the public endpoint | DNAT service can be scaled up or down, based on requirements | Stateless ACLs allow for granular control of traffic         | Create secure connections with industry standard encryption  |
+
+    
+
 * Security Group：Security Group通过控制IP和端口来控制出站入站规则，可以用于EC2，RDS及VPC Endpoint。
+
 * VPC Endpoint//
+
+* 
+
+* **Access Control List (ACL)** 

@@ -1,142 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Computer Science</title>
-    <link rel="icon" type="image/x-ico" href="./考拉.png" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="Description">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <!-- Theme: Simple -->
-    <!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
-    <link href="https://cdn.bootcss.com/KaTeX/0.10.0/katex.min.css" rel="stylesheet">
-    <script src="https://cdn.bootcss.com/KaTeX/0.10.0/katex.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
-    <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
-    <style type="text/css">
-        @media (min-width:600px) {
-            .sidebar-toggle {
-                background-color: #f3f2ee;
-            }
-        }
-
-        .content,
-        .sidebar,
-        .markdown-section,
-        body,
-        .search input {
-            background-color: rgba(243, 242, 238) !important;
-        }
-        /*Custom theme styles */
-        
-        :root {
-            /*--base-font-size: 14px;*/
-            /*--theme-color   : #f7c241; 黄色*/
-            --theme-color: #eb9f9f;
-            /*--base-background-color: #f8ecc9;*/
-            /*--mark-background      : #ffecb3;*/
-            --cover-background-color: #f1bbba;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Computer Science</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="icon" type="image/x-ico" href="./考拉.png" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
 </head>
-
 <body>
-    <div id="app"></div>
-    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
-
-    <!-- mindmap -->
-    <!-- <script src="//cdn.jsdelivr.net/npm/d3@6"></script>
-    <script src="//cdn.jsdelivr.net/npm/markmap-view"></script> -->
-
-    <script src="//unpkg.com/d3@3/d3.min.js"></script> -->
-    <script src="//unpkg.com/markmap@0.6.1/lib/d3-flextree.js"></script>
-    <script src="//unpkg.com/markmap@0.6.1/lib/view.mindmap.js"></script>
-    <link rel="stylesheet" href="//unpkg.com/markmap@0.6.1/style/view.mindmap.css">
-
-  
-
-  
-    <script>
-        window.$docsify = {
-            maxAge: 100,
-            name: 'Computer-Science',
-            // logo: 'logo.png',
-            repo: 'https://github.com/MingxiaGuo/Computer-Science',
-            // homepage: 'https://github.com/MingxiaGuo/Computer-Science/blob/master/README.md',
-            search: {
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Computer-Science',
+      repo: 'https://github.com/MingxiaGuo/Computer-Science',
+      loadSidebar: true,
+    //   loadSidebar: 'SUMMARY.md',
+      auto2top: true,
+      toc: {
+        scope: '.markdown-section',
+        headings: 'h1, h2, h3, h4, h5, h6',
+        title: 'Table of Contents',
+      },
+      search: {
                 paths: 'auto',
                 placeholder: '🔍 Type to search ',
                 noData: '😞 No Results! ',
                 depth: 6
-            },
-            // themeColor: '#f7c241',
-            subMaxLevel: 0,
-            coverpage: true,
-            loadSidebar: true,
-            autoHeader: true,
-            loadNavbar: true,
-            formatUpdated: '{MM}/{DD} {HH}:{mm}',
-            // formatUpdated: function(time) {
-            //     // ...
+        },
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 
-            //     return time;
-            // },
-            // markdown: {
-            //     smartypants: true,
-            //     renderer: {
-            //         code: function(code, lang) {
-            //             mermaid.initialize({
-            //                 startOnLoad: false
-            //             });
-            //             if (lang === "mermaid") {
-            //                 return (
-            //                     '<div class="mermaid">' + mermaid.render('mermaid-svg-' + num++, code) + "</div>"
-            //                 );
-            //             }
-            //             return this.origin.code.apply(this, arguments);
-            //         }
-            //     }
-            // },
-            pagination: {
-                previousText: '上一章节',
-                nextText: '下一章节',
-                // crossChapter: true,
-                // crossChapterText: true,
-            },
-            mindmap: {
-                // https://github.com/dundalek/markmap
-                markmap: {
-                    preset: 'colorful', // or default
-                    linkShape: 'diagonal' // or bracket
-                }
-            },
-	        plugins: [
-	            EditOnGithubPlugin.create('https://github.com/MingxiaGuo/Computer-Science/blob/master/docs/')
-	        ],
-            toc: {
-                scope: '.markdown-section',
-                headings: 'h1, h2, h3, h4, h5, h6',
-                title: 'Table of Contents',
-            }
-        }
-    </script>
-    <!-- <script src="//unpkg.com/docsify"></script> -->
-    <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
-    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-    <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
-    <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
-    <script src="//unpkg.com/docsify-copy-code"></script>
-    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <!-- Table of content -->
+  <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script> 
 
-    <!-- <script src="//unpkg.com/markmap@0.6.1/lib/d3-flextree.js"></script>
-    <script src="//unpkg.com/markmap@0.6.1/lib/view.mindmap.js"></script>
-    <link rel="stylesheet" href="//unpkg.com/markmap@0.6.1/style/view.mindmap.css">
-    <script src="//unpkg.com/docsify-mindmap/dist/docsify-mindmap.min.js"></script> -->
-    <script src="//unpkg.com/docsify-mindmap/dist/docsify-mindmap.min.js"></script>
+  <!-- Syntax highlighting -->
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-go.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-git.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-docker.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
 
-
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>   <!-- search -->
 </body>
-
 </html>

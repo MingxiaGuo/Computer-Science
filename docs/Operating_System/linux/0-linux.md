@@ -1,0 +1,1022 @@
+# Linux
+
+学习操作系统需要对C语言基础知识、数据结构和算法、编译原理以及计算机组成原理有一些了解，这样学起来就会更轻松。
+
+
+从《C程序设计语言》这本书学起。这是一本很薄很薄的书。如果你有编程基础，但是之前没有学过C语言，稍微翻一翻它，了解一下C语言的基本编程方法也就足够用了。
+
+这本书里，第1章到第3章涉及类型、运算符、表达式、控制流，这些和其他语言区别不大，你应该很容易理解。你重点看第4章函数与程序结构、第5章指针与数组、第6章结构，这样基本就可以了。
+
+对于数据结构和算法，业界有大量砖头一样厚的书籍。如果从头学起，你可能会比较崩溃。其实你只要了解表、栈、队列、树，这些基本的内容就够用了。现在学习资料这么多，想学会这些内容不是难事，关键看你是不是用心，是不是真心想要学习。既然是基于C语言的数据结构和算法，我这里给你推荐一本书《数据结构与算法分析：C语言描述》。在这本书里，你重点看第3章表、栈和队列和第4章树，基本就可以了。
+
+编译原理和计算机组成，这些都是操作系统的基础。在咱们的专栏里面，我也有简单的阐述，你只要掌握我平时说的那些，基本上足够了。计算机组成与系统原理的书，相对来说都比较复杂。
+
+一般的汇编语言的书都会简单介绍x86的机制，以及简单的汇编语言。例如，《汇编语言：基于x86处理器》这本书里，你可以重点看第2章x86处理器架构和第3章汇编语言基础，掌握这些基本就可以了。
+
+除此之外，极客时间出品的《数据结构与算法之美》《深入浅出计算机组成原理》也是非常优秀的学习资料。所有基础知识，本是一家。如果有精力，推荐你认真学习这两个专栏，对我们这门课会非常有帮助。
+
+**“先读薄，再读厚，再读薄”这样的三遍学习法**。
+
+
+---
+
+
+
+## Overview
+
+操作系统：将硬件资源分配（CPU，内存，硬盘，网络）给不同用户程序使用，并在适当的时间将资源拿回来，再分配给其他用户进程。
+
+操作系统在计算机中承担着“大管家”的角色。它合理分配计算机硬件和软件资源给不同的用户程序使用，并且在适当的时间将这些资源拿回来，再分配给其他的用户进程。并处理多种基本事务，比如管理与配置内存、决定系统资源供需的优先次序、控制输入与输出设备、操作网络与管理文件系统等，还提供一个让用户与系统交互的操作界面。硬件资源包括：CPU，内存，硬盘，网络。操作系统就是协调各种资源，帮助我们成事的
+
+整个Linux的学习过程中，要爬的坡有六个，分别是熟练使用Linux命令行、使用Linux进行程序设计、了解Linux内核机制、阅读Linux内核代码、实验定制Linux组件，以及最后落到生产实践上：
+
+- 熟练使用Linux命令行: 如果你想全面学习Linux命令，推荐你阅读《**鸟哥的Linux私房菜**》。如果想再深入一点，推荐你阅读《**Linux系统管理技术手册**》。这本砖头厚的书，可以说是Linux运维手边必备。
+- 使用Linux进行程序设计:**通过系统调用或者glibc，学会自己进行程序设计.** 如果要进一步学习Linux程序设计，推荐你阅读**《UNIX环境高级编程》**，这本书有代码，有介绍，有原理，非常实用。
+- 了解Linux内核机制,**反复研习重点突破:** 有助于你更好地使用命令行和进行程序设计，能让你的运维和开发水平上升一个层次，但是我不建议你直接看代码，先了解一下Linux内核机制，知道基本的原理和流程就可以了.《**深入理解LINUX内核**》。这本书言简意赅地讲述了主要的内核机制。看完这本书，你会对Linux内核有总体的了解。不过这本书的内核版本有点老，不过对于了解原理来讲，没有任何问题。
+- 阅读Linux内核代码: **一开始阅读代码不要纠结一城一池的得失，不要每一行都一定要搞清楚它是干嘛的，而要聚焦于核心逻辑和使用场景.** 这个时候，你就可以有针对性地去做课题，把所学和你现在做的东西结合起来重点突破。例如你是研究虚拟化的，就重点看KVM的部分；如果你是研究网络的，就重点看内核协议栈的部分。推荐一本书，《**LINUX内核源代码情景分析**》。这本书最大的优点是结合场景进行分析，看得见、摸得着，非常直观，唯一的缺点还是内核版本比较老。
+- 实验定制Linux组件，
+- 落到生产实践上: **面向真实场景的开发，实践没有终点**
+- ![bcf70b988e59522de732bc1b01b45a5b](https://static001.geekbang.org/resource/image/bc/5b/bcf70b988e59522de732bc1b01b45a5b.jpeg)
+
+假设，我们现在就是在做一家外包公司，我们的目标是把这家公司做上市。其中，操作系统就是这家外包公司的老板。我们把这家公司的发展阶段分为这样几个时期：
+
+- **初创期**：这个老板基于开放的营商环境（x86体系结构），创办一家外包公司（系统的启动）。因为一开始没有其他员工，老板需要亲自接项目（实模式）。
+- **发展期**：公司慢慢做大，项目越接越多（保护模式、多进程），为了管理各个外包项目，建立了项目管理体系（进程管理）、会议室管理体系（内存管理）、文档资料管理系统（文件系统）、售前售后体系（输入输出设备管理）。
+- **壮大期**：公司越来越牛，开始促进内部项目的合作（进程间通信）和外部公司合作（网络通信）。
+- **集团化**：公司的业务越来越多，会成立多家子公司（虚拟化），或者鼓励内部创业（容器化），这个时候公司就变成了集团。大管家的调度能力不再局限于一家公司，而是集团公司（Linux集群），从而成功上市（从单机操作系统到数据中心操作系统）。
+
+![](https://static001.geekbang.org/resource/image/7d/a5/7d7b2f705d4877bb331b4ea3ff3450a5.jpg)
+
+![80a4502300dfa51c8520001c013cee5d](https://static001.geekbang.org/resource/image/80/5d/80a4502300dfa51c8520001c013cee5d.jpeg)
+
+除此之外，极客时间出品的《数据结构与算法之美》《深入浅出计算机组成原理》也是非常优秀的学习资料。所有基础知识，本是一家。如果有精力，推荐你认真学习这两个专栏，对我们这门课会非常有帮助。
+
+国外的人写书也有这个特点，一般第一章是对整本书的核心知识做个讲解。之后章节是对第一章的涉及到的进行细致讲解。这种方法能大量使用在书籍编写中，足以说明这种方法还是有作用的。今天的文章收获到了接下来如何做，如何学习
+
+**操作系统：**
+
+如果你想全面学习Linux命令，推荐你阅读《**鸟哥的Linux私房菜**》。如果想再深入一点，推荐你阅读《**Linux系统管理技术手册**》。这本砖头厚的书，可以说是Linux运维手边必备。
+
+《自己动手写操作系统》
+
+《UNIX 环境高级编程》
+
+《一个操作系统的实现》
+
+《系统虚拟化原理与实现》
+
+《深入理解Linux虚拟内存管理》
+
+《深入理解Linux内核》
+
+《深入Linux内核架构》
+
+《穿越计算机的迷雾》
+
+《程序员的自我修养：链接、装载与库》
+
+《操作系统真象还原》
+
+《操作系统设计与实现》
+
+《x86汇编语言：从实模式到保护模式》
+
+《linux内核设计的艺术图解》
+
+《Linux设备驱动开发详解》
+
+《Linux内核完全注释》
+
+《Linux内核设计与实现》
+
+《Linux多线程服务端编程》
+
+《Linux 内核分析及编程》
+
+《IBM PC汇编语言程序设计》
+
+《深入理解计算机系统》
+
+《性能之巅：洞悉系统、企业与云计算》
+
+《Linux内核协议栈源代码解析》
+
+《UNIX网络编程》
+
+《Linux/UNIX系统编程手册》
+
+《深入Linux设备驱动程序内核机制》
+
+《深入理解Linux驱动程序设计》
+
+《Linux Device Drivers》
+
+《TCP/IP详解卷》
+
+《The TCP/IP Guide》
+
+《深入理解LINUX网络技术内幕》
+
+《Linux内核源代码情景分析》
+
+《UNIX/Linux系统管理技术手册》
+
+关于操作系统，有一本国外的教材叫做OSTEP(Operating System Three Easy Picies) 虽然貌似没有中文版的，但里面的内容讲的相当通俗易懂，强烈推荐给大家作为理论层面的补充
+
+给大家推荐一本非常棒的入门图书Unix/Linux编程实践教程(Understanding UNIX/LINUX Programming)，绝版了. 我的博客https://www.cnblogs.com/rocedu/p/6016880.html就是对这本书的核心方法的总结，供大家参考
+
+把Linux内核当成一家软件外包公司的老板
+
+### 电脑组成
+
+在平时的生活中，我们几乎时时刻刻都在使用操作系统，只是大部分时间你都意识不到它的存在。比如你买了一部手机或者一台平板电脑，立马就能上手使用，这是因为它们里面都预先安装了操作系统。
+
+![ed03667738a92d66626914fe5dc78d45](https://static001.geekbang.org/resource/image/ed/45/ed03667738a92d66626914fe5dc78d45.png)
+
+操作系统其实就像一个软件外包公司，其内核就相当于这家外包公司的老板。**鼠标和键盘**是计算机的**输入设备**，**输入设备驱动**其实就是**客户对接员**。当客户告诉对接员需求的时候，对于操作系统来讲，输入设备会发送一个中断。这个概念很好理解。客户肯定希望外包公司把正在做的事情都停下来服务它。所以，这个时候客户发送的需求就被称为**中断事件**（Interrupt Event）。显卡会有**显卡驱动**，在操作系统中称为**输出设备驱动**，也就是上面说的**交付人员**。QQ这个程序就相当于**项目执行计划书**。程序以二进制文件的形式保存在硬盘上，。硬盘是个物理设备，要按照规定格式化成为文件系统，才能存放这些程序。文件系统需要一个系统进行统一管理，称为**文件管理子系统**（File Management Subsystem）。项目执行计划书是静态的，项目的执行是动态的。QQ的二进制文件是静态的，称为**程序**（Program），而运行起来的QQ，是不断进行的，称为**进程**（Process）。操作系统也提供一个办事大厅，也就是**系统调用**（System Call）系统调用也能列出来提供哪些接口可以调用，进程有需要的时候就可以去调用。这其中，立项是办事大厅提供的关键服务之一。同样，任何一个程序要想运行起来，就需要调用系统调用，创建进程。进程的执行也需要分配CPU进行执行，也就是按照程序里面的二进制代码一行一行地执行。于是，为了管理进程，我们还需要一个**进程管理子系统**（Process Management Subsystem）。在操作系统中，不同的进程有不同的内存空间，但是整个电脑内存就这么点儿，所以需要统一的管理和分配，这就需要**内存管理子系统**（Memory Management Subsystem）。
+
+![e15954f1371a4c782f028202dce1f84a](https://static001.geekbang.org/resource/image/e1/4a/e15954f1371a4c782f028202dce1f84a.jpeg)
+
+## 操作系统架构
+
+![21a9afd64b05cf1ffc87b74515d1d4f5](https://static001.geekbang.org/resource/image/21/f5/21a9afd64b05cf1ffc87b74515d1d4f5.jpeg)
+
+linux源代码：https://github.com/torvalds/linux
+
+* 系统调用：kernel/
+* 进程管理：kernel/, arch/`<arch>`/kernel
+* 内存管理：mm/, arch/`<arch>`/mm ; mm更多的是CPU体系结构的内存管理，与具体物理内存管理相关的代码在 arch/`<arch>`/mm
+* 文件管理：fs/: （file system）
+* 设备管理：drivers/char, drivers/block ； drivers存放各种硬件的驱动程序，drivers/block 下存放块设备的驱动程序
+* 网络管理：net/
+
+References:
+\* https://www.kernel.org/
+\* https://courses.linuxchix.org/kernel-hacking-2002/08-overview-kernel-source.html
+
+操作系统本质上是构建的一层抽象层，用来屏蔽复杂的底层硬件，向上层用户提供一种“假象”。。 CPU(单核情况)，实际上是只有一个的，在一个特定时刻也只可能有一个程序跑在一个CPU上(因为寄存器只有一组)，但是我们在上层观察到的却是系统上好像同时运行着那么多的程序，这实际上是操作系统用进程这个概念对CPU做的抽象。
+内存也是相似的概念，真实的内存和我们程序员看到的内存截然不同，操作系统通过内存映射等一系列技术让上层的程序员以为自己在操作一片连续的内存空间，实际上这只是操作系统对内存的抽象，是操作系统给程序员的幻象。
+文件系统也是如此，我们看到的所谓的abcd盘符，真实的情况可能是一块机械硬盘，要找数据必须来回的寻道，找到数据的位置，操作系统通过一系列的操作，把如此复杂的过程层层抽象，抽象出了上层看起来简单的文件系统。
+
+## Linux命令
+
+Linux里是“命令行+文件”模式
+
+![Linux命令](https://static001.geekbang.org/resource/image/88/e5/8855bb645d8ecc35c80aa89cde5d16e5.jpg)
+
+自己知道想干什么，但不知道哪个命令可以干怎么办？我们可以通过man -k key1|grep key2| grep key...进行搜索，man -k 或apropos是我认为学习linux命令优先掌握的命令，这样你就可以自己搜索了，相当于google,baidu, 大家可以参考【别出心裁的Linux命令学习法】(https://www.cnblogs.com/rocedu/p/4902411.html)
+
+推荐一个工具给大家：https://github.com/tldr-pages/tldr
+tl;dr 的意思是 too long; dont read，这个工具可以用来查常用的linux命令，比man更友好一些，大多数时候用这个就够了，找不到再man或者google。
+
+环境变量不是写在 .bash_profile里面吗？和.bashrc有区别吗？
+
+.bash_profile是系统配置信息存储文件，写在里面的系统变量是所有用户共用的，而.bashrc是个人的配置信息存储文件，只是单用户有效。也就是说，配置了.bashrc后切换用户可能需要重新配置系统变量。
+
+/etc/profile是干嘛的
+
+## Linux 系统调用
+
+有个命令strace，常用来跟踪进程执行时系统调用和所接收的信号。你可以试一下咱们学过的命令行，看看都执行了哪些系统调用。
+
+### ![img](https://static001.geekbang.org/resource/image/ff/f0/ffb6847b94cb0fd086095ac263ac4ff0.jpg)立项服务与进程管理
+
+**创建进程**的系统调用叫fork。在Linux里，要创建一个新的进程，需要一个老的进程调用fork来实现，其中老的进程叫作**父进程**（Parent Process），新的进程叫作**子进程**（Child Process）。
+
+Linux就是这样想的。当父进程调用fork创建进程的时候，子进程将各个子系统为父进程创建的数据结构也全部拷贝了一份，甚至连程序代码也是拷贝过来的。按理说，如果不进行特殊的处理，父进程和子进程都按相同的程序代码进行下去，这样就没有意义了。
+
+所以，我们往往会这样处理：对于fork系统调用的返回值，如果当前进程是子进程，就返回0；如果当前进程是父进程，就返回子进程的进程号。这样首先在返回值这里就有了一个区分，然后通过if-else语句判断，如果是父进程，还接着做原来应该做的事情；如果是子进程，需要请求另一个系统调用execve来执行另一个程序，这个时候，子进程和父进程就彻底分道扬镳了，也即产生了一个分支（fork）了。
+
+![img](https://static001.geekbang.org/resource/image/e8/7f/e8ee83d78538bd43d3835662ded92e7f.jpeg)
+
+对于操作系统也一样，启动的时候先创建一个所有用户进程的“祖宗进程”。这个在讲系统启动的时候还会详细讲，我这里先不多说。
+
+有时候，父进程要关心子进程的运行情况，这毕竟是自己身上掉下来的肉。有个系统调用waitpid，父进程可以调用它，将子进程的进程号作为参数传给它，这样父进程就知道子进程运行完了没有，成功与否。
+
+所以说，所有子项目最终都是老板，也就是祖宗进程fork过来的，因而它要对整个公司的项目执行负最终的责任。
+
+### **会议室管理与内存管理**
+
+在操作系统中，每个进程都有自己的内存，互相之间不干扰，有独立的**进程内存空间**。
+
+对于进程的内存空间来讲，放程序代码的这部分，我们称为**代码段**（Code Segment）。
+
+对于进程的内存空间来讲，放进程运行中产生数据的这部分，我们称为**数据段**（Data Segment）。其中局部变量的部分，在当前函数执行的时候起作用，当进入另一个函数时，这个变量就释放了；也有动态分配的，会较长时间保存，指明才销毁的，这部分称为**堆**（Heap）。
+
+一个进程的内存空间是很大的，32位的是4G，64位的就更大了，我们不可能有这么多物理内存。一定是需要的时候再分配。所以，进程自己不用的部分就不用管，只有进程要去使用部分内存的时候，才会使用内存管理的系统调用来登记，说自己马上就要用了，希望分配一部分内存给它，但是这还不代表真的就对应到了物理内存。只有真的写入数据的时候，发现没有对应物理内存，才会触发一个中断，现分配物理内存。
+
+![img](https://static001.geekbang.org/resource/image/e9/0b/e9bcfb17a7ac8c21bcc6b0828641850b.jpeg)
+
+这里我们介绍两个在堆里面分配内存的系统调用，brk和mmap。
+
+当分配的内存数量比较小的时候，使用brk，会和原来的堆的数据连在一起，这就像多分配两三个工位，在原来的区域旁边搬两把椅子就行了。当分配的内存数量比较大的时候，使用mmap，会重新划分一块区域，也就是说，当办公空间需要太多的时候，索性来个一整块。
+
+### 档案库管理与文件管理
+
+有一些需要长时间保存。文件之所以能做到这一点，一方面是因为**介质**，另一方面是因为**格式**。
+
+对于文件的操作，下面这六个系统调用是最重要的：
+
+- 对于已经有的文件，可以使用open打开这个文件，close关闭这个文件；
+- 对于没有的文件，可以使用creat创建文件；
+- 打开文件以后，可以使用lseek跳到文件的某个位置；
+- 可以对文件的内容进行读写，读的系统调用是read，写是write。
+
+Linux里有一个特点，那就是**一切皆文件**。
+
+- 启动一个进程，需要一个程序文件，这是一个**二进制文件**。
+- 启动的时候，要加载一些配置文件，例如yml、properties等，这是**文本文件**；启动之后会打印一些日志，如果写到硬盘上，也是**文本文件**。
+- 但是如果我想把日志打印到交互控制台上，在命令行上唰唰地打印出来，这其实也是一个文件，是标准输出**stdout文件**。
+- 这个进程的输出可以作为另一个进程的输入，这种方式称为**管道**，管道也是一个文件。
+- 进程可以通过网络和其他进程进行通信，建立的**Socket**，也是一个文件。
+- 进程需要访问外部设备，**设备**也是一个文件。
+- 文件都被存储在文件夹里面，其实**文件夹**也是一个文件。
+- 进程运行起来，要想看到进程运行的情况，会在/proc下面有对应的**进程号**，还是一系列文件。
+
+每个文件，Linux都会分配一个**文件描述符**（File Descriptor），这是一个整数。有了这个文件描述符，我们就可以使用系统调用，查看或者干预进程运行的方方面面。
+
+所以说，文件操作是贯穿始终的，这也是“一切皆文件”的优势，就是统一了操作的入口，提供了极大的便利。
+
+### 项目异常处理与信号处理
+
+当项目遇到异常情况，例如项目中断，做到一半不做了。这时候就需要发送一个**信号**（Signal）给项目组。经常遇到的信号有以下几种：
+
+- 在执行一个程序的时候，在键盘输入“CTRL+C”，这就是中断的信号，正在执行的命令就会中止退出；
+- 如果非法访问内存，例如你跑到别人的会议室，可能会看到不该看的东西；
+- 硬件故障，设备出了问题，当然要通知项目组；
+- 用户进程通过kill函数，将一个用户信号发送给另一个进程。
+
+当项目组收到信号的时候，项目组需要决定如何处理这些异常情况。
+
+对于一些不严重的信号，可以忽略，该干啥干啥，但是像SIGKILL（用于终止一个进程的信号）和SIGSTOP（用于中止一个进程的信号）是不能忽略的，可以执行对于该信号的默认动作。每种信号都定义了默认的动作，例如硬件故障，默认终止；也可以提供信号处理函数，可以通过sigaction系统调用，注册一个信号处理函数。
+
+提供了信号处理服务，项目执行过程中一旦有变动，就可以及时处理了。
+
+### 项目组间沟通与进程间通信
+
+项目组之间的沟通方式有很多种，我们来一一规划。
+
+首先就是发个消息，不需要一段很长的数据，这种方式称为**消息队列**（Message Queue）。由于一个公司内的多个项目组沟通时，这个消息队列是在内核里的，我们可以通过msgget创建一个新的队列，msgsnd将消息发送到消息队列，而消息接收方可以使用msgrcv从队列中取消息。
+
+当两个项目组需要交互的信息比较大的时候，可以使用**共享内存**的方式，也即两个项目组共享一个会议室（这样数据就不需要拷贝来拷贝去）。大家都到这个会议室来，就可以完成沟通了。这时候，我们可以通过shmget创建一个共享内存块，通过shmat将共享内存映射到自己的内存空间，然后就可以读写了。
+
+但是，两个项目组共同访问一个会议室里的数据，就会存在“竞争”的问题。如果大家同时修改同一块数据咋办？这就需要有一种方式，让不同的人能够排他地访问，这就是信号量的机制**Semaphore**。
+
+这个机制比较复杂，我这里说一种简单的场景。
+
+对于只允许一个人访问的需求，我们可以将信号量设为1。当一个人要访问的时候，先调用sem_wait。如果这时候没有人访问，则占用这个信号量，他就可以开始访问了。如果这个时候另一个人要访问，也会调用sem_wait。由于前一个人已经在访问了，所以后面这个人就必须等待上一个人访问完之后才能访问。当上一个人访问完毕后，会调用sem_post将信号量释放，于是下一个人等待结束，可以访问这个资源了。
+
+### 公司间沟通与网络通信
+
+这台Linux要和另一台Linux交流，这时候，我们就需要用到网络服务。
+
+不同机器的通过网络相互通信，要遵循相同的网络协议，也即**TCP/IP网络协议栈**。Linux内核里有对于网络协议栈的实现。如何暴露出服务给项目组使用呢？
+
+网络服务是通过套接字Socket来提供服务的。Socket这个名字很有意思，可以作“插口”或者“插槽”讲。虽然我们是写软件程序，但是你可以想象成弄一根网线，一头插在客户端，一头插在服务端，然后进行通信。因此，在通信之前，双方都要建立一个Socket。
+
+我们可以通过Socket系统调用建立一个Socket。Socket也是一个文件，也有一个文件描述符，也可以通过读写函数进行通信。
+
+### 查看源代码中的系统调用
+
+访问[https://www.kernel.org](https://www.kernel.org/)下载一份Linux内核源代码
+
+对于64位操作系统，找到unistd_64.h文件，里面对于系统调用的定义，就是下面这样。
+
+```
+#define __NR_restart_syscall	  0
+#define __NR_exit		  1
+#define __NR_fork		  2
+#define __NR_read		  3
+#define __NR_write		  4
+#define __NR_open		  5
+#define __NR_close		  6
+#define __NR_waitpid		  7
+#define __NR_creat		  8
+......
+```
+
+### 中介与Glibc
+
+如果你做过开发，你会觉得刚才讲的和平时咱们调用的函数不太一样。这是因为，平时你并没有直接使用系统调用。虽然咱们的办事大厅已经很方便了，但是为了对用户更友好，我们还可以使用中介**Glibc**，有事情找它就行，它会转换成为系统调用，帮你调用。
+
+Glibc是Linux下使用的开源的标准C库，它是GNU发布的libc库。**Glibc为程序员提供丰富的 API，除了例如字符串处理、数学运算等用户态服务之外，最重要的是封装了操作系统提供的系统服务，即系统调用的封装**。
+
+每个特定的系统调用对应了至少一个Glibc封装的库函数，比如说，系统提供的打开文件系统调用sys_open对应的是Glibc中的open函数。
+
+有时候，Glibc一个单独的API可能调用多个系统调用，比如说，Glibc提供的printf函数就会调用如sys_open、sys_mmap、sys_write、sys_close等等系统调用。
+
+也有时候，多个API也可能只对应同一个系统调用，如Glibc下实现的malloc、calloc、free等函数用来分配和释放内存，都利用了内核的sys_brk的系统调用。
+
+学习笔记+作业+提问，知识点真多啊，老师这文章货太干了。
+一、 创建进程
+\#### 创建进程的总结：
+1、Linux中父进程调用fork创建子进程。
+2、父进程调用fork时，子进程拷贝所有父进程的数据接口和代码过来。
+3、当前进程是子进程，fork返回0；当前进程是父进程，fork返回子进程进程号
+4、如果返回0，说明当前进程是子进程，子进程请求execve系统调用，执行另一个程序。
+5、如果返回子进程号，说明当前进程是父进程，按照原父进程原计划执行。
+6、父进程要对子进程负责，调用waitpid将子进程进程号作为参数，父进程就能知道子进程运行完了没有，成功与否。
+7、操作系统启动的时候先创建了一个所有用户进程的“祖宗进程”，课时1，第3题A选项：0号进程是所有用户态进程的祖先
+\##### 创建进程的系统调用：fork
+\##### 执行另一个程序的系统调用：execve
+\##### 将子进程的进程号作为参数传给它，父进程就能知道子进程运行完了没有，成功与否：waitpid
+
+二、 内存管理
+\##### 内存管理总结
+1、每个进程都有独立的进程内存空间，互相之间不干扰。（隔离性）
+2、进程内存空间，存放程序代码的部分，称为代码段（Code Segment）。
+3、存放进程运行中产生数据的部分，称为数据段（Data Segment）。
+4、进程写入数据的时候，现用现分物理内存给进程使用。
+5、分配内存数量比较小时，使用brk调用，会和原来的堆数据连在一起。
+6、需要分配的内存数据量比较大的时候，使用mmap，重新划分一块内存区域。
+\##### 分配较小内存数量，和原来堆内数据连在一起：brk
+\##### 分配较大内存数量，重新划分一块内存区域：mmap
+
+三、 文件管理
+\##### 文件的操作六个最重要系统调用：
+\##### 打开文件：open
+\##### 关闭文件：close
+\##### 创建文件：creat
+\##### 打开文件后跳到文件某个位置：lseek
+\##### 读文件：read
+\##### 写文件：write
+\##### Linux一切皆文件
+\##### 一切皆文件的优势即使统一了操作的入口，提供了极大的便利。
+
+四、 信号处理（异常处理）
+进程执行过程中一旦有变动，就可以通过信号处理服务及时处理。
+
+五、 进程间通信
+\#### 有两种方式实现进程间通信
+\#### 消息队列方式
+\##### 创建一个新的队列：msgget
+\##### 发送消息到消息队列：msgsnd
+\##### 取出队列中的消息：msgrcv
+
+六、 共享内存方式
+\##### 创建共享内存块：shmget
+\##### 将共享内存映射到自己的内存空间：shmat
+
+\#### 利用信号量实现隔离性
+\##### 占用信号量：sem_wait
+\##### 释放信号量：sem_post
+伪代码：
+假设信号量为1
+signal = 1
+sem_wait伪代码
+while True {
+if sem_wait == 1；
+signal -=1;
+break;
+}
+code.code;
+sem_post伪代码
+signal +=1;
+
+七、 网络通信
+\##### 网络插口：socket
+\##### 网络通信遵循TCP/IP网络协议栈
+\#####
+
+八、 glibc
+\##### glibc是Linux下开源标准C库
+\##### glibc把系统调用进一步封
+
+\##### sys_open对应glibc的open函数
+\##### 一个单独的glibcAPI可能调用多个系统调用
+\##### printf函数调用sys_open、sys_mmap、sys_write、sys_close等等系统调用
+
+\### 课后作业
+strace ls -la
+查看有如下系统调用
+execve
+brk
+mmap
+access
+open
+fstat
+mmap
+close
+read
+stat
+write
+lseek
+lstat
+getxattr
+socket
+connect
+mprotect
+
+\##### 疑问：局部变量，在当前函数执行的时候起作用，就是说当前函数执行中产生的局部变量是存放在内存中的。为什么不是暂存在CPU缓存或者寄存器，进入另一个函数时，丢掉局部变量，而不写入内存，提升效率。 [1
+
+用strace跟踪”whoami"命令，执行的系统调用有：
+（1）execve执行/usr/bin/whoami程序
+（2）brk、mmap 内存映射，mprotect内存权限更改
+（3）access、openat、fstat、read、lseek、close 文件权限、属性查看、打开、跳到文件某个位置，关闭等操作
+（4）geteuid 获取用户id
+（5）socket、connect网络通信
+（6）write 文件写入
+（7）arch_pctcl、exit_group 设计架构的进程或线程状态和退出进程中的所有线程
+[1赞]
+
+# 09-系统调用：公司成立好了就要开始接项目
+
+上一节，系统终于进入了用户态，公司由一个“皮包公司”进入正轨，可以开始接项目了。
+
+这一节，我们来解析Linux接项目的办事大厅是如何实现的，这是因为后面介绍的每一个模块，都涉及系统调用。站在系统调用的角度，层层深入下去，就能从某个系统调用的场景出发，了解内核中各个模块的实现机制。
+
+有的时候，我们的客户觉得，直接去办事大厅还是不够方便。没问题，Linux还提供了glibc这个中介。它更熟悉系统调用的细节，并且可以封装成更加友好的接口。你可以直接用。
+
+## glibc对系统调用的封装
+
+我们以最常用的系统调用open，打开一个文件为线索，看看系统调用是怎么实现的。这一节我们仅仅会解析到从glibc如何调用到内核的open，至于open怎么实现，怎么打开一个文件，留到文件系统那一节讲。
+
+现在我们就开始在用户态进程里面调用open函数。
+
+为了方便，大部分用户会选择使用中介，也就是说，调用的是glibc里面的open函数。这个函数是如何定义的呢？
+
+```
+int open(const char *pathname, int flags, mode_t mode)
+```
+
+在glibc的源代码中，有个文件syscalls.list，里面列着所有glibc的函数对应的系统调用，就像下面这个样子：
+
+```
+# File name Caller  Syscall name    Args    Strong name Weak names
+open		-	open		Ci:siv	__libc_open __open open
+```
+
+另外，glibc还有一个脚本make-syscall.sh，可以根据上面的配置文件，对于每一个封装好的系统调用，生成一个文件。这个文件里面定义了一些宏，例如#define SYSCALL_NAME open。
+
+glibc还有一个文件syscall-template.S，使用上面这个宏，定义了这个系统调用的调用方式。
+
+```
+T_PSEUDO (SYSCALL_SYMBOL, SYSCALL_NAME, SYSCALL_NARGS)
+    ret
+T_PSEUDO_END (SYSCALL_SYMBOL)
+
+#define T_PSEUDO(SYMBOL, NAME, N)		PSEUDO (SYMBOL, NAME, N)
+```
+
+这里的PSEUDO也是一个宏，它的定义如下：
+
+```
+#define PSEUDO(name, syscall_name, args)                      \
+  .text;                                      \
+  ENTRY (name)                                    \
+    DO_CALL (syscall_name, args);                         \
+    cmpl $-4095, %eax;                               \
+    jae SYSCALL_ERROR_LABEL
+```
+
+里面对于任何一个系统调用，会调用DO_CALL。这也是一个宏，这个宏32位和64位的定义是不一样的。
+
+## 32位系统调用过程
+
+我们先来看32位的情况（i386目录下的sysdep.h文件）。
+
+```
+/* Linux takes system call arguments in registers:
+	syscall number	%eax	     call-clobbered
+	arg 1		%ebx	     call-saved
+	arg 2		%ecx	     call-clobbered
+	arg 3		%edx	     call-clobbered
+	arg 4		%esi	     call-saved
+	arg 5		%edi	     call-saved
+	arg 6		%ebp	     call-saved
+......
+*/
+#define DO_CALL(syscall_name, args)                           \
+    PUSHARGS_##args                               \
+    DOARGS_##args                                 \
+    movl $SYS_ify (syscall_name), %eax;                          \
+    ENTER_KERNEL                                  \
+    POPARGS_##args
+```
+
+这里，我们将请求参数放在寄存器里面，根据系统调用的名称，得到系统调用号，放在寄存器eax里面，然后执行ENTER_KERNEL。
+
+在Linux的源代码注释里面，我们可以清晰地看到，这些寄存器是如何传递系统调用号和参数的。
+
+这里面的ENTER_KERNEL是什么呢？
+
+```
+# define ENTER_KERNEL int $0x80
+```
+
+int就是interrupt，也就是“中断”的意思。int $0x80就是触发一个软中断，通过它就可以陷入（trap）内核。
+
+在内核启动的时候，还记得有一个trap_init()，其中有这样的代码：
+
+```
+set_system_intr_gate(IA32_SYSCALL_VECTOR, entry_INT80_32);
+```
+
+这是一个软中断的陷入门。当接收到一个系统调用的时候，entry_INT80_32就被调用了。
+
+```
+ENTRY(entry_INT80_32)
+        ASM_CLAC
+        pushl   %eax                    /* pt_regs->orig_ax */
+        SAVE_ALL pt_regs_ax=$-ENOSYS    /* save rest */
+        movl    %esp, %eax
+        call    do_syscall_32_irqs_on
+.Lsyscall_32_done:
+......
+.Lirq_return:
+	INTERRUPT_RETURN
+```
+
+通过push和SAVE_ALL将当前用户态的寄存器，保存在pt_regs结构里面。
+
+进入内核之前，保存所有的寄存器，然后调用do_syscall_32_irqs_on。它的实现如下：
+
+```
+static __always_inline void do_syscall_32_irqs_on(struct pt_regs *regs)
+{
+	struct thread_info *ti = current_thread_info();
+	unsigned int nr = (unsigned int)regs->orig_ax;
+......
+	if (likely(nr < IA32_NR_syscalls)) {
+		regs->ax = ia32_sys_call_table[nr](
+			(unsigned int)regs->bx, (unsigned int)regs->cx,
+			(unsigned int)regs->dx, (unsigned int)regs->si,
+			(unsigned int)regs->di, (unsigned int)regs->bp);
+	}
+	syscall_return_slowpath(regs);
+}
+```
+
+在这里，我们看到，将系统调用号从eax里面取出来，然后根据系统调用号，在系统调用表中找到相应的函数进行调用，并将寄存器中保存的参数取出来，作为函数参数。如果仔细比对，就能发现，这些参数所对应的寄存器，和Linux的注释是一样的。
+
+根据宏定义，#define ia32_sys_call_table sys_call_table，系统调用就是放在这个表里面。至于这个表是如何形成的，我们后面讲。
+
+当系统调用结束之后，在entry_INT80_32之后，紧接着调用的是INTERRUPT_RETURN，我们能够找到它的定义，也就是iret。
+
+```
+#define INTERRUPT_RETURN                iret
+```
+
+iret指令将原来用户态保存的现场恢复回来，包含代码段、指令指针寄存器等。这时候用户态进程恢复执行。
+
+这里我总结一下32位的系统调用是如何执行的。
+
+![img](https://static001.geekbang.org/resource/image/56/06/566299fe7411161bae25b62e7fe20506.jpg)
+
+## 64位系统调用过程
+
+我们再来看64位的情况（x86_64下的sysdep.h文件）。
+
+```
+/* The Linux/x86-64 kernel expects the system call parameters in
+   registers according to the following table:
+    syscall number	rax
+    arg 1		rdi
+    arg 2		rsi
+    arg 3		rdx
+    arg 4		r10
+    arg 5		r8
+    arg 6		r9
+......
+*/
+#define DO_CALL(syscall_name, args)					      \
+  lea SYS_ify (syscall_name), %rax;					      \
+  syscall
+```
+
+和之前一样，还是将系统调用名称转换为系统调用号，放到寄存器rax。这里是真正进行调用，不是用中断了，而是改用syscall指令了。并且，通过注释我们也可以知道，传递参数的寄存器也变了。
+
+syscall指令还使用了一种特殊的寄存器，我们叫**特殊模块寄存器**（Model Specific Registers，简称MSR）。这种寄存器是CPU为了完成某些特殊控制功能为目的的寄存器，其中就有系统调用。
+
+在系统初始化的时候，trap_init除了初始化上面的中断模式，这里面还会调用cpu_init->syscall_init。这里面有这样的代码：
+
+```
+wrmsrl(MSR_LSTAR, (unsigned long)entry_SYSCALL_64);
+```
+
+rdmsr和wrmsr是用来读写特殊模块寄存器的。MSR_LSTAR就是这样一个特殊的寄存器，当syscall指令调用的时候，会从这个寄存器里面拿出函数地址来调用，也就是调用entry_SYSCALL_64。
+
+在arch/x86/entry/entry_64.S中定义了entry_SYSCALL_64。
+
+```
+ENTRY(entry_SYSCALL_64)
+        /* Construct struct pt_regs on stack */
+        pushq   $__USER_DS                      /* pt_regs->ss */
+        pushq   PER_CPU_VAR(rsp_scratch)        /* pt_regs->sp */
+        pushq   %r11                            /* pt_regs->flags */
+        pushq   $__USER_CS                      /* pt_regs->cs */
+        pushq   %rcx                            /* pt_regs->ip */
+        pushq   %rax                            /* pt_regs->orig_ax */
+        pushq   %rdi                            /* pt_regs->di */
+        pushq   %rsi                            /* pt_regs->si */
+        pushq   %rdx                            /* pt_regs->dx */
+        pushq   %rcx                            /* pt_regs->cx */
+        pushq   $-ENOSYS                        /* pt_regs->ax */
+        pushq   %r8                             /* pt_regs->r8 */
+        pushq   %r9                             /* pt_regs->r9 */
+        pushq   %r10                            /* pt_regs->r10 */
+        pushq   %r11                            /* pt_regs->r11 */
+        sub     $(6*8), %rsp                    /* pt_regs->bp, bx, r12-15 not saved */
+        movq    PER_CPU_VAR(current_task), %r11
+        testl   $_TIF_WORK_SYSCALL_ENTRY|_TIF_ALLWORK_MASK, TASK_TI_flags(%r11)
+        jnz     entry_SYSCALL64_slow_path
+......
+entry_SYSCALL64_slow_path:
+        /* IRQs are off. */
+        SAVE_EXTRA_REGS
+        movq    %rsp, %rdi
+        call    do_syscall_64           /* returns with IRQs disabled */
+return_from_SYSCALL_64:
+	RESTORE_EXTRA_REGS
+	TRACE_IRQS_IRETQ
+	movq	RCX(%rsp), %rcx
+	movq	RIP(%rsp), %r11
+    movq	R11(%rsp), %r11
+......
+syscall_return_via_sysret:
+	/* rcx and r11 are already restored (see code above) */
+	RESTORE_C_REGS_EXCEPT_RCX_R11
+	movq	RSP(%rsp), %rsp
+	USERGS_SYSRET64
+```
+
+这里先保存了很多寄存器到pt_regs结构里面，例如用户态的代码段、数据段、保存参数的寄存器，然后调用entry_SYSCALL64_slow_pat->do_syscall_64。
+
+```
+__visible void do_syscall_64(struct pt_regs *regs)
+{
+        struct thread_info *ti = current_thread_info();
+        unsigned long nr = regs->orig_ax;
+......
+        if (likely((nr & __SYSCALL_MASK) < NR_syscalls)) {
+                regs->ax = sys_call_table[nr & __SYSCALL_MASK](
+                        regs->di, regs->si, regs->dx,
+                        regs->r10, regs->r8, regs->r9);
+        }
+        syscall_return_slowpath(regs);
+}
+```
+
+在do_syscall_64里面，从rax里面拿出系统调用号，然后根据系统调用号，在系统调用表sys_call_table中找到相应的函数进行调用，并将寄存器中保存的参数取出来，作为函数参数。如果仔细比对，你就能发现，这些参数所对应的寄存器，和Linux的注释又是一样的。
+
+所以，无论是32位，还是64位，都会到系统调用表sys_call_table这里来。
+
+在研究系统调用表之前，我们看64位的系统调用返回的时候，执行的是USERGS_SYSRET64。定义如下：
+
+```
+#define USERGS_SYSRET64				\
+	swapgs;					\
+	sysretq;
+```
+
+这里，返回用户态的指令变成了sysretq。
+
+我们这里总结一下64位的系统调用是如何执行的。
+
+![img](https://static001.geekbang.org/resource/image/1f/d7/1fc62ab8406c218de6e0b8c7e01fdbd7.jpg)
+
+## 系统调用表
+
+前面我们重点关注了系统调用的方式，都是最终到了系统调用表，但是到底调用内核的什么函数，还没有解读。
+
+现在我们再来看，系统调用表sys_call_table是怎么形成的呢？
+
+32位的系统调用表定义在面arch/x86/entry/syscalls/syscall_32.tbl文件里。例如open是这样定义的：
+
+```
+5	i386	open			sys_open  compat_sys_open
+```
+
+64位的系统调用定义在另一个文件arch/x86/entry/syscalls/syscall_64.tbl里。例如open是这样定义的：
+
+```
+2	common	open			sys_open
+```
+
+第一列的数字是系统调用号。可以看出，32位和64位的系统调用号是不一样的。第三列是系统调用的名字，第四列是系统调用在内核的实现函数。不过，它们都是以sys_开头。
+
+系统调用在内核中的实现函数要有一个声明。声明往往在include/linux/syscalls.h文件中。例如sys_open是这样声明的：
+
+```
+asmlinkage long sys_open(const char __user *filename,
+                                int flags, umode_t mode);
+```
+
+真正的实现这个系统调用，一般在一个.c文件里面，例如sys_open的实现在fs/open.c里面，但是你会发现样子很奇怪。
+
+```
+SYSCALL_DEFINE3(open, const char __user *, filename, int, flags, umode_t, mode)
+{
+        if (force_o_largefile())
+                flags |= O_LARGEFILE;
+        return do_sys_open(AT_FDCWD, filename, flags, mode);
+}
+```
+
+SYSCALL_DEFINE3是一个宏系统调用最多六个参数，根据参数的数目选择宏。具体是这样定义的：
+
+```
+#define SYSCALL_DEFINE1(name, ...) SYSCALL_DEFINEx(1, _##name, __VA_ARGS__)
+#define SYSCALL_DEFINE2(name, ...) SYSCALL_DEFINEx(2, _##name, __VA_ARGS__)
+#define SYSCALL_DEFINE3(name, ...) SYSCALL_DEFINEx(3, _##name, __VA_ARGS__)
+#define SYSCALL_DEFINE4(name, ...) SYSCALL_DEFINEx(4, _##name, __VA_ARGS__)
+#define SYSCALL_DEFINE5(name, ...) SYSCALL_DEFINEx(5, _##name, __VA_ARGS__)
+#define SYSCALL_DEFINE6(name, ...) SYSCALL_DEFINEx(6, _##name, __VA_ARGS__)
+
+
+#define SYSCALL_DEFINEx(x, sname, ...)                          \
+        SYSCALL_METADATA(sname, x, __VA_ARGS__)                 \
+        __SYSCALL_DEFINEx(x, sname, __VA_ARGS__)
+
+
+#define __PROTECT(...) asmlinkage_protect(__VA_ARGS__)
+#define __SYSCALL_DEFINEx(x, name, ...)                                 \
+        asmlinkage long sys##name(__MAP(x,__SC_DECL,__VA_ARGS__))       \
+                __attribute__((alias(__stringify(SyS##name))));         \
+        static inline long SYSC##name(__MAP(x,__SC_DECL,__VA_ARGS__));  \
+        asmlinkage long SyS##name(__MAP(x,__SC_LONG,__VA_ARGS__));      \
+        asmlinkage long SyS##name(__MAP(x,__SC_LONG,__VA_ARGS__))       \
+        {                                                               \
+                long ret = SYSC##name(__MAP(x,__SC_CAST,__VA_ARGS__));  \
+                __MAP(x,__SC_TEST,__VA_ARGS__);                         \
+                __PROTECT(x, ret,__MAP(x,__SC_ARGS,__VA_ARGS__));       \
+                return ret;                                             \
+        }                                                               \
+        static inline long SYSC##name(__MAP(x,__SC_DECL,__VA_ARGS__)
+```
+
+如果我们把宏展开之后，实现如下，和声明的是一样的。
+
+```
+asmlinkage long sys_open(const char __user * filename, int flags, int mode)
+{
+ long ret;
+
+
+ if (force_o_largefile())
+  flags |= O_LARGEFILE;
+
+
+ ret = do_sys_open(AT_FDCWD, filename, flags, mode);
+ asmlinkage_protect(3, ret, filename, flags, mode);
+ return ret;
+```
+
+声明和实现都好了。接下来，在编译的过程中，需要根据syscall_32.tbl和syscall_64.tbl生成自己的unistd_32.h和unistd_64.h。生成方式在arch/x86/entry/syscalls/Makefile中。
+
+这里面会使用两个脚本，其中第一个脚本arch/x86/entry/syscalls/syscallhdr.sh，会在文件中生成#define __NR_open；第二个脚本arch/x86/entry/syscalls/syscalltbl.sh，会在文件中生成__SYSCALL(__NR_open, sys_open)。这样，unistd_32.h和unistd_64.h是对应的系统调用号和系统调用实现函数之间的对应关系。
+
+在文件arch/x86/entry/syscall_32.c，定义了这样一个表，里面include了这个头文件，从而所有的sys_系统调用都在这个表里面了。
+
+```
+__visible const sys_call_ptr_t ia32_sys_call_table[__NR_syscall_compat_max+1] = {
+        /*
+         * Smells like a compiler bug -- it doesn't work
+         * when the & below is removed.
+         */
+        [0 ... __NR_syscall_compat_max] = &sys_ni_syscall,
+#include <asm/syscalls_32.h>
+};
+```
+
+同理，在文件arch/x86/entry/syscall_64.c，定义了这样一个表，里面include了这个头文件，这样所有的sys_系统调用就都在这个表里面了。
+
+```
+/* System call table for x86-64. */
+asmlinkage const sys_call_ptr_t sys_call_table[__NR_syscall_max+1] = {
+	/*
+	 * Smells like a compiler bug -- it doesn't work
+	 * when the & below is removed.
+	 */
+	[0 ... __NR_syscall_max] = &sys_ni_syscall,
+#include <asm/syscalls_64.h>
+};
+```
+
+## 总结时刻
+
+系统调用的过程还是挺复杂的吧？如果加上上一节的内核态和用户态的模式切换，就更复杂了。这里我们重点分析64位的系统调用，我将整个完整的过程画了一张图，帮你总结、梳理一下。
+
+![img](https://static001.geekbang.org/resource/image/86/a5/868db3f559ad08659ddc74db07a9a0a5.jpg)
+
+## 课堂练习
+
+请你根据这一节的分析，看一下与open这个系统调用相关的文件都有哪些，在每个文件里面都做了什么？如果你要自己实现一个系统调用，能不能照着open来一个呢？
+
+欢迎留言和我分享你的疑惑和见解，也欢迎你收藏本节内容，反复研读。你也可以把今天的内容分享给你的朋友，和他一起学习、进步。
+
+![img](https://static001.geekbang.org/resource/image/8c/37/8c0a95fa07a8b9a1abfd394479bdd637.jpg)
+
+## 精选留言：
+
+- 孟晓冬 2019-04-15 09:14:19
+
+  这个专栏要有一定的知识储备才能学习，起码要熟悉c,数据结构，linux系统管理，否则只会一脸懵逼的进来，一脸懵逼的出去 [48赞]
+- why 2019-04-15 18:25:06
+
+  \- glibc 将系统调用封装成更友好的接口
+  \- 本节解析 glibc 函数如何调用到内核的 open
+  \---
+  \- 用户进程调用 open 函数
+  \- glibc 的 syscal.list 列出 glibc 函数对应的系统调用
+  \- glibc 的脚本 make_syscall.sh 根据 syscal.list 生成对应的宏定义(函数映射到系统调用)
+  \- glibc 的 syscal-template.S 使用这些宏, 定义了系统调用的调用方式(也是通过宏)
+  \- 其中会调用 DO_CALL (也是一个宏), 32位与 64位实现不同
+  \---
+  \- 32位 DO_CALL (位于 i386 目录下 sysdep.h)
+  \- 将调用参数放入寄存器中, 由系统调用名得到系统调用号, 放入 eax
+  \- 执行 ENTER_KERNEL(一个宏), 对应 int $0x80 触发软中断, 进入内核
+  \- 调用软中断处理函数 entry_INT80_32(内核启动时, 由 trap_init() 配置)
+  \- entry_INT80_32 将用户态寄存器存入 pt_regs 中(保存现场以及系统调用参数), 调用 do_syscall_32_iraq_on
+  \- do_syscall_32_iraq_on 从 pt_regs 中取系统调用号(eax), 从系统调用表得到对应实现函数, 取 pt_regs 中存储的参数, 调用系统调用
+  \- entry_INT80_32 调用 INTERRUPT_RUTURN(一个宏)对应 iret 指令, 系统调用结果存在 pt_regs 的 eax 位置, 根据 pt_regs 恢复用户态进程
+  \---
+  \- 64位 DO_CALL (位于 x86_64 目录下 sysdep.h)
+  \- 通过系统调用名得到系统调用号, 存入 rax; 不同中断, 执行 syscall 指令
+  \- MSR(特殊模块寄存器), 辅助完成某些功能(包括系统调用)
+  \- trap_init() 会调用 cpu_init->syscall_init 设置该寄存器
+  \- syscall 从 MSR 寄存器中, 拿出函数地址进行调用, 即调用 entry_SYSCALL_64
+  \- entry_SYSCALL_64 先保存用户态寄存器到 pt_regs 中
+  \- 调用 entry_SYSCALL64_slow_pat->do_syscall_64
+  \- do_syscall_64 从 rax 取系统调用号, 从系统调用表得到对应实现函数, 取 pt_regs 中存储的参数, 调用系统调用
+  \- 返回执行 USERGS_SYSRET64(一个宏), 对应执行 swapgs 和 sysretq 指令; 系统调用结果存在 pt_regs 的 ax 位置, 根据 pt_regs 恢复用户态进程
+  \---
+  \- 系统调用表 sys_call_table
+  \- 32位 定义在 arch/x86/entry/syscalls/syscall_32.tbl
+  \- 64位 定义在 arch/x86/entry/syscalls/syscall_64.tbl
+  \- syscall_*.tbl 内容包括: 系统调用号, 系统调用名, 内核实现函数名(以 sys 开头)
+  \- 内核实现函数的声明: include/linux/syscall.h
+  \- 内核实现函数的实现: 某个 .c 文件, 例如 sys_open 的实现在 fs/open.c
+  \- .c 文件中, 以宏的方式替代函数名, 用多层宏构建函数头
+  \- 编译过程中, 通过 syscall_*.tbl 生成 unistd_*.h 文件
+  \- unistd_*.h 包含系统调用与实现函数的对应关系
+  \- syscall_*.h include 了 unistd_*.h 头文件, 并定义了系统调用表(数组) [13赞]
+- William 2019-04-15 16:37:35
+
+  大家可以参考glibc的源码理解，https://www.gnu.org/software/libc/started.html。 主要过程是CPU上下文切换的过程。 [3赞]
+- 阿恺 2019-04-15 21:50:06
+
+  老师，请教个问题，对于64位，DO_CALL在两个地方有地址，sysdeps/unix/sysv/linux/x86_64/sysdep.h:179和sysdeps/unix/x86_64/sysdep.h:26，我采用的最新的glibc的git下载。看到的和您给的代码不一样，您采用了前者的注释，后者的代码，两者使用的寄存器不一样。如何知道是通过哪个入口。sysdeps/unix/sysv/linux/x86_64/sysdep.h:179中注释写到，将系统调用号放在rax，后面的代码中的是eax，这里没有看懂。 [2赞]
+- weihebuken 2019-04-15 16:11:35
+
+  我想问，想看懂这篇，我先需要看哪些书，或者贮备哪些知识先，真的很懵。。。 [2赞]
+- kdb_reboot 2019-04-15 08:24:10
+
+  参数如果超过6个存在哪里？（32/64两种情况 [2赞]
+
+  作者回复2019-04-15 14:04:02
+
+  不许超过，系统调用可以查一下，没这么多参数
+- 青石 2019-04-16 21:41:36
+
+  完全不懂C，内容看起来真的吃力，以下是个人理解，不知道对不对，还请指正。
+
+  文中有一部分代码是在glibc源码中的，git clone git://sourceware.org/git/glibc.git
+
+  32位系统调用过程：
+
+  \1. 系统调用最多6个参数；
+  \2. syscall number 对应的是%eax，所有参数存放在寄存器里；
+  \3. 执行系统调用时执行int $0x80触发软中断陷入内核；
+  \4. 陷入内核态之前需要保存用户态，这里面有个pushl %eax（和2中寄存器地址相同）,将%eax存入pt_regs结构中，保存完用户态现场应该就进入内核态了；
+  \5. 进入内核态后调用do_syscall_32_irqs_on，取出syscall number及参数，do_syscall_32_irqs_on中的ax、bx、cx、dx、si、di、bp对应system call arguments中的%eax、%ebx、%ecx、%edx、%esi、%edi、%ebp，这些值是06节讲到的32位系统通用寄存器的数据单元。在内核态执行系统调用；
+  \6. 完成后调用INTERRUPT_RETURN恢复用户态保存的现场。
+
+  64位系统调用：
+
+  \1. 同样最多6个参数，但是与32位寄存器地址不同，64位系统的寄存器地址有16个，以r开始，32位系统的寄存器地址有8个，以e开始；
+  \2. syscall_name转为syscall number存入寄存器%rax；
+  \3. 调用syscall执行系统调用，期间的过程同样会陷入内核态；
+  \4. 调用MSR_LSTAR -> entry_SYSCALL_64保存用户态现场，具体参数如何传进去的看不懂；
+  \5. 调用do_syscall_64，取出系统调用号和参数（和32位没区别），在内核态执行系统调用；
+  \6. 完成后调用USERGS_SYSRET64返回，sysretq恢复用户态现场。 [1赞]
+- 小颜 2019-04-16 13:35:00
+
+  此处仅展示32位系统调用：
+
+  glibc大部分使用脚本封装生成代码，用到三种文件：
+  1.make-syscall.sh：读取syscalls.list文件的内容，对文件的每一行进行解析。根据每一行的内容生成一个.S汇编文件，汇编文件封装了一个系统调用。文件路径：sysdeps/unix/make-syscall.sh
+  2.syscall-template.S：是系统调用封装代码的模板文件。生成的.S汇编文件都调用它。文件路径：sysdeps/unix/syscall-template.S
+  3.syscalls.list：是数据文件，定义了全部的系统调用信息。文件路径有多个：sysdeps/unix/syscalls.list，sysdeps/unix/sysv/linux/syscalls.list，sysdeps/unix/sysv/linux/generic/syscalls.list，sysdeps/unix/sysv/linux/i386/syscalls.list
+
+  1.syscall-template.S生成汇编文件
+  在syscall-template.S生成汇编文件中在78行有调用T_PSEUDO (SYSCALL_SYMBOL, SYSCALL_NAME, SYSCALL_NARGS)方法，
+  2.T_PSEUDO是一个宏定义，此文件会引用#include <sysdep.h>
+  3.在sysdep.h文件中175行定义了函数PSEUDO：
+  /* Linux takes system call arguments in registers:
+
+  syscall number %eax call-clobbered /* 保存系统调用号 */
+  arg 1 %ebx call-saved
+  arg 2 %ecx call-clobbered
+  arg 3 %edx call-clobbered
+  arg 4 %esi call-saved
+  arg 5 %edi call-saved
+  arg 6 %ebp call-saved
+
+  The stack layout upon entering the function is:
+
+  24(%esp) Arg# 6
+  20(%esp) Arg# 5
+  16(%esp) Arg# 4
+  12(%esp) Arg# 3
+  8(%esp) Arg# 2
+  4(%esp) Arg# 1
+  (%esp) Return address */
+  \#define DO_CALL(syscall_name, args) PUSHARGS_##args DOARGS_##args movl $SYS_ify (syscall_name), %eax; ENTER_KERNEL POPARGS_##args
+  在此函数中调用了DO_CALL：将 系统调用 号保存在eax寄存器，其他参数分别保存至其他寄存器
+  4。然后调用ENTER_KERNEL，该宏定义在在125行：# define ENTER_KERNEL int $0x80，
+  5.int $0x80是一个软中断，将会触发软中断触发函数entry_INT80_32，
+  6.entry_INT80_32将用户态的一些信息保存在pt_regs，最终调用do_syscall_32_irqs_on，
+  7.do_syscall_32_irqs_on函数将从eax寄存器取出系统调用号，然后根据系统调用号从系统调用表中取出索引，最终取出对应函数，参数从pt_regs中，最终调用系统调用
+  8.在函数最后调用INTERRUPT_RETURN iret最终返回数据保存在pt_regs的eax中，并将pt_regs的用户态数据恢复 [1赞]
+- 春明 2019-04-15 09:52:56
+
+  开始吃力了，只能排除细节，先了解几个重要阶段了。 [1赞]
+- 安排 2019-04-15 07:22:16
+
+  进入内核之前，保存所有的寄存器，然后调用 do_syscall_32_irqs_on。
+
+  进入entry_INT80_32的时候已经是内核态了吧？怎么这里说进入内核之前？ [1赞]
+
+  作者回复2019-04-15 14:05:04
+
+  是的，中断完了就在内核了
+- honnkyou 2019-04-16 22:26:01
+
+  老师能把整个open的调用过程先串一下吗？现在的形式，跟不上老师要传授的意图。
+- honnkyou 2019-04-16 21:34:10
+
+  "glibc 还有一个文件 syscall-template.S，使用上面这个宏，定义了这个系统调用的调用方式。"
+  这个地方是怎么跳到下面的，老师能串一下吗？
+- Geek_younger 2019-04-16 18:58:46
+
+  鲁过三年嵌入式c，菜得一逼，能看懂一点点，太底层了，是我太菜
+- tux 2019-04-16 17:48:04
+
+  也许linux-4.11.1，较接近文中所用的内核版本吧
+- 落石 2019-04-16 16:09:16
+
+  老师，可以先简单介绍一下环境搭建的前置知识么？我现在已经下好了源码，找到了 fs/open.c 与 fcntl.h中的open定义，但是没办法把两个东西串联起来。
+- tiankonghewo 2019-04-16 14:02:00
+
+  有一个宏观的了解，进步了一点点，细节不行，看不懂
+- ninuxer 2019-04-16 08:16:07
+
+  打卡day10
+  我是谁？我在哪里？一脸懵逼～看来要撸过c才能消化
+- 明月 2019-04-16 01:39:09
+
+  老师的基于的内核是哪个版本
+- neohope 2019-04-15 22:03:19
+
+  有一个问题一直不很清楚，想请教老师一下。
+
+  就是在docker中，不同容器是共享宿主内核的。但一个docker的宿主，却能运行多个发行版的容器。那容器运行时，内核到发行版之间的功能调用，也是通过cglib的syscalls.list来实现的吗？
+
+  或者换句话说，cglib其实是屏蔽了不同内核版本的差异吗？
+
+  感谢！
+- tux 2019-04-15 20:37:33
+
+  对文中内核源码好奇，便先在Ubuntu Server (现成的)和CentOS(yum的)查看。文中内核文件路径，有的在Ubuntu有，有的在CentOS有。
+  至少看到一点文中的内核源码。
+  下班后，就编译安装4.X的内核源码。安装过程，略长。源码，还没看
+
+
+* 看过刘超老师的趣谈网络，收获蛮多
+  对于操作系统，我看了下老师的课程目录，下面的一些内容可能没有，希望刘超老师可以讲到以下内容
+  1.信号在内核中的实现，如何在进程间传递
+  2.epoll 在linux中的实现
+  3.进程组的概念，前台进程，后台进程
+  4.系统调用中，同步，异步，阻塞，非阻塞的严格定义
+  5.linux系统中可重入的api和非可重入的api的区别，以及使用说明
+  6.多线程程序中，对于linux系统api调用需要使用可重入的接口吗，不是的话哪些需要呢
+  7.linux 多线程的实现
+  8.linux中经典的一些并发处理 [47赞]
+* 作为服务器开发，对刘超老师的话深有同感。因为对Linux缺乏一个系统的学习，遇到很多问题都都只能傻眼，问别人、百度谷歌一下吧，又发现其实是最简单的原理问题。买过《深入理解操作系统》，一大厚本没看得下去。。买过《Linux内核分析》一类的书，满满的内核C语言实现，确实又太“硬核”了一些。。通过学《Linux性能优化专栏》，对CPU上下文切换、平均负载、各种I/O有了进一步的理解，不过，还迫切需要知道进程调度、进程相关的知识，以及最最头疼的网络知识，socket通信和网络包的具体实现，急需拯救！ [8赞]
+* 网络基础、数据结构与算法、操作系统这些基础，真的很重要。。所有的抽象都是基于这些进行封装的，所以学懂他们理解概念与理论很重要。所有的技术与编程语言都是基于此，后面学习其他新技术都是事半功倍。一定要跟上 [6赞]
+* 
+
+* 我很期待，最近在研究Goroutine及其调度。遇到瓶颈，回头补基础找遍经典OS教材也只有进程、线程理论层面的介绍，缺少协程介绍。即使是线程，也没有描述用户级线程到底是如何映射到内核级线程，如何委托内核级线程执行等等一系列问题，希望和老师及同学们讨教｡◕‿◕｡ [4赞]
+* 
+
+* 我是一名java开发者，昨天遇到一个问题，一个线程跑着跑着就没了。我目前感触是，我在Linux上只会看spring等应用的日志，我觉得线程没了肯定是报错了，但是我的日志就是没有找到报错。后来和运维询问，大概是说内存不足导致的。我的问题是，像内存不足的报错，我能在操作系统的什么地方看到系统级别的日志吗？ [3赞]
+* Geek_540e1b 2019-03-26 19:41:47
+
+  从事嵌入式领域，主要是RTOS，但是对linux也非常感兴趣，以后如果可以从事linux相关开发工作会非常开心，技术的都是相通的，希望学习了这个课程，会让自己的知识构架更加清晰，把以前会的重新整理，接下来学的也可以安排的井井有条！！！ [3赞]
+
+
+第二个原则就是 **图解** 。Linux操作系统中的概念非常多，数据结构也很多，流程也复杂，一般人在学习的过程中很容易迷路。所谓“一图胜千言”，我希望能够通过图的方式，将这些复杂的概念、数据结构、流程表现出来，争取用一张图串起一篇文章的知识点。最终，整个专栏下来，你如果能把这些图都掌握了，你的知识就会形成体系和连接。在此基础上再进行深入学习，就会如鱼得水、易如反掌。
+
+![](https://static001.geekbang.org/resource/image/bf/02/bf0bcbea6a24bc5084bc0d4ffca7c502.jpeg)
+
+## Linux Distribution
+
+ubuntu ---- Canonical
+
+* Canonical Launchpad: a software collaboration platform that provides: https://launchpad.net/
+* PPA: Personal Package Archives: https://launchpad.net/ubuntu/+ppas
+
+Redhat
+
+* How to create a Linux RPM package: https://www.redhat.com/sysadmin/create-rpm-package

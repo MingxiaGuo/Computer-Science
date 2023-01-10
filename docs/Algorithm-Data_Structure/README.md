@@ -1,7 +1,3 @@
-[MIT Introduction to algorithms: fall 2005](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm)
-
-
-
 # Contents
 
 * [Introduction](README.md)
@@ -11,7 +7,7 @@
   * 1.3 栈(Stack)
   * 1.4 队列(Queue)
   * 1.5 树(Tree)
-  * 1.6 图
+  * 1.6 图 Graph
   * 1.7 哈希表(Hash Table)
   * 1.8 堆
   * 1.9 字符串
