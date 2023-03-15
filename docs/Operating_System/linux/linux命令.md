@@ -1,12 +1,14 @@
 # Linux命令
 
+linux命令大全: [http://man.linuxde.net/](http://man.linuxde.net/)
+
 ## top
 
 linux下的任务管理器
 
    top命令是Linux下常用的性能分析工具，能够实时显示系统中各个进程的资源占用状况，类似于Windows的任务管理器。top是一个动态显示过程,即可以通过用户按键来不断刷新当前状态.如果在前台执行该命令,它将独占前台,直到用户终止该程序为止.比较准确的说,top命令提供了实时的对系统处理器的状态监视.它将显示系统中CPU最“敏感”的任务列表.该命令可以按CPU使用.内存使用和执行时间对任务进行排序；而且该命令的很多特性都可以通过交互式命令或者在个人定制文件中进行设定。
 
- ```sh
+```sh
  $top
    top - 09:14:56 up 264 days, 20:56, 1 user, load average: 0.02, 0.04, 0.00
    Tasks:  87 total,  1 running, 86 sleeping,  0 stopped,  0 zombie
@@ -18,7 +20,7 @@ linux下的任务管理器
      2 root   20  0   0   0   0  S  0.0  0.0  0:00.00 kthreadd
      3 root   20  0   0   0   0  S  0.0  0.0  7:15.20 ksoftirqd/0
      4 root   RT  0   0   0   0  S  0.0  0.0  0:00.00 migration/0
- ```
+```
 
 **第一行**
 
@@ -39,13 +41,9 @@ linux下的任务管理器
 **第三行**
 
 * Cpu(s)：表示这一行显示CPU总体信息
-
 * 0.0%us：用户态进程占用CPU时间百分比，不包含renice值为负的任务占用的CPU的时间。
-
 * 0.7%sy：内核占用CPU时间百分比
-
 * 0.0%ni：改变过优先级的进程占用CPU的百分比
-
 * 99.3%id：空闲CPU时间百分比
 * 0.0%wa：等待I/O的CPU时间百分比
 * 0.0%hi：CPU硬中断时间百分比
@@ -63,14 +61,10 @@ linux下的任务管理器
 **第五行**
 
 * Swap：交换空间
-
 * 6881272k total：交换区总量
-
 * 4010444k used：使用的交换区量
-
 * 2870828k free：空闲的交换区量
-
-* 4336992k cached：缓冲交换区总量 
+* 4336992k cached：缓冲交换区总量
 
 **进程信息**: 再下面就是进程信息：
 
@@ -87,12 +81,10 @@ linux下的任务管理器
 * TIME+：该进程启动后占用的总的CPU时间，即占用CPU使用时间的累加值。
 * COMMAND：进程启动命令名称
 
- 
-
 **top命令交互操作指令**:下面列出一些常用的 top命令操作指令
 
 * q：退出top命令
-* <Space>：立即刷新
+* `<Space>`：立即刷新
 * s：设置刷新时间间隔
 * c：显示命令完全模式
 * t:：显示或隐藏进程和CPU状态信息
@@ -109,27 +101,23 @@ linux下的任务管理器
 * kkill：进程
 * i：只显示正在运行的进程
 * W：保存对top的设置到文件^/.toprc，下次启动将自动调用toprc文件的设置。
-* h：帮助命令。 
+* h：帮助命令。
 
-注：强调一下，使用频率最高的是P、T、M，因为通常使用top，我们就想看看是哪些进程最耗cpu资源、占用的内存最多； 注：通过”shift + >”或”shift + <”可以向右或左改变排序列 
+注：强调一下，使用频率最高的是P、T、M，因为通常使用top，我们就想看看是哪些进程最耗cpu资源、占用的内存最多； 注：通过”shift + >”或”shift + <”可以向右或左改变排序列
 
 如果只需要查看内存：可用free命令。
 
 只查看uptime信息（第一行），可用uptime命令；
 
-
-
 ## CPU
 
 在linux系统中，提供了/proc目录下文件，显示系统的软硬件信息
 
-
-
-物理CPU、核数、逻辑cpu数的概念: 
+物理CPU、核数、逻辑cpu数的概念:
 
 ①物理CPU数（physical id）：主板上实际插入的cpu数量，可以数不重复的 physical id 有几个
 
-②CPU核心数（cpu cores）：单块CPU上面能处理数据的芯片组的数量，如双核、四核等 
+②CPU核心数（cpu cores）：单块CPU上面能处理数据的芯片组的数量，如双核、四核等
 
 ③逻辑CPU数：一般情况下，
 
@@ -137,11 +125,7 @@ linux下的任务管理器
 
 　　逻辑CPU=物理CPU个数×每颗核数 *2 　 #表示服务器的CPU支持超线程技术（简单来说，它可使处理器中的1 颗内核如2 颗内核那样在操作系统中发挥作用。这样一来，操作系统可使用的执行资源扩大了一倍，大幅提高了系统的整体性能）
 
-
-
 ![CPU内核结构](../assets/CPU内核结构.png)
-
-
 
 ![img](https://img-blog.csdnimg.cn/20200917205616164.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpYW9fZmFuZ196aV8xOTk3,size_16,color_FFFFFF,t_70)
 
@@ -397,10 +381,6 @@ address sizes ：可访问地址空间位数
 power management ：对能源管理的支持
 ```
 
-
-
-
-
 ### **查看cpu信息概要** `lscpu`
 
 ```sh
@@ -440,8 +420,6 @@ NUMA node3 CPU(s):     30-39,70-79   #...
 Flags: fpu .....                     #cpu支持的技术特征 这里省略了.另外章节介绍
 ```
 
-
-
 ### **查看cpu是否支持64bit**
 
 ```
@@ -450,8 +428,6 @@ Flags: fpu .....                     #cpu支持的技术特征 这里省略了.�
 (结果大于0, 说明支持64bit计算. lm指long mode, 支持lm则是64bit)
 ```
 
-
-
 ### 查看cpu运行模式
 
 ```
@@ -459,13 +435,9 @@ Flags: fpu .....                     #cpu支持的技术特征 这里省略了.�
 64
 ```
 
-
-
 查询系统有几颗物理CPU：cat /proc/cpuinfo | grep "physical id" |sort |uniq
 
 查询系统每颗物理CPU的核心数：cat /proc/cpuinfo | grep "cpu cores" | uniq
-
-
 
 查询系统的每颗物理CPU核心是否启用超线程技术。如果启用此技术那么，每个物理核心又可分为两个逻辑处理器。
 
@@ -475,15 +447,11 @@ Flags: fpu .....                     #cpu支持的技术特征 这里省略了.�
 
 ④查询系统具有多少个逻辑CPU：cat /proc/cpuinfo | grep "processor" | wc -l
 
-
-
 ## Linux内存命令
 
 Linux内存命令
 
-
-
-### free 
+### free
 
 ```sh
 [ / home / weber #]free
@@ -504,8 +472,6 @@ KiB Swap : 0 total , 0 used , 0 free . 136988 cached Mem
 
 top工具显示了free工具的第一行所有信息，但真实可用的内存，还需要自己计算才知道; 系统实际可用的内存为free工具输出第二行的free+buffer+cached；也就是第三行的free值191580；关于free命令各个值的详情解读，请参考这篇文章  free 查询可用内存  ;
 
-
-
 在 Linux 下 free 命令可以看出系统当前内存状况。以某台 Linux Ecs 为例，运行 free -m 后的输出如下：
 
 ```sql
@@ -518,28 +484,20 @@ Swap:             0           0           0
 1. 首先看行：
 
    * Mem ：表示物理内存统计
-
    * **-/+ buffers/cache看作两部分：**
 
      * -buffers/cache：正在使用的内存大小（注意不是used部分，因为buffers和cached并不是正在使用的，组织和人民需要是它们是可以释放的），其值=used-buffers-cached。
-
      * +buffers/cache：可用的内存大小（同理也不是free表示的部分），其值=free+buffers+cached。
-
    * Swap ：表示硬盘上交换分区的使用情况。设计的目的就是当上面提到的+buffers/cache表示的可用内存都已使用完，新的读写请求过来后，会把内存中的部分数据写入磁盘，从而把磁盘的部分空间当做虚拟内存来使用。
-
    * 注意：系统的总物理内存：3789M，但系统当前真正可用的内存并不是第一行 free 标记的 621M，它仅代表未被分配的内存。
-
 2. 接下来看列：
 
    * total ：总计物理内存的大小。
-
    * used ：已使用内存大小。（这里面包含cached和buffers和shared部分）
-
    * free ：可用有多少。空闲的内存大小。
-
    * Shared ：多个进程共享的内存总额。一般不会用，可以忽略）现在已经deprecated，其值总是0（当然在一些系统上也可能不是0，主要取决于free命令是怎么实现的）。
-
    * Buffers/cached ：磁盘缓存的大小。A buffer is something that has yet to be "written" to disk. A cache is something that has been "read" from the disk and stored for later use. 也就是说buffer是用于存放要输出到disk（块设备）的数据的，而cache是存放从disk上读出的数据。这二者是为了提高IO性能的，并由OS管理。
+
      * **buffers：内存中写完的东西缓存起来，这样快速响应请求，后面数据再定期刷到磁盘上。**
      * **cached：内存中读完缓存起来内容占的大小（这部分是为了下次查询时快速返回）。**
 
@@ -551,8 +509,6 @@ procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
  r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
  0  0   2076 203852 2884752 11011788    0    0     0     4    1    1  0  0 100  0  0
 ```
-
-
 
 ### /proc/meminfo
 
@@ -589,7 +545,7 @@ Dirty:                76 kB      //等待被写回到磁盘的大小
 Writeback:             0 kB      //正在被写回的大小
 AnonPages:        163320 kB      //未映射的页的大小
 Mapped:            65100 kB      //设备和文件映射的大小
-Shmem:               492 kB     
+Shmem:               492 kB   
 Slab:             294180 kB      //内核数据结构缓存的大小，可减少申请和释放内存带来的消耗
 SReclaimable:     278620 kB      //可收回slab的大小
 SUnreclaim:        15560 kB      //不可收回的slab的大小15560 + 278620 = 294180
@@ -628,9 +584,6 @@ DirectMap1G:     2097152 kB
 3、MemAvailable：可用内存数
 
 应用程序可用内存数。有些应用程序会根据系统的可用内存大小自动调整内存申请的多少，所以需要一个记录当前可用内存数量的统计值，MemFree并不适用，因为MemFree不能代表全部可用的内存。系统中有些内存虽然已被使用但是可以回收的，比如cache/buffer、slab都有一部分可以回收，所以MemFree不能代表全部可用的内存，这部分可回收的内存加上MemFree才是系统可用的内存，即：**MemAvailable≈MemFree+Buffers+Cached**，它是内核使用特定的算法计算出来的，是一个估计值。它与MemFree的关键区别点在于，MemFree是说的系统层面，MemAvailable是说的应用程序层面。
-
-
-
 
 ```bash
 MemTotal
@@ -732,8 +685,6 @@ HugePages_Total对应内核参数vm.nr_hugepages，也可以在运行的系统�
 
 ```
 
-
-
 简要说明：
 
 ```
@@ -762,8 +713,6 @@ HugePages_Total对应内核参数vm.nr_hugepages，也可以在运行的系统�
 
 这里说下buffer与cache的区别，首先，从字面意义上讲，buffer是缓冲的意思，cache是缓存的意思。举个现实中的例子，比说铁道头上像弹簧一样的东西，就叫缓冲；部署在森林里的存应急物资的保管箱，名叫“Food Cache”，类似一种保存箱。其次，常见的说法，叫write-buffer和read-cache，buffer一般用作写操作上，cache一般用在读操作上，不过也不是一成不变的； 举例说明，每秒要写100次硬盘，对系统冲击很大，浪费了大量时间在忙着处理开始写和结束写这两件事嘛。用buffer暂存起来，变成每10秒写一次硬盘，对系统的冲击就很小，写入效率高了；Cache 是为了弥补高速设备和低速设备的鸿沟而引入的中间层，最终起到加快取速度的作用。比如你一个很复杂的计算做完了，下次还要用结果，就把结果放手边一个好拿的地方存着，下次不用再算了，加快了数据取用的速度。
 
-
-
 三、Linux内存计算公式：
 
 参照 free 的输出结果，这里有几个计算公式：
@@ -779,8 +728,6 @@ Mem:      16433020    1827360   14605660        740     203540    1051400
  
 Swap:      8388604          0    8388604
 ````
-
-
 
 为了直观说明，简述：
 
@@ -813,7 +760,7 @@ APP buffers/cache total = APP buffers/cache used + APP buffers/cache free = OS M
 
 #### df -h
 
-英文全称：disk free. 列出文件系统的整体硬盘使用量，也可以用来列出系统中挂载的硬盘，使用`-h`选项可以以人类可读的格式输出硬盘使用状况：    `df`命令无法显示未挂载的硬盘。
+英文全称：disk free. 列出文件系统的整体硬盘使用量，也可以用来列出系统中挂载的硬盘，使用 `-h`选项可以以人类可读的格式输出硬盘使用状况：    `df`命令无法显示未挂载的硬盘。
 
 ```sh
 ~$ df -h
@@ -833,8 +780,6 @@ none            2.0G  220K  2.0G    1% /run/shm
 Filesystem            Size  Used Avail Use% Mounted on
 /dev/hdc2             9.5G  3.7G  5.4G  41% /
 ```
-
-
 
 #### du -h
 
@@ -917,10 +862,8 @@ umount [-fn] 装置文件名或挂载点
 卸载/dev/hdc6
 
 ```
-[root@www ~]# umount /dev/hdc6     
+[root@www ~]# umount /dev/hdc6   
 ```
-
-
 
 ### blkid
 
@@ -935,7 +878,7 @@ $ sudo blkid
 
 # lsscsi
 
-`lsscsi`工具可以打印`SCSI`硬盘信息，这个工具在`Ubuntu12.04`中默认没有安装，需要自行安装：
+`lsscsi`工具可以打印 `SCSI`硬盘信息，这个工具在 `Ubuntu12.04`中默认没有安装，需要自行安装：
 
 ```
 $ lsscsi 
