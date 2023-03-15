@@ -400,107 +400,9 @@ git remote add origin https://github.com/repo_name.git        # add remote repos
 
 ## 2. 顺序编程
 
-### 2.1 流程控制
+### 2.1 常量
 
-* if
-* switch
-* for
-* For-range
-
-#### 2.1.1 If
-
-基本形式
-
-```go
-if condition1 {
-	// do something
-} else if condition2 {
-	// do something else
-} else {
-	// catch-all or default
-}
-```
-
-if 的简短语句同 for 一样， if 语句可以在条件表达式前执行一个简单的语句。
-
-```go
-if v := x - 100; v < 0{ 
-	return v
-}
-```
-
-#### 2.1.2 Switch
-
-当分支很多时选switch
-
-```go
-switch var1 {
-	case val1: //空分支 
-	case val2:
-		fallthrough //执行case3中的f() 
-	case val3:
-		f()
-	default: //默认分支
-	... 
-}
-```
-
-#### 2.1.3 For
-
-Example: https://github.com/cncamp/golang/blob/master/examples/module1/forloop/main.go
-
-Go 只有一种循环结构:for 循环。
-
-* 计入计数器的循环
-
-  for 初始化语句; 条件语句; 修饰语句 {}
-
-  ```go
-  for i := 0; i < 10; i++ { 
-  	sum += i
-  }
-  ```
-* 初始化语句和后置语句是可选的，此场景与 while 等价(Go 语言不支持 while)
-
-  ```go
-  for ; sum < 1000; { 
-  	sum += sum
-  }
-  ```
-* 无限循环
-
-  ```go
-  for {
-  	if condition1 {
-  		break
-  	} 
-  }
-  ```
-
-#### 2.1.4 for-range
-
-遍历数组，切片，字符串，Map 等
-
-```go
-for index, char := range myString { 
-	...
-}
-for key, value := range MyMap {
-	...
-}
-for index, value := range MyArray { 
-	...
-}
-```
-
-需要注意:如果 for range 遍历指针数组，则 value 取出的指 针地址为原指针地址的拷贝。
-
-### 2.2 常量
-
-const identifier type
-
-常量是指编译期间就已知且不可改变的值。常量可以是数值类型(包括整型、
-浮点型和复数类型)、布尔类型、字符串类型等。
+常量：编译期间就已知且不可改变的值。常量可以是数值类型(包括整型、浮点型和复数类型)、布尔类型、字符串类型等。
 
 * 字面常量：程序中硬编码的常量，
 
@@ -512,15 +414,16 @@ const identifier type
   "foo" // 字符串常量
   ```
 
-  > 在其他语言中，常量通常有特定的类型，比如12在C语言中会认为是一个int类型的常量。 如果要指定一个值为12的long类型常量，需要写成12l，这有点违反人们的直观感觉。Go语言 的字面常量更接近我们自然语言中的常量概念，它是无类型的。只要这个常量在相应类型的值域 范围内，就可以作为该类型的常量，比如上面的常量12，它可以赋值给int、uint、int32、 int64、float32、float64、complex64、complex128等类型的变量
+  > 在其他语言中，常量通常有特定的类型，比如-12在C语言中会认为是一个int类型的常量。 如果要指定一个值为-12的long类型常量，需要写成-12l，这有点违反人们的直观感觉。Go语言 的字面常量更接近我们自然语言中的常量概念，它是无类型的。只要这个常量在相应类型的值域 范围内，就可以作为该类型的常量，比如上面的常量-12，它可以赋值给int、uint、int32、 int64、float32、float64、complex64、complex128等类型的变量
   >
 * 常量定义
 
   ```go
+  const identifier type
   const Pi float64 = 3.14159265358979323846
   const zero = 0.0 // 无类型浮点常量 
-  const (
-      size int64 = 1024
+  const (                       // 如果两个const的赋值语句的表达式是一样的，那么可以省略后一个赋值表达式
+      size int64 = 1024          // 可以用在const后跟一对圆括号的方式定义一组常量，这种定义法在Go语言中通常用于定义枚举值
       eof = -1 // 无类型整型常量
   )
   const u, v float32 = 0, 3 // u =0.0, v = 3.0,常量的多重赋值
@@ -529,22 +432,44 @@ const identifier type
 
   > Go的常量定义可以限定常量类型，但不是必需的。如果定义常量时没有指定类型，那么它 与字面常量一样，是无类型常量。常量定义的右值也可以是一个在编译期运算的常量表达式，比如 ``const mask = 1 << 3`` .由于常量的赋值是一个编译期行为，所以右值不能出现任何需要运行期才能得出结果的表达式
   >
-* 预定义常量
+* 预定义常量: true, false, iota
+* 枚举：枚举指一系列相关的常量
 
-### 2.3 变量
-
- var identifier type
-
-变量相当于是对一块数据存储 空间的命名，程序可以通过定义一个变量来申请一块数据存储空间，之后可以通过引用变量名来 使用这块存储空间。
-
-* 变量声明
-
+  ```go
+  const (
+  	Sunday = iota
+          Monday
+          Tuesday
+          Wednesday
+          Thursday
+          Friday
+          Saturday
+          numberOfDays // 这个常量没有导出
+  )
   ```
+
+以大写字母开头的常量在包外可见
+
+### 2.2 变量
+
+变量相当于是对一块数据存储空间的命名，程序可以通过定义一个变量来申请一块数据存储空间，之后可以通过引用变量名来使用这块存储空间。
+
+变量声明语句不需要使用分号作为结束符
+
+go语言变量声明和定义是一起的, 可以统称为变量定义
+
+变量定义行尾无分号；
+
+* 变量定义
+
+  ```go
+  var identifier type
+
   var v1 int
   var v2 string 
   var v3 [10]int // 数组
   var v4 []int // 数组切片
-  var v5 struct {
+  var v5 struct { 
       f int 
   }
   var v6 *int // 指针
@@ -553,7 +478,7 @@ const identifier type
   ```
 
   ```go
-  var (
+  var (  // var关键字的另一种用法是可以将若干个需要声明的变量放置在一起，免得程序员需要重复 写var关键字
       v1 int
       v2 string
   )
@@ -563,7 +488,9 @@ const identifier type
   ```go
   var v1 int = 10 // 正确的使用方式1
   var v2 = 10 // 正确的使用方式2，编译器可以自动推导出v2的类型,如果初始化值已存在，则可以省略类型;变量会从初始值中获得类型。 
-  v3 := 10 // 正确的使用方式3，编译器可以自动推导出v3的类型
+
+
+  v3 := 10 // 正确的使用方式3，编译器可以自动推导出v3的类型; 对于声明变量时需要进行初始化的场景，var关键字可以保留，但不再是必要的元素
   ```
 * 变量赋值
 
@@ -612,9 +539,9 @@ const identifier type
       * j:=i     // j也是一个int
       ```
 
-### 2.4 数据类型
+为什么 Go 有两种声明变量的方式，有什么区别，哪种好？:https://www.51cto.com/article/698793.html
 
-#### 2.4.1 基本数据类型
+### 2.3 数据类型
 
 Go语言内置以下这些基础类型:
 
@@ -636,14 +563,29 @@ Go语言内置以下这些基础类型:
 * 结构体(struct)
 * 接口(interface)
 
+
+
+引用类型：map
+
+#### 2.4.1 基本数据类型
+
+布尔类型不能接受其他类型的赋值，不支持自动或强制的类型转换。
+
+```
+var v1 bool
+v1 = true
+
+v2 := (1 == 2) // v2也会被推导为bool类型
+```
+
 #### 2.4.1 数组
 
-* 相同类型且长度固定`<mark>`连续内存片段`</mark>` : `<mark>`固定长度`</mark>`
+* 相同类型且长度固定 `<mark>`连续内存片段 `</mark>` : `<mark>`固定长度 `</mark>`
 * 以编号访问每个元素
 * 定义方法
 
   ```go
-  var identifier [len]type`
+  var identifier [len]type
   ```
 * 示例
 
@@ -651,7 +593,7 @@ Go语言内置以下这些基础类型:
   myArray:=[3]int{1,2,3}
   ```
 
-#### 2.4.2 切片(slice)
+#### 2.4.2 数组切片(slice)
 
 - 切片是对数组一个连续片段的引用, 切片也是连续的内存片段，但是不定长度，数组必须固定长度
 - 数组定义中不指定长度即为切片
@@ -722,40 +664,63 @@ Go语言内置以下这些基础类型:
 
 #### 2.4.3 Map
 
-* 声明方法
+map相当于哈希表, 是一堆键值对的未排序集合
 
-  ```go
+https://m.runoob.com/go/go-map.html
+
+示例: https://github.com/cncamp/golang/blob/master/examples/module1/map/main.go
+
+* 定义map:
+* ```go
   var map1 map[keytype]valuetype //key只能是int string 这种简单类型
-  ```
-* 示例: https://github.com/cncamp/golang/blob/master/examples/module1/map/main.go
 
-  ```go
-  myMap := make(map[string]string, 10)  
-  myMap["a"] = "b"
-  myFuncMap := map[string]func() int{ 
+  /* 使用 make 函数定义map */
+  map_variable := make(map[KeyType]ValueType, initialCapacity) // initialCapacity 是可选的参数，用于指定 Map 的初始容量。Map 的容量是指 Map 中可以保存的键值对的数量，当 Map 中的键值对数量达到容量时，Map 会自动扩容。如果不指定 initialCapacity，Go 语言会根据实际情况选择一个合适的值。
+  myMap := make(map[string]string)       // 创建空的map
+  myMap := make(map[string]string, 10)   //创建初始存储能力为10的map
+
+  /* 使用字面量创建 Map */
+  myMap := map[int]int{}      // 创建空的map
+
+  m := map[string]int{        // 创建并初始化
+      "apple": 1,
+      "banana": 2,
+      "orange": 3,
+  }
+
+  myMap["a"] = "b"                        // 赋值
+  myFuncMap := map[string]func() int{   // 创建并初始化
     	"funcA": func() int { return 1 },
   }
   fmt.Println(myFuncMap)
   f := myFuncMap["funcA"] 
   fmt.Println(f())
   ```
-* 访问 Map 元素
+* 操作map
+* ```go
+  // 获取元素
+  v1 := myMap["apple"]
+  v2, ok := myMap["pear"]  // 如果键不存在，ok 的值为 false，v2 的值为该类型的零值
+  if ok {
+  	println(value)
+  }
 
-  * 按 Key 取值
+  // 修改元素
+  myMap["apple"] = 5
 
-    ```go
-    value, exists := myMap["a"] 
-    if exists {
-    	println(value)
-    }
-    ```
-  * 遍历 Map: for-range
+  // 获取 Map 的长度
+  len := len(myMap)
 
-    ```go
-    for k, v := range myMap { 
-    	println(k, v)
-    }
-    ```
+  // 遍历 Map
+  for k, v := range myMap {
+      fmt.Printf("key=%s, value=%d\n", k, v)
+  }
+
+  // 删除元素
+  delete(myMap, "banana") // delete是内置函数
+  ```
+
+map底层实现原理：https://zhuanlan.zhihu.com/p/495998623
 
 #### 2.4.4 指针
 
@@ -852,6 +817,140 @@ https://www.cnblogs.com/cheyunhua/p/16652003.html
   	ServiceTypeExternalName ServiceType = "ExternalName" 
   )
   ```
+
+
+
+### 类型转换
+
+```go
+// 内置包 strconv
+// int转成string
+string := strconv.Itoa(int)
+
+// string转成int：
+int, err := strconv.Atoi(string)
+
+// string转成int64：
+int64, err := strconv.ParseInt(string, 10, 64)
+ 
+// int64转成string：
+string := strconv.FormatInt(int64,10)
+```
+
+```
+// 
+rune := []rune(string)
+```
+
+### 2.4 流程控制
+
+* 条件语句，if、else、else if;
+* 选择语句，switch、case和select (将在介绍channel的时候细说);
+* 循环语句，for、range;
+* 跳转语句，goto。
+* 其他需求：break、continue、fallthrough
+
+#### 2.1.1 If
+
+基本形式
+
+```go
+if condition1 {
+	// do something
+} else if condition2 {
+	// do something else
+} else {
+	// catch-all or default
+}
+```
+
+if 的简短语句同 for 一样， if 语句可以在条件表达式前执行一个简单的语句。
+
+```go
+if v := x - 100; v < 0{ 
+	return v
+}
+```
+
+> * 不需要使用括号将条件包含起来()
+> * 无论语句体内有几条语句，花括号{}都是必须存在的
+> * 左花括号{必须与if或者else处于同一行
+> * 在if之后，条件语句之前，可以添加变量初始化语句，使用;间隔
+> * 在有返回值的函数中，不允许将“最终的”return语句包含在if...else...结构中，否则会编译失败
+
+#### 2.1.2 Switch
+
+当分支很多时选switch
+
+```go
+switch var1 {
+	case val1: //空分支 
+	case val2:
+		fallthrough //执行case3中的f() 
+	case val3:
+		f()
+	default: //默认分支
+	... 
+}
+```
+
+#### 2.1.3 For
+
+Example: https://github.com/cncamp/golang/blob/master/examples/module1/forloop/main.go
+
+Go 只有一种循环结构: for 循环,不支持while和do-while。
+
+* 计入计数器的循环
+
+  for 初始化语句; 条件语句; 修饰语句 {}
+
+  ```go
+  for i := 0; i < 10; i++ { 
+  	sum += i
+  }
+  ```
+* 初始化语句和后置语句是可选的，此场景与 while 等价(Go 语言不支持 while)
+
+  ```go
+  for ; sum < 1000; { 
+  	sum += sum
+  }
+  ```
+* 无限循环
+
+  ```go
+  for {
+  	if condition1 {
+  		break
+  	} 
+  }
+  ```
+
+> [!NOTE]
+>
+> * 左花括号{必须与for处于同一行。
+> * Go语言不支持以逗号为间隔的多个赋值语句，必须使用平行赋值的方式来初始化多个变量
+> * Go语言的for循环同样支持continue和break来控制循环，但是它提供了一个更高级的break，可以选择中断哪一个循环
+
+#### 2.1.4 for-range
+
+遍历数组，切片，字符串，Map 等
+
+```go
+for index, char := range myString { 
+	...
+}
+for key, value := range MyMap {
+	...
+}
+for index, value := range MyArray { 
+	...
+}
+```
+
+需要注意:如果 for range 遍历指针数组，则 value 取出的指针地址为原指针地址的拷贝。
+
+#### goto
 
 ### 2.5 函数
 
@@ -1369,6 +1468,21 @@ defer func() {
 }()
 panic("a panic is triggered")
 ```
+
+### 2.7 关键字
+
+new, make
+
+Go语言中 new 和 make 是两个内置函数，主要用来创建并分配类型的内存, new 只分配内存，而 make 只能用于 slice、map 和 channel 的初始化
+
+
+Go内建函数make及切片slice、映射map详解:https://www.jianshu.com/p/f01841004810
+
+
+
+var: 声明变量
+
+nil
 
 ## 3. 面向对象编程
 
