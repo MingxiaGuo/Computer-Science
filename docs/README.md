@@ -31,6 +31,10 @@
 
 Düzenli Çizelgehttps://github.com/edisdev/periodic-table
 
+[小林图解](https://xiaolincoding.com/)
+
+Düzenli Çizelgehttps://github.com/edisdev/periodic-table
+
 ## awesome guide:
 
 * [macos setup guide](https://sourabhbajaj.com/mac-setup/)
