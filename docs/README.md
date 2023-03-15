@@ -12,7 +12,7 @@
 * [Computer Language](Computer_Language/README.md) : Familiar with a language：C++，Java or Python 程序设计基础
 * [Operating System](Operating_System/README.md) :The most important course in the university ⭐️ ⭐️ ⭐️ ⭐️ ⭐️
 * [Computer Network](Computer_Network/README.md) ⭐️ ⭐️ ⭐️ ⭐️ ⭐️
-* [Design Pattern](Design Pattern/README.md)
+* [Design Pattern](Design_Pattern/README.md)
 * [Cloud Computing](Cloud_Computing/README.md)
 * [Artificial Intelligence](Artificial_Intelligence/README.md)
   * [Machine Learning](Machine_Learning/README.md)
