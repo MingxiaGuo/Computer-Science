@@ -452,3 +452,9 @@ ubuntu ---- Canonical
 Redhat
 
 * How to create a Linux RPM package: https://www.redhat.com/sysadmin/create-rpm-package
+
+
+
+## 源码
+
+https://github.com/torvalds/linux
