@@ -563,8 +563,6 @@ Go语言内置以下这些基础类型:
 * 结构体(struct)
 * 接口(interface)
 
-
-
 引用类型：map
 
 #### 2.4.1 基本数据类型
@@ -576,6 +574,12 @@ var v1 bool
 v1 = true
 
 v2 := (1 == 2) // v2也会被推导为bool类型
+```
+
+string
+
+```
+// 
 ```
 
 #### 2.4.1 数组
@@ -817,8 +821,6 @@ https://www.cnblogs.com/cheyunhua/p/16652003.html
   	ServiceTypeExternalName ServiceType = "ExternalName" 
   )
   ```
-
-
 
 ### 类型转换
 
@@ -1475,10 +1477,7 @@ new, make
 
 Go语言中 new 和 make 是两个内置函数，主要用来创建并分配类型的内存, new 只分配内存，而 make 只能用于 slice、map 和 channel 的初始化
 
-
 Go内建函数make及切片slice、映射map详解:https://www.jianshu.com/p/f01841004810
-
-
 
 var: 声明变量
 

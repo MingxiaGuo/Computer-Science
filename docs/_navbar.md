@@ -2,7 +2,7 @@
     * [Computer Science An Overview](Computer_Science_an_Overview/README.md)	 
     * [Mathematics for Computer Science](Mathematics_for_CS/README.md)
     * [Computer System & Organization & Architecture](Computer_System/README.md)
-    * [Algorithm & Data Structure](Algorithm-Data_Structure/README.md)
+    * [Algorithm & Data Structure](Algorithm_DataStructure/README.md)
     * [Compilers Principles](Compilers_Principles/README.md)
     * [Computer Language](Computer_Language/README.md) 
     * [Operating System](Operating_System/README.md) 

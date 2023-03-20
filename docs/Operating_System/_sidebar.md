@@ -1,5 +1,12 @@
 * Operating System
 * [Introduction](IREADME.md)
+* 
+* [进程管理](linux/2-进程管理.md)
+* [内存管理](linux/3-内存管理.md)
+* [文件系统管理](linux/4-文件系统管理.md)
+* [输入输出系统管理](linux/5-输入输出系统.md)
+* [虚拟化](linux/8-虚拟化.md)
+* [容器化](linux/9-容器化.md)
 * 第一章 操作系统概论
 
   * [1.1 操作系统目标和作用](Operating_System/1.1-操作系统概念目标和作用.md)

@@ -1,6 +1,6 @@
 * Cloud Compuring
 * [Introduction](Cloud_Computing/README.md)
-* [1 云计算概念](Cloud_Computing/1-云计算概念.md)
+* [1 云计算概念](1-云计算.md)
 * 2 云计算架构
   * 2.1 多租户
   * 2.2 角色
@@ -29,6 +29,6 @@
   * [3.15 云计算平台管理技术](Cloud_Computing/3-云计算技术/3.15-云计算平台管理技术.md)
   * 3.16 桌面&应用虚拟化
 * 
-  * 5.6 [VPC](4-VPC.md)
+  * 5.6 [VPC](4-公有云.md)
 * 第八章 PaaS平台
   * Cloud Foundry

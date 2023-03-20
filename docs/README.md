@@ -7,7 +7,7 @@
   * Linear Algebra
   * Calculus
 * [Computer Organization & Architecture & System](docs/Computer_System) 计算机组成与体系结构
-* [Algorithm &amp; Data Structure](Algorithm-Data_Structure/README.md): Algorithms + Data Structures = Programs ⭐️ ⭐️ ⭐️ ⭐️ ⭐️
+* [Algorithm &amp; Data Structure](Algorithm_DataStructure/README.md): Algorithms + Data Structures = Programs ⭐️ ⭐️ ⭐️ ⭐️ ⭐️
 * [Compilers Principles](Compilers_Principles/README.md)
 * [Computer Language](Computer_Language/README.md) : Familiar with a language：C++，Java or Python 程序设计基础
 * [Operating System](Operating_System/README.md) :The most important course in the university ⭐️ ⭐️ ⭐️ ⭐️ ⭐️
@@ -76,3 +76,18 @@ Düzenli Çizelgehttps://github.com/edisdev/periodic-table
 * [Z library](http://zh.1lib.pl/): 全球最大数字图书馆
 
 ---
+
+
+教程： http://www.manongjc.com/detail/54-ynxotelbwjxzuqr.html
+https://www.runoob.com/python/att-string-replace.html
+https://jiuaidu.com/jianzhan/1006358/
+https://www.w3schools.com/python/default.asp
+
+# [ChatGPT注册教程，教你通过手机号验证，亲测有效](https://www.zhumengwl.com/2023/0213/18041.html)
+https://www.zhumengwl.com/2023/0213/18041.html
+
+
+
+youtube 印度人课程
+https://www.youtube.com/@JennyslecturesCSIT/playlists
+https://www.youtube.com/watch?v=rzVdTHLdC44

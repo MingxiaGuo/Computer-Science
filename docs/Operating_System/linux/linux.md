@@ -608,7 +608,7 @@ Tasks
 | l     | uptime信息       |
 | ----- | ---------------- |
 | t     | tasks及cpu信息   |
-| #数字 | cpu分别显示      |
+| `#数字` | cpu分别显示      |
 | m     | memory信息       |
 | s     | 修改刷新时间间隔 |
 | Esc   | 退出             |
@@ -1149,7 +1149,7 @@ passwd:/usr/bin/passwd /etc/passwd  
 
 3、locate  
 
-语法：  [root@redhat ~]#locate 文件或者目录名称  
+语法：  `[root@redhat ~]#locate 文件或者目录名称  `
 
     locate    [option]    filename1 filename2 ......
 
@@ -1163,7 +1163,7 @@ find files by name from one or moredatabases prepared by updatedb. 同whereis指
 
 例如：  
 
-[root@redhat ~]#locate passwd  
+`[root@redhat ~]#locate passwd  `
 
 /home/weblogic/bea/user_projects/domains/zhanggongzhe112/myserver/stage/_appsdir_DB_war/DB.war/jsp/as/user/passwd.jsp  
 
@@ -1247,6 +1247,7 @@ find files by name from one or moredatabases prepared by updatedb. 同whereis指
 
 例如：  
 
+```
 [root@redhat ~]#find / -name zgz  
 
 /home/zgz  
@@ -1260,9 +1261,11 @@ find files by name from one or moredatabases prepared by updatedb. 同whereis指
 /home/oracle/product/10g/cfgtoollogs/emca/zgz  
 
 /home/oracle/oradata/zgz  
+```
 
+
+```
  
-
 [root@redhat ~]#find / -name '*zgz*'  
 
 /home/zgz  
@@ -1288,6 +1291,9 @@ find files by name from one or moredatabases prepared by updatedb. 同whereis指
 /home/weblogic/bea/user_projects/domains/zgz/zgz.log00008  
 
 /home/weblogic/bea/user_projects/domains/zgz/zgz.log00005  
+```
+
+
 
  
 
@@ -2133,7 +2139,15 @@ ctrl+^ 快速切换到编辑器中切换前的文件
 
 当在编辑程序时，经常会想知道一个变量是被声明为int型还是unsigned。解决这个问题的快速办法就是使用命令[I，命令会列出所有包含该标识符的行，不光在当前文件中，也查找当前文件所包含的头文件，以及被头文件所包含的文件，以此类推。看下面例子：
 
-| 1  2  3  4  5  6  7  8  9  10 | /*file1.c*/  #include<stdio.h>  #include"yanyb.h"  int main ()  {      int x;      x=a;      printf("%d\n",x);      return 0;  } |
+| 1  2  3  4  5  6  7  8  9  10 | 
+```
+/*file1.c*/  
+
+#include<stdio.h>  #include"yanyb.h"  int main ()  {      int x;      x=a;      printf("%d\n",x);      return 0;  } 
+```
+
+
+|
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 |                               |                                                                                                                                                       |
 
