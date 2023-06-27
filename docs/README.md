@@ -6,7 +6,7 @@
 * [Mathematics for Computer Science](0.Mathematics_for_CS/README.md)
   * Linear Algebra
   * Calculus
-* [Computer System](docs/1.Computer_System) 计算机组成与体系结构
+* [Computer System & Organization & Architecture](1.Computer_System/README.md) 计算机组成与体系结构
 * [Algorithm &amp; Data Structure](3.Algorithm_DataStructure/README.md): Algorithms + Data Structures = Programs ⭐️ ⭐️ ⭐️ ⭐️ ⭐️
 * [Compilers Principles](6.Compilers_Principles/README.md)
 * [Computer Language](2.Computer_Language/README.md) : Familiar with a language：C++，Java or Python 程序设计基础
