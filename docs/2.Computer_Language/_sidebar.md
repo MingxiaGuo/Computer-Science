@@ -3,7 +3,12 @@
 * [C](C.md)
 * [Java](Java.md)
 * [Go](Go.md)
-* [python](python.md)
+* [Python](Python.md)
 * [Json](Json.md)
 * [Yaml](Yaml.md)
+* [Makefile](Makefile.md)
+* [Mini Program](Mini_Program.md)
+* [Vue](Vue.md)
+* [前端开发框架](前端开发框架.md)
+* [Rust](Rust.md)
 

@@ -9,7 +9,7 @@ Ceph is software defined storage, a form of storage virtualization to separate t
 https://docs.ceph.com/en/quincy/architecture/
 ### 基本结构
 
-![](image/ceph.png)
+![](../9.Cloud_Computing/image/ceph.png)
 
 * ***RADOS**:  Reliable Autonomous Distributed Object Store. Base layer that stores all the data. Its software based, self-healing, intelligent and lightweight. Ceph的底层是**RADOS**，RADOS本身也是分布式存储系统，Ceph所有的存储功能都是基于RADOS实现的。RADOS采用C++开发，所提供的原生Librados API包括C和C++两种。
 * **LIBRADOS**: Client library that allows apps to access RADOS (supports C++, Java, Python, Ruby). Ceph的上层应用调用本机上的librados API，再由后者通过socket与RADOS集群中的其他节点通信并完成各种操作。

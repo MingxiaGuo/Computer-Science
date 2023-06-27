@@ -62,6 +62,7 @@ Go语言设计者认为值得学习的是C语言，而不是C++。
 
 ## 1. Go Introduction
 
+
 ### 1.1 思想
 
 构建高可用微服务：**统一思想-12 factors**
@@ -2193,6 +2194,6 @@ Hello, world. 你好，世界!
 
 ## 8. go开发框架
 
-* [Gin —— a HTTP web framework written in Go \(Golang\)](https://github.com/gin-gonic)
-* [Cobra ——A Commander for modern Go CLI interactions](https://github.com/spf13/cobra) example:k8s
-*
+* [Gin —— A HTTP web framework written in Go \(Golang\)](https://github.com/gin-gonic)
+* [Cobra —— A Commander for modern Go CLI interactions](https://github.com/spf13/cobra) example:k8s
+* [Ginkgo—— A testing framework for Go](https://onsi.github.io/ginkgo/)
