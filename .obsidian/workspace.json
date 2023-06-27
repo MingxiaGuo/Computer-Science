@@ -1,0 +1,199 @@
+{
+  "main": {
+    "id": "1b83520e6d806f98",
+    "type": "split",
+    "children": [
+      {
+        "id": "c2a5315f7413bd5e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dd0fcb4ab9e9c0e5",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "29cce6df9ff81971",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b4a7c1439295cf4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0abb77c9c82337bb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c3229fd74a34d5c4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#计算机网络",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "28186e55f1fbc8e5",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 401.5
+  },
+  "right": {
+    "id": "1ad9f51aadfde097",
+    "type": "split",
+    "children": [
+      {
+        "id": "ee4e1c64fd18bb5d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8ac844be0f733611",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "642008cadcc1b1a8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": true,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "037642841c67e907",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5682fe1054dec9ee",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 388.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "dd0fcb4ab9e9c0e5",
+  "lastOpenFiles": [
+    "docs/Algorithm-Data_Structure/数据结构.md",
+    "docs/Algorithm-Data_Structure/image/stack_reverse_string.png",
+    "docs/Algorithm-Data_Structure/image/stack_reverse_linkedlist.png",
+    "docs/Algorithm-Data_Structure/image/stack_reverse_string_flow.svg",
+    "docs/Algorithm-Data_Structure/README.md",
+    "docs/Algorithm-Data_Structure/_sidebar.md",
+    "docs/Algorithm-Data_Structure/leetcode归纳.md",
+    "docs/Algorithm-Data_Structure/image/stack.png",
+    "docs/Algorithm-Data_Structure/image/doubly-linkedlist-heap.svg",
+    "docs/Algorithm-Data_Structure/2.常用算法.md",
+    "docs/Algorithm-Data_Structure/20-wei-tu.md",
+    "docs/Computer_Network/0.1-计算机网络.md",
+    "docs/Computer_Org_Arch/1-Overview.md",
+    "未命名 5.canvas",
+    "docs/Computer_Network/_sidebar.md",
+    "docs/Operating_System/linux/linux.md",
+    "docs/Computer_Language/CL_History.md",
+    "docs/Computer_Network/0.2-网络体系结构.md",
+    "Users/gmx/Documents/workspace/note/Computer-Science/docs/Computer_Network/assets/基带数字信号调制方法.png.md",
+    "Users/gmx/Documents/workspace/note/Computer-Science/docs/Computer_Network/assets/图片31.png.md",
+    "未命名 6.canvas",
+    "未命名 7.canvas",
+    "未命名 8.canvas",
+    "未命名 9.canvas",
+    "docs/Computer_Science_an_Overview/6-寄存器内存.md",
+    "docs/Computer_Science_an_Overview/SUMMARY.md.md",
+    "docs/Computer_Network/1.1-数据通信基础知识.md",
+    "Users/gmx/Documents/workspace/note/Computer-Science/docs/Computer_Network/assets",
+    "Users/gmx/Documents/workspace/note/Computer-Science/docs/Computer_Network",
+    "Users/gmx/Documents/workspace/note/Computer-Science/docs",
+    "Users/gmx/Documents/workspace/note/Computer-Science",
+    "Users/gmx/Documents/workspace/note",
+    "Users/gmx/Documents/workspace",
+    "Users/gmx/Documents",
+    "Users/gmx",
+    "Users",
+    "Computer_Network/4.6-IP多播.md",
+    "Computer_Network/3.3-网际控制报文协议ICMP.md",
+    "docs/README.md",
+    "docs/_sidebar.md",
+    "assets/图片23.png.md",
+    "docs/Compilers_Principles/README.md",
+    "docs/Cloud_Computing/_sidebar.md",
+    "Computer_Network/2.3-扩展的以太网.md",
+    "Computer_Network",
+    "docs/考拉.png",
+    "docs/考拉.svg",
+    "docs/Algorithm-Data_Structure/image/1.数据结构/1678780871627.png",
+    "docs/Algorithm-Data_Structure/image/LinkList_InsertNodeAtNth.svg",
+    "docs/Algorithm-Data_Structure/image/doubly-linkedlist-stack.svg",
+    "未命名 4.canvas",
+    "未命名 3.canvas",
+    "未命名 1.canvas",
+    "未命名 2.canvas",
+    "未命名.canvas"
+  ]
+}
