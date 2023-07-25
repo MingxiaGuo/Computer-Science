@@ -2197,3 +2197,25 @@ Hello, world. 你好，世界!
 * [Gin —— A HTTP web framework written in Go \(Golang\)](https://github.com/gin-gonic)
 * [Cobra —— A Commander for modern Go CLI interactions](https://github.com/spf13/cobra) example:k8s
 * [Ginkgo—— A testing framework of BDD style for Go](https://onsi.github.io/ginkgo/)
+## 9. 代码质量
+### Golint
+静态代码分析工具，用于检测代码规范。
+https://golangci-lint.run/
+
+Golint会对代码做以下几个方面检查：
+1. package注释 必须按照 “Package xxx 开头”
+2. package命名 不能有大写字母、下划线等特殊字符
+3. struct、interface等注释 必须按照指定格式开头
+4. struct、interface等命名
+5. 变量注释、命名
+6. 函数注释、命名
+7. 各种语法规范校验等
+## Gofmt
+用于代码格式化
+
+
+----
+
+other
+
+Context: https://blog.csdn.net/qq_35246620/article/details/53763356
