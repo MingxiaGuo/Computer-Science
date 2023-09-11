@@ -1,7 +1,7 @@
 
 
 # Content
-* [Introduction](INTRODUCTION.md)
+* [Introduction](../机器学习算法.md)
 * a）When Can Machines Learn? (illustrative + technical)
     *  [1 The Learning Problem](1-The-Learning-Problem.md)
         * 1.0 Course Introduction
@@ -55,7 +55,7 @@
 - Distilling Implicit Features: Extraction Models
 
 * [机器学习技法](ji-qi-xue-xi-ji-fa.md)
-* [Linear Support Vector Machine](支持向量机svm.md)
+* [Linear Support Vector Machine](机器学习算法.md)
   * [Large-Margin Separating Hyperplane](支持向量机svm/large-margin-separating-hyperplane.md)
   * [Standard Large-Margin Problem](支持向量机svm/standard-large-margin-problem.md)
   * Support Vector Machine

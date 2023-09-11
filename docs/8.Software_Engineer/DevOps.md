@@ -1,4 +1,4 @@
-# Devops
+# DevOps
 
 DevOps"一词是由英文 Development（开发）和 Operations （运维）组合而成，但它所代表的理念和实践要比这广阔的多。DevOps 涵盖了安全、协作方式、数据分析等许多方面。
 
@@ -126,11 +126,38 @@ conda: Package, dependency and environment management for any language* https://
 ## CICD
 
 在为软件开发工作流程选择CI/CD 服务器时需要注意以下几点：
-
 - 易于安装和配置
 - 与其他问题跟踪工具和版本控制工具集成
 - 安全性和合规性
 - 价格
+
+CI/CD的好处
+1. Reduced Deployment Risk，降低部署风险。快速提交小部分修改进行部署和集成，从而降低了出现错误的概率，即使出现错误也能快速定位问题并修复。
+2. Believable Progress，可信的进度。如果直接部署到线上环境中，项目进展以及完成度相对于开发人员自己声称已经完成要更加的有可信度。
+3. User Feedback，用户反馈。众所周知，项目开发中最大的风险就是开发的软件不被用户接受，这样的软件是没有太大的用处和意义的，尽早和更加频繁地交付给用户并且快速获得用户反馈来获取有价值的内容，从而保证了开发的软件是被用户接受的。
+
+### Continuous Integration
+
+Continuous Integration(持续集成). Integrating, building, and testing code within the development environment.
+
+**持续集成指的是，频繁地（一天多次）将代码集成到主干。**
+
+它的好处主要有两个。
+1. 快速发现错误。**每完成一点更新，就集成到主干，可以快速发现错误，定位错误也比较容易。
+2. 防止分支大幅偏离主干。**如果不是经常集成，主干又在不断更新，会导致以后集成的难度变大，甚至难以集成。
+
+**持续集成的目的，就是让产品可以快速迭代，同时还能保持高质量。它的核心措施是，代码集成到主干之前，必须通过自动化测试。只要有一个测试用例失败，就不能集成。
+
+Martin Fowler说过，"持续集成并不能消除Bug，而是让它们非常容易发现和改正。"
+
+与持续集成相关的，还有两个概念，分别是持续交付和持续部署。
+
+### Continuous Delivery
+
+Continuous Delivery(持续交付). A software development discipline, build software that can be released to production at any time.
+
+### Continuous Deployment
+
 
 ### CI/CD tools
 
@@ -192,7 +219,12 @@ Code Analysis:
 | 支持的版控系統     | all                        | github                |           |                                          |
 | 支持的架构         |                            | X86, power, s390x     | X86       |                                          |
 | 配置文件           | Jenkinsfile                | .travis.yml           | yaml      |                                          |
-| 是否直接支持CD     |                            |                       | 是        |                                          |
+| 是否直接支持CD     |     不直接支持CD,需要插件完成                       |                       | 是        |                                          |
+| pipeline运行环境 |                          |                      |   container   | |
+
+
+
+
 
 #### Concourse
 
@@ -200,7 +232,9 @@ Concourse CI 介绍:https://blog.waterstrong.me/concourse-ci/
 
 Concourse CI doc: https://concourse-ci.org/put-step.html
 
-#### tekton
+#### Tekton
+https://tekton.dev/docs/
+
 
 Tekton系列之安装篇: https://zhuanlan.zhihu.com/p/474124575
 
@@ -211,6 +245,15 @@ Tekton系列之实践篇-我的第一条Pipeline: https://zhuanlan.zhihu.com/p/4
 一篇文章说清楚云原生时代 CI/CD Tekton:https://www.homedt.net/121381.html
 
 Tekton之三：快速理解 Tekton 是如何工作的:https://blog.csdn.net/davidullua/article/details/124324349
+
+
+#### Artifactory
+https://jfrog.com/help/r/jfrog-artifactory-documentation/jfrog-artifactory
+
+
+#### Jenkins
+User guide: https://www.jenkins.io/doc/
+Jenkins architecture: https://www.jenkins.io/doc/developer/architecture/
 
 ## Change Management
 

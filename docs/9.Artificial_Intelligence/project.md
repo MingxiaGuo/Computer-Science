@@ -1,7 +1,5 @@
 1. MNIST - Number Recognition
 
-   ![](assets/MNIST.png)
-
    DATA
 
    training data(image + label): 60000 data http://yann.lecun.com/exdb/mnist/
