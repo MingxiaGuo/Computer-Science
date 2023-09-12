@@ -2,12 +2,13 @@
 * [Introduction](README.md)
 * [1 云计算概念](1-云计算.md)
 * 2 云计算架构
-  * 2.1 多租户
-  * 2.2 角色
-  * 2.3 弹性
-  * 2.4 云生态
-* [3 云计算组件](Cloud_Computing/2-云计算组件.md)
+	* 2.1 多租户
+	* 2.2 角色
+	* 2.3 弹性
+	* 2.4 云生态
 * 第3章 云计算技术
+	* [Container](Container.md)
+	* [Kubernetes](3.2.5-kubernetes.md)
   * [3.1 云原生](3.1-云原生.md)
   * [3.2 计算](Cloud_Computing/3-云计算技术/3.2-计算.md)
   * [3.3 网络](Cloud_Computing/3-云计算技术/3.3-网络.md)
