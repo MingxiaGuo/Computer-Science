@@ -1,10 +1,10 @@
 * Course
     * [Computer Science An Overview](Computer_Science_an_Overview/README.md)	 
-    * [Mathematics for Computer Science](0.Mathematics_for_CS/README.md)
+    * [Mathematics for Computer Science](0.Mathematics_Foundations/README.md)
     * [Computer System & Organization & Architecture](1.Computer_System/README.md)
     * [Algorithm & Data Structure](3.Algorithm_DataStructure/README.md)
     * [Compilers Principles](6.Compilers_Principles/README.md)
-    * [Computer Language](2.Computer_Language/README.md) 
+    * [Computer Language](2.ProgrammingLanguage_Compilers/README.md) 
     * [Operating System](4.Operating_System/README.md) 
     * [Computer Network](5.Computer_Network/README.md) 
     * [Design Pattern](Design Pattern/README.md)

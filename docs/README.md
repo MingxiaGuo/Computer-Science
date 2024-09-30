@@ -3,29 +3,34 @@
 ## Contents
 
 * [Computer Science An Overview](Computer_Science_an_Overview/README.md)
-* [Mathematics for Computer Science](0.Mathematics_for_CS/README.md)
+* [Mathematics for Computer Science](0.Mathematics_Foundations/README.md)
   * Linear Algebra
   * Calculus
 * [Computer System & Organization & Architecture](1.Computer_System/README.md) 计算机组成与体系结构
 * [Algorithm &amp; Data Structure](3.Algorithm_DataStructure/README.md): Algorithms + Data Structures = Programs ⭐️ ⭐️ ⭐️ ⭐️ ⭐️
 * [Compilers Principles](6.Compilers_Principles/README.md)
-* [Computer Language](2.Computer_Language/README.md) : Familiar with a language：C++，Java or Python 程序设计基础
+* [Computer Language](2.ProgrammingLanguage_Compilers/README.md) : Familiar with a language：C++，Java or Python 程序设计基础
 * [Operating System](4.Operating_System/README.md) :The most important course in the university ⭐️ ⭐️ ⭐️ ⭐️ ⭐️
 * [Computer Network](5.Computer_Network/README.md) ⭐️ ⭐️ ⭐️ ⭐️ ⭐️
-* [Design Pattern](7.Design_Pattern/README.md)
+* [Design Pattern](7.Software_Design_Architecture/7.3%20设计模式.md)
 * [Cloud Computing](9.Cloud_Computing/README.md)
 * [Artificial Intelligence](9.Artificial_Intelligence/README.md)
   * [Machine Learning](9.Artificial_Intelligence/Machine_Learning/README.md)
-  * [Deep Learning](9.Artificial_Intelligence/深度学习算法.md)
+  * [Deep Learning](9.Artificial_Intelligence/深度学习算法/深度学习算法.md)
 * [Big Data](9.Big_Data/README.md)
   * [Data Mining](9.Big_Data/Data_Mining/readme.md)
 * [Blockchain](10.Blockchain/README.md)
-* [Software Engineer](8.Software_Engineer/README.md)
+* [Software Engineer](8.Software_Engineering/README.md)
 * [Quantum_Computing](12.Quantum_Computing/README.md)
 * [User experience](User_experience/README.md)
 * [Open technology](Open_technology/README.md)
 * [Internet of Things](11.Internet_of_Things/物联网.md)
 
+
+
+
+
+Developer Survey: https://insights.stackoverflow.com/survey/
 ## Awesome Repo:
 
 [CSS LAYOUT](https://csslayout.io/)
