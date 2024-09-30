@@ -38,7 +38,7 @@ Programming  Language enable users to write programs for specific computations/a
 * [编译型语言](https://www.wikiwand.com/en/Compiled_language):  其实现通常是编译器(从源代码生成机器码的翻译器)，而不是解释器(源代码的逐步执行器，其中不发生运行前翻译)。
 * [解析型语言](https://www.wikiwand.com/zh/%E7%9B%B4%E8%AD%AF%E8%AA%9E%E8%A8%80)
 
-klk,,
+
 
 [盘点最常见的5个编程语言排行榜、排名逻辑&最新榜单](https://blog.csdn.net/MOY37RQW1JarN33BgZk/article/details/83044275)
 
@@ -60,11 +60,7 @@ C语言经久不衰的根源是它**足够简单**。
 
 ### 编程语言发展的编年史
 
-从1951年至今，人类一共发明了256种编程语言，每一种语言的出现都带有某些新特征。编程语言不断的在革新，很快就会有超出这个清单的新编程语言出现。
-
-我们一个统计出来256种编程语言，当然，这么多的语言中只有一些是常用的或实用的。
-
----
+从1951年至今，人类一共发明了256种编程语言，每一种语言的出现都带有某些新特征。编程语言不断的在革新，很快就会有超出这个清单的新编程语言出现。当然，这么多的语言中只有一些是常用的或实用的。
 
 ---
 
@@ -150,7 +146,7 @@ C语言经久不衰的根源是它**足够简单**。
 
 ## Comparison of pargrammong languages
 
-![](/Users/gmx/Documents/workspace/Computer-Science/docs/Computer_Language/Programming_Language/assets/comparsion-languages-1.png)
+![](assets/comparsion-languages-1.png)
 
 ![](/Users/gmx/Documents/workspace/Computer-Science/docs/Computer_Language/Programming_Language/assets/comparison-laguages-2.png)
 

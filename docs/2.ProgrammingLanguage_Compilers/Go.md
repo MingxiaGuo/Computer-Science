@@ -5,6 +5,7 @@
 
 ## materials
 
+
 [系统学习GO，推荐几本靠谱的书? - 知乎]([https://www.zhihu.com/question/30461290\](https://www.zhihu.com/question/30461290%29)
 
 相关网站
@@ -46,7 +47,6 @@ Doc: https://go.dev/doc/
 * [Tour of Go](https://go.dev/tour/)
 * [How to Write Go Code](https://go.dev/doc/code.html)
 * Effective Go: https://go.dev/doc/effective_go
-* 
 
 尽管看起来Java已经深获人心，但Java编程的体验并未尽如人意。
 之所以开发Go 语言，是因为“近10年来开发程序之难让我们有点沮丧”。 这一定位暗示了Go语言希望取代C和Java的地位，成为最流行的通用开发语言。
@@ -60,8 +60,7 @@ Go语言设计者认为值得学习的是C语言，而不是C++。
 融合各家之长，极力维持语言特性的简洁，力求小而精。
 2012年发布正式版
 
-## 1. Go Introduction
-
+## 1 Go Introduction
 
 ### 1.1 思想
 
@@ -109,7 +108,7 @@ Go语言主要特性：全新的静态类型开发语言（强类型语言）
 
 Go语言：编译高效，支持高并发，面向垃圾回收的新语言
 
-* 秒级完成大型程序单节点编译，
+* 秒级完成大型程序单节点编译
 * 依赖管理清晰
 * 不支持继承，程序员无需花费时间定义不同类型间的关系
 * 支持垃圾回收，支持并罚执行，支持多线程通讯
@@ -399,9 +398,11 @@ git remote add origin https://github.com/repo_name.git        # add remote repos
 * 可直接编写和运行 Go 语言程序
 * 国内可直接访问的 playground https://goplay.tools/
 
-## 2. 顺序编程
+## 2 顺序编程
 
-### 2.1 常量
+### 2.1 数据对象
+
+#### 2.1.1 常量
 
 常量：编译期间就已知且不可改变的值。常量可以是数值类型(包括整型、浮点型和复数类型)、布尔类型、字符串类型等。
 
@@ -451,7 +452,7 @@ git remote add origin https://github.com/repo_name.git        # add remote repos
 
 以大写字母开头的常量在包外可见
 
-### 2.2 变量
+#### 2.1.2 变量
 
 变量相当于是对一块数据存储空间的命名，程序可以通过定义一个变量来申请一块数据存储空间，之后可以通过引用变量名来使用这块存储空间。
 
@@ -520,19 +521,15 @@ go语言变量声明和定义是一起的, 可以统称为变量定义
 * 类型转换与推导
 
   * 类型转换: 表达式 T(v) 将值 v 转换为类型 T。
-
-    * 一些关于数值的转换:
-
-      * var i int=42
-      * var f float64 = float64(i)
-      * var u uint = uint(f) l
-    * 或者，更加简单的形式:
-
-      * i:=42
-      * f := float64(i)
-      * u := uint(f)
+  * 一些关于数值的转换:
+    * var i int=42
+    * var f float64 = float64(i)
+    * var u uint = uint(f) l
+  * 或者，更加简单的形式:
+    * i:=42
+    * f := float64(i)
+    * u := uint(f)
   * 类型推导
-
     * 在声明一个变量而不指定其类型时(即使用不带类型的 := 语法或 var = 表达式语法)，变量的类型由右值推导得出。
 
       ```go
@@ -544,33 +541,30 @@ go语言变量声明和定义是一起的, 可以统称为变量定义
 
 ### 2.3 数据类型
 
-Go语言内置以下这些基础类型:
+* 基础类型: 值类型
+  * 布尔类型:bool。
+  * 整型:int8、byte、int16、int、uint、uintptr等。
+  * 浮点类型:float32、float64。
+  * 复数类型:complex64、complex128。
+  * 字符串:string。
+  * 字符类型:rune。
+  * 错误类型:error。
+* 复合类型:  值类型; 要想表达引用，需要用指针
+  * 指针(pointer)
+  * 数组(array)
+  * 切片(slice) : 数组切片类型本身的赋值仍然是值语义,数组切片内部是指向数组的指针，可以改变所指向的数组元素
+  * 字典(map)
+  * 通道(chan)
+  * 结构体(struct)
+  * 接口(interface)
+* 引用类型：
+  * map
 
-* 布尔类型:bool。
-* 整型:int8、byte、int16、int、uint、uintptr等。
-* 浮点类型:float32、float64。
-* 复数类型:complex64、complex128。
-* 字符串:string。
-* 字符类型:rune。
-* 错误类型:error。
-
-此外，Go语言也支持以下这些复合类型:
-
-* 指针(pointer)
-* 数组(array)
-* 切片(slice)
-* 字典(map)
-* 通道(chan)
-* 结构体(struct)
-* 接口(interface)
-
-引用类型：map
-
-#### 2.4.1 基本数据类型
+#### 2.3.1 基本数据类型
 
 布尔类型不能接受其他类型的赋值，不支持自动或强制的类型转换。
 
-```
+```go
 var v1 bool
 v1 = true
 
@@ -583,7 +577,7 @@ string
 // 
 ```
 
-#### 2.4.1 数组
+#### 2.3.1 数组
 
 * 相同类型且长度固定 `<mark>`连续内存片段 `</mark>` : `<mark>`固定长度 `</mark>`
 * 以编号访问每个元素
@@ -598,7 +592,7 @@ string
   myArray:=[3]int{1,2,3}
   ```
 
-#### 2.4.2 数组切片(slice)
+#### 2.3.2 数组切片(slice)
 
 - 切片是对数组一个连续片段的引用, 切片也是连续的内存片段，但是不定长度，数组必须固定长度
 - 数组定义中不指定长度即为切片
@@ -667,7 +661,7 @@ string
     fmt.Printf("mySlice %+v\n", mySlice)
     ```
 
-#### 2.4.3 Map
+#### 2.3.3 字典 Map
 
 map相当于哈希表, 是一堆键值对的未排序集合
 
@@ -676,7 +670,8 @@ https://m.runoob.com/go/go-map.html
 示例: https://github.com/cncamp/golang/blob/master/examples/module1/map/main.go
 
 * 定义map:
-* ```go
+
+```go
   var map1 map[keytype]valuetype //key只能是int string 这种简单类型
 
   /* 使用 make 函数定义map */
@@ -700,9 +695,11 @@ https://m.runoob.com/go/go-map.html
   fmt.Println(myFuncMap)
   f := myFuncMap["funcA"] 
   fmt.Println(f())
-  ```
+```
+
 * 操作map
-* ```go
+
+```go
   // 获取元素
   v1 := myMap["apple"]
   v2, ok := myMap["pear"]  // 如果键不存在，ok 的值为 false，v2 的值为该类型的零值
@@ -723,11 +720,11 @@ https://m.runoob.com/go/go-map.html
 
   // 删除元素
   delete(myMap, "banana") // delete是内置函数
-  ```
+```
 
 map底层实现原理：https://zhuanlan.zhihu.com/p/495998623
 
-#### 2.4.4 指针
+#### 2.3.4 指针
 
 指针是一个代表着某个内存地址的值, 这个内存地址往往是在内存中存储的另一个变量的值的起始位置.
 
@@ -737,7 +734,7 @@ Go语言对指针的支持介于Java语言和 C/C++ 语言之间, 它既没有�
 
 https://www.cnblogs.com/cheyunhua/p/16652003.html
 
-#### 2.4.5 结构体和指针
+#### 2.3.5 结构体和指针
 
 - 通过 type ... struct 关键字自定义结构体
 - Go 语言支持指针，但不支持指针运算
@@ -823,7 +820,7 @@ https://www.cnblogs.com/cheyunhua/p/16652003.html
   )
   ```
 
-### 类型转换
+#### 2.3.6 类型转换
 
 ```go
 // 内置包 strconv
@@ -853,7 +850,7 @@ rune := []rune(string)
 * 跳转语句，goto。
 * 其他需求：break、continue、fallthrough
 
-#### 2.1.1 If
+#### 2.4.1 If
 
 基本形式
 
@@ -881,7 +878,15 @@ if v := x - 100; v < 0{
 > * 在if之后，条件语句之前，可以添加变量初始化语句，使用;间隔
 > * 在有返回值的函数中，不允许将“最终的”return语句包含在if...else...结构中，否则会编译失败
 
-#### 2.1.2 Switch
+#### 2.4.2 Switch
+
+> **switch 注意点：**
+>
+> 1. 条件表达式不限制为常量或者整数
+>    **2. 单个case 中可以出现多个结果选项**
+> 2. 与c语言相反，go不需要用break手动推出一个case，会自动退出
+> 3. 只有在case中写入fallthrough关键字，才可以不退出，继续执行下一个case
+> 4. 可以不设定switch之后的条件表达式，在此种情况下，整个switch结构与多个if...else...的逻辑作用等同。
 
 当分支很多时选switch
 
@@ -897,7 +902,7 @@ switch var1 {
 }
 ```
 
-#### 2.1.3 For
+#### 2.4.3 For
 
 Example: https://github.com/cncamp/golang/blob/master/examples/module1/forloop/main.go
 
@@ -935,7 +940,7 @@ Go 只有一种循环结构: for 循环,不支持while和do-while。
 > * Go语言不支持以逗号为间隔的多个赋值语句，必须使用平行赋值的方式来初始化多个变量
 > * Go语言的for循环同样支持continue和break来控制循环，但是它提供了一个更高级的break，可以选择中断哪一个循环
 
-#### 2.1.4 for-range
+#### 2.4.4 for-range
 
 遍历数组，切片，字符串，Map 等
 
@@ -953,7 +958,7 @@ for index, value := range MyArray {
 
 需要注意:如果 for range 遍历指针数组，则 value 取出的指针地址为原指针地址的拷贝。
 
-#### goto
+#### 2.4.4 goto
 
 ### 2.5 函数
 
@@ -1405,6 +1410,8 @@ k8s中大量用到反射机制，定义一个对象，通过反射机制获得�
 
 ### 2.6 错误处理
 
+漂亮的错误处理是go语言最大亮点之一
+
 #### 2.6.1 error接口
 
 * Go 语言无内置 exception 机制，只提供 error 接口供定义错误
@@ -1434,11 +1441,42 @@ k8s中大量用到反射机制，定义一个对象，通过反射机制获得�
     }
     ```
 
+```go
+
+type PathError struct { // 定义一个用于承载错误信息的类型
+	Op string 
+	Path string
+	Err error
+}
+
+func (e *PathError) Error() string { // PathError 实现了Error()方法后PathError可以当作一个error传递
+	return e.Op + " " + e.Path + ": " + e.Err.Error()
+}
+
+func Stat(name string) (fi FileInfo, err error) { // 将error作为多个返回值中的最后一个，但这非强制要求
+	var stat syscall.Stat_t
+	err = syscall.Stat(name, &stat)
+	if (err!=nil){
+		return nil, &PathError{"stat", name, err} //将syscall.Stat()失败返回的err包装到PathError对象中并返回
+	}
+	return fileInfoFromStat(&stat, name), nil
+
+}
+
+fi, err := os.Stat("a.txt") 
+if err != nil{
+	if e, ok := err.(*os.PathError); ok && e.Err != nil{ //类型转换获取错误详细信息
+		// 获取PathError类型变量e中的其他信息并处理
+	}
+} else {
+	// 使用返回值fi
+}
+```
+
 #### 2.6.2 defer
 
 * **函数返回之前**执行某个语句或函数
-
-  * 等同于 Java 和 C# 的 finally
+* 等同于 Java 和 C# 的 finally
 * 示例：https://github.com/cncamp/golang/blob/master/examples/module1/defer/main.go
 
   ```go
@@ -1452,9 +1490,11 @@ k8s中大量用到反射机制，定义一个对象，通过反射机制获得�
   ```
 * 常见的defer使用场景: 记得关闭你打开的资源； 确保资源一定是释放掉的，使用场景一般在关闭资源时
 
-  - defer file.Close()
-  - defer mu.Unlock()
-  - defer println("")
+```go
+defer file.Close()
+defer mu.Unlock()
+defer println("")
+```
 
 #### 2.6.3 Panic和recover
 
@@ -1463,6 +1503,7 @@ k8s中大量用到反射机制，定义一个对象，通过反射机制获得�
 * recover:函数从panic或错误场景中恢复；panic的错误需要recover
 
 ```go
+
 defer func() {
     fmt.Println("defer func is called")
     if err := recover(); err != nil { 
@@ -1470,6 +1511,7 @@ defer func() {
     }
 }()
 panic("a panic is triggered")
+
 ```
 
 ### 2.7 关键字
@@ -1484,7 +1526,12 @@ var: 声明变量
 
 nil
 
-## 3. 面向对象编程
+## 3 面向对象编程
+
+> [!Notice]
+> Go语言并没有沿袭传统面向对象编程中的诸多概念，比如继承、虚函数、构造函数和析构函数、隐藏的this指针等。
+>
+> Go语言和C语言一样，类型都是基于值传递的。要想修改变量的值，只能 传递指针。
 
 Go 语言中的面向对象编程
 
@@ -1544,9 +1591,9 @@ Json 编解码:k8s 所有对象都encode成json传到apiserver，在apiserver解
   }
   ```
 
-## 4. 并发编程
+## 4 并发编程
 
-并发编程：多线程
+并发编程：多线程, 多个执行上下文，对应多个调用栈和堆。
 
 并发和并行：
 
@@ -1558,19 +1605,18 @@ Json 编解码:k8s 所有对象都encode成json传到apiserver，在apiserver解
 协程
 
 * 进程:
-
   * 分配系统资源(CPU 时间、内存等)基本单位
   * 有独立的内存空间，切换开销大
-* 线程:进程的一个执行流，是CPU调度并能独立运行的的基本单位
-
-  - 一个进程可以支持多个线程，起一个程序通过起多个线程来用多个CPU
-  - 同一进程中的多线程共享内存空间，线程切换代价小
-  - 多线程通信方便
-  - 从内核层面来看线程其实也是一种特殊的进程，它跟父进程共享了打开的文件和文件系统信息，共享了地址空间和信号处理函数
+* 线程: 进程的一个执行流，是CPU调度并能独立运行的的基本单位
+  * 一个进程可以支持多个线程，起一个程序通过起多个线程来用多个CPU
+  * 同一进程中的多线程共享内存空间，线程切换代价小
+  * 多线程通信方便
+  * 从内核层面来看线程其实也是一种特殊的进程，它跟父进程共享了打开的文件和文件系统信息，共享了地址空间和信号处理函数
 
 - 协程
-  - Go 语言中的轻量级线程实现；进程和线程是在操作系统层面体现的
-  - Golang 在 runtime、系统调用等多方面对 goroutine 调度进行了封装和处理，当遇到长时间执行 或者进行系统调用时，会主动把当前 goroutine 的 CPU (P) 转让出去，让其他 goroutine 能被调度 并执行，也就是 Golang 从语言层面支持了协程
+  * 协程本质是一种用户态线程
+  * Go 语言中的轻量级线程实现；进程和线程是在操作系统层面体现的
+  * Golang 在 runtime、系统调用等多方面对 goroutine 调度进行了封装和处理，当遇到长时间执行 或者进行系统调用时，会主动把当前 goroutine 的 CPU (P) 转让出去，让其他 goroutine 能被调度 并执行，也就是 Golang 从语言层面支持了协程
 
 Communicating Sequential Process
 
@@ -1964,7 +2010,7 @@ Goroutine 创建过程
 
 ### 4.6 内存管理
 
-## 5. 网络编程
+## 5 网络编程
 
 Go语言标准库里提供的net包，支持基于IP层、TCP/UDP层及更高层面(如HTTP、FTP、SMTP)的网络操作，其中用于IP层的称为Raw Socket。
 
@@ -1980,7 +2026,7 @@ Go语言标准库里提供的net包，支持基于IP层、TCP/UDP层及更高层
 
 Go语言标准库对此过程进行了抽象和封装。无论我们期望使用什么协议建立什么形式的连接，都只需要调用net.Dial()即可。
 
-#### 5.1.1 **Dial()**函数
+#### 5.1.1 Dial()函数
 
 Dial()函数的原型如下:
  **func** Dial(net, addr string) (Conn, error)
@@ -2017,7 +2063,7 @@ conn, err := net.Dial("ip4:1", "10.0.0.3")
 
 #### 5.1.2 ICMP示例程序
 
-使用ICMP协议向在线的主机发送一个问候，并等待主机 返回
+使用ICMP协议向在线的主机发送一个问候，并等待主机返回
 
 ```go
 package main
@@ -2197,12 +2243,16 @@ Hello, world. 你好，世界!
 * [Gin —— A HTTP web framework written in Go \(Golang\)](https://github.com/gin-gonic)
 * [Cobra —— A Commander for modern Go CLI interactions](https://github.com/spf13/cobra) example:k8s
 * [Ginkgo—— A testing framework of BDD style for Go](https://onsi.github.io/ginkgo/)
+
 ## 9. 代码质量
+
 ### Golint
+
 静态代码分析工具，用于检测代码规范。
 https://golangci-lint.run/
 
 Golint会对代码做以下几个方面检查：
+
 1. package注释 必须按照 “Package xxx 开头”
 2. package命名 不能有大写字母、下划线等特殊字符
 3. struct、interface等注释 必须按照指定格式开头
@@ -2210,12 +2260,44 @@ Golint会对代码做以下几个方面检查：
 5. 变量注释、命名
 6. 函数注释、命名
 7. 各种语法规范校验等
+
 ## Gofmt
+
 用于代码格式化
 
-
-----
+---
 
 other
 
 Context: https://blog.csdn.net/qq_35246620/article/details/53763356
+
+## 面试
+
+https://zhuanlan.zhihu.com/p/471490292
+它既保留了C++的高性能，又可以像Java，Python优雅的调用三方库和管理项目，同时还有接口，自动垃圾回收和goroutine等让人**拍案叫绝**的设计。
+Go的优秀项目。Docker，Kubernetes，etcd，deis，flynn，lime，revel等等。Go无疑是**云时代的最好语言**！
+
+在面试中，我们需要深入了解Go**语言特性**，并适当辅以**源码阅读**（Go源码非常**人性化，注释非常详细，**基本上只要你学过Go就能看懂）来提升能力。常考的点包括：切片，通道，异常处理，Goroutine，GMP模型，字符串高效拼接，指针，反射，接口，sync，go test和相关工具链。
+
+golang协程
+
+
+# go常见问题
+
+## Issue 1
+
+```
+#
+
+internal/router/router.go:7:2: package xuanxue/internal/controller/userHandler is not in std (/usr/local/go/src/xuanxue/internal/controller/userHandler)
+
+并且 项目根目录有go.mod, GO111MODULE='on'
+
+
+```
+
+
+解决办法：
+
+➜  xuanxue git:(main) ✗ go clean -modcache
+➜  xuanxue git:(main) ✗ go mod tidy

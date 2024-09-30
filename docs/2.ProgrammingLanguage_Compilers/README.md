@@ -1,11 +1,27 @@
 # Computer Language
 
+1] TIOBE（http://www.tiobe.com）是一家评估编程语言流行度的权威机构，每月公布一次编程语言排行榜。
+
+[2] 一个能计算出每个图灵可计算函数（Turing-computable function）的计算系统被称为图灵完备的。一个语言是图灵完备的，意味着该语言的计算能力与一个通用图灵机（Universal Turing Machine）相当，这也是现代计算机语言所能拥有的最高能力。
+
+**好的语言就是适合编程者和解决对象的语言**
+
+
 这门语言是什么，为什么要创造这门语言，以及这门语言要解决什么问题。
 
 [Computer Language](https://www.wikiwand.com/en/Computer_language):  a [formal language](https://www.wikiwand.com/en/Formal_language) used to communicate with a [computer](https://www.wikiwand.com/en/Computer).
 
-* Construction Language
 
+计算机语言：语言发展离机器语言越远，离人类语言更近，易读写维护安全通行可移植，开发效率高更抽象和宏观，但运行速度和效率下降用法和功能上局限性更大。中低级语言更适合中小型或底层应用，高级语言更适合大型应用
+* 第一代：机器语言；由0和1组成，计算机能直接读懂，但对程序员来说难以记忆和阅读，维护费时
+* 第二代：汇编语言 Assembly；用接近英语单词的助记码替代0和1，减轻程序员负担，由汇编器(assember)转为机器语言来再执行。但是汇编器是针对特定机器类型的，不可移植。汇编器只能一对一翻译，程序员依然需要编写硬件操作的细节。
+* 第三代：高级语言 Fortran，Pascal，C，Java，VB；引入编译器(Compiler)和解释器(Interpreter)，使代码更简洁抽象，且能对一些指令做优化处理，减轻程序员负担。有时C被称为中级语言
+* 第四代：面向问题语言：SQL，SAS，SPSS；专注业务逻辑和问题领域，程序员主要分析和描述问题，不需花大量时间考虑具体算法和逻辑。但是第四代语言过于局限于特定领域，属于领域特定语言，而不是通用编程语言。SQL用于数据库操作，SAS和SPSS用于统计分析，Mathematica用于科学计算。LaTeX是专门用于排版的语言，正则表达式（regular expression）是专门处理字符匹配的语言但是疑问系统往往横跨多个领域，这些不同领域的语言是很难整合的。
+* 第五代：人工智能语言：Prolog，Mercury，OPSS；保持第三代通用性和第四代的重目标轻过程，重描述轻实现，
+* 
+
+
+* Construction Language
   * Command language: is interpreted languages
 
     * shell
@@ -99,4 +115,3 @@ Java
 
 
 
-## 

@@ -54,26 +54,67 @@ java
 
 # java开发环境下载安装
 
-# JDK&JRE&JVM
+## JDK&JRE&JVM
 
-![](/Users/gmx/Documents/workspace/note/Computer-Science/docs/Computer_Language/assets/QQ截图20170304212135.png)
+![](assets/QQ截图20170304212135.png)
 
-* JDK
+* JDK: Java Development kit java开发工具包
+* JRE: java Runtime Environment java运行时环境
+* JVM:  java virtual machine java虚拟机
+ 
+## 开发环境配置
+1. 安装Visual Studio Code: https://visualstudio.microsoft.com/downloads/
+2. 安装JDK： https://www.oracle.com/java/technologies/downloads/#jdk21-mac; https://zhuanlan.zhihu.com/p/402862056
+```sh
+vi .bash_profile
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home
+export PATH=$PATH:$JAVA_HOME/bin:.
+export CLASSPATH=$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar:.
+source .bash_profile
+java -version
+```
+4. 安装Maven:https://zhuanlan.zhihu.com/p/439934300
+	* 打开链接：https://maven.apache.org/download.cgi
+	* 下载Binary tar.gz archive
+	* 下载后解压缩，放到`/usr/local/` 目录下
+```sh
+sudo mv  apache-maven-3.9.6 /usr/local
+vi .bash_profile
 
-  ```
-    Java Development kit java开发工具包
-  ```
-* JRE
+export M2_HOME=/usr/local/apache-maven-3.8.4 
+export PATH=$PATH:$M2_HOME/bin
 
-  ```
-    java Runtime Environment java运行时环境
-  ```
-* JVM
-  java virtual machine java虚拟机
+source ~/.bash_profile
+```
 
-  # java执行过程
 
-  ![](/Users/gmx/Documents/workspace/note/Computer-Science/docs/Computer_Language/assets/QQ截图20170304214031.png)
+4. 安装Tomcat: https://www.jianshu.com/p/69496fb3495e
+	* 打开链接：https://tomcat.apache.org/download-90.cgi
+	* 下载tar.gz
+```sh
+sudo mv apache-tomcat-9.0.83 /Library
+cd /Library/apache-tomcat-9.0.83/bin
+sudo chmod 755 *.sh
+sudo sh ./startup.sh # 启动tomcat
+# 去浏览器打开 http://localhost:8080/ 验证tomcat是否开启
+sh ./shutdown.sh # 关闭tomcat
+
+```
+
+5. 在VSCode中安装Java插件，包括
+	* Extension Pack for Java
+	* Debugger for Java
+	* Maven for Java
+	* Language Support for Java by Red Hat
+	* Project Manager for Java
+	* Test Runner for Java
+	* Spring Initializr Java Support
+	* Community Server Connectors
+6. 配置插件
+
+# java执行过程
+
+  ![](assets/QQ截图20170304214031.png)
 * 下载JDK1.7
 * 安装JDK
 * 配置环境变量

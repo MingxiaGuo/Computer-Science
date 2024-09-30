@@ -9,7 +9,7 @@
 * [Makefile](Makefile.md)
 * [Mini Program](Mini_Program.md)
 * [Vue](Vue.md)
-* [前端开发框架](前端开发框架.md)
+* [前端技术](前端技术.md)
 * [Rust](Rust.md)
 * [Handlebars](Handlebars.md)
 * [Mustache](Mustache.md)
