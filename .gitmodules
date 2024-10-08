@@ -1,0 +1,3 @@
+[submodule "docs/9.Artificial_Intelligence/data_tangyudi"]
+	path = docs/9.Artificial_Intelligence/data_tangyudi
+	url = git@github.com:jackliaoall/data_tangyudi.git
