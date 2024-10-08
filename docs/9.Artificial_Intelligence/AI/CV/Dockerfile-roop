@@ -1,0 +1,39 @@
+# Base
+FROM nvidia/cuda:12.2.0-devel-ubuntu22.04 as base
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install Ubuntu packages
+RUN apt update && \
+    apt-get install -y \
+        python3.10-venv \
+        python3-pip \
+        python3-tk \
+        ffmpeg \
+	    git \
+	    unzip \
+        vim
+
+# Set Python
+RUN ln -s /usr/bin/python3.10 /usr/bin/python
+
+# Clone repo
+RUN git clone https://github.com/s0md3v/roop
+WORKDIR /roop
+
+# Install dependencies
+RUN pip3 cache purge && \
+    pip3 install -r requirements.txt
+
+# COPY pre-train model
+RUN mkdir models
+COPY inswapper_128.onnx models/
+# wget https://huggingface.co/ashleykleynhans/inswapper/resolve/main/inswapper_128.onnx
+ENV BUFFALO_DIR=/root/.insightface/models
+COPY buffalo_l.zip $BUFFALO_DIR/
+RUN unzip $BUFFALO_DIR/buffalo_l.zip -d $BUFFALO_DIR/buffalo_l
+COPY GFPGANv1.4.pth models/
+RUN mkdir -p gfpgan/weights
+COPY detection_Resnet50_Final.pth gfpgan/weights/
+COPY parsing_parsenet.pth gfpgan/weights/
+# RUN python run.py
+ENTRYPOINT ["bash"]

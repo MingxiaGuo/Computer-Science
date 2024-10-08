@@ -9,6 +9,8 @@ AI:
 
 ![](assets/AI&ML&DL.png)
 
+![](image/AI演进历史.png)
+
 人工智能：模仿人类智能产生智能行为
 机器学习：计算机自己从数据中学习并具备预测能力，是人工智能主要实现方式
 深度学习：机器学习的一种独特学习方式，模拟大脑神经元
@@ -124,6 +126,13 @@ AI研究领域：
 
 
 ## NLP
+NLP：将自然语言转换为一种计算机能理解的形式。NLP底层原理涉及语言学，计算机科学和统计学，涉及对语言的结构，语义，语法和语用等方面的研究，对大规模语料库的统计分析和模型建立。
+NLP应用：
+* 机器翻译
+* 问答系统
+* 情感分析
+* 文本摘要
+
 
 large language models: 
 * Chatgpt: OpenAI
@@ -132,6 +141,70 @@ large language models:
 Text translation
 * 百度翻译API：https://ai.baidu.com/ai-doc/MT/4kqryjku9
 * 开源翻译API：https://github.com/LibreTranslate/LibreTranslate
+
+NLP领域算法
+* 朴素贝叶斯
+* 隐马尔可夫模型HMM
+* 条件随机场CRF
+* 循环神经网络RNN
+* LSTM
+* NLP中的Attention机制
+* 特征抽取器Tranformer
+* BERT
+* transformerXL
+* GPT/GPR2.0
+* XLnet
+
+
+NLP的研究方向：
+* 文本向量化embedding
+* 序列标注任务
+* 文本分类
+* 信息提取任务
+* 复杂应用场景任务
+
+NLP一般流程：
+* 获取语料：语料：是NLP任务所研究的内容。通常用一个文本集合作为语料库(Corpus)。来源：
+	* 已有语料：积累的文档
+	* 下载语料：
+	* 抓取语料：
+* 预料预处理
+	* 语料清洗：留下有用的，删掉噪声数据。常见的数据清洗方式：
+		* 人工去重、对齐、删除和标注等，
+		* 或者规则提取内容、正则表达式匹配、根据词性和命名实体提取、编写脚本或代码批处理等
+	* 分词：将文本分成词语，常见分词算法：
+		* 基于字符串匹配的分词方法，基于理解的分词方法，基于统计的分词方法，基于规则的分词方法
+	* 词性标注：给词语打词类标签：如形容词，动词，名称等，在情感分析，知识推理等任务中需要，常见词性标注方法：
+		* 基于规则
+		* 基于统计：如基于最大熵的词性标注，基于统计最大概率输出词性和基于HMM的词性标注
+	* 去停用词：去掉文本特征没有任何贡献作用的字词，比如标点符号，语气，人称等
+* 特征工程：把分词表示成计算机能够计算的类型，一般为向量。常用的表示模型：
+	* 词袋模型(Bag of word, BOW): TF-IDF
+	* 词向量:
+		* One-bot
+		* Word2Vec
+* 特征选择选择合适的，表达能力强的特征。常见的特征选择方法：
+	* DF，MI，IG，CHI，WLLR，WFO
+* 模型训练
+	* 机器学习模型：KNN，SVM，NaiveBayes，决策树，GBOT，K-means等
+	* 深度学习模型：CNN，RNN，LSTM，Seq2seq，FastText，TextCNN
+	* 注意过拟合，欠拟合问题：
+		* 过拟合：在训练集上表现很好，但在测试集上表现很差，常见解决方法：
+			* 增大数据等训练量
+			* 增加正则化项，如L1正则和L2正则
+			* 特征选取不合理，人工筛选特征和使用特征选择算法
+			* 采用Dropout方法等
+		* 欠拟合：模型不能很好地拟合数据。常用解决方法：
+			* 添加其他特征项
+			* 增加模型复杂度，比如神经网络加更多层，线性模型通过添加多项式使模型泛化能力更强
+			* 减少正则化参数，正则化的目的是用来防止过拟合的，但是现在模型出现了欠拟合，则需要减少正则化参数
+	* 注意梯度消失和梯度爆炸问题
+* 评价指标
+	* 错误率，精度，准确率，精确度，召回率，F1衡量
+	* ROC曲线，AUC曲线
+* 模型上线应用
+	* 1. 线下训练模型，将模型做线上部署
+	* 2。在线训练，在线训练完后把模型pickle持久化
 ## CV
 
 * [jiajunhua/ahong007007-Awesome_Computer_Vision](https://github.com/jiajunhua/ahong007007-Awesome_Computer_Vision)
@@ -146,13 +219,13 @@ Compuet Vision and other subject
 * Computer Vision
 	* object detection
 		* face detection
-	*  visual recognition
+	* object recognition
 		* facial recognition
 	* image classification
 	* image captioning
 	* action classification
-	* Segmentation
-
+	* Image Segmentation
+![](https://img-blog.csdnimg.cn/20190108174118390.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhaWx5X0R1YW4=,size_16,color_FFFFFF,t_70)
 
 Convolutional Neural Networks (CNN) have
 become an important tool for object recognition
@@ -160,7 +233,7 @@ become an important tool for object recognition
 ### Image Processing
 opencv library using python
 
-## Face application
+### Face application
 * face detection
 * facial recognition
 
@@ -332,3 +405,166 @@ AI framework：AI 框架，框架是一种软件工具集，提供开发和实�
 
 数据集网站：
 paper with code
+# AI工具
+
+## 1 Anaconda
+Anaconda: 隔离不同AI项目所用到的库的版本，
+Anaconda官网: https://www.anaconda.com/
+conda:https://conda.io/projects/conda/en/stable/index.html
+```sh
+conda list # 列出所有已安装的库
+pip install xgboost # 安装xgboost
+conda install xgboost # pip 或者conda 都可以，pip安装成功率大一些
+```
+
+## 2 Python
+
+Python官网：https://www.python.org/
+
+* numpy
+* pandas
+* edge-tts
+
+## 3 JupyterNotebook
+JupyterNotebook：网页版python环境
+官网：https://jupyter.org/
+安装jupyter插件查看目录：https://blog.csdn.net/weixin_42521211/article/details/113784404
+## 4 Huggingface
+https://huggingface.co/
+
+https://replicate.com/
+
+Pycharm
+
+
+包
+
+
+## ffmpeg
+处理视频，音频。应用：播放器，
+
+视频文件格式：
+.avi .mpg .vob .mov .flv .mkv 
+视频封装格式
+AVI、RMVB、MKV、ASF、WMV、MP4、3GP、FLV
+有损压缩：MPEG、WMV、RMVB
+无损压缩：
+
+视频编码格式
+H264、Xvid
+
+MPEG-1/-2 < WMV/7/8 < RM/RMVB < Xvid/Divx < AVC/H.264
+
+音频编码格式
+MP3、AAC
+
+
+换背景
+利用ffmpeg实现rtmp推流：https://zhuanlan.zhihu.com/p/101960559
+
+## opencv
+官网：https://opencv.org/
+opencv：开源计算机视觉库，提供大量图像处理和计算机视觉算法，可供C++，python，java语音使用。用途：
+* 图像和视频处理：读取，写入，处理图像和视频，提供图像处理函数，如滤波，阈值处理，形态学处理和边缘检测等，提供视频处理函数，如视频捕获，视频压缩，视频编解码
+* 特征检测和匹配：提供 特征检测和匹配函数，如SIFT，SURF，ORB等。用于图像检测和描述特征及不同图像之间匹配特征
+* 目标检测和跟踪：提供目标检测和跟踪函数，如Haar特征检测器，HOG特征检测器和卡尔曼滤波器等，用与检测和跟踪图像中的目标，如人脸，行人，汽车等
+* 三维重建：提供三维重建函数，如立体匹配和三维重建，用于从双目图像中计算深度信息，并重建三维场景
+* 机器学习：机器学习函数，如支持向量机，随机森林，神经网络等。用于分类，回归，聚类
+**应用**
+* ***人脸识别**: OpenCV库提供了一些人脸识别函数，如Haar特征检测器和LBPH人脸识别器等。这些函数可以用于检测和识别图像中的人脸。
+* ***视频监控**: OpenCV库可以用于视频监控系统中，例如安全监控和交通监控等。它可以用于检测和跟踪运动物体，并进行目标识别和分析。
+* ***机器人视觉**: OpenCV库可以用于机器人视觉中，例如机器人导航和机器人抓取等。它可以用于计算机器人的位置和姿态，并执行目标追踪和物体抓取等任务。
+* ***医学影像**: OpenCV库可以用于医学影像中，例如医学图像分析和医学诊断等。它可以用于图像分割、特征提取和分类等任务。
+* ***虚拟现实**: OpenCV库可以用于虚拟现实中，例如虚拟现实游戏和虚拟现实培训等。它可以用于计算相机的位置和姿态，并生成虚拟场景。
+
+
+
+## Dlib
+
+
+
+## keras
+
+
+
+## Colab
+
+
+## 移动端DL框架
+深度学习要落地，部署到手机等移动端平台的框架
+
+* TensorFlow Lite(Google, 2017)：[TensorFlow Lite](https://tensorflow.google.cn/lite/) [Android-TensorFlow-Lite-Example](https://github.com/amitshekhariitbhu/Android-TensorFlow-Lite-Example)
+* Core ML(Apple): 
+	* https://developer.apple.com/documentation/coreml
+	* https://github.com/likedan/Awesome-CoreML-Models
+* Caffe2(Facebook)
+	* https://github.com/facebookarchive/caffe2
+	* https://caffe2.ai/docs/zoo.html
+	* https://github.com/caffe2/models
+* NCNN(腾讯)
+	* https://github.com/Tencent/ncnn
+	* https://github.com/BUG1989/caffe-int8-convert-tools.git
+* Paddle-Mobile(百度)
+	* https://github.com/PaddlePaddle/paddle-mobile
+	* https://github.com/PaddlePaddle/Paddle
+* QNNPACK(Facebook)
+	* https://github.com/pytorch/QNNPACK
+* MACE(小米)
+	* https://github.com/XiaoMi/mace
+	* https://github.com/XiaoMi/mace-models
+* MNN(阿里)：
+	* https://github.com/alibaba/MNN
+Mediapipe: google, https://developers.google.com/mediapipe/solutions/guide
+ExecuTorch: Meta, https://pytorch.org/executorch/stable/index.html
+
+
+## 深度学习框架
+
+用于训练模型的框架
+各类框架快速入门：https://github.com/longpeng2008/yousan.ai
+
+
+* Tensorflow(Google)
+* Pytorch(Facebook.Meta)
+* Caffe
+* Mxnet(Amazon)
+* Keras
+* Paddlepaddle(百度)
+* CNTK(微软)
+* Matconvnet
+* Deeplearning4j
+* Chainer
+* Lesagne/Theano
+* Darknet
+## Tensorflow
+
+https://www.tensorflow.org/?hl=zh-cn
+简单粗暴 TensorFlow 2: https://tf.wiki/zh_hans/
+《TensorFlow Custom Layer》：https://www.tensorflow.org/tutorials/customization/custom_layers
+
+《TensorFlow Text Vectorization》：https://www.tensorflow.org/api_docs/python/tf/keras/layers/experimental/preprocessing/TextVectorization
+TensorFlow 的安装与环境配置：https://tf.wiki/zh_hans/basic/installation.html
+
+
+TensorFlow 2 官方网站​ ：https://www.tensorflow.org/overview
+
+OpenVINO 官方中文文档​ https://docs.openvinotoolkit.org/cn/latest/index.html：
+
+了解 TF2 OD API 和 MobileNet-SSD 等​  ​：https://github.com/tensorflow/models/tree/master/research/object_detection
+
+预装环境并验证运行：​
+
+TensorFlow 2 CPU-only PIP安装
+
+以下任选​
+
+Windows 安装 OpenVINO 2021.1​ ：https://docs.openvinotoolkit.org/2021.1/openvino_docs_install_guides_installing_openvino_windows.html
+
+Linux 安装 OpenVINO 2021.1​  ：https://docs.openvinotoolkit.org/2021.1/openvino_docs_install_guides_installing_openvino_linux.html
+
+macOS 安装 OpenVINO 2021.1​：https://docs.openvinotoolkit.org/2021.1/openvino_docs_install_guides_installing_openvino_m
+## Pytorch
+
+## 部署工具
+OpenVINO(Intel): 是一个Pipeline工具集，同时可以兼容各种开源框架训练好的模型，拥有算法模型上线部署的各种能力，只要掌握了该工具，你可以轻松的将预训练模型在Intel的CPU上快速部署起来。优化部署的框架
+的[TensorRT](https://link.zhihu.com/?target=https%3A//developer.nvidia.com/nvidia-tensorrt-download)(Nvidia)
