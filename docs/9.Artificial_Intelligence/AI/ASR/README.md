@@ -1,1 +1,0 @@
-ASR: Automatic Speech Recognition
