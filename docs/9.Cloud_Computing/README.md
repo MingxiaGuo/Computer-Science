@@ -2,13 +2,14 @@
 
 [Awesome Cloud Native](https://github.com/rootsongjc/awesome-cloud-native)
 
+
 [Technical Skill Development Recommendation - Cloud](https://w3-connections.ibm.com/forums/html/topic?id=6552b0a7-a559-4766-ae63-a9df2b839488&ps=)
 云计算的虚拟资源层，Iaas云管理层，paas各个平台服务层次
 计算、存储、网络虚拟化的技术发展和应用
 nfv，公有云，私有云，混合云的架构、部署、应用场景
 sdn，nfv 云存储 云计算的部署和运维
 
-
+云原生的代表技术包括容器、服务网格、微服务、不可变基础设施和声明式 API。
 
 技术
 

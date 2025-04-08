@@ -4,7 +4,7 @@
 
 Container ecosystem layers
 
-![container_ecosystem_layers.png](../9.Cloud_Computing/assets/container_ecosystem_layers.png)
+![container_ecosystem_layers.png](image/container_ecosystem_layers.png)
 
 ### **1.1 What** is Container (容器)?
 
@@ -191,13 +191,13 @@ VM 利用 **Hypervisor 虚拟化技术**来模拟 CPU、内存等硬件资源，
 
 容器虚拟化和Hypervisor虚拟化的差别在于，容器虚拟化没有Hypervisor层，容器间相互隔离，但是容器共享操作系统，甚至bins/libs,如图2·6所示。每个容器不是独立的操作系统，所以容器虚拟化没有冗余的操作系统内核及相应的二进制库等，这使得容器部署、启动的开销几乎为零，且非常迅速。总的来说容器就是一种**基于操作系统能力的隔离技术**，这和基于hypervisor的虚拟化技术（能完整模拟出虚拟硬件和客户机操作系统）复杂度不可同日而语。
 
-![img](../9.Cloud_Computing/assets/hypervisor&container.png)
+![img](image/hypervisor&container.png)
 
 ## 8. LinuxContainer vs Docker
 
 Docker技术是否与传统的 Linux 容器相同？否。Docker 技术最初是基于 [LXC ](https://www.redhat.com/zh/topics/containers/whats-a-linux-container)技术构建（大多数人都会将这一技术与“传统的”Linux 容器联系在一起），但后来它逐渐摆脱了对这种技术的依赖。就轻量级 [虚拟化](https://www.redhat.com/zh/topics/virtualization) 这一功能来看，LXC 非常有用，但它无法提供出色的开发人员或用户体验。除了运行容器之外，Docker 技术还具备其他多项功能，包括简化用于构建容器、传输镜像以及控制镜像版本的流程。
 
-![](../9.Cloud_Computing/assets/lxc&container.png)
+![](image/lxc&container.png)
 
 容器引擎，https://docs.docker.com/
 
@@ -252,7 +252,7 @@ Docker 在容器的基础上，进行了进一步的封装，从文件系统、�
 
 ![img](https://docs.docker.com/guides/images/docker-architecture.webp)
 
-![img](./assets/docker-架构图.png)
+![img](image/docker-架构图.png)
 
 
 
@@ -351,7 +351,7 @@ Linux对Namespace操作方法：
 | UTS         | 主机名和域名                   | 2.6.19   |
 | USR         | 用户和用户组                   | 3.8      |
 
-![docker_namespace](../9.Cloud_Computing/assets/docker_namespace.png)
+![docker_namespace](image/docker_namespace.png)
 
 不同namespace之间是相互隔离的:
 
@@ -546,13 +546,13 @@ $ delete merged/in_upper.txt
 
 Docker起初以docker daemon为主，后来集成了containerd。创建container时，docker daemon调用contaiernd，containerd fork 出shim，shim之后是runc container，然后将shim的父进程由containerd转为systems(pid=1). shim和container一一对应。 以前docker demon fork出shim，shim的父进程为docker daemon，如果docker daemon升级，container将不能用。
 
-![](./assets/docker引擎架构.png)
+![](image/docker引擎架构.png)
 
-![Screen Shot 2022-08-04 at 01.16.21](./assets/docker-exercise.png)
+![Screen Shot 2022-08-04 at 01.16.21](image/docker-exercise.png)
 
 在主机上是可以看到container 的 pid=1的进程，只是此时pid不等于1，而是8418. pid namespace
 
-![Screen Shot 2022-08-04 at 01.36.16](./assets/docker-pid-exercise2.png)
+![Screen Shot 2022-08-04 at 01.36.16](image/docker-pid-exercise2.png)
 
 ### 3.4 网络
 
@@ -629,7 +629,7 @@ Docker网络默认模式–网桥和NAT：
 
 **容器镜像(Docker Image)** 就是容器运行时所需要的所有文件集合，其具备一次构建、到处运行的特点。镜像是一个只读的 Docker 容器模板，包含启动容器所需要的所有文件系统结构和内容。简单来讲， **镜像是一个特殊的文件系统** ，它提供了容器运行时所需的程序、软件库、资源、配置等静态数据。即镜像不包含任何动态数据，镜像内容在构建后不会被改变。
 
-![img](./assets/镜像操作.png)
+![img](image/镜像操作.png)
 
 通常采用 **Dockerfile** **来构建镜像**，因为 Dockerfile 提供了非常便利的语法糖，能够帮助我们很好地描述构建的每个步骤。当然，每个构建步骤都会对已有的文件系统进行操作，这样就会带来文件系统内容的变化，我们将这些变化称之为 **changeset**。当我们把构建步骤所产生的变化依次作用到一个空文件夹上，就能够得到一个完整的镜像。
 
@@ -1164,7 +1164,7 @@ From lower.
 
 如下图所示的 Dockerfile 适用于描述如何构建 golang 应用的。
 
-![img](../9.Cloud_Computing/assets/golang-dockerfile.png)
+![img](image/golang-dockerfile.png)
 
 如图所示：
 

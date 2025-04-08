@@ -2,11 +2,11 @@
 
 Everyone’s container journey starts with one container. At first the growth is easy to handle, but soon you have many applications, many instances… And that is why we have Container orchestration.
 
-![](./assets/Container_orchestration.png)
+![](image/Container_orchestration.png)
 
 ## 1 Container Orchestration Functionality
 
-![](./assets/container_orchestration_2.png)
+![](image/container_orchestration_2.png)
 
 * Container Orchestration Functionality
   * Scheduling: Distributes containers across nodes
@@ -30,7 +30,7 @@ scalable, reliable, stable, efficient, and performant.
 
 ## 2 Container ecosystem layers
 
-![](./assets/container_ecosystem_layers.png)
+![](image/container_ecosystem_layers.png)
 
 ## 3 **资源管理器**
 
@@ -38,7 +38,8 @@ scalable, reliable, stable, efficient, and performant.
 * Docker Swarm: docker 集群化方案
 * K8s: from Borg. 轻量级，资源消耗小；开源；弹性伸缩；负载均衡(IPVS)
 * Borg: 谷歌内部容器管理器
-* 
+* Omega：
+
 
 # [Kubernetes](https://kubernetes.io/)
 
@@ -137,11 +138,11 @@ Kubernetes 有业务负载检查的能力，它会监测业务上所承担的负
 
 ### k8s 生态系统
 
-![](assets/k8s生态系统.png)
+![](image/k8s生态系统.png)
 
 ### k8s设计理念
 
-![](assets/k8s设计理念.png)
+![](image/k8s设计理念.png)
 分层架构:
 
 - 核心层: Kubernetes 最核心的功能，对外提供 API 构建高层的应用，对内提供插件式应用执行环境。
@@ -152,7 +153,7 @@ Kubernetes 有业务负载检查的能力，它会监测业务上所承担的负
   - Kubernetes 外部: 日志、监控、配置管理、CI、CD、Workflow、FaaS、OTS 应用、 ChatOps 等;
   - Kubernetes 内部: CRI、CNI、CVI、镜像仓库、Cloud Provider、集群自身的配置和管理等。
 
-![](assets/k8s分层架构.png)
+![](image/k8s分层架构.png)
 
 **API 设计原则:**
 
@@ -223,7 +224,7 @@ The KCSP program is a vetted tier of service providers who have deep experience 
 
 ### 2.1 Architecture Overview
 
-![](assets/k8s-arch.svg)
+![](image/k8s-arch.svg)
 
 * **Cluster**: 集群是一组节点，这些节点可以是物理服务器或者虚拟机，之上安装了Kubernetes平台. A cluster is a set of resources, worker nodes, networks, and storage devices that keep apps highly available
 * [Node](https://kubernetes.io/docs/concepts/architecture/nodes/): a node is a worker machine in k8s
@@ -262,7 +263,7 @@ kube-scheduler-dal1-qz2-sr3-rk180-s18            1/1     Running   1 (38d ago)  
 
 Kubernetes 的 **Master Node** 包含四个主要的组件：API Server、Controller manager、Scheduler 以及 etcd。Control Plane = Master Node
 
-![](./assets/control-plane-components.png)
+![](image/control-plane-components.png)
 
 #### 2.2.1 API Server
 
@@ -277,9 +278,9 @@ Kubernetes 的 **Master Node** 包含四个主要的组件：API Server、Contro
 - APIServer 提供 etcd 数据缓存以减少集群对 etcd 的访问
 - Used by kubectl CLI
 
-![](assets/kube-apiserver.png)
+![](image/kube-apiserver.png)
 
-![](assets/kube-apiserver展开.png)
+![](image/kube-apiserver展开.png)
 
 rate limit：限流
 
@@ -296,13 +297,13 @@ AggregationServer即extenisonServer。
 	* provide a strong, consistent and **highly available key-value store** for persisting cluster state.
 	* Stores objects(API对象) and config information.
 	* The apiserveris the only thing that talks to itUses *“Raft Consensus”* among a quorum of systems to create a fault-tolerant consistent *“view”* of the cluster. https://raft.github.io/
-	* ![](./assets/etcd.png)
+	* ![](image/etcd.png)
   * etcd 是 CoreOS 基于 **Raft协议** 开发的分布式 key-value 存储，可用于**服务发现**、**共享配置**以及**一致性保障**(如 数据库选主、分布式锁等)。 异步消息机制，使得集群通过etcd的event联系起来。
     * 基本的 key-value 存储;
     * **监听机制**;
     - key 的过期及续约机制，用于监控和服务发现;
     - 原子 CAS 和 CAD，用于分布式锁和 leader 选举。
-    - ![](assets/etcd-cluster.png)
+    - ![](image/etcd-cluster.png)
   * 直接访问 etcd 的数据
     * 通过 etcd 进程查看启动参数
     * 进入容器 `kubectl exec -it etcd-cadmin bash -n kube-system`
@@ -331,15 +332,15 @@ Controller Manager:
 
 控制器工作流程：
 
-![](assets/控制器工作流程.png)
+![](image/控制器工作流程.png)
 
 Informer 的内部机制:
 
-![](assets/Informer的内部机制.png)
+![](image/Informer的内部机制.png)
 
 控制器的协同工作原理:
 
-![](assets/控制器的协同工作原理.png)
+![](image/控制器的协同工作原理.png)
 
 * **Kube-controller-manager**: 控制管理器，它用来完成**对集群状态的一些管理**。比如刚刚我们提到的两个例子之中，第一个自动对容器进行修复、第二个自动进行水平扩张，都是由 Kubernetes 中的 Controller 来进行完成的。它运行着处理集群日常任务的控制器，包括：节点控制器，副本控制器，端点(endpoint)控制器及服务账户等
 
@@ -386,7 +387,7 @@ kube-scheduler 调度阶段分为:
 * Priority: 按既定要素将满足调度需求的节点评分，按优先级排序，选择最佳节点。 有一堆插件组合，有些是默认开启的
 * Bind: 将计算节点与 Pod 绑定，完成调度
 
-![](assets/调度器.png)
+![](image/调度器.png)
 
 **Predicates策略**：过滤策略。 有一堆插件组合，有些是默认开启的
 
@@ -406,7 +407,7 @@ kube-scheduler 调度阶段分为:
 
 Predicates plugin工作原理：
 
-![](assets/predicates_plugin工作原理.png)
+![](image/predicates_plugin工作原理.png)
 **Priorities策略**：打分策略， 每个plugin有一个权重
 
 * SelectorSpreadPriority: 优先减少节点上属于同一个service或Replication controller的Pod数量
@@ -484,7 +485,7 @@ spec:
 
 Kubernetes 的 **Node** 包含四个主要的组件：kubelet, kube-proxy, Container Runtime Engine:
 
-![](./assets/node-components.png)
+![](image/node-components.png)
 
 <img src="./assets/k8s-node.png" style="zoom: 33%;" />
 
@@ -504,7 +505,7 @@ Kubernetes 的初始化系统(init system): 每个节点上都有kubelet
 * 负责汇报当前节点的资源信息和健康状态;
 * 负责 Pod 的健康检查和状态汇报。
 
-![](assets/kubelet.png)
+![](image/kubelet%201.png)
 
 
 PodWorker: 负责起停pod
@@ -538,7 +539,7 @@ ImageGC：回收不用的镜像
     * iptables;
     * ipvs。
 
-![](assets/kube-proxy.png)
+![](image/kube-proxy.png)
 
 * **Container runtime Engine**
 
@@ -569,7 +570,7 @@ Kubernetes 的 Node 并不会直接和 user 进行 interaction，它的 interact
 
 ### 2.5 Communication of components
 
-![](assets/k8s例子.png)
+![](image/k8s例子.png)
 
 下面我们以一个例子再去看一下 Kubernetes 架构中的这些组件，是如何互相进行 interaction 的。
 
@@ -853,7 +854,7 @@ Namespaces are a logical cluster or environment, and are the primary method of p
 
 k8s的对象分为namspace对象和非namspace对象
 
-![image-20220418184210798](assets/namespace.png)
+![image-20220418184210798](image/namespace.png)
 
 Namespace 是用来做一个集群内部的逻辑隔离的，它包括鉴权、资源管理等。Kubernetes 的每个资源，比如刚才讲的 Pod、Deployment、Service 都属于一个 Namespace，同一个 Namespace 中的资源需要命名的唯一性，不同的 Namespace 中的资源可以重名。
 
@@ -1119,7 +1120,7 @@ A group of co-located containers: Pods are **one or MORE containers** that share
 
 **Pod定义**
 
-![image-20220418184313988](assets/pod-example.png)
+![image-20220418184313988](image/pod-example.png)
 
 ```yaml
 apiVersion: v1 # 与k8s集群版本有关，使用 kubectl api-versions 即可查看当前集群支持的版本
@@ -1279,17 +1280,17 @@ A deep dive into Kubernetes controllers: https://docs.bitnami.com/tutorials/a-de
 - 当某个副本宕机以后，控制器将会创建一个新的副本。
 - 当因业务负载发生变更而需要调整扩缩容时，可以方便地调整副本数量。
 
-![](assets/replicaset-img.png)
+![](image/replicaset-img.png)
 
 - Primary method of managing pod replicas and their lifecycle.
 - Includes their scheduling, scaling, and deletion.
 - Their job is simple: **Always ensure the desired number of pods are running.**
 - 
-- ![](./assets/ReolicaSet.png)
+- ![](image/ReolicaSet.png)
 
 
-![](./assets/ReplicaSet-example.png)
-![image-20220418213531098](assets/ReplicaSet-2.png)
+![](image/ReplicaSet-example.png)
+![image-20220418213531098](image/ReplicaSet-2.png)
 
 ### 4.2 **Deployment**
 
@@ -1299,7 +1300,7 @@ A deep dive into Kubernetes controllers: https://docs.bitnami.com/tutorials/a-de
 - 这样一个复合操作用一个 RS 是不太好描述的，所以用一个更通用的 Deployment 来描述。
 - 以 Kubernetes 的发展方向，未来对所有长期伺服型的的业务的管理，都会通过 Deployment 来管理。
 
-![](assets/deployment-example.png)
+![](image/deployment-example.png)
 
 ```
 通过类似 Docker run 的命令在 Kubernetes 运行容器
@@ -1317,10 +1318,10 @@ kubectl expose deployment nginx-app --port=80 --target-port=80
 - Updates are managed through the **pod-template-hash** label.
 - Each iteration creates a unique label that is assigned to both the **ReplicaSet** and subsequent Pods.
 
-![image-20220418213619710](assets/Deployment.png)
+![image-20220418213619710](image/Deployment.png)
 
 Deployment 是在 Pod 这个抽象上更为上层的一个抽象，它可以定义一组 Pod 的副本数目、以及这个 Pod 的版本。一般大家用 Deployment 这个抽象来做应用的真正的管理，而 Pod 是组成 Deployment 最小的单元。Deployment用来描述一个应用的部署。
-![](./assets/k8s-deployment.png)
+![](image/k8s-deployment.png)
 
 
 Kubernetes 是通过 Controller，也就是我们刚才提到的控制器去维护 Deployment 中 Pod 的数目，它也会去帮助 Deployment 自动恢复失败的 Pod。
@@ -1366,7 +1367,7 @@ Pod是k8s最小调度单元，但是如果不小心删掉pod，服务将会中�
 - Ensure that all nodes matching certain criteria will run an instance of the supplied Pod.
 - Are ideal for cluster wide services such as log forwarding or monitoring.
 
-![image-20220418213752435](assets/DaemonSet.png)
+![image-20220418213752435](image/DaemonSet.png)
 
 ### 4.4 **StatefulSet**
 
@@ -1383,7 +1384,7 @@ A StatefulSet is a Controller that provides a unique identity to its Pods. It pr
 
   StatefulSet 做的只是将确定的 Pod 与确定的存储关联起来保证状态的连续性。
 
-![](assets/statefulset.png)
+![](image/statefulset.png)
 
 Statefulset 与 Deployment 的差异
 
@@ -1410,7 +1411,7 @@ Deployment ，Service都是long running任务。Job用来支持一次性任务�
     • 工作队列型任务根据应用确认的全局成功而标志成功。
 
 
-![](assets/job.png)
+![](image/job.png)
 ### 4.6 **CronJob**
 
 An extension of the Job Controller, it provides a method of executing jobs on a cron-like schedule.
@@ -1421,7 +1422,7 @@ Service 是应用服务的抽象，通过 labels 为应用提供负载均衡和�
 
 每个 Service 都会自动分配一个 cluster IP(仅在集群内部可访问的虚拟地址) 和 DNS 名，其他容器可以通过该地址或 DNS 来访问服务，而不需要了解后端 容器的运行。
 
-![](assets/service-img.png)
+![](image/service-img.png)
 
 Service Spec:
 
@@ -1446,7 +1447,7 @@ Service 提供了一个或者多个 Pod 实例的稳定访问地址。
 
 service：服务如何将应用发布成服务，本质上是负载均衡和域名服务的声明。
 
-![](assets/k8s-service.png)
+![](image/k8s-service.png)
 
 比如在上面的例子中，我们看到：一个 Deployment 可能有两个甚至更多个完全相同的 Pod。对于一个外部的用户来讲，访问哪个 Pod 其实都是一样的，所以它希望做一次负载均衡，在做负载均衡的同时，我只想访问某一个固定的 VIP，也就是 Virtual IP 地址，而不希望得知每一个具体的 Pod 的 IP 地址。
 
@@ -1478,25 +1479,25 @@ A service defines a set of pods and a means by which to access them, such as sin
 
   <img src="./assets/services-2.png" alt="image-20220418175332944" style="zoom:30%;" />
 
-  ![img](assets/services.png)
+  ![img](image/services.png)
 
 #### 3.6.1 **ClusterIP Service**
 
 **ClusterIP** services exposes a service on a strictly cluster internal virtual IP.
-![](assets/clusrerip-service.png)
-![](assets/cluster-ip-dia.png)
+![](image/clusrerip-service.png)
+![](image/cluster-ip-dia.png)
 
 **ClusterIP Service Without Selector**
 
-![](assets/cluster-ip-no-selector.png)
+![](image/cluster-ip-no-selector.png)
 
 #### 3.6.2 NodePort Service
 
 - **NodePort** services extend the **ClusterIP** service.
 - Exposes a port on every node’s IP.
 - Port can either be statically defined, or dynamically taken from a range between 30000-32767.
-  ![](assets/nodeport-service.png)
-  ![](assets/nodeport-service-example.png)
+  ![](image/nodeport-service.png)
+  ![](image/nodeport-service-example.png)
 
 #### 3.6.3 **LoadBalancer Service**
 
@@ -1534,7 +1535,7 @@ Kubernetes 主要通过 API Server 对外提供服务，Kubernetes 对于访问 
 
 下图是 API 访问需要经过的三个步骤，它们分别是：认证、授权和准入，准入不在这章节讨论，它更多专注的是资源的管理。
 
-![](./assets/access-control.png)
+![](image/access-control.png)
 
 一个组件和apiserver通信时要做认证鉴权，要有一个身份，每个k8s pod 会分配一个service account，service account以volume形式mount到pod里，里面的应用读取service account 对应的文件来与apiserver通信
 
@@ -1986,7 +1987,7 @@ kubernetes 已经内置了许多 ClusterRole，以 system:开头，可以用 kub
 
 **Role - Authorization**
 
-![image-20220418183514597](assets/role-auth.png)
+![image-20220418183514597](image/role-auth.png)
 
 **RoleBinding - Authorization**
 
@@ -2283,7 +2284,7 @@ A volume is a directory, possibly with some data in it, which is accessible to a
 * PVCs can be named the same to make things consistent but point to different storage classes
 * In this example we have a dev and prod namespace. These PVCs are named the same, but reside within different namespaces and request different classes of storage.
 
-![](./assets/PVs-and-PVCs.png)
+![](image/PVs-and-PVCs.png)
 
 ### 7.5 **Working with Volumes**
 
@@ -2317,9 +2318,9 @@ This pattern makes use of two Kubernetes components: **ConfigMaps** and **Secret
 * **ConfigMap Example**
 
   * **data**: Contains key-value pairs of ConfigMap contents.
-    * ![](./assets/ConfigMap-example.png)
+    * ![](image/ConfigMap-example.png)
 * Can be created from a manifest, literals, directories, or files directly.
-	* ![](./assets/create-ConfigMap.png)
+	* ![](image/create-ConfigMap.png)
 
 * Can be referenced through several different means:
 
@@ -2354,11 +2355,11 @@ This pattern makes use of two Kubernetes components: **ConfigMaps** and **Secret
 
 ### 8.3 **Injecting Configuration**
 
-![](./assets/inject-as-env.png)
+![](image/inject-as-env.png)
 
-![](./assets/inject-in-command.png)
+![](image/inject-in-command.png)
 
-![](./assets/inject-as-volume.png)
+![](image/inject-as-volume.png)
 ## 9. Scheduling, Preemption, eviction
 
 - [Kubernetes Scheduler](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/)
@@ -2493,13 +2494,13 @@ Kubernetes Liveness Probes | Practical Guide and Best Practices: https://komodor
 
 **Prometheus** & **Grafana (dashboards)**
 
-![image-20220418194546676](assets/prometheus.png)
+![image-20220418194546676](image/prometheus.png)
 
 **Fluentd** **(log shipping)**
 
-![image-20220418194623430](assets/fluentd.png)
+![image-20220418194623430](image/fluentd.png)
 
-![image-20220418194703160](assets/logging-33.png)
+![image-20220418194703160](image/logging-33.png)
 
 ## 9 Extend k8s
 

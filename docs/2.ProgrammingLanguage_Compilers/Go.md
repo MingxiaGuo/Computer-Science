@@ -2243,6 +2243,7 @@ Hello, world. 你好，世界!
 * [Gin —— A HTTP web framework written in Go \(Golang\)](https://github.com/gin-gonic)
 * [Cobra —— A Commander for modern Go CLI interactions](https://github.com/spf13/cobra) example:k8s
 * [Ginkgo—— A testing framework of BDD style for Go](https://onsi.github.io/ginkgo/)
+* [go-i18n——Translate your Go program into multiple languages.](https://github.com/nicksnyder/go-i18n)
 
 ## 9. 代码质量
 
